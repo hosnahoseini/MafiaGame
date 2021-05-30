@@ -1,0 +1,36 @@
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۱۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۲۳ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۲۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۳۰ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۳۵ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۰۴:۳۵ [INFO] org.HO.Server.Server ---> introducing normal mafias
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۱:۴۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۱:۴۹ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۱:۵۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۲:۰۲ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۲:۰۷ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۲:۰۷ [INFO] org.HO.Server.Server ---> introducing normal mafias
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۲:۰۷ [INFO] org.HO.Server.Server ---> introducing normal mafias
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۲۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۳۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۳۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۴۰ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۴۴ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۴۶ [INFO] org.HO.Server.Server ---> introducing normal mafias
+۳۰/۰۵/۲۰۲۱ ۲۰:۲۵:۴۶ [INFO] org.HO.Server.Server ---> introducing normal mafias
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۵:۱۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۵:۱۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۵:۲۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۷:۵۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۷:۵۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۸:۰۶ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۸:۴۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۳۹:۰۰ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۱:۵۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۱:۵۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۲:۰۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۲:۱۶ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۳:۴۸ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۳:۵۴ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۳:۵۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۰/۰۵/۲۰۲۱ ۲۰:۴۴:۰۴ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
