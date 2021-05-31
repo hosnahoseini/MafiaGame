@@ -6,12 +6,9 @@ import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
 import org.HO.SharedData;
 
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -35,7 +32,7 @@ public class Server {
             }
 
             while (true) {
-                if (sharedData.players.size() == sharedData.numberOfPlayers)
+                if (checkIfEveryOneISReady())
                     break;
             }
 
@@ -48,31 +45,46 @@ public class Server {
         }
     }
 
+    private boolean checkIfEveryOneISReady() {
+        for (ClientHandler player : sharedData.players) {
+            if (!player.isReadyToPlay())
+                return false;
+        }
+        return true;
+    }
+
     private void sendMessageToAllClients(String msg) throws IOException {
-        for (ClientHandler player: sharedData.players) {
+        for (ClientHandler player : sharedData.players) {
             player.writeTxt(msg);
         }
     }
 
     public void introducing() {
-        mafiaIntroducing();
+        try {
+            introduceMafias();
+            introduceDrCityToMayor();
+        } catch (IOException e) {
+            logger.log("cant introduce", LogLevels.ERROR);
+        }
 
     }
 
-    public void mafiaIntroducing() {
+    public void introduceMafias() throws IOException {
         for (ClientHandler mafia : sharedData.getMafias()) {
-                try {
-                    logger.log("introducing mafias", LogLevels.INFO);
-                    for (ClientHandler otherMafia : sharedData.getMafias()) {
-                        if (!otherMafia.equals(mafia)) {
-                            mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
-                            logger.log(otherMafia.getName() + " is " + otherMafia.getRole(), LogLevels.INFO);
-                        }
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
+
+            logger.log("introducing mafias", LogLevels.INFO);
+            for (ClientHandler otherMafia : sharedData.getMafias()) {
+                if (!otherMafia.equals(mafia)) {
+                    mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
+                    logger.log(otherMafia.getName() + " is " + otherMafia.getRole(), LogLevels.INFO);
                 }
+            }
 
         }
+    }
+
+    public void introduceDrCityToMayor() throws IOException {
+        String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
+        sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
     }
 }

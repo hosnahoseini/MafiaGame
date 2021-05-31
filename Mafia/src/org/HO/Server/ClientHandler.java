@@ -1,14 +1,12 @@
 package org.HO.Server;
 
 import org.HO.Initializer;
-import org.HO.Logger.LogLevels;
 import org.HO.PlayerRole;
 import org.HO.SharedData;
 
 import java.io.*;
 import java.net.Socket;
 import java.util.Objects;
-import java.util.Scanner;
 
 public class ClientHandler implements Runnable {
 
@@ -38,13 +36,26 @@ public class ClientHandler implements Runnable {
         try {
 
             role = initializer.assignRole();
-            name = (String) inObj.readObject();
+            setNameFromClient();
             outObj.writeObject(role);
             sharedData.addToSharedData(this);
+            readyToPlay = (boolean) inObj.readObject();
 
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void setNameFromClient() throws IOException, ClassNotFoundException {
+        while (true){
+            name = (String) inObj.readObject();
+            if(sharedData.checkIfNameIsRepetitive(name))
+                outObj.writeObject(false);
+            else{
+                outObj.writeObject(true);
+                break;
+            }
         }
     }
 
@@ -82,6 +93,10 @@ public class ClientHandler implements Runnable {
 
     public ObjectInputStream getInObj() {
         return inObj;
+    }
+
+    public boolean isReadyToPlay() {
+        return readyToPlay;
     }
 
     public boolean isMafia(){

@@ -12,26 +12,34 @@ public class Client {
 
     private PlayerRole role;
     private String name;
+    private Scanner scanner = new Scanner(System.in);
+    private DataInputStream in;
+    private DataOutputStream out;
+    private ObjectInputStream inObj;
+    private ObjectOutputStream outObj;
 
     public void startClient(String ipAddress, int port) {
-        try (Socket connection = new Socket(ipAddress, port);
-             DataInputStream in = new DataInputStream(connection.getInputStream());
-             DataOutputStream out = new DataOutputStream(connection.getOutputStream());
-             ObjectInputStream inObj = new ObjectInputStream(in);
-             ObjectOutputStream outObj = new ObjectOutputStream(out)) {
+        try (Socket connection = new Socket(ipAddress, port)) {
+            in = new DataInputStream(connection.getInputStream());
+            out = new DataOutputStream(connection.getOutputStream());
+            inObj = new ObjectInputStream(in);
+            outObj = new ObjectOutputStream(out);
 
             System.out.println("connected to server");
-            outObj.writeObject(setName());
+            setName();
             role = (PlayerRole) inObj.readObject();
             System.out.println("Welcome to our game \nyour role is -> " + role);
-            
+            System.out.println("type GO whenever you are ready to play");
+            scanner.next();
+            outObj.writeObject(true);
 
             while (true) {
                 String input = in.readUTF();
                 System.out.println(input);
-                if(input.equals("MORNING"))
+                if (input.equals("MORNING"))
                     break;
             }
+
             System.out.println("hi");
             //clientType(connection);
 
@@ -45,19 +53,17 @@ public class Client {
         }
 
     }
-    public String setName(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        name = scanner.next();
-        return name;
-    }
-    public void clientType(Socket connection) throws InterruptedException {
 
-        switch (role){
-            case NORMAL_MAFIA -> new NormalMafia(connection).start();
+    public void setName() throws IOException, ClassNotFoundException {
+        System.out.println("Enter your name: ");
+        while (true) {
+            name = scanner.next();
+            outObj.writeObject(name);
+            if ((boolean) inObj.readObject())
+                break;
+            System.out.println("Some one use this name before:( please try another one");
         }
     }
-
 
 }
 

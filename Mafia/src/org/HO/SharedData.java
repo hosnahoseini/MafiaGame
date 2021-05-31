@@ -35,7 +35,7 @@ public class SharedData {
     public void addToSharedData(ClientHandler player) {
         try {
             players.put(player);
-            playerWithRoles.get(player.getRole()).add(player);
+            //playerWithRoles.get(player.getRole()).add(player);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -57,4 +57,10 @@ public class SharedData {
             return null;
     }
 
+    public boolean checkIfNameIsRepetitive(String name){
+        for(ClientHandler player : players)
+            if(player.getName().equals(name))
+                return true;
+            return false;
+    }
 }

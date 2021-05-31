@@ -20,11 +20,12 @@ public class Initializer {
         availableRoles.add(PlayerRole.DR_LECTER);
         //sharedData.playerWithRoles.put(PlayerRole.DR_LECTER, new ArrayList<>());
 
-//        availableRoles.add(PlayerRole.DR_CITY);
+        availableRoles.add(PlayerRole.DR_CITY);
 //        availableRoles.add(PlayerRole.DETECTIVE);
 //        availableRoles.add(PlayerRole.PROFESSIONAL);
 //        availableRoles.add(PlayerRole.PSYCHOLOGIST);
 //        availableRoles.add(PlayerRole.DIE_HARD);
+        availableRoles.add(PlayerRole.MAYOR);
 
         //sharedData.playerWithRoles.put(PlayerRole.NORMAL_MAFIA, new ArrayList<>());
         for (int i = 0; i < sharedData.numberOfNormalMafias; i++)

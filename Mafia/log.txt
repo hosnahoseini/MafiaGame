@@ -95,3 +95,37 @@
 ۳۱/۰۵/۲۰۲۱ ۱۷:۱۸:۵۷ [INFO] org.HO.Server.Server ---> a is NORMAL_MAFIA
 ۳۱/۰۵/۲۰۲۱ ۱۷:۱۸:۵۷ [INFO] org.HO.Server.Server ---> b is GOD_FATHER
 ۳۱/۰۵/۲۰۲۱ ۱۷:۱۸:۵۷ [INFO] org.HO.Server.Server ---> d is DR_LECTER
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۳:۱۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۳:۲۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۳:۲۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۳:۲۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۳:۳۰ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۴:۱۳ [INFO] org.HO.Server.Server ---> Client [5] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۴۴:۱۷ [INFO] org.HO.Server.Server ---> Client [6] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۴:۵۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۵:۴۰ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۵:۵۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۶:۰۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۶:۱۴ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۶:۱۹ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۶:۲۸ [INFO] org.HO.Server.Server ---> Client [5] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۶:۳۵ [INFO] org.HO.Server.Server ---> Client [6] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> c is GOD_FATHER
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> e is DR_LECTER
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> f is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> b is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> e is DR_LECTER
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> f is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> b is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> c is GOD_FATHER
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> f is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> b is NORMAL_MAFIA
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> c is GOD_FATHER
+۳۱/۰۵/۲۰۲۱ ۱۷:۵۷:۱۲ [INFO] org.HO.Server.Server ---> e is DR_LECTER
+۳۱/۰۵/۲۰۲۱ ۱۸:۰۹:۱۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۸:۰۹:۲۵ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۳۱/۰۵/۲۰۲۱ ۱۸:۰۹:۳۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully

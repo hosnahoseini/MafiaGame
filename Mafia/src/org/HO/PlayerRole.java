@@ -9,6 +9,7 @@ public enum PlayerRole {
     PROFESSIONAL,
     PSYCHOLOGIST,
     DIE_HARD,
+    MAYOR,
     NORMAL_PEOPLE
 
 }
