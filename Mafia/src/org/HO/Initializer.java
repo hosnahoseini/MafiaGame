@@ -13,16 +13,12 @@ public class Initializer {
 
 
     private Initializer() {
-        int numberOfPlayers = sharedData.numberOfPlayers;
-        int numberOfMafia = 2;
-        int numberOfPeople = 1;
-//        int numberOfMafia = (numberOfPlayers / 3) - 2;
-//        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;
+
 
         availableRoles.add(PlayerRole.GOD_FATHER);
-        sharedData.players.put(PlayerRole.GOD_FATHER, new ArrayList<>());
+        //sharedData.playerWithRoles.put(PlayerRole.GOD_FATHER, new ArrayList<>());
         availableRoles.add(PlayerRole.DR_LECTER);
-        sharedData.players.put(PlayerRole.DR_LECTER, new ArrayList<>());
+        //sharedData.playerWithRoles.put(PlayerRole.DR_LECTER, new ArrayList<>());
 
 //        availableRoles.add(PlayerRole.DR_CITY);
 //        availableRoles.add(PlayerRole.DETECTIVE);
@@ -30,12 +26,12 @@ public class Initializer {
 //        availableRoles.add(PlayerRole.PSYCHOLOGIST);
 //        availableRoles.add(PlayerRole.DIE_HARD);
 
-        sharedData.players.put(PlayerRole.NORMAL_MAFIA, new ArrayList<>());
-        for (int i = 0; i < numberOfMafia; i++)
+        //sharedData.playerWithRoles.put(PlayerRole.NORMAL_MAFIA, new ArrayList<>());
+        for (int i = 0; i < sharedData.numberOfNormalMafias; i++)
             availableRoles.add(PlayerRole.NORMAL_MAFIA);
 
-        sharedData.players.put(PlayerRole.NORMAL_PEOPLE, new ArrayList<>());
-        for (int i = 0; i < numberOfPeople; i++)
+        //sharedData.playerWithRoles.put(PlayerRole.NORMAL_PEOPLE, new ArrayList<>());
+        for (int i = 0; i < sharedData.numberOfNormalPeople; i++)
             availableRoles.add(PlayerRole.NORMAL_PEOPLE);
 
         Collections.shuffle(availableRoles);

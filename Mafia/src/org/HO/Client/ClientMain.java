@@ -8,7 +8,7 @@ public class ClientMain {
         //System.out.println("Enter port: ");
         //int port = scanner.nextInt();
         Client client = new Client();
-        client.startClient("127.0.01", 8080);
+        client.startClient("127.0.01", 7652);
 
     }
 }

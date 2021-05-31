@@ -23,9 +23,17 @@ public class Client {
             System.out.println("connected to server");
             outObj.writeObject(setName());
             role = (PlayerRole) inObj.readObject();
-            System.out.println("your role is -> " + role);
+            System.out.println("Welcome to our game \nyour role is -> " + role);
+            
 
-            clientType(connection);
+            while (true) {
+                String input = in.readUTF();
+                System.out.println(input);
+                if(input.equals("MORNING"))
+                    break;
+            }
+            System.out.println("hi");
+            //clientType(connection);
 
 
         } catch (UnknownHostException e) {
@@ -34,15 +42,12 @@ public class Client {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
 
     }
     public String setName(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
-//        name = "a";
         name = scanner.next();
         return name;
     }

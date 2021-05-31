@@ -10,6 +10,6 @@ public class ServerMain {
         //System.out.println("Enter port: ");
         //int port = scanner.nextInt();
         Server server = new Server(numberOfPlayer);
-        server.start(8080);
+        server.start(7652);
     }
 }
