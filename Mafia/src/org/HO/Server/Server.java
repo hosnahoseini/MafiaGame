@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
 public class Server {
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(Server.class.getName());
+    ExecutorService pool = Executors.newCachedThreadPool();
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -22,43 +23,73 @@ public class Server {
 
     public void start(int port) {
 
-        ExecutorService pool = Executors.newCachedThreadPool();
+        acceptClients(port);
+
+
+        while (true) {
+            if (checkIfEveryOneISReady())
+                break;
+        }
+
+        introducing();
+        sendMessageToAllClients("MORNING");
+        executeChatRoom();
+
+
+    }
+
+    public void acceptClients(int port) {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             for (int i = 0; i < sharedData.numberOfPlayers; i++) {
                 Socket connection = serverSocket.accept();
                 logger.log("Client [" + i + "] connected successfully", LogLevels.INFO);
-                Thread thread = new Thread(new ClientHandler(connection));
-                pool.execute(thread);
+                pool.execute(new ClientHandler(connection));
             }
-
-            while (true) {
-                if (checkIfEveryOneISReady())
-                    break;
-            }
-
-            introducing();
-            sendMessageToAllClients("MORNING");
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private boolean checkIfEveryOneISReady() {
+    public void executeChatRoom() {
+        for (ClientHandler player : sharedData.players) {
+            pool.execute(new ChatHandler(player, this));
+        }
+    }
+
+    public boolean checkIfEveryOneISReady() {
         for (ClientHandler player : sharedData.players) {
             if (!player.isReadyToPlay())
                 return false;
         }
-        return true;
+        if(sharedData.numberOfPlayers == sharedData.players.size())
+            return true;
+        else
+            return false;
     }
 
-    private void sendMessageToAllClients(String msg) throws IOException {
+    public void sendMessageToAllClients(String msg) {
         for (ClientHandler player : sharedData.players) {
-            player.writeTxt(msg);
+            try {
+                player.writeTxt(msg);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
+    public void sendMessageToAllClientsExceptOne(String msg, ClientHandler notGiven) {
+
+        for (ClientHandler player : sharedData.players) {
+            if (!player.equals(notGiven)) {
+                try {
+                    player.writeTxt(msg);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
     public void introducing() {
         try {
             introduceMafias();
@@ -84,6 +115,7 @@ public class Server {
     }
 
     public void introduceDrCityToMayor() throws IOException {
+        logger.log("introducing doc", LogLevels.INFO);
         String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
         sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
     }

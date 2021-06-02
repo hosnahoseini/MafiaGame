@@ -19,8 +19,8 @@ public class SharedData {
 
     private SharedData(){
         players = new LinkedBlockingQueue<>();
-        numberOfNormalMafias = 2;
-        numberOfNormalPeople = 1;
+        numberOfNormalMafias = 0;
+        numberOfNormalPeople = 0;
 //        int numberOfMafia = (numberOfPlayers / 3) - 2;
 //        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;
     }
@@ -33,12 +33,9 @@ public class SharedData {
     }
 
     public void addToSharedData(ClientHandler player) {
-        try {
-            players.put(player);
+            players.add(player);
             //playerWithRoles.get(player.getRole()).add(player);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
     }
 
     public ArrayList<ClientHandler> getMafias(){

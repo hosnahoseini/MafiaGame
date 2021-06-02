@@ -21,6 +21,7 @@ public class ClientHandler implements Runnable {
     private ObjectOutputStream outObj;
     private ObjectInputStream inObj ;
     private boolean readyToPlay = false;
+
     public ClientHandler(Socket connection) throws IOException {
         this.connection = connection;
         sharedData = SharedData.getInstance();
