@@ -8,6 +8,9 @@ import java.io.*;
 import java.net.Socket;
 import java.util.Objects;
 
+import static org.HO.PlayerRole.*;
+import static org.HO.PlayerRole.MAYOR;
+
 public class ClientHandler implements Runnable {
 
     private Socket connection;
@@ -16,11 +19,12 @@ public class ClientHandler implements Runnable {
     private String name;
     private PlayerRole role;
     private boolean alive = true;
+    private boolean readyToPlay = false;
+    private boolean ableToReadChat = true;
     private DataInputStream in;
     private DataOutputStream out;
     private ObjectOutputStream outObj;
     private ObjectInputStream inObj ;
-    private boolean readyToPlay = false;
 
     public ClientHandler(Socket connection) throws IOException {
         this.connection = connection;
@@ -59,6 +63,44 @@ public class ClientHandler implements Runnable {
             }
         }
     }
+
+    public boolean isMafia(){
+        if(role == NORMAL_MAFIA || role ==DR_LECTER || role == GOD_FATHER)
+            return true;
+        return false;
+    }
+
+    public boolean isCitizen(){
+        if(role == NORMAL_PEOPLE || role == DETECTIVE || role == PROFESSIONAL ||
+                role == PSYCHOLOGIST || role == DIE_HARD || role == MAYOR)
+            return true;
+        return false;
+    }
+
+    public boolean isNormalMafia(){
+        if(role == PlayerRole.NORMAL_MAFIA)
+            return true;
+        return false;
+    }
+
+    public void writeTxt(String text) throws IOException {
+        this.out.writeUTF(text);
+    }
+    public void writeObj(Object obj) throws IOException {
+        this.outObj.writeObject(obj);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ClientHandler that = (ClientHandler) o;
+        return alive == that.alive &&
+                Objects.equals(connection, that.connection) &&
+                Objects.equals(name, that.name) &&
+                role == that.role;
+    }
+
 
     public Socket getConnection() {
         return connection;
@@ -100,27 +142,7 @@ public class ClientHandler implements Runnable {
         return readyToPlay;
     }
 
-    public boolean isMafia(){
-        if(role == PlayerRole.NORMAL_MAFIA || role == PlayerRole.DR_LECTER || role == PlayerRole.GOD_FATHER)
-            return true;
-        return false;
-    }
-
-    public boolean isNormalMafia(){
-        if(role == PlayerRole.NORMAL_MAFIA)
-            return true;
-        return false;
-    }
-
-    public void writeTxt(String text) throws IOException {
-        this.out.writeUTF(text);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ClientHandler that = (ClientHandler) o;
-        return alive == that.alive && Objects.equals(connection, that.connection) && Objects.equals(name, that.name) && role == that.role;
+    public boolean isAbleToReadChat() {
+        return ableToReadChat;
     }
 }

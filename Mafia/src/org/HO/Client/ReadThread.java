@@ -38,7 +38,7 @@ public class ReadThread implements Runnable{
                 logger.log(String.valueOf(socket.isClosed())+ "2" + name, LogLevels.ERROR);
                 message = in.readUTF();
                 logger.log(name + " read " + message +" in chat", LogLevels.INFO);
-                System.out.println(message + "\n");
+                System.out.println(message);
 
             } catch (IOException e) {
                 e.printStackTrace();

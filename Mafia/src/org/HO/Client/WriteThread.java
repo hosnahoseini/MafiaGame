@@ -43,7 +43,7 @@ public class WriteThread implements Runnable{
             logger.log(String.valueOf(socket.isClosed())+ "2" + name, LogLevels.ERROR);
             logger.log(name + " wants to write " + message +" in chat", LogLevels.INFO);
             try {
-                out.writeUTF("[ " + name + " ]: " + message);
+                out.writeUTF(message);
                 logger.log(name + " write " + message +" in chat", LogLevels.INFO);
             } catch (IOException e) {
                 e.printStackTrace();

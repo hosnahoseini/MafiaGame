@@ -47,6 +47,7 @@ public class Client {
     }
 
     private void startChat(Socket connection) {
+        if()
         new Thread(new WriteThread(connection, name)).start();
         new Thread(new ReadThread(connection, name)).start();
     }

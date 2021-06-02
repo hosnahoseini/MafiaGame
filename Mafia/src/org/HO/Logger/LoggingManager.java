@@ -5,9 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class LoggingManager {
-    private final String ROOT_DIR = "./log/";
-    private final String LOG_FILE = "log.txt";
-    private final String ERROR_FILE = "./log/error/";
+
     private final String CLASS_NAME;
 
     public LoggingManager(String CLASS_NAME) {

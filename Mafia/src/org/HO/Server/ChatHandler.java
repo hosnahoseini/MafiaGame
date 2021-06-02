@@ -7,22 +7,21 @@ import org.HO.SharedData;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.util.concurrent.BlockingQueue;
 
 public class ChatHandler implements Runnable {
 
-    private SharedData sharedData;
     private DataInputStream in;
     private DataOutputStream out;
     private Server server;
     private ClientHandler player;
-    private static int numberOfPlayerEndedChat;
+    private BlockingQueue<ClientHandler> chatters;
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
 
-    public ChatHandler(ClientHandler player, Server server) {
+    public ChatHandler(ClientHandler player, Server server, BlockingQueue<ClientHandler> chatters) {
+        this.chatters = chatters;
         this.player = player;
-        sharedData = SharedData.getInstance();
         this.server = server;
-        numberOfPlayerEndedChat = 0;
         logger.log("New player use chat handler", LogLevels.INFO);
         try {
             in = new DataInputStream(player.getConnection().getInputStream());
@@ -38,22 +37,40 @@ public class ChatHandler implements Runnable {
         try {
             do {
                 clientMessage = in.readUTF();
-                if(clientMessage.equalsIgnoreCase("done"))
-                    numberOfPlayerEndedChat ++;
+                String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
+
+                if (clientMessage.equalsIgnoreCase("done")) {
+                    chatters.remove(player);
+                    serverMessage = player.getName() + " left chat";
+                }
+
                 logger.log("server receives " + clientMessage, LogLevels.INFO);
-                server.sendMessageToAllClients(clientMessage);
+                broadcast(serverMessage);
                 logger.log("server broad cast " + clientMessage, LogLevels.INFO);
-            } while (checkIfChatEnded());
-            numberOfPlayerEndedChat = 0;
+            } while (!checkIfChatEnded());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public boolean checkIfChatEnded(){
-        if(numberOfPlayerEndedChat == sharedData.numberOfPlayers)
+    public boolean checkIfChatEnded() {
+        if (chatters.size() == 0)
             return true;
         return false;
+    }
+
+    public void broadcast(String msg) {
+
+        for (ClientHandler player : chatters) {
+
+            try {
+                player.writeTxt(msg);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
     }
 
 }

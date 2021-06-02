@@ -4,11 +4,15 @@ import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 
 import org.HO.PlayerRole;
+import org.HO.Poll;
 import org.HO.SharedData;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -34,7 +38,14 @@ public class Server {
         introducing();
         sendMessageToAllClients("MORNING");
         executeChatRoom();
+        mafiasPoll();
 
+
+    }
+
+    private void mafiasPoll() {
+        Poll poll = new Poll(sharedData.getCitizens());
+        se
 
     }
 
@@ -51,8 +62,9 @@ public class Server {
     }
 
     public void executeChatRoom() {
+        sharedData.chatters = sharedData.players;
         for (ClientHandler player : sharedData.players) {
-            pool.execute(new ChatHandler(player, this));
+            pool.execute(new ChatHandler(player, this, sharedData.chatters));
         }
     }
 
@@ -68,28 +80,29 @@ public class Server {
     }
 
     public void sendMessageToAllClients(String msg) {
-        for (ClientHandler player : sharedData.players) {
+        sendMessageToAGroup(sharedData.players, msg);
+    }
+
+    public void sendMessageToAGroup(Collection<ClientHandler> members, String msg) {
+        for (ClientHandler member : members) {
             try {
-                player.writeTxt(msg);
+                member.writeTxt(msg);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public void sendMessageToAllClientsExceptOne(String msg, ClientHandler notGiven) {
-
-        for (ClientHandler player : sharedData.players) {
-            if (!player.equals(notGiven)) {
-                try {
-                    player.writeTxt(msg);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+    public void sendPollToAGroup(Collection<ClientHandler> members, Poll poll) {
+        for (ClientHandler member : members) {
+            try {
+                member.writeObj(poll);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
-
     }
+
     public void introducing() {
         try {
             introduceMafias();
