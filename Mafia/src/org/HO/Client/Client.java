@@ -2,6 +2,8 @@ package org.HO.Client;
 
 import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
+import org.HO.Player;
+import org.HO.Poll;
 
 import java.io.*;
 import java.net.Socket;
@@ -10,22 +12,14 @@ import java.util.Scanner;
 
 public class Client {
 
-    private PlayerRole role;
-    private String name;
-    private Scanner scanner = new Scanner(System.in);
-    private DataInputStream in;
-    private DataOutputStream out;
-    private ObjectInputStream inObj;
-    private ObjectOutputStream outObj;
+    private Player player;
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
+    Scanner scanner = new Scanner(System.in);
 
     public void startClient(String ipAddress, int port) {
         try  {
             Socket connection = new Socket(ipAddress, port);
-            in = new DataInputStream(connection.getInputStream());
-            out = new DataOutputStream(connection.getOutputStream());
-            inObj = new ObjectInputStream(in);
-            outObj = new ObjectOutputStream(out);
+            player = new Player(connection);
 
             System.out.println("connected to server");
 
@@ -34,6 +28,8 @@ public class Client {
             waitUntilMorning();
 
             startChat(connection);
+
+            voteForMorningPoll();
 
 
         } catch (UnknownHostException e) {
@@ -46,16 +42,30 @@ public class Client {
 
     }
 
+    private void voteForMorningPoll() {
+        try {
+            Poll poll = (Poll) player.getInObj().readObject();
+            poll.showPoll();
+            System.out.println("Enter your vote");
+            int vote = scanner.nextInt();
+            player.getOutObj().writeObject(vote);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void startChat(Socket connection) {
-        if()
-        new Thread(new WriteThread(connection, name)).start();
-        new Thread(new ReadThread(connection, name)).start();
+        if(player.isAlive())
+            new Thread(new WriteThread(connection, player.getName())).start();
+        new Thread(new ReadThread(connection, player.getName())).start();
     }
 
 
     private void waitUntilMorning() throws IOException {
         while (true) {
-            String input = in.readUTF();
+            String input = player.getIn().readUTF();
             System.out.println(input);
             if (input.equals("MORNING"))
                 break;
@@ -64,24 +74,25 @@ public class Client {
 
     private void initializeInfo() throws IOException, ClassNotFoundException {
         setName();
-        role = (PlayerRole) inObj.readObject();
-        System.out.println("Welcome to our game \nyour role is -> " + role);
+        player.setRole((PlayerRole) player.getInObj().readObject());
+        System.out.println("Welcome to our game \nyour role is -> " + player.getRole());
         System.out.println("type GO whenever you are ready to play");
         //scanner.next();
-        outObj.writeObject(true);
+        player.getOutObj().writeObject(true);
     }
 
     private void setName() throws IOException, ClassNotFoundException {
         System.out.println("Enter your name: ");
+        String name;
         while (true) {
             name = scanner.next();
-            outObj.writeObject(name);
-            if ((boolean) inObj.readObject())
+            player.getOutObj().writeObject(name);
+            if ((boolean) player.getInObj().readObject())
                 break;
             System.out.println("Some one use this name before:( please try another one");
         }
+        player.setName(name);
+
     }
 
 }
-
-

@@ -2,15 +2,11 @@ package org.HO.Client;
 
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
-import org.HO.Server.ClientHandler;
-import org.HO.Server.Server;
 
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 public class WriteThread implements Runnable{
     private String name;

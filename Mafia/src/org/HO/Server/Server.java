@@ -3,6 +3,7 @@ package org.HO.Server;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 
+import org.HO.Player;
 import org.HO.PlayerRole;
 import org.HO.Poll;
 import org.HO.SharedData;
@@ -10,16 +11,14 @@ import org.HO.SharedData;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Server {
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(Server.class.getName());
-    ExecutorService pool = Executors.newCachedThreadPool();
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -38,18 +37,26 @@ public class Server {
         introducing();
         sendMessageToAllClients("MORNING");
         executeChatRoom();
+        MorningPolling();
+        sendMessageToAllClients("NIGHT");
         mafiasPoll();
 
 
     }
 
+    private void MorningPolling() {
+        Poll poll = new Poll(sharedData.players);
+
+    }
+
     private void mafiasPoll() {
         Poll poll = new Poll(sharedData.getCitizens());
-        se
+        //se
 
     }
 
     public void acceptClients(int port) {
+        ExecutorService pool = Executors.newCachedThreadPool();
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             for (int i = 0; i < sharedData.numberOfPlayers; i++) {
                 Socket connection = serverSocket.accept();
@@ -62,18 +69,26 @@ public class Server {
     }
 
     public void executeChatRoom() {
-        sharedData.chatters = sharedData.players;
-        for (ClientHandler player : sharedData.players) {
-            pool.execute(new ChatHandler(player, this, sharedData.chatters));
+        ExecutorService pool = Executors.newCachedThreadPool();
+        for (Player player : sharedData.players) {
+            if (player.isAlive() || player.isAbleToReadChat())
+                pool.execute(new ChatHandler(player));
+        }
+
+        try {
+            pool.awaitTermination(20, TimeUnit.SECONDS);
+            sendMessageToAllClients("Chat time ended");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
     public boolean checkIfEveryOneISReady() {
-        for (ClientHandler player : sharedData.players) {
+        for (Player player : sharedData.players) {
             if (!player.isReadyToPlay())
                 return false;
         }
-        if(sharedData.numberOfPlayers == sharedData.players.size())
+        if (sharedData.numberOfPlayers == sharedData.players.size())
             return true;
         else
             return false;
@@ -83,8 +98,8 @@ public class Server {
         sendMessageToAGroup(sharedData.players, msg);
     }
 
-    public void sendMessageToAGroup(Collection<ClientHandler> members, String msg) {
-        for (ClientHandler member : members) {
+    public void sendMessageToAGroup(Collection<Player> members, String msg) {
+        for (Player member : members) {
             try {
                 member.writeTxt(msg);
             } catch (IOException e) {
@@ -93,8 +108,8 @@ public class Server {
         }
     }
 
-    public void sendPollToAGroup(Collection<ClientHandler> members, Poll poll) {
-        for (ClientHandler member : members) {
+    public void sendPollToAGroup(Collection<Player> members, Poll poll) {
+        for (Player member : members) {
             try {
                 member.writeObj(poll);
             } catch (IOException e) {
@@ -114,10 +129,10 @@ public class Server {
     }
 
     public void introduceMafias() throws IOException {
-        for (ClientHandler mafia : sharedData.getMafias()) {
+        for (Player mafia : sharedData.getMafias()) {
 
             logger.log("introducing mafias", LogLevels.INFO);
-            for (ClientHandler otherMafia : sharedData.getMafias()) {
+            for (Player otherMafia : sharedData.getMafias()) {
                 if (!otherMafia.equals(mafia)) {
                     mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
                     logger.log(otherMafia.getName() + " is " + otherMafia.getRole(), LogLevels.INFO);

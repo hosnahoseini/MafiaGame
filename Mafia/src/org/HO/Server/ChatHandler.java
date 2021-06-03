@@ -2,33 +2,25 @@ package org.HO.Server;
 
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
+import org.HO.Player;
 import org.HO.SharedData;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.concurrent.BlockingQueue;
+import java.util.ArrayList;
 
 public class ChatHandler implements Runnable {
 
-    private DataInputStream in;
-    private DataOutputStream out;
-    private Server server;
-    private ClientHandler player;
-    private BlockingQueue<ClientHandler> chatters;
+    private Player player;
+    private ArrayList<Player> writers;
+    private ArrayList<Player> readers;
+    private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
 
-    public ChatHandler(ClientHandler player, Server server, BlockingQueue<ClientHandler> chatters) {
-        this.chatters = chatters;
+    public ChatHandler(Player player) {
+        writers = sharedData.getAlivePlayers();
+        readers = sharedData.getAbleToReadChats();
         this.player = player;
-        this.server = server;
         logger.log("New player use chat handler", LogLevels.INFO);
-        try {
-            in = new DataInputStream(player.getConnection().getInputStream());
-            out = new DataOutputStream(player.getConnection().getOutputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
@@ -36,11 +28,11 @@ public class ChatHandler implements Runnable {
         String clientMessage;
         try {
             do {
-                clientMessage = in.readUTF();
+                clientMessage = player.getIn().readUTF();
                 String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
 
                 if (clientMessage.equalsIgnoreCase("done")) {
-                    chatters.remove(player);
+                    writers.remove(player);
                     serverMessage = player.getName() + " left chat";
                 }
 
@@ -54,14 +46,14 @@ public class ChatHandler implements Runnable {
     }
 
     public boolean checkIfChatEnded() {
-        if (chatters.size() == 0)
+        if (writers.size() == 0)
             return true;
         return false;
     }
 
     public void broadcast(String msg) {
 
-        for (ClientHandler player : chatters) {
+        for (Player player : writers) {
 
             try {
                 player.writeTxt(msg);
