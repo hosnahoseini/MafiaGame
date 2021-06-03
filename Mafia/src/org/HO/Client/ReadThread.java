@@ -1,9 +1,7 @@
 package org.HO.Client;
 
-import org.HO.Initializer;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
-import org.HO.Server.ClientHandler;
 
 import java.io.DataInputStream;
 import java.io.IOException;

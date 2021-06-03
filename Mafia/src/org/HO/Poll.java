@@ -1,48 +1,55 @@
 package org.HO;
 
-import org.HO.Server.ClientHandler;
-
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.Random;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class Poll {
-    private ConcurrentHashMap<ClientHandler , Integer> choices;
+    private ConcurrentHashMap<Player, BlockingQueue<Player>> poll;
 
-    public Poll(ArrayList<ClientHandler> choices) {
-        for(ClientHandler choice:choices)
-            this.choices.put(choice, 0);
+    public Poll(Collection<Player> choices) {
+        poll = new ConcurrentHashMap<>();
+        for(Player choice:choices)
+            this.poll.put(choice, new LinkedBlockingQueue<>());
     }
 
     public void showPoll(){
         int index = 1;
-        for(ClientHandler choice:choices.keySet())
+        for(Player choice: poll.keySet())
             System.out.println(index ++ + " ) "+ choice);
     }
 
-    public void vote(String choice){
-        for(ClientHandler player:choices.keySet())
-            if(player.getName().equals(choice)){
-                int previousVote = choices.get(choice) + 1;
-                choices.put(player , previousVote + 1);
-            }
+    public void vote(int index, Player player){
+        Player choice = (Player) poll.keySet().toArray()[index];
+        BlockingQueue previousVote = poll.get(choice);
+        previousVote.add(player);
+        poll.put(player , previousVote);
+
+//        for(Player player1: poll.keySet())
+//            if(player1.getName().equals(choice)){
+//                BlockingQueue previousVote = poll.get(choice);
+//                previousVote.add(player);
+//                poll.put(player , previousVote);
+//            }
     }
 
     public void showResult(){
-        for(ClientHandler player:choices.keySet())
-            System.out.println(player.getName() + " : " + choices.get(player));
+        for(Player player: poll.keySet())
+            System.out.println(player.getName() + " : " + poll.get(player));
     }
 
-    public ClientHandler winner(){
-        ArrayList<ClientHandler> winners = new ArrayList<>();
+    public Player winner(){
+        ArrayList<Player> winners = new ArrayList<>();
         int max = 0;
-        for(ClientHandler player:choices.keySet())
-            if(choices.get(player) > max){
-                max = choices.get(player);
+        for(Player player: poll.keySet())
+            if(poll.get(player).size() > max){
+                max = poll.get(player).size();
                 winners.removeAll(winners);
                 winners.add(player);
-            }else if(choices.get(player) == max)
+            }else if(poll.get(player).size() == max)
                 winners.add(player);
             Random random = new Random();
             return winners.get(random.nextInt(winners.size()));
