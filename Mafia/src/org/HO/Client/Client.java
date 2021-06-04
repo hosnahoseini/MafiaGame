@@ -59,7 +59,7 @@ public class Client {
         try {
             String poll = (String) player.getInObj().readObject();
             logger.log("read poll res",LogLevels.INFO);
-
+            System.out.println("The result is:");
             System.out.println(poll);
             Thread.sleep(5000);
         } catch (IOException e) {

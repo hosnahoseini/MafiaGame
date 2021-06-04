@@ -15,6 +15,7 @@ public abstract class ClientWithRole {
 
     public void start() {
         waitUntilReceivingMsg("NIGHT");
+        waitUntilReceivingMsg("YOUR TURN");
     }
 
 

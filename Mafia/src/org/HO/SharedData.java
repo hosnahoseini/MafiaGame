@@ -18,7 +18,7 @@ public class SharedData {
     private SharedData(){
         killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
-        numberOfNormalMafias = 0;
+        numberOfNormalMafias = 1;
         numberOfNormalPeople = 0;
 //        int numberOfMafia = (numberOfPlayers / 3) - 2;
 //        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;
@@ -82,10 +82,10 @@ public class SharedData {
             return false;
     }
 
-//    public Player findPlayerWithName(String name){
-//        for (Player player:players)
-//            if(player.getName().equals(name))
-//                return player;
-//            return null;
-//    }
+    public Player findPlayerWithName(String name){
+        for (Player player:players)
+            if(player.getName().equals(name))
+                return player;
+            return null;
+    }
 }

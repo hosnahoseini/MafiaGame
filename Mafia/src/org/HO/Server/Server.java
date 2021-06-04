@@ -47,13 +47,31 @@ public class Server {
 
         sendPollResultToAllClients(morningPoll);
 
-        AskMayorForPoll();
+//        AskMayorForPoll();
 
         sendMessageToAllClients("NIGHT");
 
-        mafiasPoll();
+        Poll mafiasPoll = mafiasPoll();
 
+        godFatherChoiceKilledOne(mafiasPoll);
 
+//        drLecterHealMafia();
+    }
+
+    private void godFatherChoiceKilledOne(Poll mafiasPoll) {
+        Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
+        godFather.writeTxt("YOUR TURN");
+        if(godFather != null){
+            try {
+                godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
+                godFather.getOutObj().writeObject(mafiasPoll);
+                String killedName = godFather.readTxt();
+                sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void sendPollResultToAllClients(Poll poll) {
@@ -71,6 +89,7 @@ public class Server {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(sharedData.getCitizens());
         for (Player player : sharedData.getMafias()) {
+            player.writeTxt("YOUR TURN");
             pool.execute(new PollHandler(poll, player));
         }
         try {
@@ -151,7 +170,7 @@ public class Server {
 
         try {
             pool.shutdown();
-            pool.awaitTermination(10, TimeUnit.SECONDS);
+            pool.awaitTermination(40, TimeUnit.SECONDS);
 
             sendMessageToAllClients("Chat time ended");
             sendMessageToAllClients("POLL");
