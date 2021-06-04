@@ -2,6 +2,7 @@ package org.HO.Client;
 
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
+import org.HO.Player;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -10,17 +11,17 @@ import java.net.Socket;
 public class ReadThread implements Runnable{
     private Socket socket;
     private DataInputStream in;
-    private String name;
+    private Player player;
     private static final LoggingManager logger = new LoggingManager(ReadThread.class.getName());
 
-    public ReadThread(Socket socket, String name) {
+    public ReadThread(Socket socket, Player player) {
         this.socket = socket;
         try {
             in = new DataInputStream(socket.getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        this.name = name;
+        this.player = player;
         logger.log(String.valueOf(socket), LogLevels.INFO);
 
         logger.log("startd read therad", LogLevels.INFO);
@@ -30,17 +31,25 @@ public class ReadThread implements Runnable{
     @Override
     public void run() {
         String message = "";
+        String end = player.getName() + " left chat";
+
         do{
             try {
 
-                logger.log(String.valueOf(socket.isClosed())+ "2" + name, LogLevels.ERROR);
+                logger.log(String.valueOf(socket.isClosed())+ "2" + player.getName(), LogLevels.ERROR);
                 message = in.readUTF();
-                logger.log(name + " read " + message +" in chat", LogLevels.INFO);
+                logger.log(player.getName() + " read " + message +" in chat", LogLevels.INFO);
+
+                if(message.equalsIgnoreCase(end))
+                    break;
+
                 System.out.println(message);
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }while (!message.equalsIgnoreCase("done"));
+        }while (true);
+        System.out.println("END READ");
+
     }
 }

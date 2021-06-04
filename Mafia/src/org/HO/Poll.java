@@ -1,5 +1,6 @@
 package org.HO;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
@@ -7,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class Poll {
+public class Poll implements Serializable {
     private ConcurrentHashMap<Player, BlockingQueue<Player>> poll;
 
     public Poll(Collection<Player> choices) {
@@ -19,7 +20,7 @@ public class Poll {
     public void showPoll(){
         int index = 1;
         for(Player choice: poll.keySet())
-            System.out.println(index ++ + " ) "+ choice);
+            System.out.println(index ++ + " ) "+ choice.getName());
     }
 
     public void vote(int index, Player player){

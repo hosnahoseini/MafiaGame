@@ -37,15 +37,27 @@ public class Server {
         introducing();
         sendMessageToAllClients("MORNING");
         executeChatRoom();
-        MorningPolling();
-        sendMessageToAllClients("NIGHT");
-        mafiasPoll();
+//        MorningPolling();
+//        sendMessageToAllClients("NIGHT");
+//        mafiasPoll();
 
 
     }
 
     private void MorningPolling() {
+        ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(sharedData.players);
+        for (Player player : sharedData.players) {
+            pool.execute(new PollHandler(poll, player));
+        }
+        try {
+            pool.awaitTermination(4, TimeUnit.SECONDS);
+            sendMessageToAllClients("Poll time ended");
+            poll.showResult();
+            System.out.println(poll.winner().getName());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -76,11 +88,17 @@ public class Server {
         }
 
         try {
-            pool.awaitTermination(20, TimeUnit.SECONDS);
-            sendMessageToAllClients("Chat time ended");
+            pool.shutdown();
+            pool.awaitTermination(40, TimeUnit.SECONDS);
+
+            System.out.println("END");
+            sendMessageToAllClients("POLL");
+
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
     public boolean checkIfEveryOneISReady() {
@@ -101,17 +119,8 @@ public class Server {
     public void sendMessageToAGroup(Collection<Player> members, String msg) {
         for (Player member : members) {
             try {
+                member.getOut().flush();
                 member.writeTxt(msg);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public void sendPollToAGroup(Collection<Player> members, Poll poll) {
-        for (Player member : members) {
-            try {
-                member.writeObj(poll);
             } catch (IOException e) {
                 e.printStackTrace();
             }

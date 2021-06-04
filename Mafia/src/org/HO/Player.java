@@ -7,19 +7,18 @@ import java.util.Objects;
 import static org.HO.PlayerRole.*;
 import static org.HO.PlayerRole.MAYOR;
 
-public class Player{
+public class Player implements Serializable{
 
-    private Socket connection;
-
+    private transient Socket connection;
     private String name;
     private PlayerRole role;
     private boolean alive = true;
     private boolean readyToPlay = false;
     private boolean ableToReadChat = true;
-    private DataInputStream in;
-    private DataOutputStream out;
-    private ObjectOutputStream outObj;
-    private ObjectInputStream inObj ;
+    private transient DataInputStream in;
+    private transient DataOutputStream out;
+    private transient ObjectOutputStream outObj;
+    private transient ObjectInputStream inObj ;
 
     public Player(Socket connection) throws IOException {
         this.connection = connection;
