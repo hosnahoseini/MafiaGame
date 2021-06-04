@@ -18,7 +18,6 @@ public class Client {
     private Player player;
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
     private Scanner scanner = new Scanner(System.in);
-    private ExecutorService pool = Executors.newCachedThreadPool();
 
     public void startClient(String ipAddress, int port) {
         try {
@@ -34,8 +33,7 @@ public class Client {
             startChat(connection);
 
             waitUntilReceivingMsg("POLL");
-
-//            voteForMorningPoll();
+            voteForMorningPoll();
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
@@ -54,7 +52,8 @@ public class Client {
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
             poll.showPoll();
             System.out.println("Enter your vote");
-            int vote = scanner.nextInt();
+            String vote = scanner.next();
+            System.out.println("thanks");
             player.getOutObj().writeObject(vote);
         } catch (IOException e) {
             e.printStackTrace();
@@ -64,20 +63,21 @@ public class Client {
     }
 
     private void startChat(Socket connection) {
+        ExecutorService pool = Executors.newCachedThreadPool();
         Thread write = new Thread(new WriteThread(connection, player));
         Thread read = new Thread(new ReadThread(connection, player));
         if (player.isAlive())
             write.start();
-        read = new Thread(new ReadThread(connection, player));
         read.start();
 
         try {
-            write.join();
             read.join();
+
+            System.out.println(write.isAlive());
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
 
     }
 
@@ -85,8 +85,8 @@ public class Client {
     private void waitUntilReceivingMsg(String msg) throws IOException {
         while (true) {
             String input = player.getIn().readUTF();
-            //System.out.println(input);
             if (input.equals(msg)) {
+                logger.log("read" + msg ,LogLevels.INFO);
                 System.out.println(msg);
                 break;
             }

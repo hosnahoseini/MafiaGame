@@ -13,9 +13,10 @@ public class ReadThread implements Runnable{
     private DataInputStream in;
     private Player player;
     private static final LoggingManager logger = new LoggingManager(ReadThread.class.getName());
-
+    private WriteThread write;
     public ReadThread(Socket socket, Player player) {
         this.socket = socket;
+        this.write = write;
         try {
             in = new DataInputStream(socket.getInputStream());
         } catch (IOException e) {
@@ -40,9 +41,9 @@ public class ReadThread implements Runnable{
                 message = in.readUTF();
                 logger.log(player.getName() + " read " + message +" in chat", LogLevels.INFO);
 
-                if(message.equalsIgnoreCase(end))
+                if(message.equalsIgnoreCase(end) || message.equals("Chat time ended")) {
                     break;
-
+                }
                 System.out.println(message);
 
             } catch (IOException e) {
@@ -50,6 +51,7 @@ public class ReadThread implements Runnable{
             }
         }while (true);
         System.out.println("END READ");
+        Thread.currentThread().interrupt();
 
     }
 }

@@ -37,7 +37,7 @@ public class Server {
         introducing();
         sendMessageToAllClients("MORNING");
         executeChatRoom();
-//        MorningPolling();
+        MorningPolling();
 //        sendMessageToAllClients("NIGHT");
 //        mafiasPoll();
 
@@ -51,8 +51,9 @@ public class Server {
             pool.execute(new PollHandler(poll, player));
         }
         try {
-            pool.awaitTermination(4, TimeUnit.SECONDS);
-            sendMessageToAllClients("Poll time ended");
+            pool.shutdown();
+            pool.awaitTermination(30, TimeUnit.SECONDS);
+//            sendMessageToAllClients("Poll time ended");
             poll.showResult();
             System.out.println(poll.winner().getName());
         } catch (InterruptedException e) {
@@ -61,11 +62,6 @@ public class Server {
 
     }
 
-    private void mafiasPoll() {
-        Poll poll = new Poll(sharedData.getCitizens());
-        //se
-
-    }
 
     public void acceptClients(int port) {
         ExecutorService pool = Executors.newCachedThreadPool();
@@ -89,9 +85,9 @@ public class Server {
 
         try {
             pool.shutdown();
-            pool.awaitTermination(40, TimeUnit.SECONDS);
+            pool.awaitTermination(10, TimeUnit.SECONDS);
 
-            System.out.println("END");
+            sendMessageToAllClients("Chat time ended");
             sendMessageToAllClients("POLL");
 
 

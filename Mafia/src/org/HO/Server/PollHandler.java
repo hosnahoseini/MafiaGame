@@ -24,10 +24,12 @@ public class PollHandler implements Runnable{
         try {
             player.getOutObj().writeObject(poll);
             logger.log("write poll to " + player.getName(), LogLevels.INFO);
-            int vote = player.getInObj().readInt();
+            String vote = (String) player.getInObj().readObject();
+            logger.log(player.getName() + " vote to " + vote,LogLevels.INFO);
             poll.vote(vote, player);
-        } catch (IOException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+        Thread.currentThread().interrupt();
     }
 }

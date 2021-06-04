@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class WriteThread implements Runnable{
+public class WriteThread implements Runnable {
     private Player player;
     public Socket socket;
     private DataOutputStream out;
@@ -35,20 +35,20 @@ public class WriteThread implements Runnable{
         Scanner scanner = new Scanner(System.in);
         String message;
 
-        do {
-            message = scanner.nextLine();
-            logger.log(String.valueOf(socket.isClosed())+ "2" + player.getName(), LogLevels.ERROR);
-            logger.log(player.getName() + " wants to write " + message +" in chat", LogLevels.INFO);
-            try {
+        try {
+            do {
+                message = scanner.nextLine();
+                logger.log(String.valueOf(socket.isClosed()) + "2" + player.getName(), LogLevels.ERROR);
+                logger.log(player.getName() + " wants to write " + message + " in chat", LogLevels.INFO);
                 out.writeUTF(message);
-                logger.log(player.getName() + " write " + message +" in chat", LogLevels.INFO);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        } while (!message.equalsIgnoreCase("done"));
+                logger.log(player.getName() + " write " + message + " in chat", LogLevels.INFO);
+            } while (!message.equalsIgnoreCase("done"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("END WRITE");
+//        Thread.currentThread().interrupt();
     }
 
 }

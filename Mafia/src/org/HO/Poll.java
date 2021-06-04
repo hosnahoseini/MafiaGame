@@ -23,23 +23,23 @@ public class Poll implements Serializable {
             System.out.println(index ++ + " ) "+ choice.getName());
     }
 
-    public void vote(int index, Player player){
-        Player choice = (Player) poll.keySet().toArray()[index];
-        BlockingQueue previousVote = poll.get(choice);
-        previousVote.add(player);
-        poll.put(player , previousVote);
+    public void vote(String choice, Player player){
 
-//        for(Player player1: poll.keySet())
-//            if(player1.getName().equals(choice)){
-//                BlockingQueue previousVote = poll.get(choice);
-//                previousVote.add(player);
-//                poll.put(player , previousVote);
-//            }
+        for(Player player1: poll.keySet())
+            if(player1.getName().equals(choice)){
+                BlockingQueue previousVote = poll.get(choice);
+                previousVote.add(player);
+                poll.put(player , previousVote);
+            }
     }
 
     public void showResult(){
-        for(Player player: poll.keySet())
-            System.out.println(player.getName() + " : " + poll.get(player));
+        for(Player player: poll.keySet()) {
+            System.out.print(player.getName() + " : [");
+            for (Player voters : poll.get(player))
+                System.out.print(voters + " ");
+            System.out.println("]");
+        }
     }
 
     public Player winner(){

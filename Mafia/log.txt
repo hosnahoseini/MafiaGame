@@ -1,0 +1,1985 @@
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۲۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۲ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۷ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=57068]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=57065]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=57073]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۰ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۰ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۰ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۰ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۲ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۲ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۶ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۶ [INFO] org.HO.Client.WriteThread ---> b wants to write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۶ [INFO] org.HO.Client.WriteThread ---> b write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۶ [INFO] org.HO.Server.ChatHandler ---> server receives hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۴۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۳ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۳ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۳ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۶ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۶ [INFO] org.HO.Client.WriteThread ---> b wants to write sfjkasgf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۶ [INFO] org.HO.Client.WriteThread ---> b write sfjkasgf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۶ [INFO] org.HO.Server.ChatHandler ---> server receives sfjkasgf
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۱:۵۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast sfjkasgf
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۴۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۴۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61377]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61383]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61389]
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۳ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۳ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۳ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۳ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۸:۵۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۰۷ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۰۷ [INFO] org.HO.Client.WriteThread ---> b wants to write vye in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۰۷ [INFO] org.HO.Server.ChatHandler ---> server receives vye
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۰۷ [INFO] org.HO.Client.WriteThread ---> b write vye in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۰۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast vye
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۳ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۳ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۳ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۳ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۹ [INFO] org.HO.Client.WriteThread ---> b wants to write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۹ [INFO] org.HO.Client.WriteThread ---> b write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۹ [INFO] org.HO.Server.ChatHandler ---> server receives boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۰۹:۱۹ [INFO] org.HO.Server.ChatHandler ---> server broad cast boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۱۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61405]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61411]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61417]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [INFO] org.HO.Client.WriteThread ---> b wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [INFO] org.HO.Client.WriteThread ---> b write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [INFO] org.HO.Client.ReadThread ---> c read [ b ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۴ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۴ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۳۴ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۴۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۴۹ [INFO] org.HO.Client.WriteThread ---> b wants to write fdz in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۴۹ [INFO] org.HO.Client.WriteThread ---> b write fdz in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۴۹ [INFO] org.HO.Server.ChatHandler ---> server receives fdz
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۴۹ [INFO] org.HO.Server.ChatHandler ---> server broad cast fdz
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> c wants to write gv in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> c write gv in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> server receives gv
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast gv
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: gv in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [INFO] org.HO.Client.WriteThread ---> c wants to write bvgc in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [INFO] org.HO.Client.WriteThread ---> c write bvgc in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [INFO] org.HO.Server.ChatHandler ---> server receives bvgc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: bvgc in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast bvgc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۰:۵۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۰ [INFO] org.HO.Client.WriteThread ---> b wants to write bzbzgb in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۰ [INFO] org.HO.Client.WriteThread ---> b write bzbzgb in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۰ [INFO] org.HO.Server.ChatHandler ---> server receives bzbzgb
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast bzbzgb
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۳ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۳ [INFO] org.HO.Client.WriteThread ---> b wants to write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۳ [INFO] org.HO.Client.WriteThread ---> b write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۳ [INFO] org.HO.Server.ChatHandler ---> server receives g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b wants to write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server receives g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b wants to write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server receives 
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast 
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b wants to write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Client.WriteThread ---> b write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server receives 
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast 
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۵ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۵ [INFO] org.HO.Client.WriteThread ---> b wants to write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۵ [INFO] org.HO.Client.WriteThread ---> b write g in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۵ [INFO] org.HO.Server.ChatHandler ---> server receives g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۱:۰۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast g
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۱۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۱۹ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61456]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61462]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61468]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [INFO] org.HO.Client.ReadThread ---> c read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Client.WriteThread ---> c wants to write ds in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Client.WriteThread ---> c write ds in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Server.ChatHandler ---> server receives ds
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: ds in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast ds
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: ds in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۴:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۰۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61485]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61491]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61479]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Client.WriteThread ---> b wants to write booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Client.WriteThread ---> b write booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Server.ChatHandler ---> server receives booo
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast booo
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۲۹ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۴۰ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۴۰ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۴۰ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۵:۴۰ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۱۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61512]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61518]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61524]
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Client.WriteThread ---> b wants to write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Client.WriteThread ---> b write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Server.ChatHandler ---> server receives hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۴۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۵۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۵۰ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۵۰ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۱۷:۵۰ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۱۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60376]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60370]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60382]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Client.WriteThread ---> b wants to write hi  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Client.WriteThread ---> b write hi  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Server.ChatHandler ---> server receives hi 
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: hi  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: hi  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi 
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [INFO] org.HO.Client.ReadThread ---> c read [ b ]: hi  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۰:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۳۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۳۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60402]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60396]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=60408]
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۴۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Client.WriteThread ---> b wants to write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Client.WriteThread ---> b write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Server.ChatHandler ---> server receives hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [INFO] org.HO.Server.ChatHandler ---> server broad cast hii
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۸ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۸ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۸ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۲۱:۵۸ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۰۸ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63558]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54484]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54478]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63558]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54484]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54478]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Client.WriteThread ---> b wants to write hiii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Client.WriteThread ---> b write hiii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Server.ChatHandler ---> server receives hiii
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: hiii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hiii
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: hiii in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Client.WriteThread ---> a wants to write booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Server.ChatHandler ---> server receives booo
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Client.WriteThread ---> a write booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: booo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast booo
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۶ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۶ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۶ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۲:۳۶ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۴:۵۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۴:۵۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63198]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63192]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63198]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63192]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63204]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63204]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.WriteThread ---> a wants to write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.WriteThread ---> a write  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.ChatHandler ---> server receives 
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast 
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> a read [ a ]:  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> b read [ a ]:  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [INFO] org.HO.Client.ReadThread ---> c read [ a ]:  in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۰۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Client.WriteThread ---> b wants to write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Server.ChatHandler ---> server receives boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Client.WriteThread ---> b write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [INFO] org.HO.Client.WriteThread ---> a wants to write fffffffff in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [INFO] org.HO.Server.ChatHandler ---> server receives fffffffff
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [INFO] org.HO.Client.WriteThread ---> a write fffffffff in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast fffffffff
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: fffffffff in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۷ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۷ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۷ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۵:۲۷ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۳۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۳۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62195]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62189]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62195]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62189]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62201]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=62201]
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Client.WriteThread ---> c wants to write ho in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Client.WriteThread ---> c write ho in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Server.ChatHandler ---> server receives ho
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast ho
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: ho in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: ho in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: ho in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Client.WriteThread ---> b wants to write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Client.WriteThread ---> b write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Server.ChatHandler ---> server receives sf
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast sf
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۴۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [INFO] org.HO.Client.WriteThread ---> a wants to write df in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [INFO] org.HO.Client.WriteThread ---> a write df in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [INFO] org.HO.Server.ChatHandler ---> server receives df
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: df in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast df
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۵ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۵ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۳۷:۵۵ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۴۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56458]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56452]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56464]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56452]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56458]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56464]
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۵:۵۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Client.WriteThread ---> b wants to write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Server.ChatHandler ---> server receives boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Client.WriteThread ---> b write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast boo
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۰۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۱ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۶ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۶ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۲:۵۶:۱۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۱۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۱۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59013]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59021]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59027]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Client.WriteThread ---> b wants to write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Server.ChatHandler ---> server receives boo
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Client.WriteThread ---> b write boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: boo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast boo
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۳۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۰:۵۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59044]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59050]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59038]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۶ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۶ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۶ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۰۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۱۱ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۱۱ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۱۱ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۱:۱۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۴۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۴۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=52849]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=52855]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=52843]
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Client.WriteThread ---> b wants to write fgdcx in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Client.WriteThread ---> b write fgdcx in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Server.ChatHandler ---> server receives fgdcx
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast fgdcx
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: fgdcx in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: fgdcx in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۶:۵۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Client.WriteThread ---> a wants to write fdbd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Server.ChatHandler ---> server receives fdbd
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Client.WriteThread ---> a write fdbd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: fdbd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Server.ChatHandler ---> server broad cast fdbd
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: fdbd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۰۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۳۲ [INFO] org.HO.Client.ReadThread ---> b read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۳۲ [INFO] org.HO.Client.ReadThread ---> a read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Client.WriteThread ---> a wants to write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Client.WriteThread ---> a write hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Server.ChatHandler ---> server receives hii
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: hii in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۰۷:۵۱ [INFO] org.HO.Server.ChatHandler ---> server broad cast hii
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۰۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۳ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۷ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=50553]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=50559]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=50565]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۲ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۰:۲۶ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۳۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۳۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۳:۴۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۲۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53110]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53117]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53123]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۴ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.WriteThread ---> c wants to write fs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.ChatHandler ---> server receives fs
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.WriteThread ---> c write fs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: fs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast fs
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: fs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: fs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Client.WriteThread ---> b wants to write fsg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Server.ChatHandler ---> server receives fsg
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Client.WriteThread ---> b write fsg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: fsg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: fsg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast fsg
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Client.WriteThread ---> a wants to write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Server.ChatHandler ---> server receives sf
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Client.WriteThread ---> a write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast sf
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۴۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Client.WriteThread ---> b wants to write sfgg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Client.WriteThread ---> b write sfgg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Server.ChatHandler ---> server receives sfgg
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: sfgg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: sfgg in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast sfgg
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.WriteThread ---> a wants to write fsdfs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.ChatHandler ---> server receives fsdfs
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.WriteThread ---> a write fsdfs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: fsdfs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast fsdfs
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: fsdfs in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۲ [INFO] org.HO.Client.ReadThread ---> b read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۲ [INFO] org.HO.Client.ReadThread ---> a read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Client.WriteThread ---> a wants to write dgh in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Client.WriteThread ---> a write dgh in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Server.ChatHandler ---> server receives dgh
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: dgh in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: dgh in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast dgh
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Client.WriteThread ---> a wants to write ghd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Client.WriteThread ---> a write ghd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Server.ChatHandler ---> server receives ghd
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: ghd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: ghd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast ghd
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Client.WriteThread ---> a wants to write hd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Server.ChatHandler ---> server receives hd
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Client.WriteThread ---> a write hd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: hd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast hd
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: hd in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۵:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۲۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۰ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۴ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=49412]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=49418]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=49424]
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۷:۵۹ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [INFO] org.HO.Client.ReadThread ---> c read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [INFO] org.HO.Client.Client ---> true
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [INFO] org.HO.Client.ReadThread ---> a read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [INFO] org.HO.Client.ReadThread ---> c read POLL in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [INFO] org.HO.Client.Client ---> true
+۰۴/۰۶/۲۰۲۱ ۱۳:۱۸:۳۹ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۰۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۰۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64278]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64272]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2B
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2A
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64284]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۳ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۳ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.ReadThread ---> B read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.ReadThread ---> A read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [ERROR] org.HO.Client.ReadThread ---> false2B
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [ERROR] org.HO.Client.ReadThread ---> false2A
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.Client ---> playercreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۱۴ [INFO] org.HO.Client.Client ---> playercwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۲۲ [INFO] org.HO.Client.ReadThread ---> A read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۱:۲۲ [INFO] org.HO.Client.ReadThread ---> B read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۷ [ERROR] org.HO.Client.WriteThread ---> false2B
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۷ [INFO] org.HO.Client.WriteThread ---> B wants to write ff in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۷ [INFO] org.HO.Client.WriteThread ---> B write ff in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۷ [INFO] org.HO.Server.ChatHandler ---> server receives ff
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast ff
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۹ [ERROR] org.HO.Client.WriteThread ---> false2B
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۹ [INFO] org.HO.Client.WriteThread ---> B wants to write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۹ [INFO] org.HO.Client.WriteThread ---> B write sf in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۹ [INFO] org.HO.Server.ChatHandler ---> server receives sf
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۳:۰۹ [INFO] org.HO.Server.ChatHandler ---> server broad cast sf
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۱۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۱۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=58365]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=58371]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false23
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=58377]
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false24
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۴ [ERROR] org.HO.Client.ReadThread ---> false2s
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [ERROR] org.HO.Client.WriteThread ---> false2s
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Client.WriteThread ---> s wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Client.WriteThread ---> s write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Client.ReadThread ---> 3 read [ s ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Client.ReadThread ---> 4 read [ s ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [ERROR] org.HO.Client.ReadThread ---> false23
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [ERROR] org.HO.Client.ReadThread ---> false24
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [INFO] org.HO.Client.ReadThread ---> s read [ s ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2s
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [ERROR] org.HO.Client.WriteThread ---> false2s
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.WriteThread ---> s wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.WriteThread ---> s write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.ReadThread ---> 3 read s left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.ReadThread ---> s read s left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.ReadThread ---> 4 read s left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [ERROR] org.HO.Client.ReadThread ---> false23
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [ERROR] org.HO.Client.ReadThread ---> false24
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.Client ---> playersreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۲۷ [INFO] org.HO.Client.Client ---> playerswritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۳۴ [INFO] org.HO.Client.ReadThread ---> 4 read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۳۹:۳۴ [INFO] org.HO.Client.ReadThread ---> 3 read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۲۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۲۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53451]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53463]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53457]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.Client ---> playercreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۳۵ [INFO] org.HO.Client.Client ---> playercwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۴۱ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۱:۴۱ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۳۸ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64706]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64700]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=64712]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.Client ---> playercreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۴۹ [INFO] org.HO.Client.Client ---> playercwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۵۶ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۲:۵۶ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۰۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۳ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۶ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61638]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61644]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=61650]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.Client ---> playercreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۱۹ [INFO] org.HO.Client.Client ---> playercwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.Client ---> playerareadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.Client ---> playerawritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.Client ---> playerbreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۴:۲۷ [INFO] org.HO.Client.Client ---> playerbwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۲۸ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=55719]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=55713]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=55726]
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۳۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.Client ---> playercreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۰ [INFO] org.HO.Client.Client ---> playercwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> playerareadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> playerbreadtrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> playerawritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> playerbwritetrue
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۳:۴۷:۴۶ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۲۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۲۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59091]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59078]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59085]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۲ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [INFO] org.HO.Client.WriteThread ---> b wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [ERROR] org.HO.Client.WriteThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.WriteThread ---> a wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۰:۳۸ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۱:۵۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۱:۵۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59112]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59106]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=59119]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۰۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Client.WriteThread ---> b wants to write bo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Client.WriteThread ---> b write bo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Server.ChatHandler ---> server receives bo
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Server.ChatHandler ---> server broad cast bo
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: bo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: bo in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۱۳ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۲۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۲۹ [INFO] org.HO.Client.WriteThread ---> b wants to write ne in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۲:۲۹ [INFO] org.HO.Client.WriteThread ---> b write ne in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۱۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53649]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53643]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=53655]
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۲۵ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.ReadThread ---> c read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۳:۵۶:۳۵ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۴۴ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۴۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63456]
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63462]
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=63468]
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۳ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۶:۵۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۳ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۰۷:۰۶ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۳۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۲ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=65066]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=65079]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=65073]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۷ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۴۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۷ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۲:۵۸ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۲۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۲۵ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۲۹ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56547]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56559]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56553]
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۲ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۳ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [ERROR] org.HO.Client.WriteThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Client.WriteThread ---> b wants to write b in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Server.ChatHandler ---> server receives b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Client.WriteThread ---> b write b in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Server.ChatHandler ---> server broad cast b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: b in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: b in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۳۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۱۷:۴۰ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۲۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۲۸ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56265]
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56271]
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=56278]
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۶ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۳۸ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> receive poll c
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۴:۲۲:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۱ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۴ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۷ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Server.Server ---> introducing doc
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54395]
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.Client ---> readMORNING
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54401]
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.WriteThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> Socket[addr=/127.0.0.1,port=7652,localport=54408]
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Client.ReadThread ---> startd read therad
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۱۹ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Client.WriteThread ---> c wants to write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۰ [ERROR] org.HO.Client.ReadThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false2c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [INFO] org.HO.Client.WriteThread ---> c wants to write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [ERROR] org.HO.Client.ReadThread ---> false2a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۱ [ERROR] org.HO.Client.ReadThread ---> false2b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> readPOLL
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> start poll c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> start poll b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> start poll a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> receive poll b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> receive poll a
+۰۴/۰۶/۲۰۲۱ ۱۵:۰۴:۲۹ [INFO] org.HO.Client.Client ---> receive poll c
