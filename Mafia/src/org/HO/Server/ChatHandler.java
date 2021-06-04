@@ -57,17 +57,8 @@ public class ChatHandler implements Runnable {
     }
 
     public void broadcast(String msg) {
-
-        for (Player player : readers) {
-
-            try {
-                player.writeTxt(msg);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-
+        for (Player player : readers)
+            player.writeTxt(msg);
     }
 
 }

@@ -39,6 +39,8 @@ public class Client {
 
             voteForMorningPoll();
 
+            waitUntilReceivingMsg("VOTING TIME ENDED");
+
             clientWithRole.start();
 
         } catch (UnknownHostException e) {

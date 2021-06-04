@@ -11,9 +11,12 @@ public class SharedData {
     public int numberOfPlayers;
     public int numberOfNormalMafias;
     public int numberOfNormalPeople;
-    public Player remove;
+    public Player killed;
+    public Player killedByMafias;
+    public ArrayList<Player> killedPlayers;
 
     private SharedData(){
+        killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
         numberOfNormalMafias = 0;
         numberOfNormalPeople = 0;

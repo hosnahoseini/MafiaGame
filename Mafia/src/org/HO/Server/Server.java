@@ -8,6 +8,7 @@ import org.HO.PlayerRole;
 import org.HO.Poll;
 import org.HO.SharedData;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -38,33 +39,59 @@ public class Server {
         sendMessageToAllClients("MORNING");
         executeChatRoom();
         MorningPolling();
+        sendMessageToAllClients("VOTING TIME ENDED");
+        sendPollResultToAllClients();
         AskMayorForPoll();
-//        sendMessageToAllClients("NIGHT");
-//        mafiasPoll();
+        sendMessageToAllClients("NIGHT");
+        mafiasPoll();
 
 
+    }
+
+    private void sendPollResultToAllClients() {
+    }
+
+    private Poll mafiasPoll() {
+        ExecutorService pool = Executors.newCachedThreadPool();
+        Poll poll = new Poll(sharedData.getCitizens());
+        for (Player player : sharedData.getMafias()) {
+            pool.execute(new PollHandler(poll, player));
+        }
+        try {
+            pool.shutdown();
+            pool.awaitTermination(30, TimeUnit.SECONDS);
+            poll.showResult();
+            System.out.println(poll.winner().getName());
+            return poll;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private void AskMayorForPoll() {
         Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
-        mayor.writeTxt(" is going to be killed do you want to cancel this?(y/n)");
-        String result = mayor.getIn().readUTF();
-        if (result == "n")
-            sharedData.remove = null;
-        else
-            removePlayer(sharedData.remove);
-    }
-
-    private void removePlayer(Player remove) {
-        remove.writeTxt("You've been killed:(");
-        remove.writeTxt("Do you want to see rest of the game?(y/n)");
-        String result = remove.readTxt();
-        if(result == "n") {
-            remove.setAbleToReadChat(false);
+        mayor.writeTxt(sharedData.killed + " is going to be killed do you want to cancel this?(y/n)");
+        String result = mayor.readTxt();
+        if (result == "y") {
+            sharedData.killed = null;
         }
         else
-            remove.writeTxt("OK BYE!");
-        remove.setAlive(false);
+            removePlayer(sharedData.killed);
+    }
+
+    private void removePlayer(Player killed) {
+        sharedData.killedPlayers.add(killed);
+        killed.setAlive(false);
+
+        killed.writeTxt("You've been killed:(");
+        killed.writeTxt("Do you want to see rest of the game?(y/n)");
+        String result = killed.readTxt();
+        if(result == "n") {
+            killed.setAbleToReadChat(false);
+            killed.writeTxt("OK BYE!");
+            sharedData.players.remove(killed);
+        }
     }
 
     private void MorningPolling() {
@@ -78,7 +105,7 @@ public class Server {
             pool.awaitTermination(30, TimeUnit.SECONDS);
             poll.showResult();
             System.out.println(poll.winner().getName());
-            sharedData.remove = poll.winner();
+            sharedData.killed = poll.winner();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

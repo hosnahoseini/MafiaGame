@@ -34,7 +34,7 @@ public class Poll implements Serializable {
 
     public void showResult(){
         for(Player player: poll.keySet()) {
-            System.out.print(player.getName() + " : [");
+            System.out.print(player.getName() + " : [ ");
             for (Player voters : poll.get(player))
                 System.out.print(voters.getName() + " ");
             System.out.println("]");
