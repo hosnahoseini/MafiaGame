@@ -41,6 +41,8 @@ public class Client {
 
             waitUntilReceivingMsg("VOTING TIME ENDED");
 
+            showPollResult();
+
             clientWithRole.start();
 
         } catch (UnknownHostException e) {
@@ -48,6 +50,23 @@ public class Client {
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void showPollResult() {
+        try {
+            String poll = (String) player.getInObj().readObject();
+            logger.log("read poll res",LogLevels.INFO);
+
+            System.out.println(poll);
+            Thread.sleep(5000);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 

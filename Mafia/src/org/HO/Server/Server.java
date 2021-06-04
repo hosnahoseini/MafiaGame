@@ -36,19 +36,35 @@ public class Server {
         }
 
         introducing();
+
         sendMessageToAllClients("MORNING");
+
         executeChatRoom();
-        MorningPolling();
+
+        Poll morningPoll = MorningPolling();
+
         sendMessageToAllClients("VOTING TIME ENDED");
-        sendPollResultToAllClients();
+
+        sendPollResultToAllClients(morningPoll);
+
         AskMayorForPoll();
+
         sendMessageToAllClients("NIGHT");
+
         mafiasPoll();
 
 
     }
 
-    private void sendPollResultToAllClients() {
+    private void sendPollResultToAllClients(Poll poll) {
+        for (Player player : sharedData.players) {
+            try {
+                player.getOutObj().writeObject(poll.toString());
+                logger.log("write poll res",LogLevels.INFO);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private Poll mafiasPoll() {
@@ -71,13 +87,14 @@ public class Server {
 
     private void AskMayorForPoll() {
         Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
-        mayor.writeTxt(sharedData.killed + " is going to be killed do you want to cancel this?(y/n)");
-        String result = mayor.readTxt();
-        if (result == "y") {
-            sharedData.killed = null;
+        if(mayor != null) {
+            mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
+            String result = mayor.readTxt();
+            if (result == "y") {
+                sharedData.killed = null;
+            } else
+                removePlayer(sharedData.killed);
         }
-        else
-            removePlayer(sharedData.killed);
     }
 
     private void removePlayer(Player killed) {
@@ -87,29 +104,28 @@ public class Server {
         killed.writeTxt("You've been killed:(");
         killed.writeTxt("Do you want to see rest of the game?(y/n)");
         String result = killed.readTxt();
-        if(result == "n") {
+        if (result == "n") {
             killed.setAbleToReadChat(false);
             killed.writeTxt("OK BYE!");
             sharedData.players.remove(killed);
         }
     }
 
-    private void MorningPolling() {
+    private Poll MorningPolling() {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(sharedData.players);
-        for (Player player : sharedData.players) {
+        for (Player player : sharedData.getAlivePlayers()) {
             pool.execute(new PollHandler(poll, player));
         }
         try {
             pool.shutdown();
             pool.awaitTermination(30, TimeUnit.SECONDS);
-            poll.showResult();
-            System.out.println(poll.winner().getName());
             sharedData.killed = poll.winner();
+            return poll;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        return null;
     }
 
 

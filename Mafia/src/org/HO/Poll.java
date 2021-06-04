@@ -33,12 +33,7 @@ public class Poll implements Serializable {
     }
 
     public void showResult(){
-        for(Player player: poll.keySet()) {
-            System.out.print(player.getName() + " : [ ");
-            for (Player voters : poll.get(player))
-                System.out.print(voters.getName() + " ");
-            System.out.println("]");
-        }
+        System.out.println(this.toString());
     }
 
     public Player winner(){
@@ -53,5 +48,17 @@ public class Poll implements Serializable {
                 winners.add(player);
             Random random = new Random();
             return winners.get(random.nextInt(winners.size()));
+    }
+
+    @Override
+    public String toString(){
+        String result = "";
+        for(Player player: poll.keySet()) {
+            result += (player.getName() + " : [ ");
+            for (Player voters : poll.get(player))
+                result += (voters.getName() + " ");
+            result += ("]\n");
+        }
+        return result;
     }
 }

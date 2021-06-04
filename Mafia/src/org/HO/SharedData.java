@@ -39,7 +39,7 @@ public class SharedData {
     public ArrayList<Player> getMafias(){
         ArrayList<Player> mafias = new ArrayList<>();
         for(Player player : players)
-            if(player.isMafia())
+            if(player.isMafia() && player.isAlive())
                 mafias.add(player);
             return mafias;
 
@@ -48,7 +48,7 @@ public class SharedData {
     public ArrayList<Player> getCitizens(){
         ArrayList<Player> citizens = new ArrayList<>();
         for(Player player : players)
-            if (player.isCitizen())
+            if (player.isCitizen() && player.isAlive())
                 citizens.add(player);
         return citizens;
     }
