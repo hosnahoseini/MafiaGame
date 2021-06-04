@@ -38,22 +38,30 @@ public class Server {
         sendMessageToAllClients("MORNING");
         executeChatRoom();
         MorningPolling();
-        sendMessageToAllClients("NIGHT");
-        mafiasPoll();
+//        sendMessageToAllClients("NIGHT");
+//        mafiasPoll();
 
 
     }
 
     private void MorningPolling() {
+        ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(sharedData.players);
+        for (Player player : sharedData.players) {
+            pool.execute(new PollHandler(poll, player));
+        }
+        try {
+            pool.shutdown();
+            pool.awaitTermination(30, TimeUnit.SECONDS);
+//            sendMessageToAllClients("Poll time ended");
+            poll.showResult();
+            System.out.println(poll.winner().getName());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
-    private void mafiasPoll() {
-        Poll poll = new Poll(sharedData.getCitizens());
-        //se
-
-    }
 
     public void acceptClients(int port) {
         ExecutorService pool = Executors.newCachedThreadPool();
@@ -76,11 +84,17 @@ public class Server {
         }
 
         try {
-            pool.awaitTermination(20, TimeUnit.SECONDS);
+            pool.shutdown();
+            pool.awaitTermination(10, TimeUnit.SECONDS);
+
             sendMessageToAllClients("Chat time ended");
+            sendMessageToAllClients("POLL");
+
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
     public boolean checkIfEveryOneISReady() {
@@ -101,17 +115,8 @@ public class Server {
     public void sendMessageToAGroup(Collection<Player> members, String msg) {
         for (Player member : members) {
             try {
+                member.getOut().flush();
                 member.writeTxt(msg);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public void sendPollToAGroup(Collection<Player> members, Poll poll) {
-        for (Player member : members) {
-            try {
-                member.writeObj(poll);
             } catch (IOException e) {
                 e.printStackTrace();
             }

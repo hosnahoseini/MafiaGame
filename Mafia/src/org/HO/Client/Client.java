@@ -1,5 +1,6 @@
 package org.HO.Client;
 
+import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
 import org.HO.Player;
@@ -9,15 +10,17 @@ import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Client {
 
     private Player player;
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public void startClient(String ipAddress, int port) {
-        try  {
+        try {
             Socket connection = new Socket(ipAddress, port);
             player = new Player(connection);
 
@@ -25,12 +28,12 @@ public class Client {
 
             initializeInfo();
 
-            waitUntilMorning();
+            waitUntilReceivingMsg("MORNING");
 
             startChat(connection);
 
+            waitUntilReceivingMsg("POLL");
             voteForMorningPoll();
-
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
@@ -44,10 +47,13 @@ public class Client {
 
     private void voteForMorningPoll() {
         try {
+            logger.log("start poll " + player.getName(), LogLevels.INFO);
             Poll poll = (Poll) player.getInObj().readObject();
+            logger.log("receive poll " + player.getName(), LogLevels.INFO);
             poll.showPoll();
             System.out.println("Enter your vote");
-            int vote = scanner.nextInt();
+            String vote = scanner.next();
+            System.out.println("thanks");
             player.getOutObj().writeObject(vote);
         } catch (IOException e) {
             e.printStackTrace();
@@ -57,18 +63,33 @@ public class Client {
     }
 
     private void startChat(Socket connection) {
-        if(player.isAlive())
-            new Thread(new WriteThread(connection, player.getName())).start();
-        new Thread(new ReadThread(connection, player.getName())).start();
+        ExecutorService pool = Executors.newCachedThreadPool();
+        Thread write = new Thread(new WriteThread(connection, player));
+        Thread read = new Thread(new ReadThread(connection, player));
+        if (player.isAlive())
+            write.start();
+        read.start();
+
+        try {
+            read.join();
+
+            System.out.println(write.isAlive());
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
-    private void waitUntilMorning() throws IOException {
+    private void waitUntilReceivingMsg(String msg) throws IOException {
         while (true) {
             String input = player.getIn().readUTF();
-            System.out.println(input);
-            if (input.equals("MORNING"))
+            if (input.equals(msg)) {
+                logger.log("read" + msg ,LogLevels.INFO);
+                System.out.println(msg);
                 break;
+            }
         }
     }
 

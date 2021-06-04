@@ -32,8 +32,12 @@ public class ChatHandler implements Runnable {
                 String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
 
                 if (clientMessage.equalsIgnoreCase("done")) {
-                    writers.remove(player);
                     serverMessage = player.getName() + " left chat";
+                    broadcast(serverMessage);
+                    writers.remove(player);
+                    readers.remove(player);
+                    break;
+
                 }
 
                 logger.log("server receives " + clientMessage, LogLevels.INFO);
@@ -43,6 +47,7 @@ public class ChatHandler implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Thread.currentThread().interrupt();
     }
 
     public boolean checkIfChatEnded() {
@@ -53,7 +58,7 @@ public class ChatHandler implements Runnable {
 
     public void broadcast(String msg) {
 
-        for (Player player : writers) {
+        for (Player player : readers) {
 
             try {
                 player.writeTxt(msg);

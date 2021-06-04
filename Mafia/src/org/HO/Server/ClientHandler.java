@@ -9,13 +9,11 @@ import java.net.Socket;
 
 public class ClientHandler implements Runnable {
 
-    private Socket connection;
     private SharedData sharedData;
     private Initializer initializer;
     private Player player;
 
     public ClientHandler(Socket connection) throws IOException {
-        this.connection = connection;
         sharedData = SharedData.getInstance();
         initializer = Initializer.getInstance();
         player = new Player(connection);

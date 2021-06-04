@@ -2,21 +2,22 @@ package org.HO.Client;
 
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
+import org.HO.Player;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class WriteThread implements Runnable{
-    private String name;
+public class WriteThread implements Runnable {
+    private Player player;
     public Socket socket;
     private DataOutputStream out;
     private static final LoggingManager logger = new LoggingManager(WriteThread.class.getName());
 
-    public WriteThread(Socket socket, String name) {
+    public WriteThread(Socket socket, Player player) {
         this.socket = socket;
-        this.name = name;
+        this.player = player;
         try {
             out = new DataOutputStream(socket.getOutputStream());
         } catch (IOException e) {
@@ -34,20 +35,20 @@ public class WriteThread implements Runnable{
         Scanner scanner = new Scanner(System.in);
         String message;
 
-        do {
-            message = scanner.nextLine();
-            logger.log(String.valueOf(socket.isClosed())+ "2" + name, LogLevels.ERROR);
-            logger.log(name + " wants to write " + message +" in chat", LogLevels.INFO);
-            try {
+        try {
+            do {
+                message = scanner.nextLine();
+                logger.log(String.valueOf(socket.isClosed()) + "2" + player.getName(), LogLevels.ERROR);
+                logger.log(player.getName() + " wants to write " + message + " in chat", LogLevels.INFO);
                 out.writeUTF(message);
-                logger.log(name + " write " + message +" in chat", LogLevels.INFO);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                logger.log(player.getName() + " write " + message + " in chat", LogLevels.INFO);
+            } while (!message.equalsIgnoreCase("done"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        } while (!message.equalsIgnoreCase("done"));
-
-
+        System.out.println("END WRITE");
+//        Thread.currentThread().interrupt();
     }
 
 }

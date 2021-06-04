@@ -1,5 +1,6 @@
 package org.HO;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
@@ -7,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class Poll {
+public class Poll implements Serializable {
     private ConcurrentHashMap<Player, BlockingQueue<Player>> poll;
 
     public Poll(Collection<Player> choices) {
@@ -19,26 +20,26 @@ public class Poll {
     public void showPoll(){
         int index = 1;
         for(Player choice: poll.keySet())
-            System.out.println(index ++ + " ) "+ choice);
+            System.out.println(index ++ + " ) "+ choice.getName());
     }
 
-    public void vote(int index, Player player){
-        Player choice = (Player) poll.keySet().toArray()[index];
-        BlockingQueue previousVote = poll.get(choice);
-        previousVote.add(player);
-        poll.put(player , previousVote);
+    public void vote(String choice, Player player){
 
-//        for(Player player1: poll.keySet())
-//            if(player1.getName().equals(choice)){
-//                BlockingQueue previousVote = poll.get(choice);
-//                previousVote.add(player);
-//                poll.put(player , previousVote);
-//            }
+        for(Player player1: poll.keySet())
+            if(player1.getName().equals(choice)){
+                BlockingQueue previousVote = poll.get(choice);
+                previousVote.add(player);
+                poll.put(player , previousVote);
+            }
     }
 
     public void showResult(){
-        for(Player player: poll.keySet())
-            System.out.println(player.getName() + " : " + poll.get(player));
+        for(Player player: poll.keySet()) {
+            System.out.print(player.getName() + " : [");
+            for (Player voters : poll.get(player))
+                System.out.print(voters + " ");
+            System.out.println("]");
+        }
     }
 
     public Player winner(){
