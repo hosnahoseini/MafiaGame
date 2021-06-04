@@ -4,17 +4,16 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Poll implements Serializable {
-    private ConcurrentHashMap<Player, BlockingQueue<Player>> poll;
+    private ConcurrentHashMap<Player, ArrayList<Player>> poll;
 
     public Poll(Collection<Player> choices) {
         poll = new ConcurrentHashMap<>();
         for(Player choice:choices)
-            this.poll.put(choice, new LinkedBlockingQueue<>());
+            this.poll.put(choice, new ArrayList<>());
     }
 
     public void showPoll(){
@@ -23,13 +22,13 @@ public class Poll implements Serializable {
             System.out.println(index ++ + " ) "+ choice.getName());
     }
 
-    public void vote(String choice, Player player){
+    public void vote(String vote, Player voter){
 
-        for(Player player1: poll.keySet())
-            if(player1.getName().equals(choice)){
-                BlockingQueue previousVote = poll.get(choice);
-                previousVote.add(player);
-                poll.put(player , previousVote);
+        for(Player choice: poll.keySet())
+            if(choice.getName().equals(vote)){
+                ArrayList<Player> previousVote = poll.get(choice);
+                previousVote.add(voter);
+                poll.put(choice , previousVote);
             }
     }
 
@@ -37,7 +36,7 @@ public class Poll implements Serializable {
         for(Player player: poll.keySet()) {
             System.out.print(player.getName() + " : [");
             for (Player voters : poll.get(player))
-                System.out.print(voters + " ");
+                System.out.print(voters.getName() + " ");
             System.out.println("]");
         }
     }

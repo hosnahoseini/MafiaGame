@@ -11,7 +11,7 @@ public class SharedData {
     public int numberOfPlayers;
     public int numberOfNormalMafias;
     public int numberOfNormalPeople;
-
+    public Player remove;
 
     private SharedData(){
         players = new LinkedBlockingQueue<>();
@@ -78,4 +78,11 @@ public class SharedData {
                 return true;
             return false;
     }
+
+//    public Player findPlayerWithName(String name){
+//        for (Player player:players)
+//            if(player.getName().equals(name))
+//                return player;
+//            return null;
+//    }
 }

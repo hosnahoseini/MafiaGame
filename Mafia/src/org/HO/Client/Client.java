@@ -1,5 +1,7 @@
 package org.HO.Client;
 
+import org.HO.Client.Role.ClientFactory;
+import org.HO.Client.Role.ClientWithRole;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
@@ -18,7 +20,8 @@ public class Client {
     private Player player;
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
     private Scanner scanner = new Scanner(System.in);
-
+    private ClientWithRole clientWithRole;
+    private ClientFactory factory = new ClientFactory();
     public void startClient(String ipAddress, int port) {
         try {
             Socket connection = new Socket(ipAddress, port);
@@ -33,7 +36,10 @@ public class Client {
             startChat(connection);
 
             waitUntilReceivingMsg("POLL");
+
             voteForMorningPoll();
+
+            clientWithRole.start();
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
@@ -63,17 +69,17 @@ public class Client {
     }
 
     private void startChat(Socket connection) {
-        ExecutorService pool = Executors.newCachedThreadPool();
-        Thread write = new Thread(new WriteThread(connection, player));
         Thread read = new Thread(new ReadThread(connection, player));
+        Thread write = new WriteThread(connection, player);
         if (player.isAlive())
             write.start();
         read.start();
 
         try {
             read.join();
+            write.interrupt();
+            System.out.println(write.isInterrupted());
 
-            System.out.println(write.isAlive());
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -100,6 +106,8 @@ public class Client {
         System.out.println("type GO whenever you are ready to play");
         //scanner.next();
         player.getOutObj().writeObject(true);
+        clientWithRole = factory.getClient(player);
+
     }
 
     private void setName() throws IOException, ClassNotFoundException {

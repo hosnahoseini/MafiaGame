@@ -13,10 +13,8 @@ public class ReadThread implements Runnable{
     private DataInputStream in;
     private Player player;
     private static final LoggingManager logger = new LoggingManager(ReadThread.class.getName());
-    private WriteThread write;
     public ReadThread(Socket socket, Player player) {
         this.socket = socket;
-        this.write = write;
         try {
             in = new DataInputStream(socket.getInputStream());
         } catch (IOException e) {

@@ -47,8 +47,20 @@ public class Player implements Serializable{
         return false;
     }
 
-    public void writeTxt(String text) throws IOException {
-        this.out.writeUTF(text);
+    public void writeTxt(String text) {
+        try {
+            this.out.writeUTF(text);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String readTxt() {
+        try {
+            return this.in.readUTF();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public void writeObj(Object obj) throws IOException {
         this.outObj.writeObject(obj);

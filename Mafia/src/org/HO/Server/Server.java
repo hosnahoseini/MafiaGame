@@ -38,10 +38,33 @@ public class Server {
         sendMessageToAllClients("MORNING");
         executeChatRoom();
         MorningPolling();
+        AskMayorForPoll();
 //        sendMessageToAllClients("NIGHT");
 //        mafiasPoll();
 
 
+    }
+
+    private void AskMayorForPoll() {
+        Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
+        mayor.writeTxt(" is going to be killed do you want to cancel this?(y/n)");
+        String result = mayor.getIn().readUTF();
+        if (result == "n")
+            sharedData.remove = null;
+        else
+            removePlayer(sharedData.remove);
+    }
+
+    private void removePlayer(Player remove) {
+        remove.writeTxt("You've been killed:(");
+        remove.writeTxt("Do you want to see rest of the game?(y/n)");
+        String result = remove.readTxt();
+        if(result == "n") {
+            remove.setAbleToReadChat(false);
+        }
+        else
+            remove.writeTxt("OK BYE!");
+        remove.setAlive(false);
     }
 
     private void MorningPolling() {
@@ -53,9 +76,9 @@ public class Server {
         try {
             pool.shutdown();
             pool.awaitTermination(30, TimeUnit.SECONDS);
-//            sendMessageToAllClients("Poll time ended");
             poll.showResult();
             System.out.println(poll.winner().getName());
+            sharedData.remove = poll.winner();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
