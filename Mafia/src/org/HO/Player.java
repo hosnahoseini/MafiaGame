@@ -15,6 +15,7 @@ public class Player implements Serializable{
     private boolean alive = true;
     private boolean readyToPlay = false;
     private boolean ableToReadChat = true;
+    private boolean ableToWriteChat = true;
     private int heal = 0;
     private transient DataInputStream in;
     private transient DataOutputStream out;
@@ -64,6 +65,7 @@ public class Player implements Serializable{
         }
         return null;
     }
+
     public void writeObj(Object obj) {
         try {
             this.outObj.writeObject(obj);
@@ -180,5 +182,13 @@ public class Player implements Serializable{
 
     public int getHeal() {
         return heal;
+    }
+
+    public boolean isAbleToWriteChat() {
+        return ableToWriteChat;
+    }
+
+    public void setAbleToWriteChat(boolean ableToWriteChat) {
+        this.ableToWriteChat = ableToWriteChat;
     }
 }

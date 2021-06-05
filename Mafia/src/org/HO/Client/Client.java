@@ -89,7 +89,7 @@ public class Client {
 
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
-        if (player.isAlive())
+        if (player.isAlive() && player.isAbleToWriteChat())
             write.start();
         read.start();
 

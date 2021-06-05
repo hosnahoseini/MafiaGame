@@ -64,6 +64,30 @@ public class Server {
         detectiveGuess();
 
         professionalKillMafia();
+
+        psychologistMuteSO();
+    }
+
+    private void psychologistMuteSO() {
+        Player professional = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
+        professional.writeTxt("YOUR TURN");
+        if (professional != null) {
+
+            professional.writeTxt("Do you want to mute some one?(y/n)");
+            String result = professional.readTxt();
+            if (result.equals("y")) {
+                professional.writeTxt("who do you want to mute?");
+                try {
+                    professional.getOutObj().writeObject(sharedData.getAlivePlayers());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                String name = professional.readTxt();
+                Player player = sharedData.findPlayerWithName(name);
+                sharedData.killedByProfessional = player;
+            }
+
+        }
     }
 
     private void professionalKillMafia() {

@@ -11,6 +11,7 @@ public class Professional extends ClientWithRole {
         super(player);
     }
 
+    @Override
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
