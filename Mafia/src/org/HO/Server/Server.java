@@ -69,20 +69,20 @@ public class Server {
     }
 
     private void psychologistMuteSO() {
-        Player professional = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
-        professional.writeTxt("YOUR TURN");
-        if (professional != null) {
+        Player psychologist = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
+        psychologist.writeTxt("YOUR TURN");
+        if (psychologist != null) {
 
-            professional.writeTxt("Do you want to mute some one?(y/n)");
-            String result = professional.readTxt();
+            psychologist.writeTxt("Do you want to mute some one?(y/n)");
+            String result = psychologist.readTxt();
             if (result.equals("y")) {
-                professional.writeTxt("who do you want to mute?");
+                psychologist.writeTxt("who do you want to mute?");
                 try {
-                    professional.getOutObj().writeObject(sharedData.getAlivePlayers());
+                    psychologist.getOutObj().writeObject(sharedData.getAlivePlayers());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                String name = professional.readTxt();
+                String name = psychologist.readTxt();
                 Player player = sharedData.findPlayerWithName(name);
                 sharedData.killedByProfessional = player;
             }
