@@ -75,16 +75,14 @@ public class Client {
     private void voteForMorningPoll() {
         try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
-            Poll poll = (Poll) player.getInObj().readObject();
+            String poll = player.readTxt();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
-            poll.showPoll();
+            System.out.println(poll);
             System.out.println("Enter your vote");
             String vote = scanner.next();
             System.out.println("thanks");
             player.getOutObj().writeObject(vote);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -110,14 +108,14 @@ public class Client {
 
 
     private void waitUntilReceivingMsg(String msg) throws IOException {
-        while (true) {
+        //while (true) {
             String input = player.getIn().readUTF();
+            System.out.println("->" + msg);
             if (input.equals(msg)) {
                 logger.log("read" + msg ,LogLevels.INFO);
-                System.out.println(msg);
-                break;
+                //break;
             }
-        }
+        //}
     }
 
     private void initializeInfo() throws IOException, ClassNotFoundException {

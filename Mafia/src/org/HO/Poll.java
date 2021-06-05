@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class Poll implements Serializable {
     private ConcurrentHashMap<Player, ArrayList<Player>> poll;
@@ -16,10 +15,13 @@ public class Poll implements Serializable {
             this.poll.put(choice, new ArrayList<>());
     }
 
-    public void showPoll(){
+    public String showPoll(){
+        String result = "";
         int index = 1;
         for(Player choice: poll.keySet())
-            System.out.println(index ++ + " ) "+ choice.getName());
+            result += (index ++ + " ) "+ choice.getName() + "\n");
+
+        return result;
     }
 
     public void vote(String vote, Player voter){
@@ -33,7 +35,7 @@ public class Poll implements Serializable {
     }
 
     public void showResult(){
-        System.out.println(this.toString());
+        System.out.println(this.PollResult());
     }
 
     public Player winner(){
@@ -50,8 +52,8 @@ public class Poll implements Serializable {
             return winners.get(random.nextInt(winners.size()));
     }
 
-    @Override
-    public String toString(){
+
+    public String PollResult(){
         String result = "";
         for(Player player: poll.keySet()) {
             result += (player.getName() + " : [ ");

@@ -21,7 +21,7 @@ public class NormalMafia extends ClientWithRole{
         try {
             Scanner scanner = new Scanner(System.in);
             Poll poll = (Poll) getPlayer().getInObj().readObject();
-            poll.showPoll();
+            System.out.println(poll.showPoll());
             System.out.println("Enter your vote");
             String vote = scanner.next();
             System.out.println("thanks");

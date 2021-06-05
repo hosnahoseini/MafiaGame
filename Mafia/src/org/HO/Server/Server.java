@@ -8,7 +8,6 @@ import org.HO.PlayerRole;
 import org.HO.Poll;
 import org.HO.SharedData;
 
-import java.awt.*;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -41,6 +40,9 @@ public class Server {
 
         executeChatRoom();
 
+
+        sendMessageToAllClients("POLL");
+
         Poll morningPoll = MorningPolling();
 
         sendMessageToAllClients("VOTING TIME ENDED");
@@ -53,12 +55,29 @@ public class Server {
 
         Poll mafiasPoll = mafiasPoll();
 
-        godFatherChoiceKilledOne(mafiasPoll);
+        godFatherChooseKilledOne(mafiasPoll);
 
-//        drLecterHealMafia();
+        drLecterHealMafia();
     }
 
-    private void godFatherChoiceKilledOne(Poll mafiasPoll) {
+    private void drLecterHealMafia() {
+        Player drLecter = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
+        drLecter.writeTxt("YOUR TURN");
+        if(drLecter != null){
+            drLecter.writeTxt("Who do you want to heal?");
+            try {
+                drLecter.getOutObj().writeObject(sharedData.getMafias());
+                String name = drLecter.getName();
+                sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                sharedData.healedMafia.heal();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
         godFather.writeTxt("YOUR TURN");
         if(godFather != null){
@@ -77,7 +96,7 @@ public class Server {
     private void sendPollResultToAllClients(Poll poll) {
         for (Player player : sharedData.players) {
             try {
-                player.getOutObj().writeObject(poll.toString());
+                player.getOutObj().writeObject(poll.PollResult());
                 logger.log("write poll res",LogLevels.INFO);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -172,8 +191,7 @@ public class Server {
             pool.shutdown();
             pool.awaitTermination(40, TimeUnit.SECONDS);
 
-            sendMessageToAllClients("Chat time ended");
-            sendMessageToAllClients("POLL");
+//            sendMessageToAllClients("Chat time ended");
 
 
         } catch (InterruptedException e) {
@@ -202,6 +220,7 @@ public class Server {
             try {
                 member.getOut().flush();
                 member.writeTxt(msg);
+                logger.log("send " + msg + " to " + member.getName(),LogLevels.INFO);
             } catch (IOException e) {
                 e.printStackTrace();
             }

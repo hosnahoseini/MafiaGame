@@ -22,7 +22,7 @@ public class PollHandler implements Runnable{
     @Override
     public void run() {
         try {
-            player.getOutObj().writeObject(poll);
+            player.writeTxt(poll.showPoll());
             logger.log("write poll to " + player.getName(), LogLevels.INFO);
             String vote = (String) player.getInObj().readObject();
             logger.log(player.getName() + " vote to " + vote,LogLevels.INFO);

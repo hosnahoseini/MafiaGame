@@ -15,6 +15,7 @@ public class Player implements Serializable{
     private boolean alive = true;
     private boolean readyToPlay = false;
     private boolean ableToReadChat = true;
+    private int heal = 0;
     private transient DataInputStream in;
     private transient DataOutputStream out;
     private transient ObjectOutputStream outObj;
@@ -78,6 +79,9 @@ public class Player implements Serializable{
                 role == that.role;
     }
 
+    public void heal(){
+        heal ++;
+    }
 
     public Socket getConnection() {
         return connection;

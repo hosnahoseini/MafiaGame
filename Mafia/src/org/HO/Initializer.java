@@ -15,9 +15,9 @@ public class Initializer {
     private Initializer() {
 
 
-        availableRoles.add(PlayerRole.GOD_FATHER);
+//        availableRoles.add(PlayerRole.GOD_FATHER);
 //        sharedData.playerWithRoles.put(PlayerRole.GOD_FATHER, new ArrayList<>());
-        availableRoles.add(PlayerRole.DR_LECTER);
+//        availableRoles.add(PlayerRole.DR_LECTER);
         //sharedData.playerWithRoles.put(PlayerRole.DR_LECTER, new ArrayList<>());
 
         availableRoles.add(PlayerRole.DR_CITY);
