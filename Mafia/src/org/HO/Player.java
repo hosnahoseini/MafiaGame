@@ -162,4 +162,8 @@ public class Player implements Serializable{
     public void setInObj(ObjectInputStream inObj) {
         this.inObj = inObj;
     }
+
+    public int getHeal() {
+        return heal;
+    }
 }

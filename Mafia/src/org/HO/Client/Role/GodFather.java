@@ -6,23 +6,20 @@ import org.HO.Poll;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class GodFather extends ClientWithRole {
+public class GodFather extends NormalMafia {
     public GodFather(Player player) {
         super(player);
     }
 
     @Override
     public void start(){
-        try {
+        super.start();
+            waitUntilReceivingMsg("YOUR TURN");
             System.out.println(getPlayer().readTxt());
-            Poll poll = (Poll) getPlayer().getInObj().readObject();
+            String poll = getPlayer().readTxt();
             System.out.println(poll);
             Scanner scanner = new Scanner(System.in);
             getPlayer().writeTxt(scanner.next());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+
     }
 }

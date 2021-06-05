@@ -21,10 +21,7 @@ public class ReadThread implements Runnable{
             e.printStackTrace();
         }
         this.player = player;
-        logger.log(String.valueOf(socket), LogLevels.INFO);
 
-        logger.log("startd read therad", LogLevels.INFO);
-        logger.log(String.valueOf(this.socket.isClosed()), LogLevels.ERROR);
     }
 
     @Override
@@ -35,13 +32,16 @@ public class ReadThread implements Runnable{
         do{
             try {
 
-                logger.log(String.valueOf(socket.isClosed())+ "2" + player.getName(), LogLevels.ERROR);
                 message = in.readUTF();
                 logger.log(player.getName() + " read " + message +" in chat", LogLevels.INFO);
 
-                if(message.equalsIgnoreCase(end) || message.equals("Chat time ended")) {
+                if(message.equalsIgnoreCase(end))
+                    break;
+                if(message.equals("Chat time ended")){
+                    System.out.println(message);
                     break;
                 }
+
                 System.out.println(message);
 
             } catch (IOException e) {

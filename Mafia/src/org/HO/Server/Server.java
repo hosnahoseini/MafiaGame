@@ -1,5 +1,6 @@
 package org.HO.Server;
 
+import org.HO.Client.Role.GodFather;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 
@@ -40,7 +41,6 @@ public class Server {
 
         executeChatRoom();
 
-
         sendMessageToAllClients("POLL");
 
         Poll morningPoll = MorningPolling();
@@ -58,18 +58,27 @@ public class Server {
         godFatherChooseKilledOne(mafiasPoll);
 
         drLecterHealMafia();
+
+        drCityHealCitizen();
+
+        detectiveGuess();
+
+
     }
 
-    private void drLecterHealMafia() {
-        Player drLecter = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
-        drLecter.writeTxt("YOUR TURN");
-        if(drLecter != null){
-            drLecter.writeTxt("Who do you want to heal?");
+    private void detectiveGuess() {
+        Player detective = sharedData.getSingleRole(PlayerRole.DETECTIVE);
+        detective.writeTxt("YOUR TURN");
+        if (detective != null) {
             try {
-                drLecter.getOutObj().writeObject(sharedData.getMafias());
-                String name = drLecter.getName();
-                sharedData.healedMafia = sharedData.findPlayerWithName(name);
-                sharedData.healedMafia.heal();
+                detective.writeTxt("Who do you want to inquire about?");
+                detective.getOutObj().writeObject(sharedData.getAlivePlayers());
+                String name = detective.readTxt();
+                Player player = sharedData.findPlayerWithName(name);
+                if(player.isMafia() && !(player.getRole() != PlayerRole.GOD_FATHER))
+                    detective.writeTxt("he / she is mafia");
+                else
+                    detective.writeTxt("he / she is NOT mafia");
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -77,19 +86,67 @@ public class Server {
         }
     }
 
+
+    private void drCityHealCitizen() {
+        Player drCity = sharedData.getSingleRole(PlayerRole.DR_CITY);
+        drCity.writeTxt("YOUR TURN");
+        if (drCity != null) {
+            while (true) {
+                drCity.writeTxt("Who do you want to heal?");
+                try {
+                    drCity.getOutObj().writeObject(sharedData.getCitizens());
+                    String name = drCity.readTxt();
+                    if (name.equals(drCity) && drCity.getHeal() == 1)
+                        drCity.writeTxt("you've already healed your self, try another player:");
+                    else {
+                        drCity.writeTxt("thanks");
+                        break;
+                    }
+                        sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                    sharedData.healedMafia.heal();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    private void drLecterHealMafia() {
+        Player drLecter = sharedData.getSingleRole(PlayerRole.DR_LECTER);
+        drLecter.writeTxt("YOUR TURN");
+        if(drLecter != null){
+            while (true) {
+                drLecter.writeTxt("Who do you want to heal?");
+                try {
+                    drLecter.getOutObj().writeObject(sharedData.getMafias());
+                    String name = drLecter.readTxt();
+                    if (name.equals(drLecter) && drLecter.getHeal() == 1)
+                        drLecter.writeTxt("you've already healed your self, try another player:");
+                    else {
+                        drLecter.writeTxt("thanks");
+                        break;
+                    }
+                    sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                    sharedData.healedMafia.heal();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("BYE LECTER");
+    }
+
     private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
         godFather.writeTxt("YOUR TURN");
         if(godFather != null){
-            try {
+
                 godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
-                godFather.getOutObj().writeObject(mafiasPoll);
+                godFather.writeTxt(mafiasPoll.PollResult());
                 String killedName = godFather.readTxt();
                 sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -189,10 +246,8 @@ public class Server {
 
         try {
             pool.shutdown();
-            pool.awaitTermination(40, TimeUnit.SECONDS);
-
-//            sendMessageToAllClients("Chat time ended");
-
+            if (!pool.awaitTermination(40, TimeUnit.SECONDS))
+                sendMessageToAllClients("Chat time ended");
 
         } catch (InterruptedException e) {
             e.printStackTrace();

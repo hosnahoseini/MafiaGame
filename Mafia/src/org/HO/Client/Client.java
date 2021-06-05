@@ -6,14 +6,11 @@ import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
 import org.HO.Player;
-import org.HO.Poll;
 
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Client {
 
@@ -31,15 +28,15 @@ public class Client {
 
             initializeInfo();
 
-            waitUntilReceivingMsg("MORNING");
+            ReceiveUntilGetMsg("MORNING");
 
             startChat(connection);
 
-            waitUntilReceivingMsg("POLL");
+            waitUntilRecivingMsg("POLL");
 
             voteForMorningPoll();
 
-            waitUntilReceivingMsg("VOTING TIME ENDED");
+            waitUntilRecivingMsg("VOTING TIME ENDED");
 
             showPollResult();
 
@@ -88,6 +85,8 @@ public class Client {
     }
 
     private void startChat(Socket connection) {
+
+
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
         if (player.isAlive())
@@ -97,6 +96,7 @@ public class Client {
         try {
             read.join();
             write.interrupt();
+
             System.out.println(write.isInterrupted());
 
 
@@ -107,17 +107,26 @@ public class Client {
     }
 
 
-    private void waitUntilReceivingMsg(String msg) throws IOException {
-        //while (true) {
+    private void ReceiveUntilGetMsg(String msg) throws IOException {
+        while (true) {
             String input = player.getIn().readUTF();
-            System.out.println("->" + msg);
+            System.out.println("->" + input);
             if (input.equals(msg)) {
                 logger.log("read" + msg ,LogLevels.INFO);
-                //break;
+                break;
             }
-        //}
+        }
     }
 
+    private void waitUntilRecivingMsg(String msg) throws IOException {
+        while (true) {
+            String input = player.getIn().readUTF();
+            if (input.equals(msg)) {
+                logger.log("read" + msg, LogLevels.INFO);
+                break;
+            }
+        }
+    }
     private void initializeInfo() throws IOException, ClassNotFoundException {
         setName();
         player.setRole((PlayerRole) player.getInObj().readObject());

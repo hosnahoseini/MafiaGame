@@ -39,19 +39,15 @@ public class WriteThread extends Thread {
             if (Thread.interrupted())
                 Thread.currentThread().interrupt();
 
-                try {
-
+            try {
                 message = scanner.nextLine();
-                logger.log(String.valueOf(socket.isClosed()) + "2" + player.getName(), LogLevels.ERROR);
-                logger.log(player.getName() + " wants to write " + message + " in chat", LogLevels.INFO);
                 out.writeUTF(message);
                 logger.log(player.getName() + " write " + message + " in chat", LogLevels.INFO);
             } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                e.printStackTrace();
+            }
+
         } while (!message.equalsIgnoreCase("done"));
-
-
         System.out.println("END WRITE");
     }
 

@@ -1,6 +1,5 @@
 package org.HO.Server;
 
-import org.HO.Client.Client;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
@@ -22,7 +21,7 @@ public class PollHandler implements Runnable{
     @Override
     public void run() {
         try {
-            player.writeTxt(poll.showPoll());
+            player.writeTxt(poll.pollChoices());
             logger.log("write poll to " + player.getName(), LogLevels.INFO);
             String vote = (String) player.getInObj().readObject();
             logger.log(player.getName() + " vote to " + vote,LogLevels.INFO);

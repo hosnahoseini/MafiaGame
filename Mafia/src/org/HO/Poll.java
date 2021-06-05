@@ -15,13 +15,17 @@ public class Poll implements Serializable {
             this.poll.put(choice, new ArrayList<>());
     }
 
-    public String showPoll(){
+    public String pollChoices(){
         String result = "";
         int index = 1;
         for(Player choice: poll.keySet())
             result += (index ++ + " ) "+ choice.getName() + "\n");
 
         return result;
+    }
+
+    public void showPoll(){
+        System.out.println(pollChoices());
     }
 
     public void vote(String vote, Player voter){

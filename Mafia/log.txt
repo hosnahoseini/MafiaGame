@@ -4351,3 +4351,1389 @@
 ۰۵/۰۶/۲۰۲۱ ۱۲:۱۷:۰۰ [INFO] org.HO.Server.PollHandler ---> write poll to b
 ۰۵/۰۶/۲۰۲۱ ۱۲:۱۷:۰۰ [INFO] org.HO.Server.PollHandler ---> write poll to c
 ۰۵/۰۶/۲۰۲۱ ۱۲:۱۷:۰۴ [INFO] org.HO.Server.PollHandler ---> a vote to a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۲۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۲۹ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۴ [INFO] org.HO.Client.ReadThread ---> c read MORNING in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Client.WriteThread ---> c write hi in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Client.ReadThread ---> c read [ c ]: hi in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Client.ReadThread ---> a read [ c ]: hi in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۶ [INFO] org.HO.Client.ReadThread ---> b read [ c ]: hi in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۸ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۸ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۳۸ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Server.ChatHandler ---> server receives boo
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Client.WriteThread ---> b write boo in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast boo
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Client.ReadThread ---> a read [ b ]: boo in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۴۲ [INFO] org.HO.Client.ReadThread ---> b read [ b ]: boo in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Server.ChatHandler ---> server receives giiii
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Client.WriteThread ---> a write giiii in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Server.ChatHandler ---> server broad cast giiii
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Client.ReadThread ---> b read [ a ]: giiii in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Client.ReadThread ---> a read [ a ]: giiii in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۳:۵۲ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.ReadThread ---> a read Chat time ended in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send Chat time ended to a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send Chat time ended to b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.ReadThread ---> b read Chat time ended in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send Chat time ended to c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۱۴ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Server.ChatHandler ---> server receives c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Client.WriteThread ---> b write c in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Server.PollHandler ---> b vote to c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Server.ChatHandler ---> server receives c
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Client.WriteThread ---> b write c in chat
+۰۵/۰۶/۲۰۲۱ ۱۲:۴۴:۲۷ [INFO] org.HO.Server.ChatHandler ---> server broad cast c
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۸:۴۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۸:۵۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۸:۵۹ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۰۴ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۱۲ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۱۷ [INFO] org.HO.Server.Server ---> Client [5] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۴۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۵۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۵۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۲:۵۹:۵۸ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۲ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۰۹ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۲ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۲ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۲ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۲ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۲ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۵ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۵ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۵ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۵ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۷ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۷ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۱۷ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۰ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۳ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۵ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۷ [INFO] org.HO.Server.PollHandler ---> c vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۲۹ [INFO] org.HO.Server.PollHandler ---> d vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۰:۳۱ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۰۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۰۷:۱۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۰۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۰۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۱۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۱۵ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۱۸ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۳۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۴۲ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۴۶ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۰ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۴ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> a is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> a is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۰:۵۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.ReadThread ---> e read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۰ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۳ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۶ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۹ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۹ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۹ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۹ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۰۹ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۳ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۱۵ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۲۳ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۱:۴۲ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۰۷ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۱۰ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۱۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۱۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۰ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۴ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۲۸ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۱ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۳ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۳ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۳ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۳ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۳ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۳۸ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۴۴ [INFO] org.HO.Server.PollHandler ---> b vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۴۸ [INFO] org.HO.Server.PollHandler ---> c vote to dd
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۲ [INFO] org.HO.Server.PollHandler ---> d vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.PollHandler ---> e vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۴:۵۵ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۸:۵۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۸:۵۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۰۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۰۳ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۰۹ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> c is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> c is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۳ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۶ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۶ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۶ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۶ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۶ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۸ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۸ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۸ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۱۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۱ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۱ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۱ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۶ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۲۸ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۰ [INFO] org.HO.Server.PollHandler ---> c vote to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۳ [INFO] org.HO.Server.PollHandler ---> d vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۱۹:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۲۱ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۲۵ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۰ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۴ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۷ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> d is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> b is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> b is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> d is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۳۸ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۰ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۳ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۳ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۳ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۳ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۳ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۶ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۶ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۶ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۶ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۸ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۸ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۴۸ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۱ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۳ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۵ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۷ [INFO] org.HO.Server.PollHandler ---> c vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۶:۵۹ [INFO] org.HO.Server.PollHandler ---> d vote to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۷:۰۱ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۹:۴۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۹:۴۹ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۹:۵۳ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۲۹:۵۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۱ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۳ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۴ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۷ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۷ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۷ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۷ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۰۷ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۰ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۰ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۰ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۰ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۳ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۳ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۳ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۵ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۱۷ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۲۰ [INFO] org.HO.Server.PollHandler ---> b vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۲۲ [INFO] org.HO.Server.PollHandler ---> c vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۲۵ [INFO] org.HO.Server.PollHandler ---> d vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۵ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۷ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۰:۴۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۱:۰۸ [INFO] org.HO.Server.PollHandler ---> b vote to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۱۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۱۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۲۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۲۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۱ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۴ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۷ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۷ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۷ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۷ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۳۷ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۰ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۰ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۰ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۰ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۳ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۳ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۳ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۴۸ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۰ [INFO] org.HO.Server.PollHandler ---> b vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۳ [INFO] org.HO.Server.PollHandler ---> c vote to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۵ [INFO] org.HO.Server.PollHandler ---> d vote to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.PollHandler ---> e vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۳:۵۷ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۴:۱۷ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۳۴:۲۴ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۰۲ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۰۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۱۱ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۱۵ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۰ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> d is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۱ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.ReadThread ---> a read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۳ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۷ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۷ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۷ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۷ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۲۷ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۰ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۰ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۰ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۰ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۴ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۴ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۴ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۷ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۳۹ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۱ [INFO] org.HO.Server.PollHandler ---> b vote to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۴ [INFO] org.HO.Server.PollHandler ---> c vote to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۶ [INFO] org.HO.Server.PollHandler ---> d vote to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۳:۵۹:۵۷ [INFO] org.HO.Server.PollHandler ---> d vote to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۰:۰۸ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۰۹ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۱۵ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۱۸ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۱ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۴ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> e is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> a is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۵ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.ReadThread ---> c read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.ReadThread ---> d read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۶ [INFO] org.HO.Client.ReadThread ---> e read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۷ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۷ [INFO] org.HO.Client.ReadThread ---> b read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۷ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۷ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۲۷ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۰ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۰ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۰ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۰ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۳ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۳ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۳ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۵ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۳۷ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۱ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۳ [INFO] org.HO.Server.PollHandler ---> c vote to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۶ [INFO] org.HO.Server.PollHandler ---> d vote to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۴۸ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۲:۵۷ [INFO] org.HO.Server.PollHandler ---> e vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۳:۰۲ [INFO] org.HO.Server.PollHandler ---> c vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۳:۰۷ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۵:۵۳ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۵:۵۷ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۰۷ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۱۱ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۱ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> c is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> d is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> b is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> c is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> c read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> e read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> c read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> e read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> c read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> d read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> d read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> d read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۲ [INFO] org.HO.Client.ReadThread ---> d read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۴ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۵ [INFO] org.HO.Server.PollHandler ---> d vote to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۲۸ [INFO] org.HO.Server.PollHandler ---> e vote to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۱ [INFO] org.HO.Server.PollHandler ---> c vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۳ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.PollHandler ---> a vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۳۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۴۸ [INFO] org.HO.Server.PollHandler ---> b vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۵۰ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۶:۵۵ [INFO] org.HO.Server.PollHandler ---> d vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۸:۵۰ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۸:۵۶ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۰۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۰۷ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۲ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> b is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> e is GOD_FATHER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> b is NORMAL_MAFIA
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> c is DR_LECTER
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> introducing doc
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> send MORNING to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> send MORNING to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> send MORNING to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> send MORNING to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.Server ---> send MORNING to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.Client ---> readMORNING
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> a write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> d write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [ERROR] org.HO.Client.WriteThread ---> false
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> b write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> b read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> d read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> d read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> c read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> c write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> d read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> c read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> e read a left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> e read b left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> e read c left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> e read d left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.WriteThread ---> e write ne in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> server receives ne
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Server.ChatHandler ---> server broad cast ne
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۴ [INFO] org.HO.Client.ReadThread ---> e read [ e ]: ne in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.WriteThread ---> e write done in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.Server ---> send POLL to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> start poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> start poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.Server ---> send POLL to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.Server ---> send POLL to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> start poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.Server ---> send POLL to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> start poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> readPOLL
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.Server ---> send POLL to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> start poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> receive poll c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> receive poll b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> receive poll d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> receive poll a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۷ [INFO] org.HO.Client.Client ---> receive poll e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۱۹ [INFO] org.HO.Server.PollHandler ---> e vote to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۲۳ [INFO] org.HO.Server.PollHandler ---> d vote to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۲۷ [INFO] org.HO.Server.PollHandler ---> c vote to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۳۱ [INFO] org.HO.Server.PollHandler ---> b vote to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> write poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۰۵/۰۶/۲۰۲۱ ۱۴:۰۹:۴۷ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۰:۴۰ [INFO] org.HO.Server.PollHandler ---> a vote to d
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۰:۴۰ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۰:۴۰ [INFO] org.HO.Client.Client ---> read poll res
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۰:۵۲ [INFO] org.HO.Server.PollHandler ---> b vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۰:۵۶ [INFO] org.HO.Server.PollHandler ---> c vote to a
+۰۵/۰۶/۲۰۲۱ ۱۴:۱۱:۱۲ [INFO] org.HO.Server.PollHandler ---> e vote to  

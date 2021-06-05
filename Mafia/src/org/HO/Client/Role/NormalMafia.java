@@ -1,6 +1,5 @@
 package org.HO.Client.Role;
 
-import org.HO.Logger.LogLevels;
 import org.HO.Player;
 import org.HO.Poll;
 
@@ -20,15 +19,13 @@ public class NormalMafia extends ClientWithRole{
     private void vote() {
         try {
             Scanner scanner = new Scanner(System.in);
-            Poll poll = (Poll) getPlayer().getInObj().readObject();
-            System.out.println(poll.showPoll());
+            String poll = getPlayer().readTxt();
+            System.out.println(poll);
             System.out.println("Enter your vote");
             String vote = scanner.next();
             System.out.println("thanks");
             getPlayer().getOutObj().writeObject(vote);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

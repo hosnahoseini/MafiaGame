@@ -15,6 +15,7 @@ public class ChatHandler implements Runnable {
     private ArrayList<Player> readers;
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
+    private boolean running = true;
 
     public ChatHandler(Player player) {
         writers = sharedData.getAlivePlayers();
@@ -36,6 +37,7 @@ public class ChatHandler implements Runnable {
                     broadcast(serverMessage);
                     writers.remove(player);
                     readers.remove(player);
+                    running = false;
                     break;
 
                 }
@@ -43,7 +45,7 @@ public class ChatHandler implements Runnable {
                 logger.log("server receives " + clientMessage, LogLevels.INFO);
                 broadcast(serverMessage);
                 logger.log("server broad cast " + clientMessage, LogLevels.INFO);
-            } while (!checkIfChatEnded());
+            } while (!checkIfChatEnded() && running);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class DrLecter extends ClientWithRole {
+public class DrLecter extends NormalMafia {
     public DrLecter(Player player) {
         super(player);
     }
@@ -14,18 +14,25 @@ public class DrLecter extends ClientWithRole {
     @Override
     public void start() {
         super.start();
-        System.out.println(getPlayer().readTxt());
-        try {
-            ArrayList <Player> mafias =(ArrayList<Player>) getPlayer().getInObj().readObject();
-            for(Player player:mafias)
-                System.out.println(player.getName());
-            Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
-            getPlayer().writeTxt(name);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        waitUntilReceivingMsg("YOUR TURN");
+        while (true) {
+            System.out.println(getPlayer().readTxt());
+            try {
+                ArrayList<Player> mafias = (ArrayList<Player>) getPlayer().getInObj().readObject();
+                for (Player player : mafias)
+                    System.out.println(player.getName());
+                Scanner scanner = new Scanner(System.in);
+                String name = scanner.nextLine();
+                getPlayer().writeTxt(name);
+                String check = getPlayer().readTxt();
+                System.out.println(check);
+                if (check == "thanks")
+                    break;
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
