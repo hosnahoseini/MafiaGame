@@ -63,7 +63,29 @@ public class Server {
 
         detectiveGuess();
 
+        professionalKillMafia();
+    }
 
+    private void professionalKillMafia() {
+        Player professional = sharedData.getSingleRole(PlayerRole.PROFESSIONAL);
+        professional.writeTxt("YOUR TURN");
+        if (professional != null) {
+
+            professional.writeTxt("Do you want to kill some one?(y/n)");
+            String result = professional.readTxt();
+            if (result.equals("y")) {
+                professional.writeTxt("who do you want to kill?");
+                try {
+                    professional.getOutObj().writeObject(sharedData.getAlivePlayers());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                String name = professional.readTxt();
+                Player player = sharedData.findPlayerWithName(name);
+                sharedData.killedByProfessional = player;
+            }
+
+        }
     }
 
     private void detectiveGuess() {
@@ -75,7 +97,7 @@ public class Server {
                 detective.getOutObj().writeObject(sharedData.getAlivePlayers());
                 String name = detective.readTxt();
                 Player player = sharedData.findPlayerWithName(name);
-                if(player.isMafia() && !(player.getRole() != PlayerRole.GOD_FATHER))
+                if (player.isMafia() && !(player.getRole() != PlayerRole.GOD_FATHER))
                     detective.writeTxt("he / she is mafia");
                 else
                     detective.writeTxt("he / she is NOT mafia");
@@ -102,7 +124,7 @@ public class Server {
                         drCity.writeTxt("thanks");
                         break;
                     }
-                        sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                    sharedData.healedMafia = sharedData.findPlayerWithName(name);
                     sharedData.healedMafia.heal();
 
                 } catch (IOException e) {
@@ -111,10 +133,11 @@ public class Server {
             }
         }
     }
+
     private void drLecterHealMafia() {
         Player drLecter = sharedData.getSingleRole(PlayerRole.DR_LECTER);
         drLecter.writeTxt("YOUR TURN");
-        if(drLecter != null){
+        if (drLecter != null) {
             while (true) {
                 drLecter.writeTxt("Who do you want to heal?");
                 try {
@@ -140,12 +163,12 @@ public class Server {
     private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
         godFather.writeTxt("YOUR TURN");
-        if(godFather != null){
+        if (godFather != null) {
 
-                godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
-                godFather.writeTxt(mafiasPoll.PollResult());
-                String killedName = godFather.readTxt();
-                sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
+            godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
+            godFather.writeTxt(mafiasPoll.PollResult());
+            String killedName = godFather.readTxt();
+            sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
 
         }
     }
@@ -154,7 +177,7 @@ public class Server {
         for (Player player : sharedData.players) {
             try {
                 player.getOutObj().writeObject(poll.PollResult());
-                logger.log("write poll res",LogLevels.INFO);
+                logger.log("write poll res", LogLevels.INFO);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -182,7 +205,7 @@ public class Server {
 
     private void AskMayorForPoll() {
         Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
-        if(mayor != null) {
+        if (mayor != null) {
             mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
             String result = mayor.readTxt();
             if (result == "y") {
@@ -275,7 +298,7 @@ public class Server {
             try {
                 member.getOut().flush();
                 member.writeTxt(msg);
-                logger.log("send " + msg + " to " + member.getName(),LogLevels.INFO);
+                logger.log("send " + msg + " to " + member.getName(), LogLevels.INFO);
             } catch (IOException e) {
                 e.printStackTrace();
             }

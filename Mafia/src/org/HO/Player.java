@@ -64,8 +64,23 @@ public class Player implements Serializable{
         }
         return null;
     }
-    public void writeObj(Object obj) throws IOException {
-        this.outObj.writeObject(obj);
+    public void writeObj(Object obj) {
+        try {
+            this.outObj.writeObject(obj);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Object readObj() {
+        try {
+            return this.inObj.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override

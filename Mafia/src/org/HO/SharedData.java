@@ -14,12 +14,13 @@ public class SharedData {
     public Player killed;
     public Player killedByMafias;
     public Player healedMafia;
+    public Player killedByProfessional;
     public ArrayList<Player> killedPlayers;
 
     private SharedData(){
         killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
-        numberOfNormalMafias = 1;
+        numberOfNormalMafias = 2;
         numberOfNormalPeople = 0;
 //        int numberOfMafia = (numberOfPlayers / 3) - 2;
 //        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;

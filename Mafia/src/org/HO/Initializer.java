@@ -21,8 +21,8 @@ public class Initializer {
 //        sharedData.playerWithRoles.put(PlayerRole.DR_LECTER, new ArrayList<>());
 
         availableRoles.add(PlayerRole.DR_CITY);
-//        availableRoles.add(PlayerRole.DETECTIVE);
-//        availableRoles.add(PlayerRole.PROFESSIONAL);
+        availableRoles.add(PlayerRole.DETECTIVE);
+        availableRoles.add(PlayerRole.PROFESSIONAL);
 //        availableRoles.add(PlayerRole.PSYCHOLOGIST);
 //        availableRoles.add(PlayerRole.DIE_HARD);
         availableRoles.add(PlayerRole.MAYOR);
