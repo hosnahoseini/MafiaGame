@@ -14,6 +14,7 @@ public class SharedData {
     public Player killed;
     public Player killedByMafias;
     public Player healedMafia;
+    public boolean killedInquired = false;
     public Player killedByProfessional;
     public ArrayList<Player> killedPlayers;
 

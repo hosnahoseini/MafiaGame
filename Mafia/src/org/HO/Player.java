@@ -38,7 +38,7 @@ public class Player implements Serializable{
 
     public boolean isCitizen(){
         if(role == NORMAL_PEOPLE || role == DETECTIVE || role == PROFESSIONAL ||
-                role == PSYCHOLOGIST || role == DIE_HARD || role == MAYOR)
+                role == PSYCHOLOGIST || role == DIE_HARD || role == MAYOR || role == DR_CITY)
             return true;
         return false;
     }

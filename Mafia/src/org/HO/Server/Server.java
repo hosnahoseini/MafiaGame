@@ -66,6 +66,20 @@ public class Server {
         professionalKillMafia();
 
         psychologistMuteSO();
+
+        dieHardInquired();
+    }
+
+    private void dieHardInquired() {
+
+        Player psychologist = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
+        psychologist.writeTxt("YOUR TURN");
+        if (psychologist != null) {
+
+            psychologist.writeTxt("Do you want to know who has been killed?(y/n)");
+            String result = psychologist.readTxt();
+            sharedData.killedInquired = result == "y" ? true : false;
+        }
     }
 
     private void psychologistMuteSO() {
@@ -84,7 +98,7 @@ public class Server {
                 }
                 String name = psychologist.readTxt();
                 Player player = sharedData.findPlayerWithName(name);
-                sharedData.killedByProfessional = player;
+                player.setAbleToWriteChat(false);
             }
 
         }
@@ -332,7 +346,7 @@ public class Server {
     public void introducing() {
         try {
             introduceMafias();
-            introduceDrCityToMayor();
+//            introduceDrCityToMayor();
         } catch (IOException e) {
             logger.log("cant introduce", LogLevels.ERROR);
         }
