@@ -31,7 +31,7 @@ public class Initializer {
         for (int i = 0; i < sharedData.numberOfNormalPeople; i++)
             availableRoles.add(PlayerRole.NORMAL_PEOPLE);
 
-        Collections.shuffle(availableRoles);
+//        Collections.shuffle(availableRoles);
     }
 
     public static Initializer getInstance() {

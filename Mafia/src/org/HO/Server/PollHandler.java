@@ -21,6 +21,7 @@ public class PollHandler implements Runnable{
     @Override
     public void run() {
         try {
+            player.writeTxt("Who do you want to be killed?");
             player.writeTxt(poll.pollChoices());
             logger.log("write poll to " + player.getName(), LogLevels.INFO);
             String vote = (String) player.getInObj().readObject();

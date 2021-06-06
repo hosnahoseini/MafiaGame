@@ -49,7 +49,8 @@ public class Client {
 
                 ReceiveUntilGetMsg("NIGHT");
 
-                clientWithRole.start();
+                if(player.getRole() != PlayerRole.MAYOR)
+                    clientWithRole.start();
 
                 ReceiveUntilGetMsg("MORNING");
 
@@ -84,11 +85,19 @@ public class Client {
     private void voteForMorningPoll() {
         try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
+            System.out.println(player.readTxt());
             String poll = player.readTxt();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
             System.out.println(poll);
-            System.out.println("Enter your vote");
-            String vote = scanner.next();
+            String vote;
+            while (true) {
+                System.out.println("Enter your vote");
+                vote = scanner.next();
+                if(vote.equals(player.getName()))
+                    System.out.println("You can't vote to your self try another player");
+                else
+                    break;
+            }
             System.out.println("thanks");
             player.getOutObj().writeObject(vote);
         } catch (IOException e) {

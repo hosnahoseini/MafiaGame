@@ -18,5 +18,6 @@ public class Diehard extends ClientWithRole {
         Scanner scanner = new Scanner(System.in);
         String result = scanner.nextLine();
         getPlayer().writeTxt(result);
+        System.out.println(getPlayer().readTxt());
     }
 }

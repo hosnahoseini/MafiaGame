@@ -19,6 +19,7 @@ public class NormalMafia extends ClientWithRole{
     private void vote() {
         try {
             Scanner scanner = new Scanner(System.in);
+            System.out.println(getPlayer().readTxt());
             String poll = getPlayer().readTxt();
             System.out.println(poll);
             System.out.println("Enter your vote");

@@ -18,6 +18,8 @@ public class SharedData {
     public Player killedByProfessional;
     public PlayerRole winner;
     public boolean killedInquired = false;
+    public int numberOfInquiries = 0;
+    public int numberOfKillDieHard = 0;
     public ArrayList<Player> killedPlayers;
 
     private SharedData(){
@@ -91,6 +93,7 @@ public class SharedData {
         for (Player player:players)
             if(player.getName().equals(name))
                 return player;
+        System.out.println("i cant find " + name);
             return null;
     }
 
@@ -100,5 +103,14 @@ public class SharedData {
             killedRoles += player.getRole() + "\n";
 
         return killedRoles;
+    }
+
+    public void reset(){
+        killed = null;
+        killedByMafias = null;
+        healedMafia = null;
+        healedCitizen = null;
+        killedByProfessional = null;
+        killedInquired = false;
     }
 }
