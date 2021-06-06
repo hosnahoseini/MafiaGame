@@ -26,23 +26,34 @@ public class Client {
             player = new Player(connection);
 
             System.out.println("connected to server");
+            System.out.println("FIRST MORNING");
 
             initializeInfo();
 
-            ReceiveUntilGetMsg("MORNING");
 
-            startChat(connection);
+            do {
+                ReceiveUntilGetMsg("CHAT TIME");
 
-            waitUntilRecivingMsg("POLL");
+                //startChat(connection);
 
-            voteForMorningPoll();
+                waitUntilRecivingMsg("POLL");
 
-            waitUntilRecivingMsg("VOTING TIME ENDED");
+                voteForMorningPoll();
 
-            showPollResult();
+                waitUntilRecivingMsg("VOTING TIME ENDED");
 
-            clientWithRole.start();
+                showPollResult();
 
+                if(player.getRole() == PlayerRole.MAYOR)
+                    clientWithRole.start();
+
+                ReceiveUntilGetMsg("NIGHT");
+
+                clientWithRole.start();
+
+                ReceiveUntilGetMsg("MORNING");
+
+            }while (true);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -102,9 +113,6 @@ public class Client {
             read.join();
             write.interrupt();
 
-            System.out.println(write.isInterrupted());
-
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -115,10 +123,22 @@ public class Client {
     private void ReceiveUntilGetMsg(String msg) throws IOException {
         while (true) {
             String input = player.getIn().readUTF();
+            logger.log(player.getName()+" read " + input,LogLevels.INFO);
             System.out.println("->" + input);
             if (input.equals(msg)) {
                 logger.log("read" + msg ,LogLevels.INFO);
                 break;
+            }
+            if (input.contains("You've been killed:(")){
+                System.out.println(player.readTxt());
+                String result = scanner.next();
+                player.writeTxt(result);
+                if(result.equals("n")) {
+                    System.out.println("BYE");
+                    player.getConnection().close();
+                    System.exit(0);
+                }
+
             }
         }
     }
@@ -148,8 +168,8 @@ public class Client {
         String name;
         while (true) {
             Random random = new Random();
-//            name = scanner.next();
-            name = String.valueOf((char)(random.nextInt(26) + 64));
+            name = scanner.nextLine();
+//            name = String.valueOf((char)(random.nextInt(26) + 64));
             player.getOutObj().writeObject(name);
             if ((boolean) player.getInObj().readObject())
                 break;

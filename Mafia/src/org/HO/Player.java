@@ -96,6 +96,11 @@ public class Player implements Serializable{
                 role == that.role;
     }
 
+    @Override
+    public String toString(){
+        return name;
+    }
+
     public void heal(){
         heal ++;
     }

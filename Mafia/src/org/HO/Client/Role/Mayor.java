@@ -16,8 +16,7 @@ public class Mayor extends ClientWithRole {
         System.out.println(getPlayer().readTxt());
         Scanner scanner = new Scanner(System.in);
         getPlayer().writeTxt(scanner.nextLine());
-
-        waitUntilReceivingMsg("NIGHT");
+        
     }
 
 

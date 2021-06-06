@@ -23,7 +23,7 @@ public class Initializer {
         availableRoles.add(PlayerRole.PROFESSIONAL);
         availableRoles.add(PlayerRole.PSYCHOLOGIST);
         availableRoles.add(PlayerRole.DIE_HARD);
-//        availableRoles.add(PlayerRole.MAYOR);
+        availableRoles.add(PlayerRole.MAYOR);
 
         for (int i = 0; i < sharedData.numberOfNormalMafias; i++)
             availableRoles.add(PlayerRole.NORMAL_MAFIA);

@@ -10,6 +10,8 @@ public enum PlayerRole {
     PSYCHOLOGIST,
     DIE_HARD,
     MAYOR,
-    NORMAL_PEOPLE
+    NORMAL_PEOPLE,
+    MAFIAS,
+    CITIZENS;
 
 }

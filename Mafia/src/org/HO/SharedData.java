@@ -14,8 +14,10 @@ public class SharedData {
     public Player killed;
     public Player killedByMafias;
     public Player healedMafia;
-    public boolean killedInquired = false;
+    public Player healedCitizen;
     public Player killedByProfessional;
+    public PlayerRole winner;
+    public boolean killedInquired = false;
     public ArrayList<Player> killedPlayers;
 
     private SharedData(){
@@ -90,5 +92,13 @@ public class SharedData {
             if(player.getName().equals(name))
                 return player;
             return null;
+    }
+
+    public String showKilledRoles(){
+        String killedRoles = "";
+        for (Player player:killedPlayers)
+            killedRoles += player.getRole() + "\n";
+
+        return killedRoles;
     }
 }
