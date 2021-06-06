@@ -1,13 +1,9 @@
 package org.HO.Server;
 
+import org.HO.*;
 import org.HO.Client.Role.GodFather;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
-
-import org.HO.Player;
-import org.HO.PlayerRole;
-import org.HO.Poll;
-import org.HO.SharedData;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -20,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class Server {
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(Server.class.getName());
+    private FileUtils fileUtils = new FileUtils();
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -72,7 +69,7 @@ public class Server {
 
     private void dieHardInquired() {
 
-        Player psychologist = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
+        Player psychologist = sharedData.getSingleRole(PlayerRole.DIE_HARD);
         psychologist.writeTxt("YOUR TURN");
         if (psychologist != null) {
 
@@ -135,7 +132,7 @@ public class Server {
                 detective.getOutObj().writeObject(sharedData.getAlivePlayers());
                 String name = detective.readTxt();
                 Player player = sharedData.findPlayerWithName(name);
-                if (player.isMafia() && !(player.getRole() != PlayerRole.GOD_FATHER))
+                if (player.isMafia() && (player.getRole() != PlayerRole.GOD_FATHER))
                     detective.writeTxt("he / she is mafia");
                 else
                     detective.writeTxt("he / she is NOT mafia");
@@ -232,7 +229,6 @@ public class Server {
         try {
             pool.shutdown();
             pool.awaitTermination(30, TimeUnit.SECONDS);
-            poll.showResult();
             System.out.println(poll.winner().getName());
             return poll;
         } catch (InterruptedException e) {
@@ -301,8 +297,9 @@ public class Server {
     public void executeChatRoom() {
         ExecutorService pool = Executors.newCachedThreadPool();
         for (Player player : sharedData.players) {
-            if (player.isAlive() || player.isAbleToReadChat())
+            if (player.isAlive() || player.isAbleToReadChat()) {
                 pool.execute(new ChatHandler(player));
+            }
         }
 
         try {
@@ -315,6 +312,8 @@ public class Server {
         }
 
     }
+
+
 
     public boolean checkIfEveryOneISReady() {
         for (Player player : sharedData.players) {

@@ -21,7 +21,7 @@ public class SharedData {
     private SharedData(){
         killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
-        numberOfNormalMafias = 2;
+        numberOfNormalMafias = 1;
         numberOfNormalPeople = 0;
 //        int numberOfMafia = (numberOfPlayers / 3) - 2;
 //        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;

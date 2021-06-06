@@ -26,7 +26,6 @@ public class Psychologist extends ClientWithRole {
                     System.out.println(player.getName());
                 String name = scanner.nextLine();
                 getPlayer().writeTxt(name);
-                System.out.println(getPlayer().readTxt());
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {

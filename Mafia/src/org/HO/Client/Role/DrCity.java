@@ -26,7 +26,7 @@ public class DrCity extends ClientWithRole {
 
                 String check = getPlayer().readTxt();
                 System.out.println(check);
-                if (check == "thanks")
+                if (check.equals("thanks"))
                     break;
             } catch (IOException e) {
                 e.printStackTrace();

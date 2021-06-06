@@ -10,6 +10,7 @@ import org.HO.Player;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Client {
@@ -86,7 +87,11 @@ public class Client {
 
     private void startChat(Socket connection) {
 
-
+        System.out.println(player.readTxt());
+        String result = scanner.nextLine();
+        player.writeTxt(result);
+        if (result .equals("y"))
+            System.out.println(player.readTxt());
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
         if (player.isAlive() && player.isAbleToWriteChat())
@@ -142,7 +147,9 @@ public class Client {
         System.out.println("Enter your name: ");
         String name;
         while (true) {
-            name = scanner.next();
+            Random random = new Random();
+//            name = scanner.next();
+            name = String.valueOf((char)(random.nextInt(26) + 64));
             player.getOutObj().writeObject(name);
             if ((boolean) player.getInObj().readObject())
                 break;

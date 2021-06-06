@@ -1,5 +1,6 @@
 package org.HO.Server;
 
+import org.HO.FileUtils;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
@@ -16,6 +17,7 @@ public class ChatHandler implements Runnable {
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
     private boolean running = true;
+    private FileUtils fileUtils = new FileUtils();
 
     public ChatHandler(Player player) {
         writers = sharedData.getAlivePlayers();
@@ -28,10 +30,13 @@ public class ChatHandler implements Runnable {
     public void run() {
         String clientMessage;
         try {
+            player.writeTxt("Do you want to see previous chats?(y/n)");
+            if(player.readTxt() == "y")
+                previousChats(player);
             do {
                 clientMessage = player.getIn().readUTF();
                 String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
-
+                fileUtils.fileWriterByBuffer("chatBox.txt", serverMessage);
                 if (clientMessage.equalsIgnoreCase("done")) {
                     serverMessage = player.getName() + " left chat";
                     broadcast(serverMessage);
@@ -61,6 +66,11 @@ public class ChatHandler implements Runnable {
     public void broadcast(String msg) {
         for (Player player : readers)
             player.writeTxt(msg);
+    }
+
+    private void previousChats(Player player) {
+        String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
+        player.writeTxt(chatBox);
     }
 
 }
