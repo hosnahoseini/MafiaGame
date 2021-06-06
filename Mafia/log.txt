@@ -7192,3 +7192,56 @@
 ۰۶/۰۶/۲۰۲۱ ۱۴:۵۸:۴۶ [INFO] org.HO.Client.Client ---> receive poll A
 ۰۶/۰۶/۲۰۲۱ ۱۴:۵۸:۴۶ [INFO] org.HO.Server.PollHandler ---> write poll to W
 ۰۶/۰۶/۲۰۲۱ ۱۴:۵۸:۴۶ [INFO] org.HO.Client.Client ---> receive poll W
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۳۱ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۳۳ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۳۵ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۳۸ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۰ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۲ [INFO] org.HO.Server.Server ---> Client [5] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۴ [INFO] org.HO.Server.Server ---> Client [6] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> Client [7] connected successfully
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> A is NORMAL_MAFIA
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> F is GOD_FATHER
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> G is DR_LECTER
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> F is GOD_FATHER
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> introducing mafias
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> G is DR_LECTER
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> A is NORMAL_MAFIA
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to P
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to L
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to G
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to A
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to T
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to N
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to R
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.Server ---> send MORNING to F
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Client.Client ---> readMORNING
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۴۷ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۱ [ERROR] org.HO.Client.WriteThread ---> false
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۱ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۳ [INFO] org.HO.Server.ChatHandler ---> server receives hii
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۳ [INFO] org.HO.Server.ChatHandler ---> server broad cast hii
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۳ [INFO] org.HO.Client.ReadThread ---> F read [ F ]: hii in chat
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۳ [INFO] org.HO.Client.WriteThread ---> F write hii in chat
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۷ [ERROR] org.HO.Client.WriteThread ---> false
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۷ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۱:۵۷ [INFO] org.HO.Client.ReadThread ---> R read [ F ]: hii in chat
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۲:۰۰ [ERROR] org.HO.Client.WriteThread ---> false
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۲:۰۰ [INFO] org.HO.Client.WriteThread ---> startd write therad
+۰۶/۰۶/۲۰۲۱ ۱۵:۰۲:۰۰ [INFO] org.HO.Client.ReadThread ---> N read [ M ]: done[ Y ]: done[ V ]: done[ S ]: done[ N ]: done[ Q ]: done[ P ]: done[ Q ]:HIII----DFJND[ O ]: fdx[ O ]: bd[ Y ]: bdg[ Y ]: done[ F ]: hii in chat

@@ -31,7 +31,7 @@ public class ChatHandler implements Runnable {
         String clientMessage;
         try {
             player.writeTxt("Do you want to see previous chats?(y/n)");
-            if(player.readTxt() == "y")
+            if(player.readTxt().equals("y"))
                 previousChats(player);
             do {
                 clientMessage = player.getIn().readUTF();
