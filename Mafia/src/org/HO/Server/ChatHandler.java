@@ -8,29 +8,31 @@ import org.HO.SharedData;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.BlockingQueue;
 
 public class ChatHandler implements Runnable {
 
     private Player player;
     private ArrayList<Player> writers;
-    private ArrayList<Player> readers;
+    private BlockingQueue<Player> readers;
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
     private boolean running = true;
     private FileUtils fileUtils = new FileUtils();
 
     public ChatHandler(Player player) {
-        writers = sharedData.getAlivePlayers();
-        readers = sharedData.getAbleToReadChats();
-        this.player = player;
         logger.log("New player use chat handler", LogLevels.INFO);
+        writers = sharedData.getAlivePlayers();
+        readers = sharedData.players;
+        this.player = player;
     }
 
     @Override
     public void run() {
         String clientMessage;
         try {
-            player.writeTxt("Do you want to see previous chats?(y/n)");
+            logger.log("send pc q" , LogLevels.INFO);
+
             if(player.readTxt().equals("y"))
                 previousChats(player);
             do {

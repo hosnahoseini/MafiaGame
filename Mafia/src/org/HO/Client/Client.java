@@ -36,7 +36,7 @@ public class Client {
 
                 startChat(connection);
 
-                waitUntilRecivingMsg("POLL");
+                ReceiveUntilGetMsg("POLL");
 
                 voteForMorningPoll();
 
@@ -107,7 +107,7 @@ public class Client {
 
     private void startChat(Socket connection) {
 
-        System.out.println(player.readTxt());
+        System.out.println("Do you want to see previous chats?(y/n)");
         String result = scanner.nextLine();
         player.writeTxt(result);
         if (result .equals("y"))
@@ -115,7 +115,7 @@ public class Client {
 
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
-        if (player.isAlive() && player.isAbleToWriteChat())
+        if (player.isAbleToWriteChat())
             write.start();
         read.start();
 
