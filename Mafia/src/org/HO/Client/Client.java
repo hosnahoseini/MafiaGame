@@ -34,7 +34,7 @@ public class Client {
             do {
                 ReceiveUntilGetMsg("CHAT TIME");
 
-                //startChat(connection);
+                startChat(connection);
 
                 waitUntilRecivingMsg("POLL");
 
@@ -112,6 +112,7 @@ public class Client {
         player.writeTxt(result);
         if (result .equals("y"))
             System.out.println(player.readTxt());
+
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
         if (player.isAlive() && player.isAbleToWriteChat())

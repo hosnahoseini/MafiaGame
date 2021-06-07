@@ -4,7 +4,10 @@ import org.HO.*;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -25,7 +28,7 @@ public class Server {
     public void start(int port) {
 
         acceptClients(port);
-
+        resetCahtBox();
 
         while (true) {
             if (checkIfEveryOneISReady())
@@ -40,7 +43,7 @@ public class Server {
 
             sendMessageToAllClients("CHAT TIME");
 
-            //executeChatRoom();
+            executeChatRoom();
 
             sendMessageToAllClients("POLL");
 
@@ -67,6 +70,19 @@ public class Server {
 
         }while (!checkEndOfGame());
         System.out.println(sharedData.winner);
+    }
+
+    private void resetCahtBox() {
+        File file = new File("chatBox.txt");
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter(file);
+            writer.print("");
+            writer.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void nightEvents() {
@@ -174,7 +190,7 @@ public class Server {
     private void dieHardInquired() {
 
         Player dieHard = sharedData.getSingleRole(PlayerRole.DIE_HARD);
-        if (dieHard != null) {
+        if (dieHard != null && dieHard.isAlive()) {
             dieHard.writeTxt("YOUR TURN");
 
             dieHard.writeTxt("Do you want to know who has been killed?(y/n)");
@@ -193,7 +209,7 @@ public class Server {
 
     private void psychologistMuteSO() {
         Player psychologist = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
-        if (psychologist != null) {
+        if (psychologist != null && psychologist.isAlive()) {
             psychologist.writeTxt("YOUR TURN");
 
             psychologist.writeTxt("Do you want to mute some one?(y/n)");
@@ -215,7 +231,7 @@ public class Server {
 
     private void professionalKillMafia() {
         Player professional = sharedData.getSingleRole(PlayerRole.PROFESSIONAL);
-        if (professional != null) {
+        if (professional != null && professional.isAlive()) {
             professional.writeTxt("YOUR TURN");
 
             professional.writeTxt("Do you want to kill some one?(y/n)");
@@ -237,7 +253,7 @@ public class Server {
 
     private void detectiveGuess() {
         Player detective = sharedData.getSingleRole(PlayerRole.DETECTIVE);
-        if (detective != null) {
+        if (detective != null && detective.isAlive()) {
             detective.writeTxt("YOUR TURN");
             try {
                 detective.writeTxt("Who do you want to inquire about?");
@@ -258,7 +274,7 @@ public class Server {
 
     private void drCityHealCitizen() {
         Player drCity = sharedData.getSingleRole(PlayerRole.DR_CITY);
-        if (drCity != null) {
+        if (drCity != null && drCity.isAlive()) {
             drCity.writeTxt("YOUR TURN");
             while (true) {
                 drCity.writeTxt("Who do you want to heal?");
@@ -283,7 +299,7 @@ public class Server {
 
     private void drLecterHealMafia() {
         Player drLecter = sharedData.getSingleRole(PlayerRole.DR_LECTER);
-        if (drLecter != null) {
+        if (drLecter != null && drLecter.isAlive()) {
             drLecter.writeTxt("YOUR TURN");
             while (true) {
                 drLecter.writeTxt("Who do you want to heal?");
@@ -309,7 +325,7 @@ public class Server {
 
     private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
-        if (godFather != null) {
+        if (godFather != null && godFather.isAlive()) {
             godFather.writeTxt("YOUR TURN");
 
             godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
