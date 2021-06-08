@@ -8,54 +8,61 @@ import org.HO.SharedData;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.concurrent.BlockingQueue;
 
 public class ChatHandler implements Runnable {
 
     private Player player;
     private ArrayList<Player> writers;
-    private BlockingQueue<Player> readers;
+    private ArrayList<Player> readers;
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
     private boolean running = true;
     private FileUtils fileUtils = new FileUtils();
 
     public ChatHandler(Player player) {
-        logger.log("New player use chat handler", LogLevels.INFO);
         writers = sharedData.getAlivePlayers();
-        readers = sharedData.players;
+        readers = sharedData.getAbleToReadChats();
         this.player = player;
+        logger.log("New player use chat handler", LogLevels.INFO);
     }
 
     @Override
     public void run() {
         String clientMessage;
-        try {
-            logger.log("send pc q" , LogLevels.INFO);
 
-            if(player.readTxt().equals("y"))
-                previousChats(player);
+
             do {
-                clientMessage = player.getIn().readUTF();
+                clientMessage = player.readTxt();
                 String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
-                fileUtils.fileWriterByBuffer("chatBox.txt", serverMessage);
+                fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
+
                 if (clientMessage.equalsIgnoreCase("done")) {
                     serverMessage = player.getName() + " left chat";
                     broadcast(serverMessage);
                     writers.remove(player);
                     readers.remove(player);
                     running = false;
+                    sharedData.numberOfPlayerEndChat ++;
                     break;
 
                 }
 
+                if(clientMessage.equals("exit")) {
+                    serverMessage = player.getName() + " exit";
+                    broadcast(serverMessage);
+                    writers.remove(player);
+                    readers.remove(player);
+                    removePlayer(player);
+                    break;
+                }
+
                 logger.log("server receives " + clientMessage, LogLevels.INFO);
                 broadcast(serverMessage);
+
+
                 logger.log("server broad cast " + clientMessage, LogLevels.INFO);
             } while (!checkIfChatEnded() && running);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
         Thread.currentThread().interrupt();
     }
 
@@ -70,9 +77,21 @@ public class ChatHandler implements Runnable {
             player.writeTxt(msg);
     }
 
-    private void previousChats(Player player) {
-        String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
-        player.writeTxt(chatBox);
+    private void removePlayer(Player killed) {
+        sharedData.killedPlayers.add(killed);
+        killed.setAlive(false);
+
+        killed.writeTxt("Do you want to see rest of the game?(y/n)");
+        String result = killed.readTxt();
+        if (result.equals("n")) {
+            killed.setAbleToReadChat(false);
+            sharedData.players.remove(killed);
+            try {
+                killed.getConnection().close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

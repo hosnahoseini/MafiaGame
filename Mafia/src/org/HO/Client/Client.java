@@ -12,6 +12,9 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Client {
 
@@ -20,6 +23,7 @@ public class Client {
     private Scanner scanner = new Scanner(System.in);
     private ClientWithRole clientWithRole;
     private ClientFactory factory = new ClientFactory();
+
     public void startClient(String ipAddress, int port) {
         try {
             Socket connection = new Socket(ipAddress, port);
@@ -36,7 +40,7 @@ public class Client {
 
                 startChat(connection);
 
-                ReceiveUntilGetMsg("POLL");
+                waitUntilRecivingMsg("POLL");
 
                 voteForMorningPoll();
 
@@ -44,17 +48,30 @@ public class Client {
 
                 showPollResult();
 
-                if(player.getRole() == PlayerRole.MAYOR)
+                if (player.getRole() == PlayerRole.MAYOR)
                     clientWithRole.start();
 
                 ReceiveUntilGetMsg("NIGHT");
 
-                if(player.getRole() != PlayerRole.MAYOR)
+                if (!player.isAlive())
+                    break;
+
+                if (player.getRole() != PlayerRole.MAYOR)
                     clientWithRole.start();
 
                 ReceiveUntilGetMsg("MORNING");
 
-            }while (true);
+                if (!player.isAlive())
+                    break;
+
+            } while (true);
+
+
+            if (!player.isAlive())
+                while (true) {
+                    System.out.println(player.readTxt());
+                }
+
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -66,57 +83,77 @@ public class Client {
     }
 
     private void showPollResult() {
-        try {
-            String poll = (String) player.getInObj().readObject();
-            logger.log("read poll res",LogLevels.INFO);
-            System.out.println("The result is:");
-            System.out.println(poll);
-            Thread.sleep(5000);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        String poll = player.readTxt();
+        logger.log("read poll res", LogLevels.INFO);
+        System.out.println("The result is:");
+        System.out.println(poll);
 
     }
 
     private void voteForMorningPoll() {
+        ExecutorService pool = Executors.newCachedThreadPool();
         try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
             System.out.println(player.readTxt());
             String poll = player.readTxt();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
             System.out.println(poll);
-            String vote;
+            final String[] vote = new String[1];
             while (true) {
                 System.out.println("Enter your vote");
-                vote = scanner.next();
-                if(vote.equals(player.getName()))
+                vote[0] = scanner.next();
+                if (vote[0].equals(player.getName()))
                     System.out.println("You can't vote to your self try another player");
                 else
                     break;
             }
+
+
+//            pool.execute(new Runnable() {
+//                @Override
+//                public void run() {
+//                    while (true) {
+//                        System.out.println("Enter your vote");
+//                        vote[0] = scanner.next();
+//                        if (vote[0].equals(player.getName()))
+//                            System.out.println("You can't vote to your self try another player");
+//                        else
+//                            break;
+//                    }
+//                }
+//            });
+//            pool.shutdown();
+//            pool.awaitTermination(2000, TimeUnit.MILLISECONDS);
+
             System.out.println("thanks");
-            player.getOutObj().writeObject(vote);
+            player.getOutObj().writeObject(vote[0]);
         } catch (IOException e) {
             e.printStackTrace();
         }
+//        catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     private void startChat(Socket connection) {
 
+        if (player.isMute()) {
+            System.out.println("you are mute this turn");
+            player.setMute(false);
+            return;
+        }
+
         System.out.println("Do you want to see previous chats?(y/n)");
-        String result = scanner.nextLine();
+        String result = scanner.next();
         player.writeTxt(result);
-        if (result .equals("y"))
+        if (result.equals("y")) {
             System.out.println(player.readTxt());
+            System.out.println("----------");
+        }
 
         Thread read = new Thread(new ReadThread(connection, player));
         Thread write = new WriteThread(connection, player);
-        if (player.isAbleToWriteChat())
-            write.start();
+        write.start();
         read.start();
 
         try {
@@ -133,21 +170,28 @@ public class Client {
     private void ReceiveUntilGetMsg(String msg) throws IOException {
         while (true) {
             String input = player.getIn().readUTF();
-            logger.log(player.getName()+" read " + input,LogLevels.INFO);
+            logger.log(player.getName() + " read " + input, LogLevels.INFO);
             System.out.println("->" + input);
             if (input.equals(msg)) {
-                logger.log("read" + msg ,LogLevels.INFO);
+                logger.log("read" + msg, LogLevels.INFO);
                 break;
             }
-            if (input.contains("You've been killed:(")){
+
+            if (input.contains("You've been killed:(")) {
                 System.out.println(player.readTxt());
                 String result = scanner.next();
                 player.writeTxt(result);
-                if(result.equals("n")) {
+                player.setAlive(false);
+                if (result.equals("n")) {
                     System.out.println("BYE");
                     player.getConnection().close();
                     System.exit(0);
                 }
+
+                if (input.contains(player.getName() + " is muted"))
+                    player.setMute(true);
+                else
+                    player.setMute(false);
 
             }
         }
@@ -162,6 +206,7 @@ public class Client {
             }
         }
     }
+
     private void initializeInfo() throws IOException, ClassNotFoundException {
         setName();
         player.setRole((PlayerRole) player.getInObj().readObject());

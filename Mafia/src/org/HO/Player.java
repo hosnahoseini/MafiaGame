@@ -15,6 +15,8 @@ public class Player implements Serializable{
     private boolean alive = true;
     private boolean readyToPlay = false;
     private boolean ableToWriteChat = true;
+    private boolean ableToReadChat = true;
+    private boolean mute = false;
     private int heal = 0;
     private transient DataInputStream in;
     private transient DataOutputStream out;
@@ -59,7 +61,7 @@ public class Player implements Serializable{
     public String readTxt() {
         try {
             return this.in.readUTF();
-        } catch (IOException e) {
+        }catch (IOException e) {
             e.printStackTrace();
         }
         return null;
@@ -98,6 +100,19 @@ public class Player implements Serializable{
     @Override
     public String toString(){
         return name;
+    }
+
+    public void close(){
+        try {
+            in.close();
+            out.close();
+            inObj.close();
+            outObj.close();
+            connection.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void heal(){
@@ -186,5 +201,21 @@ public class Player implements Serializable{
 
     public void setAbleToWriteChat(boolean ableToWriteChat) {
         this.ableToWriteChat = ableToWriteChat;
+    }
+
+    public boolean isMute() {
+        return mute;
+    }
+
+    public void setMute(boolean mute) {
+        this.mute = mute;
+    }
+
+    public boolean isAbleToReadChat() {
+        return ableToReadChat;
+    }
+
+    public void setAbleToReadChat(boolean ableToReadChat) {
+        this.ableToReadChat = ableToReadChat;
     }
 }

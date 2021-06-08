@@ -47,7 +47,7 @@ public class WriteThread extends Thread {
                 e.printStackTrace();
             }
 
-        } while (!message.equalsIgnoreCase("done"));
+        } while (!message.equalsIgnoreCase("done") && !message.equals("exit") );
         System.out.println("END WRITE");
     }
 

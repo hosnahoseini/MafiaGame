@@ -34,4 +34,60 @@ public class FileUtils {
 
         return result;
     }
+
+    public void copy(String srcFileAdd, String destFileAdd) {
+        String txt = fileReaderByBuffer(srcFileAdd);
+        fileWriterByBuffer(destFileAdd, txt);
+    }
+
+    public void singleObjectFileWriter(String fileName, SharedData sharedData) {
+        FileOutputStream fileOutputStream = null;
+        ObjectOutputStream objectOutputStream = null;
+        File file = new File(fileName);
+        try {
+            fileOutputStream = new FileOutputStream(file, true);
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
+            objectOutputStream = new ObjectOutputStream(fileOutputStream);
+
+            objectOutputStream.writeObject(sharedData);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                objectOutputStream.close();
+                fileOutputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public SharedData singleObjectFileReader(String fileName) {
+        FileInputStream fileInputStream = null;
+        ObjectInputStream objectInputStream = null;
+        SharedData sharedData = null;
+        try {
+            fileInputStream = new FileInputStream(fileName);
+            objectInputStream = new ObjectInputStream(fileInputStream);
+            sharedData = (SharedData) objectInputStream.readObject();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                objectInputStream.close();
+                fileInputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return sharedData;
+    }
+
+
 }
