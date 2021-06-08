@@ -92,7 +92,7 @@ public class Client {
 
     private void voteForMorningPoll() {
         ExecutorService pool = Executors.newCachedThreadPool();
-        try {
+
             logger.log("start poll " + player.getName(), LogLevels.INFO);
             System.out.println(player.readTxt());
             String poll = player.readTxt();
@@ -101,7 +101,7 @@ public class Client {
             final String[] vote = new String[1];
             while (true) {
                 System.out.println("Enter your vote");
-                vote[0] = scanner.next();
+                vote[0] = readWithExit(player);
                 if (vote[0].equals(player.getName()))
                     System.out.println("You can't vote to your self try another player");
                 else
@@ -126,10 +126,8 @@ public class Client {
 //            pool.awaitTermination(2000, TimeUnit.MILLISECONDS);
 
             System.out.println("thanks");
-            player.getOutObj().writeObject(vote[0]);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            player.writeTxt(vote[0]);
+
 //        catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
@@ -172,6 +170,7 @@ public class Client {
             String input = player.getIn().readUTF();
             logger.log(player.getName() + " read " + input, LogLevels.INFO);
             System.out.println("->" + input);
+
             if (input.equals(msg)) {
                 logger.log("read" + msg, LogLevels.INFO);
                 break;
@@ -232,6 +231,32 @@ public class Client {
         }
         player.setName(name);
 
+    }
+
+    public String readWithExit(Player player){
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        if(input.equals("exit")) {
+            player.writeTxt("exit");
+            removePlayer(player);
+        }
+        return input;
+    }
+
+    private void removePlayer(Player player) {
+        player.readTxt();
+        System.out.println(player.readTxt());
+        Scanner scanner = new Scanner(System.in);
+        String result = scanner.next();
+        player.writeTxt(result);
+        if (result.equals("n")) {
+            player.close();
+            System.exit(5);
+        }else {
+            while (true) {
+                System.out.println(player.readTxt());
+            }
+        }
     }
 
 }

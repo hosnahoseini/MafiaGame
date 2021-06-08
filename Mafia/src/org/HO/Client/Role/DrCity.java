@@ -21,7 +21,7 @@ public class DrCity extends ClientWithRole {
                 for (Player player : people)
                     System.out.println(player.getName());
                 Scanner scanner = new Scanner(System.in);
-                String name = scanner.nextLine();
+                String name = readWithExit(getPlayer());
                 getPlayer().writeTxt(name);
 
                 String check = getPlayer().readTxt();

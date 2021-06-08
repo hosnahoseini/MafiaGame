@@ -64,9 +64,7 @@ public class ReadThread implements Runnable {
             }
         } while (true);
         System.out.println("END READ");
-        Thread.currentThread().
-
-                interrupt();
+        Thread.currentThread().interrupt();
 
     }
 }

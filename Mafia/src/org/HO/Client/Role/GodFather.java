@@ -24,7 +24,7 @@ public class GodFather extends NormalMafia {
         String poll = getPlayer().readTxt();
         System.out.println(poll);
         Scanner scanner = new Scanner(System.in);
-        String result = scanner.nextLine();
+        String result = readWithExit(getPlayer());
         getPlayer().writeTxt(result);
         logger.log(result, LogLevels.INFO);
     }

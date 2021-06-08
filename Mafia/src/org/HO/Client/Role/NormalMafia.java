@@ -23,7 +23,7 @@ public class NormalMafia extends ClientWithRole{
             String poll = getPlayer().readTxt();
             System.out.println(poll);
             System.out.println("Enter your vote");
-            String vote = scanner.next();
+            String vote = readWithExit(getPlayer());
             System.out.println("thanks");
             getPlayer().getOutObj().writeObject(vote);
         } catch (IOException e) {

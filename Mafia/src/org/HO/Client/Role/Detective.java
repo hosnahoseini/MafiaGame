@@ -20,7 +20,7 @@ public class Detective extends ClientWithRole {
             for (Player player : players)
                 System.out.println(player.getName());
             Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
+            String name = readWithExit(getPlayer());
             getPlayer().writeTxt(name);
             System.out.println(getPlayer().readTxt());
         } catch (IOException e) {

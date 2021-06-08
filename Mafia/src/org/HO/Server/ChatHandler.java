@@ -6,7 +6,9 @@ import org.HO.Logger.LoggingManager;
 import org.HO.Player;
 import org.HO.SharedData;
 
+import java.io.EOFException;
 import java.io.IOException;
+import java.net.SocketException;
 import java.util.ArrayList;
 
 public class ChatHandler implements Runnable {
@@ -32,7 +34,9 @@ public class ChatHandler implements Runnable {
 
 
             do {
-                clientMessage = player.readTxt();
+                clientMessage = readWithExit(player);
+                if (clientMessage == null)
+                    break;
                 String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
                 fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
 
@@ -80,7 +84,6 @@ public class ChatHandler implements Runnable {
     private void removePlayer(Player killed) {
         sharedData.killedPlayers.add(killed);
         killed.setAlive(false);
-
         killed.writeTxt("Do you want to see rest of the game?(y/n)");
         String result = killed.readTxt();
         if (result.equals("n")) {
@@ -92,6 +95,22 @@ public class ChatHandler implements Runnable {
                 e.printStackTrace();
             }
         }
+    }
+
+    public String readWithExit(Player player) {
+        String input = "";
+        try {
+            input = player.getIn().readUTF();
+        } catch (SocketException e){
+            player.close();
+            sharedData.players.remove(player);
+            writers.remove(player);
+            readers.remove(player);
+            return null;
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+        return input;
     }
 
 }
