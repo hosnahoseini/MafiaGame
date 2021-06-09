@@ -38,13 +38,13 @@ public abstract class ClientWithRole {
         }
     }
 
-    public String readWithExit(Player player){
+    public String writeWithExit(Player player){
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
-        if(input.equals("exit")) {
-            player.writeTxt("exit");
-            removePlayer(player);
-        }
+//        if(input.equals("exit")) {
+//            player.writeTxt("exit");
+//            removePlayer(player);
+//        }
         return input;
     }
 

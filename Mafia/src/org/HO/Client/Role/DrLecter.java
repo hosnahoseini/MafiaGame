@@ -22,7 +22,7 @@ public class DrLecter extends NormalMafia {
                 for (Player player : mafias)
                     System.out.println(player.getName());
                 Scanner scanner = new Scanner(System.in);
-                String name = readWithExit(getPlayer());
+                String name = writeWithExit(getPlayer());
                 getPlayer().writeTxt(name);
                 String check = getPlayer().readTxt();
                 System.out.println(check);

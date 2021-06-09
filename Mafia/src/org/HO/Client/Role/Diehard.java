@@ -2,8 +2,6 @@ package org.HO.Client.Role;
 
 import org.HO.Player;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Diehard extends ClientWithRole {
@@ -16,7 +14,7 @@ public class Diehard extends ClientWithRole {
         super.start();
         System.out.println(getPlayer().readTxt());
         Scanner scanner = new Scanner(System.in);
-        String result = readWithExit(getPlayer());
+        String result = writeWithExit(getPlayer());
         getPlayer().writeTxt(result);
         System.out.println(getPlayer().readTxt());
     }

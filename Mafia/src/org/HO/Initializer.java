@@ -15,15 +15,15 @@ public class Initializer {
     private Initializer() {
 
 
-        availableRoles.add(PlayerRole.GOD_FATHER);
-        availableRoles.add(PlayerRole.DR_LECTER);
 
         availableRoles.add(PlayerRole.DR_CITY);
         availableRoles.add(PlayerRole.DETECTIVE);
         availableRoles.add(PlayerRole.PROFESSIONAL);
         availableRoles.add(PlayerRole.PSYCHOLOGIST);
         availableRoles.add(PlayerRole.DIE_HARD);
+        availableRoles.add(PlayerRole.DR_LECTER);
         availableRoles.add(PlayerRole.MAYOR);
+        availableRoles.add(PlayerRole.GOD_FATHER);
 
         for (int i = 0; i < sharedData.numberOfNormalMafias; i++)
             availableRoles.add(PlayerRole.NORMAL_MAFIA);

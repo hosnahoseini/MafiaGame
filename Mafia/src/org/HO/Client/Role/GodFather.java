@@ -3,10 +3,7 @@ package org.HO.Client.Role;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
-import org.HO.Poll;
-import org.HO.Server.Server;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class GodFather extends NormalMafia {
@@ -24,7 +21,7 @@ public class GodFather extends NormalMafia {
         String poll = getPlayer().readTxt();
         System.out.println(poll);
         Scanner scanner = new Scanner(System.in);
-        String result = readWithExit(getPlayer());
+        String result = scanner.next();
         getPlayer().writeTxt(result);
         logger.log(result, LogLevels.INFO);
     }

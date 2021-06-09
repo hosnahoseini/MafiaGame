@@ -17,10 +17,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Server {
     private SharedData sharedData = SharedData.getInstance();
-    private static final LoggingManager logger = new LoggingManager(Server.class.getName());
     private FileUtils fileUtils = new FileUtils();
     private ArrayList<String> events = new ArrayList<>();
     private boolean savedGame = false;
+    private static final LoggingManager logger = new LoggingManager(Server.class.getName());
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -33,6 +33,7 @@ public class Server {
     public void start(int port) {
 
         acceptClients(port);
+
         resetChatBox("chatBox.txt");
 
         while (true) {
@@ -81,7 +82,7 @@ public class Server {
         PrintWriter writer = null;
         try {
             writer = new PrintWriter(file);
-            writer.print("");
+            writer.print("--CHAT BOX--");
             writer.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -143,16 +144,16 @@ public class Server {
     }
 
     private void killedByProfessionalUpdate() {
-
-        if (sharedData.killedByProfessional != null) {
-            if (sharedData.killedByProfessional.isMafia()
-                    && !(sharedData.healedMafia.equals(sharedData.killedByProfessional))) {
-                removePlayer(sharedData.killedByProfessional);
-                events.add(sharedData.killedByProfessional + " have been killed last night");
-                logger.log(sharedData.killedByProfessional + " have been killed last night", LogLevels.INFO);
+        Player killed = sharedData.killedByProfessional;
+        if (killed != null) {
+            if (killed.isMafia()
+                    && !(sharedData.healedMafia.equals(killed))) {
+                removePlayer(killed);
+                events.add(killed + " have been killed last night");
+                logger.log(killed + " have been killed last night", LogLevels.INFO);
 
             }
-            if (!sharedData.killedByProfessional.isMafia()
+            if (!killed.isMafia()
                     && sharedData.getSingleRole(PlayerRole.PROFESSIONAL) != null) {
                 removePlayer(sharedData.getSingleRole(PlayerRole.PROFESSIONAL));
                 events.add(sharedData.getSingleRole(PlayerRole.PROFESSIONAL)
@@ -342,7 +343,7 @@ public class Server {
 
             godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
             godFather.writeTxt(mafiasPoll.PollResult());
-            String killedName = readWithExit(godFather);
+            String killedName = godFather.readTxt();
             logger.log("read god father choice" + killedName, LogLevels.INFO);
             sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
 
@@ -447,8 +448,6 @@ public class Server {
         resetChatBox("chatBoxTemp.txt");
         for (Player player : sharedData.players) {
             if (player.isAlive() && !player.isMute()) {
-                if (player.readTxt().equals("y"))
-                    previousChats(player);
                 pool.execute(new ChatHandler(player));
             }
         }
@@ -460,17 +459,12 @@ public class Server {
 //            }
         pool.shutdown();
         try {
-            if (!pool.awaitTermination(4000, TimeUnit.SECONDS))
+            if (!pool.awaitTermination(4000000, TimeUnit.SECONDS))
                 sendMessageToAllClients("Chat time ended");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-    }
-
-    private void previousChats(Player player) {
-        String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
-        player.writeTxt(chatBox);
     }
 
     public boolean checkIfEveryOneISReady() {
@@ -528,11 +522,11 @@ public class Server {
         String input = "";
         try {
             input = player.getIn().readUTF();
-            if (input.equals("exit"))
-                removePlayer(player);
-        } catch (SocketException e) {
-            player.close();
-            sharedData.players.remove(player);
+//            if (input.equals("exit"))
+//                removePlayer(player);
+//        } catch (SocketException e) {
+//            player.close();
+//            sharedData.players.remove(player);
         } catch (IOException e) {
             e.printStackTrace();
         }

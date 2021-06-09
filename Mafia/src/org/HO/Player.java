@@ -60,7 +60,7 @@ public class Player implements Serializable{
 
     public String readTxt() {
         try {
-            return this.in.readUTF();
+            return in.readUTF();
         }catch (IOException e) {
             e.printStackTrace();
         }

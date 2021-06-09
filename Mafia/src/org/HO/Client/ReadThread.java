@@ -10,20 +10,11 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class ReadThread implements Runnable {
-    private Socket socket;
-    private DataInputStream in;
     private Player player;
     private static final LoggingManager logger = new LoggingManager(ReadThread.class.getName());
 
-    public ReadThread(Socket socket, Player player) {
-        this.socket = socket;
-        try {
-            in = new DataInputStream(socket.getInputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public ReadThread(Player player) {
         this.player = player;
-
     }
 
     @Override
@@ -32,39 +23,43 @@ public class ReadThread implements Runnable {
         String end = player.getName() + " left chat";
 
         do {
-            try {
+            message = player.readTxt();
+            logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
 
-                message = in.readUTF();
-                logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
+            if (message.equalsIgnoreCase(end)) break;
 
-                if (message.equalsIgnoreCase(end))
-                    break;
+            if (chatTimeEndedHandler(message)) break;
 
-                if (message.equals("Chat time ended")) {
-                    System.out.println(message);
-                    break;
-                }
+            if (exitMessageHandler(message)) break;
 
-                if (message.equals(player.getName() + " exit")) {
-                    System.out.println(player.readTxt());
-                    Scanner scanner = new Scanner(System.in);
-                    String result = scanner.next();
-                    player.writeTxt(result);
-                    if (result.equals("n")) {
-                        player.close();
-                        System.exit(5);
-                        break;
-                    }
-                }
+            System.out.println(message);
 
-                System.out.println(message);
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         } while (true);
         System.out.println("END READ");
-        Thread.currentThread().interrupt();
+//        Thread.currentThread().interrupt();
 
+    }
+
+    private boolean chatTimeEndedHandler(String message) {
+        if (message.equals("Chat time ended")) {
+            System.out.println(message);
+            return true;
+        }
+        return false;
+    }
+
+    private boolean exitMessageHandler(String message) {
+        if (message.equals(player.getName() + " exit")) {
+            System.out.println(player.readTxt());
+            Scanner scanner = new Scanner(System.in);
+            String result = scanner.next();
+            player.writeTxt(result);
+            if (result.equals("n")) {
+                player.close();
+                System.exit(5);
+                return true;
+            }
+        }
+        return false;
     }
 }

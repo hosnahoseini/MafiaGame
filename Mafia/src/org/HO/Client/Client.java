@@ -10,11 +10,11 @@ import org.HO.Player;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class Client {
 
@@ -38,7 +38,7 @@ public class Client {
             do {
                 ReceiveUntilGetMsg("CHAT TIME");
 
-                startChat(connection);
+                startChat();
 
                 waitUntilRecivingMsg("POLL");
 
@@ -133,7 +133,7 @@ public class Client {
 //        }
     }
 
-    private void startChat(Socket connection) {
+    private void startChat() {
 
         if (player.isMute()) {
             System.out.println("you are mute this turn");
@@ -141,27 +141,35 @@ public class Client {
             return;
         }
 
-        System.out.println("Do you want to see previous chats?(y/n)");
-        String result = scanner.next();
-        player.writeTxt(result);
-        if (result.equals("y")) {
-            System.out.println(player.readTxt());
-            System.out.println("----------");
-        }
+        previousChat();
 
-        Thread read = new Thread(new ReadThread(connection, player));
-        Thread write = new WriteThread(connection, player);
+        Thread read = new Thread(new ReadThread(player));
+        Thread write = new WriteThread(player);
         write.start();
         read.start();
 
         try {
             read.join();
-            write.interrupt();
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+    }
+
+    private void previousChat() {
+        System.out.println("Do you want to see previous chats?(y/n)");
+        String result = scanner.next();
+        player.writeTxt(result);
+        if (result.equals("y")) {
+            ArrayList<String> currentChats = new ArrayList<>();
+            String chat;
+            while (!(chat = player.readTxt()).contains("--CHAT BOX--"))
+                currentChats.add(chat);
+            System.out.println(chat);
+            for (String s : currentChats)
+                System.out.println(s);
+        }
     }
 
 
@@ -170,28 +178,31 @@ public class Client {
             String input = player.getIn().readUTF();
             logger.log(player.getName() + " read " + input, LogLevels.INFO);
             System.out.println("->" + input);
-
             if (input.equals(msg)) {
-                logger.log("read" + msg, LogLevels.INFO);
                 break;
             }
+            receiverKilledMessage(input);
+            receiverMuteMessage(input);
+        }
+    }
 
-            if (input.contains("You've been killed:(")) {
-                System.out.println(player.readTxt());
-                String result = scanner.next();
-                player.writeTxt(result);
-                player.setAlive(false);
-                if (result.equals("n")) {
-                    System.out.println("BYE");
-                    player.getConnection().close();
-                    System.exit(0);
-                }
+    private void receiverMuteMessage(String input) {
+        if (input.contains(player.getName() + " is muted"))
+                player.setMute(true);
+            else
+                player.setMute(false);
+    }
 
-                if (input.contains(player.getName() + " is muted"))
-                    player.setMute(true);
-                else
-                    player.setMute(false);
-
+    private void receiverKilledMessage(String input) throws IOException {
+        if (input.contains("You've been killed:(")) {
+            System.out.println(player.readTxt());
+            String result = scanner.next();
+            player.writeTxt(result);
+            player.setAlive(false);
+            if (result.equals("n")) {
+                System.out.println("BYE");
+                player.getConnection().close();
+                System.exit(0);
             }
         }
     }
@@ -236,10 +247,10 @@ public class Client {
     public String readWithExit(Player player){
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
-        if(input.equals("exit")) {
-            player.writeTxt("exit");
-            removePlayer(player);
-        }
+//        if(input.equals("exit")) {
+//            player.writeTxt("exit");
+//            removePlayer(player);
+//        }
         return input;
     }
 
