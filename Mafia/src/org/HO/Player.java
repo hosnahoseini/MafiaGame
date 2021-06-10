@@ -15,7 +15,6 @@ public class Player implements Serializable{
     private PlayerRole role;
     private boolean alive = true;
     private boolean readyToPlay = false;
-    private boolean ableToReadChat = true;
     private boolean mute = false;
     private int heal = 0;
     private transient DataInputStream in;
@@ -201,14 +200,6 @@ public class Player implements Serializable{
 
     public void setMute(boolean mute) {
         this.mute = mute;
-    }
-
-    public boolean isAbleToReadChat() {
-        return ableToReadChat;
-    }
-
-    public void setAbleToReadChat(boolean ableToReadChat) {
-        this.ableToReadChat = ableToReadChat;
     }
 
     public String writeWithExit(Player player){

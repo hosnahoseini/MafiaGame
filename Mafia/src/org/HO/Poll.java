@@ -39,7 +39,7 @@ public class Poll implements Serializable {
     }
 
     public void showResult(){
-        System.out.println(this.PollResult());
+        System.out.println(this.getPollResult());
     }
 
     public Player winner(){
@@ -57,7 +57,7 @@ public class Poll implements Serializable {
     }
 
 
-    public String PollResult(){
+    public String getPollResult(){
         String result = "";
         for(Player player: poll.keySet()) {
             result += (player.getName() + " : [ ");

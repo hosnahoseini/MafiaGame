@@ -76,14 +76,6 @@ public class SharedData {
         return alives;
     }
 
-    public ArrayList<Player> getAbleToReadChats() {
-        ArrayList<Player> ableToReads = new ArrayList<>();
-        for (Player player : players)
-            if (player.isAbleToReadChat())
-                ableToReads.add(player);
-        return ableToReads;
-    }
-
     public boolean checkIfNameIsRepetitive(String name) {
         for (Player player : players)
             if (player.getName().equals(name))
