@@ -1,2 +1,5 @@
 --CHAT BOX--
-[ d ]: hi
+[ e ]: f
+[ d ]: vf
+[ d ]: b
+[ c ]: a

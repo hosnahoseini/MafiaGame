@@ -17,36 +17,45 @@ public class WriteThread extends Thread {
     private Player player;
     private static final LoggingManager logger = new LoggingManager(WriteThread.class.getName());
     private boolean running = true;
-    private Scanner scanner = new Scanner(System.in);
     private String str = "";
+    private Timer timer = new Timer();
+    private BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
 
-    public WriteThread( Player player) {
+    TimerTask task = new TimerTask() {
+        @Override
+        public void run() {
+            running = false;
+            timer.cancel();
+
+        }
+    };
+
+    public WriteThread(Player player) {
         this.player = player;
 
     }
 
-//    private TimerTask task = new TimerTask() {
-//        @Override
-//        public void run() {
-//            running = false;
-//        }
-//    };
-
     @Override
     public void run() {
         try {
-//            Timer timer = new Timer();
-//            timer.schedule(task, 10 * 1000);
+            Timer timer = new Timer();
+            timer.schedule(task, 10 * 1000);
             do {
 
-                str = scanner.nextLine();
-//                if (!running)
-//                    break;
+
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running)
+                        return;
+                }
+                str = scanner.readLine();
+
+
                 player.writeTxt(str);
 
-            } while (!str.equalsIgnoreCase("done") && !str.equals("exit"));
+            } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);
             System.out.println("END WRITE");
-//            timer.cancel();
+            timer.cancel();
 
         } catch (Exception e) {
             e.printStackTrace();

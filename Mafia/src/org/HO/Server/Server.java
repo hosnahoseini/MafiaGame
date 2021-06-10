@@ -605,7 +605,7 @@ public class Server {
         }
         pool.shutdown();
         try {
-            if (!pool.awaitTermination(4000000, TimeUnit.SECONDS))
+            if (!pool.awaitTermination(10, TimeUnit.SECONDS))
                 sendMessageToAllClients("Chat time ended");
         } catch (InterruptedException e) {
             e.printStackTrace();

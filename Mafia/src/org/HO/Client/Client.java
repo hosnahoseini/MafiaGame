@@ -97,43 +97,41 @@ public class Client {
     }
 
     private void voteForMorningPoll() {
-        ExecutorService pool = Executors.newCachedThreadPool();
+        boolean running = true;
         try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
+
             System.out.println(player.readTxt());
             Collection<Player> poll = (Collection<Player>) player.getInObj().readObject();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
             for (Player player : poll)
                 System.out.println(player);
-            final String[] vote = new String[1];
+
+            String vote;
             while (true) {
                 System.out.println("Enter your vote");
                 vote[0] = player.writeWithExit(player);
-                if (vote[0].equals(player.getName()))
+                if (vote[0].equals(player.getName())) {
                     System.out.println("You can't vote to your self try another player");
-                else if (!validInput(poll, vote[0]))
+                }
+                else if (!validInput(poll, vote[0])) {
                     System.out.println("Invalid input");
-                else
+                }
+                else {
                     break;
+                }
 
             }
 
-
-//            pool.execute(new Runnable() {
-//                @Override
-//                public void run() {
-//                    while (true) {
-//                        System.out.println("Enter your vote");
-//                        vote[0] = scanner.next();
-//                        if (vote[0].equals(player.getName()))
-//                            System.out.println("You can't vote to your self try another player");
-//                        else
-//                            break;
-//                    }
-//                }
-//            });
-//            pool.shutdown();
-//            pool.awaitTermination(2000, TimeUnit.MILLISECONDS);
+            while (running) {
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running)
+                        return;
+                }
+                String input = scanner.readLine();
+                System.out.println(input);
+            }
 
             System.out.println("thanks");
             player.writeTxt(vote[0]);
@@ -215,6 +213,7 @@ public class Client {
             System.out.println(player.readTxt());
             System.out.println(player.readTxt());
             player.close();
+            System.exit(9);
         }
     }
 
