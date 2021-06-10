@@ -6,11 +6,16 @@ import org.HO.Logger.LoggingManager;
 import org.HO.Player;
 import org.HO.SharedData;
 
-import java.io.EOFException;
 import java.io.IOException;
 import java.net.SocketException;
 import java.util.ArrayList;
 
+/**
+ * A class for handling chat
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class ChatHandler implements Runnable {
 
     private Player player;
@@ -18,7 +23,6 @@ public class ChatHandler implements Runnable {
     private ArrayList<Player> readers;
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
-    private boolean running = true;
     private FileUtils fileUtils = new FileUtils();
 
     public ChatHandler(Player player) {
@@ -34,51 +38,64 @@ public class ChatHandler implements Runnable {
 
         if (player.readTxt().equals("y"))
             previousChats(player);
-            do {
-                clientMessage = readWithExit(player);
-                if (clientMessage == null)
-                    break;
-                String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
-                fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
 
-                if (clientMessage.equalsIgnoreCase("done")) {
-                    serverMessage = player.getName() + " left chat";
-                    broadcast(serverMessage);
-                    writers.remove(player);
-                    readers.remove(player);
-                    running = false;
-                    break;
+        do {
+            clientMessage = readWithExit(player);
+            logger.log("server receives " + clientMessage, LogLevels.INFO);
+            String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
 
-                }
-
-                if(clientMessage.equals("exit")) {
-                    serverMessage = player.getName() + " exit";
-                    broadcast(serverMessage);
-                    writers.remove(player);
-                    readers.remove(player);
-                    removePlayer(player);
-                    break;
-                }
-
-                logger.log("server receives " + clientMessage, LogLevels.INFO);
+            if (clientMessage.equalsIgnoreCase("done")) {
+                serverMessage = player.getName() + " left chat";
                 broadcast(serverMessage);
+                writers.remove(player);
+                readers.remove(player);
+                break;
 
+            }
 
-                logger.log("server broad cast " + clientMessage, LogLevels.INFO);
-            } while (!checkIfChatEnded() && running);
+            if (clientMessage.equals("exit")) {
+                serverMessage = player.getName() + " exit";
+                broadcast(serverMessage);
+                writers.remove(player);
+                readers.remove(player);
+                removePlayer(player);
+                break;
+            }
+
+            logger.log("server receives " + clientMessage, LogLevels.INFO);
+            broadcast(serverMessage);
+            logger.log("server broad cast " + clientMessage, LogLevels.INFO);
+        } while (!checkIfChatEnded() );
 
         Thread.currentThread().interrupt();
     }
 
     public boolean checkIfChatEnded() {
-        if (writers.size() == 0)
-            return true;
-        return false;
+//        if (writers.size() == 0)
+//            return true;
+//        return false;
+        return true;
+        //TODO
     }
 
+    /**
+     * broadcast message to players
+     *
+     * @param msg message
+     */
     public void broadcast(String msg) {
         for (Player player : readers)
             player.writeTxt(msg);
+    }
+
+    /**
+     * show previous chats to client
+     *
+     * @param player client
+     */
+    private void previousChats(Player player) {
+        String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
+        player.writeTxt(chatBox);
     }
 
     private void removePlayer(Player killed) {
@@ -87,7 +104,6 @@ public class ChatHandler implements Runnable {
         killed.writeTxt("Do you want to see rest of the game?(y/n)");
         String result = killed.readTxt();
         if (result.equals("n")) {
-            killed.setAbleToReadChat(false);
             sharedData.players.remove(killed);
             try {
                 killed.getConnection().close();
@@ -101,20 +117,15 @@ public class ChatHandler implements Runnable {
         String input = "";
         try {
             input = player.getIn().readUTF();
-        } catch (SocketException e){
+        } catch (SocketException e) {
             player.close();
             sharedData.players.remove(player);
             writers.remove(player);
             readers.remove(player);
-            System.exit(7);
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return input;
     }
-    private void previousChats(Player player) {
-        String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
-        player.writeTxt(chatBox);
-        System.out.println(chatBox);
-    }
+
 }

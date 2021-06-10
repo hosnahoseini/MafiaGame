@@ -57,7 +57,7 @@ public class Server {
     }
 
     private void endGame() {
-        for(Player player: sharedData.players)
+        for (Player player : sharedData.players)
             player.close();
     }
 
@@ -213,8 +213,7 @@ public class Server {
                     && !(sharedData.healedMafia.equals(killed))) {
                 removePlayer(killed);
                 events.add(killed + " have been killed last night");
-            }
-            else if (!killed.isMafia()
+            } else if (!killed.isMafia()
                     && professional != null
                     && !sharedData.healedCitizen.equals(professional)) {
                 removePlayer(professional);
@@ -252,6 +251,7 @@ public class Server {
 
     /**
      * check if the game ended or not
+     *
      * @return true if game ended
      */
     private boolean checkEndOfGame() {
@@ -333,8 +333,7 @@ public class Server {
                     System.err.println("Can't send players name to professional");
                 }
                 String name = readWithExit(professional);
-                Player player = sharedData.findPlayerWithName(name);
-                sharedData.killedByProfessional = player;
+                sharedData.killedByProfessional = sharedData.findPlayerWithName(name);
             }
 
         }
@@ -440,7 +439,8 @@ public class Server {
 
     /**
      * godfather decide who will be killed
-     * @param mafiasPoll
+     *
+     * @param mafiasPoll mafias poll
      */
     private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
@@ -462,6 +462,7 @@ public class Server {
 
     /**
      * send result of a poll to all players
+     *
      * @param poll morning poll
      */
     private void sendPollResultToAllClients(Poll poll) {
@@ -474,6 +475,7 @@ public class Server {
 
     /**
      * a poll for mafias to decide who is going to be killed
+     *
      * @return mafias poll
      */
     private Poll executeMafiasPoll() {
@@ -487,11 +489,12 @@ public class Server {
 
     /**
      * execute a poll
+     *
      * @param choices poll choices
-     * @param voters poll voters
+     * @param voters  poll voters
      * @return poll
      */
-    private Poll executePoll(Collection<Player> choices,Collection<Player> voters){
+    private Poll executePoll(Collection<Player> choices, Collection<Player> voters) {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(choices);
         for (Player player : voters) {
@@ -504,9 +507,9 @@ public class Server {
         } catch (InterruptedException e) {
             e.printStackTrace();
             //TODO:handle exp
-        } finally {
-            return poll;
         }
+        return poll;
+
     }
 
     /**
@@ -530,6 +533,7 @@ public class Server {
 
     /**
      * remove a player from game
+     *
      * @param killed player to be removed
      */
     private void removePlayer(Player killed) {
@@ -547,7 +551,7 @@ public class Server {
                 try {
                     killed.getConnection().close();
                 } catch (IOException e) {
-                    System.err.println ("Some thing went wrong with Server in I/O while closing connection of player " + killed);
+                    System.err.println("Some thing went wrong with Server in I/O while closing connection of player " + killed);
                 }
             }
         }
@@ -561,6 +565,7 @@ public class Server {
     private Poll executeMorningPolling() {
         Poll poll = executePoll(sharedData.getAlivePlayers(), sharedData.getAlivePlayers());
         sharedData.killed = poll.winner();
+        return poll;
     }
 
     /**
@@ -686,6 +691,11 @@ public class Server {
         sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
     }
 
+    /**
+     * read message from client and check if he wants to exit or disconnected
+     * @param player client
+     * @return message
+     */
     public String readWithExit(Player player) {
         String input = "";
         try {

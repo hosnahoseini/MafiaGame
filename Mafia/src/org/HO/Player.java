@@ -22,12 +22,16 @@ public class Player implements Serializable{
     private transient ObjectOutputStream outObj;
     private transient ObjectInputStream inObj ;
 
-    public Player(Socket connection) throws IOException {
+    public Player(Socket connection){
         this.connection = connection;
-        in = new DataInputStream(connection.getInputStream());
-        out = new DataOutputStream(connection.getOutputStream());
-        outObj = new ObjectOutputStream(out);
-        inObj = new ObjectInputStream(in);
+        try {
+            in = new DataInputStream(connection.getInputStream());
+            out = new DataOutputStream(connection.getOutputStream());
+            outObj = new ObjectOutputStream(out);
+            inObj = new ObjectInputStream(in);
+        } catch (IOException e) {
+            System.err.println ("Some went Wrong in I/O for client " + name);
+        }
     }
 
     public boolean isMafia(){

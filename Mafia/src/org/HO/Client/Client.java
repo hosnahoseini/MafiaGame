@@ -253,7 +253,7 @@ public class Client {
             Random random = new Random();
             name = scanner.nextLine();
 //            name = String.valueOf((char)(random.nextInt(26) + 64));
-            player.getOutObj().writeObject(name);
+            player.writeTxt(name);
             if ((boolean) player.getInObj().readObject())
                 break;
             System.out.println("Some one use this name before:( please try another one");
