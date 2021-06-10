@@ -10,7 +10,6 @@ import org.HO.Player;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
@@ -32,7 +31,6 @@ public class Client {
             player = new Player(connection);
 
             System.out.println("connected to server");
-            System.out.println("FIRST MORNING");
 
             initializeInfo();
 
@@ -104,7 +102,7 @@ public class Client {
             final String[] vote = new String[1];
             while (true) {
                 System.out.println("Enter your vote");
-                vote[0] = readWithExit(player);
+                vote[0] = player.writeWithExit(player);
                 if (vote[0].equals(player.getName()))
                     System.out.println("You can't vote to your self try another player");
                 else if(!validInput(poll, vote[0]))
@@ -243,6 +241,7 @@ public class Client {
         System.out.println("type GO whenever you are ready to play");
         //scanner.next();
         player.getOutObj().writeObject(true);
+        System.out.println("FIRST MORNING");
         clientWithRole = factory.getClient(player);
 
     }
@@ -261,32 +260,6 @@ public class Client {
         }
         player.setName(name);
 
-    }
-
-    public String readWithExit(Player player){
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
-//        if(input.equals("exit")) {
-//            player.writeTxt("exit");
-//            removePlayer(player);
-//        }
-        return input;
-    }
-
-    private void removePlayer(Player player) {
-        player.readTxt();
-        System.out.println(player.readTxt());
-        Scanner scanner = new Scanner(System.in);
-        String result = scanner.next();
-        player.writeTxt(result);
-        if (result.equals("n")) {
-            player.close();
-            System.exit(5);
-        }else {
-            while (true) {
-                System.out.println(player.readTxt());
-            }
-        }
     }
 
 }

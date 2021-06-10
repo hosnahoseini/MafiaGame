@@ -21,7 +21,7 @@ public class Detective extends ClientWithRole {
                 System.out.println(player.getName());
             String name;
             while (true) {
-                name = writeWithExit(getPlayer());
+                name = getPlayer().writeWithExit(getPlayer());
                 if (!validInput(players, name))
                     System.out.println("Invalid input, try again");
                 else

@@ -25,7 +25,7 @@ public class DrLecter extends NormalMafia {
                         System.out.println(player.getName());
                     String name;
                     while (true) {
-                        name = writeWithExit(getPlayer());
+                        name = getPlayer().writeWithExit(getPlayer());
                         if (!validInput(mafias, name))
                             System.out.println("Invalid input, try again");
                         else

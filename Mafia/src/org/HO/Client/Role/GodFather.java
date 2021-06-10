@@ -28,7 +28,7 @@ public class GodFather extends NormalMafia {
             System.out.println(pollResult);
             String result;
             while (true) {
-                result = writeWithExit(getPlayer());
+                result = getPlayer().writeWithExit(getPlayer());
                 if (!validInput(poll, result))
                     System.out.println("Invalid input, try again");
                 else

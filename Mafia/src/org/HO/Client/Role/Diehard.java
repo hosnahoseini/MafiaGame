@@ -14,7 +14,7 @@ public class Diehard extends ClientWithRole {
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());;
-        String result = writeWithExit(getPlayer());
+        String result = getPlayer().writeWithExit(getPlayer());
         if(n <= 1 && result.equals("y"))
             getPlayer().writeTxt(result);
         else{

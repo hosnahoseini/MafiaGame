@@ -28,7 +28,7 @@ public class NormalMafia extends ClientWithRole {
             String vote;
             while (true) {
                 System.out.println("Enter your vote");
-                vote = writeWithExit(getPlayer());
+                vote = getPlayer().writeWithExit(getPlayer());
                 if(!validInput(poll, vote))
                     System.out.println("Invalid input");
                 else

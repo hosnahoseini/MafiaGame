@@ -21,7 +21,6 @@ public class SharedData {
     public boolean killedInquired = false;
     public int numberOfInquiries = 0;
     public int numberOfKillDieHard = 0;
-    public int numberOfPlayerEndChat = 0;
     public ArrayList<Player> killedPlayers;
 
     private SharedData() {
@@ -108,6 +107,9 @@ public class SharedData {
         return killedRoles;
     }
 
+    /**
+     * reset data for new loop
+     */
     public void reset() {
         killed = null;
         killedByMafias = null;
@@ -116,6 +118,5 @@ public class SharedData {
         killedByProfessional = null;
         killedInquired = false;
         mute = null;
-        numberOfPlayerEndChat = 0;
     }
 }

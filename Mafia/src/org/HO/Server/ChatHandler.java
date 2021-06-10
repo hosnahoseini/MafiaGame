@@ -23,7 +23,7 @@ public class ChatHandler implements Runnable {
 
     public ChatHandler(Player player) {
         writers = sharedData.getAlivePlayers();
-        readers = sharedData.getAbleToReadChats();
+        readers = (ArrayList<Player>) sharedData.players;
         this.player = player;
         logger.log("New player use chat handler", LogLevels.INFO);
     }
@@ -47,7 +47,6 @@ public class ChatHandler implements Runnable {
                     writers.remove(player);
                     readers.remove(player);
                     running = false;
-                    sharedData.numberOfPlayerEndChat ++;
                     break;
 
                 }

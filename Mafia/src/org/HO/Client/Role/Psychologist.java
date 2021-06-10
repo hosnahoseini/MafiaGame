@@ -16,7 +16,7 @@ public class Psychologist extends ClientWithRole {
         super.start();
         System.out.println(getPlayer().readTxt());
         Scanner scanner = new Scanner(System.in);
-        String result = writeWithExit(getPlayer());
+        String result = getPlayer().writeWithExit(getPlayer());
         getPlayer().writeTxt(result);
         if(result.equals("y"))
             try {
@@ -26,7 +26,7 @@ public class Psychologist extends ClientWithRole {
                     System.out.println(player.getName());
                 String name ;
                 while (true) {
-                    name = writeWithExit(getPlayer());
+                    name = getPlayer().writeWithExit(getPlayer());
                     if (!validInput(players, name))
                         System.out.println("Invalid input, try again");
                     else

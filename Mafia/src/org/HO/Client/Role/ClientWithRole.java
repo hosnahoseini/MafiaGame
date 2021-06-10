@@ -39,32 +39,6 @@ public abstract class ClientWithRole {
         }
     }
 
-    public String writeWithExit(Player player){
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
-        if(input.equals("exit")) {
-            player.writeTxt("exit");
-            removePlayer(player);
-        }
-        return input;
-    }
-
-    private void removePlayer(Player player) {
-        player.readTxt();
-        System.out.println(player.readTxt());
-        Scanner scanner = new Scanner(System.in);
-        String result = scanner.next();
-        player.writeTxt(result);
-        if (result.equals("n")) {
-            player.close();
-            System.exit(5);
-        }else {
-            while (true) {
-                System.out.println(player.readTxt());
-            }
-        }
-    }
-
     public boolean validInput(Collection<Player> choices, String name) {
         for(Player player:choices)
             if(player.getName().equalsIgnoreCase(name))

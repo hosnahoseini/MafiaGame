@@ -15,7 +15,7 @@ public class Professional extends ClientWithRole {
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
-        String result = writeWithExit(getPlayer());
+        String result = getPlayer().writeWithExit(getPlayer());
         getPlayer().writeTxt(result);
         if(result.equals("y"))
         try {
@@ -25,7 +25,7 @@ public class Professional extends ClientWithRole {
                 System.out.println(player.getName());
             String name ;
             while (true) {
-                name = writeWithExit(getPlayer());
+                name = getPlayer().writeWithExit(getPlayer());
                 if (!validInput(players, name))
                     System.out.println("Invalid input, try again");
                 else

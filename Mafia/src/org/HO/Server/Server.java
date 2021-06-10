@@ -7,19 +7,23 @@ import org.HO.Logger.LoggingManager;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * A class for server which handle game process
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Server {
     private SharedData sharedData = SharedData.getInstance();
     private FileUtils fileUtils = new FileUtils();
     private ArrayList<String> events = new ArrayList<>();
-    private boolean savedGame = false;
     private static final LoggingManager logger = new LoggingManager(Server.class.getName());
-    private int turn = 1;
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -29,18 +33,28 @@ public class Server {
         this.sharedData = sharedData;
     }
 
+    /**
+     * start server for a new game
+     *
+     * @param port game port
+     */
     public void start(int port) {
 
         acceptClients(port);
 
         resetChatBox("chatBox.txt");
 
-        while (true) {
-            if (checkIfEveryOneISReady())
-                break;
-        }
+        waitUntilEveryOneReady();
 
         introducing();
+
+        gameLoop();
+    }
+
+    /**
+     * loop for the main part of game
+     */
+    private void gameLoop() {
 
         do {
 
@@ -50,9 +64,11 @@ public class Server {
 
             executeChatRoom();
 
+            unMutePlayers();
+
             sendMessageToAllClients("POLL");
 
-            Poll morningPoll = MorningPolling();
+            Poll morningPoll = executeMorningPolling();
 
             sendMessageToAllClients("VOTING TIME ENDED");
 
@@ -73,21 +89,27 @@ public class Server {
 
             sendEventsToClient();
 
-            turn++;
         } while (!checkEndOfGame());
     }
 
+
+    /**
+     * empty files which act like storage of chat box
+     *
+     * @param fileName file name of chat box to be empty
+     */
     private void resetChatBox(String fileName) {
         File file = new File(fileName);
-        PrintWriter writer = null;
         try {
-            writer = new PrintWriter(file);
+            PrintWriter writer = new PrintWriter(file);
             writer.print("--CHAT BOX--\n");
+
             if (fileName.equals("chatBox.txt"))
                 writer.print("chat box is empty at first\n");
+
             writer.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("There is not such a file");
         }
 
     }
@@ -375,6 +397,10 @@ public class Server {
         }
     }
 
+    /**
+     * send result of a poll to all players
+     * @param poll morning poll
+     */
     private void sendPollResultToAllClients(Poll poll) {
         for (Player player : sharedData.players) {
             player.writeTxt(poll.PollResult());
@@ -401,9 +427,12 @@ public class Server {
         return null;
     }
 
+    /**
+     * ask mayor if he wants to cancel morning poll or not
+     */
     private void AskMayorForPoll() {
         Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
-        if (mayor != null) {
+        if (mayor != null && mayor.isAlive()) {
             mayor.writeTxt("YOUR TURN");
             mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
             String result = readWithExit(mayor);
@@ -411,19 +440,25 @@ public class Server {
                 sharedData.killed = null;
                 sendMessageToAllClients("Mayor canceled poll");
             } else {
-                logger.log(sharedData.killed + " is going killed", LogLevels.INFO);
                 removePlayer(sharedData.killed);
                 sendMessageToAllClients(sharedData.killed + " killed");
             }
         }
     }
 
+    /**
+     * remove a player from game
+     * @param killed player to be removed
+     */
     private void removePlayer(Player killed) {
+
         if (killed.isAlive()) {
             sharedData.killedPlayers.add(killed);
+            killed.setAlive(false);
+
             killed.writeTxt("You've been killed:(");
             killed.writeTxt("Do you want to see rest of the game?(y/n)");
-            logger.log("send txt to " + killed, LogLevels.INFO);
+            logger.log(killed + " killed" + killed, LogLevels.INFO);
             String result = killed.readTxt();
             if (result.equals("n")) {
                 killed.setAbleToReadChat(false);
@@ -435,11 +470,15 @@ public class Server {
                     e.printStackTrace();
                 }
             }
-            killed.setAlive(false);
         }
     }
 
-    private Poll MorningPolling() {
+    /**
+     * execute morning poll to remove s.o. from game
+     *
+     * @return morning poll
+     */
+    private Poll executeMorningPolling() {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(sharedData.getAlivePlayers());
         for (Player player : sharedData.getAlivePlayers()) {
@@ -448,30 +487,45 @@ public class Server {
         try {
             pool.shutdown();
             pool.awaitTermination(4000, TimeUnit.SECONDS);
-            sharedData.killed = poll.winner();
-            return poll;
+
         } catch (InterruptedException e) {
             e.printStackTrace();
+            //TODO:handle exp
+        } finally {
+            sharedData.killed = poll.winner();
+            return poll;
         }
-        return null;
     }
 
-    public void acceptClients(int port) {
+    /**
+     * accept clients(game players)
+     *
+     * @param port game port
+     */
+    private void acceptClients(int port) {
         ExecutorService pool = Executors.newCachedThreadPool();
+
         try (ServerSocket serverSocket = new ServerSocket(port)) {
+
             for (int i = 0; i < sharedData.numberOfPlayers; i++) {
                 Socket connection = serverSocket.accept();
                 logger.log("Client [" + i + "] connected successfully", LogLevels.INFO);
                 pool.execute(new ClientHandler(connection));
             }
+
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some thing went wrong with Server in I/O");
         }
     }
 
+    /**
+     * start chat room(start new chat handler thread for each player)
+     */
     public void executeChatRoom() {
-        ExecutorService pool = Executors.newCachedThreadPool();
+
         resetChatBox("chatBoxTemp.txt");
+
+        ExecutorService pool = Executors.newCachedThreadPool();
         for (Player player : sharedData.players) {
             if (player.isAlive() && !player.isMute()) {
                 pool.execute(new ChatHandler(player));
@@ -483,11 +537,30 @@ public class Server {
                 sendMessageToAllClients("Chat time ended");
         } catch (InterruptedException e) {
             e.printStackTrace();
+            System.err.println("InterruptedException for termination");
+            //TODO:handle this exp
         }
+
+        fileUtils.copy("chatBoxTemp.txt", "chatBox.txt");
+    }
+
+    /**
+     * unmute the player who have been mute previous turn for chat
+     */
+    private void unMutePlayers() {
         for (Player player : sharedData.players)
             if (player.isMute())
                 player.setMute(false);
-        fileUtils.copy("chatBoxTemp.txt", "chatBox.txt");
+    }
+
+    /**
+     * server wait until all clients join game
+     */
+    private void waitUntilEveryOneReady() {
+        while (true) {
+            if (checkIfEveryOneISReady())
+                break;
+        }
     }
 
     public boolean checkIfEveryOneISReady() {
@@ -501,72 +574,66 @@ public class Server {
             return false;
     }
 
+    /**
+     * send text message to all players
+     *
+     * @param msg message to be sent
+     */
     public void sendMessageToAllClients(String msg) {
-        sendMessageToAGroup(sharedData.players, msg);
-    }
 
-    public void sendMessageToAGroup(Collection<Player> members, String msg) {
-        for (Player member : members) {
-            try {
-                member.getOut().flush();
-                member.writeTxt(msg);
-                logger.log("send " + msg + " to " + member.getName(), LogLevels.INFO);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        for (Player player : sharedData.players) {
+            //player.getOut().flush();
+            player.writeTxt(msg);
+            logger.log("send " + msg + " to " + player.getName(), LogLevels.INFO);
         }
     }
 
+    /**
+     * introducing players to each other
+     */
     public void introducing() {
-        try {
-            introduceMafias();
-//            introduceDrCityToMayor();
-        } catch (IOException e) {
-            logger.log("cant introduce", LogLevels.ERROR);
-        }
-
+        introduceMafias();
+        introduceDrCityToMayor();
     }
 
-    public void introduceMafias() throws IOException {
+    /**
+     * Mafias introducing
+     */
+    public void introduceMafias() {
         for (Player mafia : sharedData.getMafias()) {
-
             logger.log("introducing mafias", LogLevels.INFO);
             for (Player otherMafia : sharedData.getMafias()) {
                 if (!otherMafia.equals(mafia)) {
                     mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
-                    logger.log(otherMafia.getName() + " is " + otherMafia.getRole(), LogLevels.INFO);
                 }
             }
 
         }
     }
 
+    /**
+     * introduce dr city to mayor
+     */
+    public void introduceDrCityToMayor() {
+        logger.log("introducing doctor city", LogLevels.INFO);
+        String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
+        sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
+    }
+
     public String readWithExit(Player player) {
         String input = "";
         try {
             input = player.getIn().readUTF();
-//            if (input.equals("exit"))
-//                removePlayer(player);
-//        } catch (SocketException e) {
-//            player.close();
-//            sharedData.players.remove(player);
+            if (input.equals("exit"))
+                removePlayer(player);
+        } catch (SocketException e) {
+            player.close();
+            sharedData.players.remove(player);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return input;
     }
 
-    public void introduceDrCityToMayor() throws IOException {
-        logger.log("introducing doc", LogLevels.INFO);
-        String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
-        sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
-    }
 
-    public boolean isSavedGame() {
-        return savedGame;
-    }
-
-    public void setSavedGame(boolean savedGame) {
-        this.savedGame = savedGame;
-    }
 }
