@@ -24,13 +24,13 @@ public class SharedData {
     public int numberOfPlayerEndChat = 0;
     public ArrayList<Player> killedPlayers;
 
-    private SharedData(){
+    private SharedData() {
         killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
-        numberOfNormalMafias = 1;
-        numberOfNormalPeople = 0;
-//        int numberOfMafia = (numberOfPlayers / 3) - 2;
-//        int numberOfPeople = numberOfPlayers - numberOfMafia - 7;
+//        numberOfNormalMafias = 1;
+//        numberOfNormalPeople = 0;
+        numberOfNormalMafias = (numberOfPlayers / 3) - 2;
+        numberOfNormalPeople = numberOfPlayers - numberOfNormalMafias - 8;
     }
 
     public static SharedData getInstance() {
@@ -41,87 +41,81 @@ public class SharedData {
     }
 
     public void addToSharedData(Player player) {
-            players.add(player);
+        players.add(player);
 
     }
 
-    public ArrayList<Player> getMafias(){
+    public ArrayList<Player> getMafias() {
         ArrayList<Player> mafias = new ArrayList<>();
-        for(Player player : players)
-            if(player.isMafia() && player.isAlive())
+        for (Player player : players)
+            if (player.isMafia() && player.isAlive())
                 mafias.add(player);
-            return mafias;
+        return mafias;
 
     }
 
-    public ArrayList<Player> getCitizens(){
+    public ArrayList<Player> getCitizens() {
         ArrayList<Player> citizens = new ArrayList<>();
-        for(Player player : players)
+        for (Player player : players)
             if (player.isCitizen() && player.isAlive())
                 citizens.add(player);
         return citizens;
     }
 
-    public Player getSingleRole(PlayerRole role){
-        for(Player player : players)
-            if(player.getRole().equals(role))
+    public Player getSingleRole(PlayerRole role) {
+        for (Player player : players)
+            if (player.getRole().equals(role))
                 return player;
-            return null;
+        return null;
     }
-    public ArrayList<Player> getAlivePlayers(){
+
+    public ArrayList<Player> getAlivePlayers() {
         ArrayList<Player> alives = new ArrayList<>();
-        for(Player player : players)
+        for (Player player : players)
             if (player.isAlive())
                 alives.add(player);
         return alives;
     }
 
-    public ArrayList<Player> getAbleToReadChats(){
+    public ArrayList<Player> getAbleToReadChats() {
         ArrayList<Player> ableToReads = new ArrayList<>();
-        for(Player player : players)
+        for (Player player : players)
             if (player.isAbleToReadChat())
                 ableToReads.add(player);
         return ableToReads;
     }
 
-    public ArrayList<Player> getAbleToWriteChats(){
-        ArrayList<Player> ableToReads = new ArrayList<>();
-        for(Player player : players)
-            if (player.isAbleToWriteChat())
-                ableToReads.add(player);
-        return ableToReads;
-    }
-
-    public boolean checkIfNameIsRepetitive(String name){
-        for(Player player : players)
-            if(player.getName().equals(name))
+    public boolean checkIfNameIsRepetitive(String name) {
+        for (Player player : players)
+            if (player.getName().equals(name))
                 return true;
-            return false;
+        return false;
     }
 
-    public Player findPlayerWithName(String name){
-        for (Player player:players)
-            if(player.getName().equals(name))
+    public Player findPlayerWithName(String name) {
+        for (Player player : players)
+            if (player.getName().equals(name))
                 return player;
         System.out.println("i cant find " + name);
-            return null;
+        return null;
     }
 
-    public String showKilledRoles(){
+    public String showKilledRoles() {
         String killedRoles = "";
-        for (Player player:killedPlayers)
+        for (Player player : killedPlayers)
             killedRoles += player.getRole() + "\n";
 
         return killedRoles;
     }
 
-    public void reset(){
+    public void reset() {
         killed = null;
         killedByMafias = null;
         healedMafia = null;
         healedCitizen = null;
         killedByProfessional = null;
         killedInquired = false;
+        mute = null;
         numberOfPlayerEndChat = 0;
     }
 }

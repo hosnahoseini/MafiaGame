@@ -23,17 +23,21 @@ public class PollHandler implements Runnable{
 
     @Override
     public void run() {
+            try {
 
-            player.writeTxt("Who do you want to be killed?");
-            player.writeTxt(poll.pollChoices());
-            logger.log("write poll to " + player.getName(), LogLevels.INFO);
-            String vote = readWithExit(player);
-            if(vote.equals("exit")) {
-                removePlayer(player);
-                //Thread.currentThread().interrupt();
-            }else {
-                poll.vote(vote, player);
-                logger.log(player.getName() + " vote to " + vote, LogLevels.INFO);
+                player.writeTxt("Who do you want to be killed?");
+                player.getOutObj().writeObject(poll.getPoll().keySet());
+                logger.log("write poll to " + player.getName(), LogLevels.INFO);
+                String vote = readWithExit(player);
+                if (vote.equals("exit")) {
+                    removePlayer(player);
+                    //Thread.currentThread().interrupt();
+                } else {
+                    poll.vote(vote, player);
+                    logger.log(player.getName() + " vote to " + vote, LogLevels.INFO);
+                }
+            }catch (IOException e) {
+                e.printStackTrace();
             }
         Thread.currentThread().interrupt();
     }

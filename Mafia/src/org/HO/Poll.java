@@ -67,4 +67,8 @@ public class Poll implements Serializable {
         }
         return result;
     }
+
+    public ConcurrentHashMap<Player, ArrayList<Player>> getPoll() {
+        return poll;
+    }
 }

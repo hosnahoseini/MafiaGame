@@ -14,7 +14,6 @@ public class Player implements Serializable{
     private PlayerRole role;
     private boolean alive = true;
     private boolean readyToPlay = false;
-    private boolean ableToWriteChat = true;
     private boolean ableToReadChat = true;
     private boolean mute = false;
     private int heal = 0;
@@ -193,14 +192,6 @@ public class Player implements Serializable{
 
     public int getHeal() {
         return heal;
-    }
-
-    public boolean isAbleToWriteChat() {
-        return ableToWriteChat;
-    }
-
-    public void setAbleToWriteChat(boolean ableToWriteChat) {
-        this.ableToWriteChat = ableToWriteChat;
     }
 
     public boolean isMute() {

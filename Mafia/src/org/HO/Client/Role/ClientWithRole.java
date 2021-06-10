@@ -4,6 +4,7 @@ import org.HO.Logger.LogLevels;
 import org.HO.Player;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Scanner;
 
 public abstract class ClientWithRole {
@@ -41,10 +42,10 @@ public abstract class ClientWithRole {
     public String writeWithExit(Player player){
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
-//        if(input.equals("exit")) {
-//            player.writeTxt("exit");
-//            removePlayer(player);
-//        }
+        if(input.equals("exit")) {
+            player.writeTxt("exit");
+            removePlayer(player);
+        }
         return input;
     }
 
@@ -62,5 +63,12 @@ public abstract class ClientWithRole {
                 System.out.println(player.readTxt());
             }
         }
+    }
+
+    public boolean validInput(Collection<Player> choices, String name) {
+        for(Player player:choices)
+            if(player.getName().equalsIgnoreCase(name))
+                return true;
+        return false;
     }
 }

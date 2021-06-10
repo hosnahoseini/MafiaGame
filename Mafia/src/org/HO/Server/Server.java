@@ -7,10 +7,8 @@ import org.HO.Logger.LoggingManager;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -21,6 +19,7 @@ public class Server {
     private ArrayList<String> events = new ArrayList<>();
     private boolean savedGame = false;
     private static final LoggingManager logger = new LoggingManager(Server.class.getName());
+    private int turn = 1;
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
@@ -74,6 +73,7 @@ public class Server {
 
             sendEventsToClient();
 
+            turn++;
         } while (!checkEndOfGame());
     }
 
@@ -82,7 +82,9 @@ public class Server {
         PrintWriter writer = null;
         try {
             writer = new PrintWriter(file);
-            writer.print("--CHAT BOX--");
+            writer.print("--CHAT BOX--\n");
+            if (fileName.equals("chatBox.txt"))
+                writer.print("chat box is empty at first\n");
             writer.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -123,10 +125,10 @@ public class Server {
 
     private void updateServer() {
         events.clear();
-        alivePlayerUpdate();
         killedByMafiasUpdate();
         killedByProfessionalUpdate();
-        killedInquiredUpdate();
+        inquiredUpdate();
+        alivePlayerUpdate();
         muteUpdate();
     }
 
@@ -135,7 +137,7 @@ public class Server {
             events.add(sharedData.mute.getName() + " is muted");
     }
 
-    private void killedInquiredUpdate() {
+    private void inquiredUpdate() {
         if (sharedData.killedInquired) {
             events.add("killed roles are:\n" + sharedData.showKilledRoles());
             logger.log("killed roles are:\n" + sharedData.showKilledRoles(), LogLevels.INFO);
@@ -145,6 +147,7 @@ public class Server {
 
     private void killedByProfessionalUpdate() {
         Player killed = sharedData.killedByProfessional;
+        Player professional = sharedData.getSingleRole(PlayerRole.PROFESSIONAL);
         if (killed != null) {
             if (killed.isMafia()
                     && !(sharedData.healedMafia.equals(killed))) {
@@ -154,11 +157,12 @@ public class Server {
 
             }
             if (!killed.isMafia()
-                    && sharedData.getSingleRole(PlayerRole.PROFESSIONAL) != null) {
-                removePlayer(sharedData.getSingleRole(PlayerRole.PROFESSIONAL));
-                events.add(sharedData.getSingleRole(PlayerRole.PROFESSIONAL)
+                    && professional != null
+                    && !sharedData.healedCitizen.equals(professional)) {
+                removePlayer(professional);
+                events.add(professional
                         + " have been killed last night");
-                logger.log(sharedData.getSingleRole(PlayerRole.PROFESSIONAL)
+                logger.log(professional
                         + " have been killed last night", LogLevels.INFO);
 
             }
@@ -168,13 +172,15 @@ public class Server {
     private void killedByMafiasUpdate() {
         Player killed = sharedData.killedByMafias;
         if (killed != null) {
-            if (killed.getRole() == PlayerRole.DIE_HARD) {
-                if (sharedData.numberOfKillDieHard == 0)
+            if (killed.getRole().equals(PlayerRole.DIE_HARD)) {
+                if (sharedData.numberOfKillDieHard >= 1) {
+                    System.out.println("-->" + sharedData.numberOfKillDieHard);
+                    removePlayer(killed);
                     return;
-                else
+                } else {
                     sharedData.numberOfKillDieHard++;
-            }
-            if (!(killed.equals(sharedData.healedCitizen))) {
+                }
+            } else if (!(killed.equals(sharedData.healedCitizen))) {
                 removePlayer(killed);
                 events.add(killed + " have been killed last night");
                 logger.log(killed + " have been killed last night", LogLevels.INFO);
@@ -235,7 +241,6 @@ public class Server {
                 }
                 String name = readWithExit(psychologist);
                 Player player = sharedData.findPlayerWithName(name);
-                player.setAbleToWriteChat(false);
                 player.setMute(true);
                 sharedData.mute = player;
             }
@@ -290,23 +295,32 @@ public class Server {
         Player drCity = sharedData.getSingleRole(PlayerRole.DR_CITY);
         if (drCity != null && drCity.isAlive()) {
             drCity.writeTxt("YOUR TURN");
-            while (true) {
-                drCity.writeTxt("Who do you want to heal?");
-                try {
-                    drCity.getOutObj().writeObject(sharedData.getCitizens());
-                    String name = readWithExit(drCity);
-                    if (name.equals(drCity.getName()) && drCity.getHeal() == 1)
-                        drCity.writeTxt("you've already healed your self, try another player:");
-                    else {
-                        drCity.writeTxt("thanks");
+            if (sharedData.getCitizens().size() != 1 || drCity.getHeal() == 0) {
+                drCity.writeTxt("OK");
+                logger.log("send OK", LogLevels.INFO);
+                while (true) {
+                    drCity.writeTxt("Who do you want to heal?");
+                    try {
+                        drCity.getOutObj().writeObject(sharedData.getCitizens());
+                        String name = readWithExit(drCity);
+                        if (name.equals(drCity.getName()) && drCity.getHeal() == 1)
+                            drCity.writeTxt("you've already healed your self, try another player:");
+                        else {
+                            drCity.writeTxt("thanks");
 
-                        sharedData.healedCitizen = sharedData.findPlayerWithName(name);
-                        sharedData.healedCitizen.heal();
-                        break;
+                            sharedData.healedCitizen = sharedData.findPlayerWithName(name);
+                            sharedData.healedCitizen.heal();
+                            if (sharedData.healedCitizen.getRole() == PlayerRole.DIE_HARD
+                                    && sharedData.killedByMafias.getRole() == PlayerRole.DIE_HARD)
+                                sharedData.numberOfKillDieHard--;
+                            break;
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
+            } else {
+                drCity.writeTxt("you don't have choice");
             }
         }
     }
@@ -315,23 +329,28 @@ public class Server {
         Player drLecter = sharedData.getSingleRole(PlayerRole.DR_LECTER);
         if (drLecter != null && drLecter.isAlive()) {
             drLecter.writeTxt("YOUR TURN");
-            while (true) {
-                drLecter.writeTxt("Who do you want to heal?");
-                try {
-                    drLecter.getOutObj().writeObject(sharedData.getMafias());
-                    String name = readWithExit(drLecter);
-                    if (name.equals(drLecter.getName()) && drLecter.getHeal() == 1)
-                        drLecter.writeTxt("you've already healed your self, try another player:");
-                    else {
-                        drLecter.writeTxt("thanks");
+            if (sharedData.getMafias().size() != 1 || drLecter.getHeal() == 0) {
+                drLecter.writeTxt("OK");
+                while (true) {
+                    drLecter.writeTxt("Who do you want to heal?");
+                    try {
+                        drLecter.getOutObj().writeObject(sharedData.getMafias());
+                        String name = readWithExit(drLecter);
+                        if (name.equals(drLecter.getName()) && drLecter.getHeal() == 1)
+                            drLecter.writeTxt("you've already healed your self, try another player:");
+                        else {
+                            drLecter.writeTxt("thanks");
 
-                        sharedData.healedMafia = sharedData.findPlayerWithName(name);
-                        sharedData.healedMafia.heal();
-                        break;
+                            sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                            sharedData.healedMafia.heal();
+                            break;
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
+            } else {
+                drLecter.writeTxt("you don't have choice");
             }
         }
     }
@@ -339,14 +358,20 @@ public class Server {
     private void godFatherChooseKilledOne(Poll mafiasPoll) {
         Player godFather = sharedData.getSingleRole(PlayerRole.GOD_FATHER);
         if (godFather != null && godFather.isAlive()) {
-            godFather.writeTxt("YOUR TURN");
+            try {
+                godFather.writeTxt("YOUR TURN");
 
-            godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
-            godFather.writeTxt(mafiasPoll.PollResult());
-            String killedName = godFather.readTxt();
-            logger.log("read god father choice" + killedName, LogLevels.INFO);
-            sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
+                godFather.writeTxt("This is the result of voting\nWho is going to be killed to night?");
 
+                godFather.getOutObj().writeObject(mafiasPoll.getPoll().keySet());
+                godFather.writeTxt(mafiasPoll.PollResult());
+
+                String killedName = godFather.readTxt();
+                logger.log("read god father choice" + killedName, LogLevels.INFO);
+                sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -384,6 +409,7 @@ public class Server {
             String result = readWithExit(mayor);
             if (result.equals("y")) {
                 sharedData.killed = null;
+                sendMessageToAllClients("Mayor canceled poll");
             } else {
                 logger.log(sharedData.killed + " is going killed", LogLevels.INFO);
                 removePlayer(sharedData.killed);
@@ -393,23 +419,24 @@ public class Server {
     }
 
     private void removePlayer(Player killed) {
-        sharedData.killedPlayers.add(killed);
-
-        killed.writeTxt("You've been killed:(");
-        killed.writeTxt("Do you want to see rest of the game?(y/n)");
-        logger.log("send txt to " + killed, LogLevels.INFO);
-        String result = killed.readTxt();
-        if (result.equals("n")) {
-            killed.setAbleToReadChat(false);
-            //killed.writeTxt("OK BYE!");
-            sharedData.players.remove(killed);
-            try {
-                killed.getConnection().close();
-            } catch (IOException e) {
-                e.printStackTrace();
+        if (killed.isAlive()) {
+            sharedData.killedPlayers.add(killed);
+            killed.writeTxt("You've been killed:(");
+            killed.writeTxt("Do you want to see rest of the game?(y/n)");
+            logger.log("send txt to " + killed, LogLevels.INFO);
+            String result = killed.readTxt();
+            if (result.equals("n")) {
+                killed.setAbleToReadChat(false);
+                //killed.writeTxt("OK BYE!");
+                sharedData.players.remove(killed);
+                try {
+                    killed.getConnection().close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            killed.setAlive(false);
         }
-        killed.setAlive(false);
     }
 
     private Poll MorningPolling() {
@@ -428,7 +455,6 @@ public class Server {
         }
         return null;
     }
-
 
     public void acceptClients(int port) {
         ExecutorService pool = Executors.newCachedThreadPool();
@@ -451,12 +477,6 @@ public class Server {
                 pool.execute(new ChatHandler(player));
             }
         }
-//            while (true){
-//                if(sharedData.numberOfPlayerEndChat == sharedData.getAbleToWriteChats().size()) {
-//                    pool.shutdown();
-//                    break;
-//                }
-//            }
         pool.shutdown();
         try {
             if (!pool.awaitTermination(4000000, TimeUnit.SECONDS))
@@ -464,7 +484,10 @@ public class Server {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        for (Player player : sharedData.players)
+            if (player.isMute())
+                player.setMute(false);
+        fileUtils.copy("chatBoxTemp.txt", "chatBox.txt");
     }
 
     public boolean checkIfEveryOneISReady() {

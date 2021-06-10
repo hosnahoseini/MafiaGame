@@ -12,12 +12,19 @@ public class ServerMain {
         System.out.println("1)Start new game\n2)Load game");
         int choice = scanner.nextInt();
         if(choice == 1) {
-            System.out.println("Enter number of players: ");
-            int numberOfPlayer = scanner.nextInt();
+            int numberOfPlayer;
+            while (true) {
+                System.out.println("Enter number of players: ");
+                numberOfPlayer = scanner.nextInt();
+                if (numberOfPlayer < 5)
+                    System.out.println("minimum players should be 5");
+                else break;
+            }
             //System.out.println("Enter port: ");
             //int port = scanner.nextInt();
             Server server = new Server(numberOfPlayer);
             server.start(7652);
+
         }else {
             System.out.println("Enter file name:");
             Server server = new Server(fileUtils.singleObjectFileReader(scanner.nextLine()));

@@ -13,7 +13,6 @@ public class Mayor extends ClientWithRole {
     public void start() {
         System.out.println(getPlayer().readTxt());
         System.out.println(getPlayer().readTxt());
-        Scanner scanner = new Scanner(System.in);
         getPlayer().writeTxt(writeWithExit(getPlayer()));
         
     }

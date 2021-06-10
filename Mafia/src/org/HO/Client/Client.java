@@ -10,7 +10,9 @@ import org.HO.Player;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
@@ -92,20 +94,24 @@ public class Client {
 
     private void voteForMorningPoll() {
         ExecutorService pool = Executors.newCachedThreadPool();
-
+        try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
             System.out.println(player.readTxt());
-            String poll = player.readTxt();
+            Collection <Player> poll=(Collection<Player>) player.getInObj().readObject();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
-            System.out.println(poll);
+            for (Player player:poll)
+                System.out.println(player);
             final String[] vote = new String[1];
             while (true) {
                 System.out.println("Enter your vote");
                 vote[0] = readWithExit(player);
                 if (vote[0].equals(player.getName()))
                     System.out.println("You can't vote to your self try another player");
+                else if(!validInput(poll, vote[0]))
+                    System.out.println("Invalid input");
                 else
                     break;
+
             }
 
 
@@ -127,10 +133,21 @@ public class Client {
 
             System.out.println("thanks");
             player.writeTxt(vote[0]);
-
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 //        catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
+    }
+
+    private boolean validInput(Collection<Player> choices, String name) {
+        for(Player player:choices)
+            if(player.getName().equalsIgnoreCase(name))
+                return true;
+            return false;
     }
 
     private void startChat() {
@@ -138,6 +155,7 @@ public class Client {
         if (player.isMute()) {
             System.out.println("you are mute this turn");
             player.setMute(false);
+            //TODO:flush buffer
             return;
         }
 
@@ -167,6 +185,7 @@ public class Client {
             while (!(chat = player.readTxt()).contains("--CHAT BOX--"))
                 currentChats.add(chat);
             System.out.println(chat);
+            System.out.println("----END!----");
             for (String s : currentChats)
                 System.out.println(s);
         }

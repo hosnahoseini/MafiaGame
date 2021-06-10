@@ -12,31 +12,56 @@ public class Initializer {
     SharedData sharedData = SharedData.getInstance();
 
 
-    private Initializer() {
+    private Initializer(int numberOfPlayers) {
 
-
-
+    if(numberOfPlayers >= 8) {
+        availableRoles.add(PlayerRole.GOD_FATHER);
+        availableRoles.add(PlayerRole.DR_LECTER);
         availableRoles.add(PlayerRole.DR_CITY);
         availableRoles.add(PlayerRole.DETECTIVE);
         availableRoles.add(PlayerRole.PROFESSIONAL);
         availableRoles.add(PlayerRole.PSYCHOLOGIST);
         availableRoles.add(PlayerRole.DIE_HARD);
-        availableRoles.add(PlayerRole.DR_LECTER);
         availableRoles.add(PlayerRole.MAYOR);
-        availableRoles.add(PlayerRole.GOD_FATHER);
 
         for (int i = 0; i < sharedData.numberOfNormalMafias; i++)
             availableRoles.add(PlayerRole.NORMAL_MAFIA);
 
         for (int i = 0; i < sharedData.numberOfNormalPeople; i++)
             availableRoles.add(PlayerRole.NORMAL_PEOPLE);
+    }else{
+        switch (numberOfPlayers){
+            case 7:
+                availableRoles.add(PlayerRole.GOD_FATHER);
+                availableRoles.add(PlayerRole.DR_LECTER);
+                availableRoles.add(PlayerRole.DR_CITY);
+                availableRoles.add(PlayerRole.DETECTIVE);
+                availableRoles.add(PlayerRole.PROFESSIONAL);
+                availableRoles.add(PlayerRole.DIE_HARD);
+                availableRoles.add(PlayerRole.MAYOR);
+                break;
+            case 6:
+                availableRoles.add(PlayerRole.GOD_FATHER);
+                availableRoles.add(PlayerRole.DR_LECTER);
+                availableRoles.add(PlayerRole.DR_CITY);
+                availableRoles.add(PlayerRole.DETECTIVE);
+                availableRoles.add(PlayerRole.PROFESSIONAL);
+                availableRoles.add(PlayerRole.MAYOR);
+            case 5:
+                availableRoles.add(PlayerRole.GOD_FATHER);
+                availableRoles.add(PlayerRole.DR_LECTER);
+                availableRoles.add(PlayerRole.DR_CITY);
+                availableRoles.add(PlayerRole.PROFESSIONAL);
+                availableRoles.add(PlayerRole.MAYOR);
+        }
 
+    }
 //        Collections.shuffle(availableRoles);
     }
 
-    public static Initializer getInstance() {
+    public static Initializer getInstance(int numberOfPlayers) {
         if (instance == null) {
-            instance = new Initializer();
+            instance = new Initializer(numberOfPlayers);
         }
         return instance;
     }

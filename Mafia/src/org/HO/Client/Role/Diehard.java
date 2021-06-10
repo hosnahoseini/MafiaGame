@@ -5,6 +5,7 @@ import org.HO.Player;
 import java.util.Scanner;
 
 public class Diehard extends ClientWithRole {
+    private static int n = 0;
     public Diehard(Player player) {
         super(player);
     }
@@ -12,10 +13,15 @@ public class Diehard extends ClientWithRole {
     @Override
     public void start() {
         super.start();
-        System.out.println(getPlayer().readTxt());
-        Scanner scanner = new Scanner(System.in);
+        System.out.println(getPlayer().readTxt());;
         String result = writeWithExit(getPlayer());
-        getPlayer().writeTxt(result);
+        if(n <= 1 && result.equals("y"))
+            getPlayer().writeTxt(result);
+        else{
+            System.out.println("you can't inquire any more");
+            getPlayer().writeTxt("n");
+        }
+
         System.out.println(getPlayer().readTxt());
     }
 }

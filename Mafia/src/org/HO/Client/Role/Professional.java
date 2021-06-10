@@ -15,7 +15,6 @@ public class Professional extends ClientWithRole {
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
-        Scanner scanner = new Scanner(System.in);
         String result = writeWithExit(getPlayer());
         getPlayer().writeTxt(result);
         if(result.equals("y"))
@@ -24,7 +23,14 @@ public class Professional extends ClientWithRole {
             ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();
             for (Player player : players)
                 System.out.println(player.getName());
-            String name = writeWithExit(getPlayer());
+            String name ;
+            while (true) {
+                name = writeWithExit(getPlayer());
+                if (!validInput(players, name))
+                    System.out.println("Invalid input, try again");
+                else
+                    break;
+            }
             getPlayer().writeTxt(name);
         } catch (IOException e) {
             e.printStackTrace();

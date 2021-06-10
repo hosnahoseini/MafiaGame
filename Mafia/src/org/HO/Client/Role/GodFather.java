@@ -3,7 +3,10 @@ package org.HO.Client.Role;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
+import org.HO.Poll;
 
+import java.io.IOException;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class GodFather extends NormalMafia {
@@ -18,11 +21,25 @@ public class GodFather extends NormalMafia {
         super.start();
         waitUntilReceivingMsg("YOUR TURN");
         System.out.println(getPlayer().readTxt());
-        String poll = getPlayer().readTxt();
-        System.out.println(poll);
-        Scanner scanner = new Scanner(System.in);
-        String result = scanner.next();
-        getPlayer().writeTxt(result);
-        logger.log(result, LogLevels.INFO);
+
+        try {
+            Collection <Player> poll = (Collection<Player>) getPlayer().getInObj().readObject();
+            String pollResult = getPlayer().readTxt();
+            System.out.println(pollResult);
+            String result;
+            while (true) {
+                result = writeWithExit(getPlayer());
+                if (!validInput(poll, result))
+                    System.out.println("Invalid input, try again");
+                else
+                    break;
+            }
+            getPlayer().writeTxt(result);
+            logger.log(result, LogLevels.INFO);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

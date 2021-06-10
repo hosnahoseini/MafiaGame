@@ -15,7 +15,7 @@ public class ClientHandler implements Runnable {
 
     public ClientHandler(Socket connection) throws IOException {
         sharedData = SharedData.getInstance();
-        initializer = Initializer.getInstance();
+        initializer = Initializer.getInstance(sharedData.numberOfPlayers);
         player = new Player(connection);
     }
 

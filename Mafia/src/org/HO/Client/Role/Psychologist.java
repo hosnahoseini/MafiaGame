@@ -24,7 +24,14 @@ public class Psychologist extends ClientWithRole {
                 ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();
                 for (Player player : players)
                     System.out.println(player.getName());
-                String name = writeWithExit(getPlayer());
+                String name ;
+                while (true) {
+                    name = writeWithExit(getPlayer());
+                    if (!validInput(players, name))
+                        System.out.println("Invalid input, try again");
+                    else
+                        break;
+                }
                 getPlayer().writeTxt(name);
             } catch (IOException e) {
                 e.printStackTrace();

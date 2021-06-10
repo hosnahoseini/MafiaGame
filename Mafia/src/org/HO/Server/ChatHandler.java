@@ -116,5 +116,6 @@ public class ChatHandler implements Runnable {
     private void previousChats(Player player) {
         String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
         player.writeTxt(chatBox);
+        System.out.println(chatBox);
     }
 }
