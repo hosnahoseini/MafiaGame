@@ -27,7 +27,7 @@ public class ChatHandler implements Runnable {
 
     public ChatHandler(Player player) {
         writers = sharedData.getAlivePlayers();
-        readers = (ArrayList<Player>) sharedData.players;
+        readers = sharedData.getPlayers();
         this.player = player;
         logger.log("New player use chat handler", LogLevels.INFO);
     }
@@ -62,6 +62,7 @@ public class ChatHandler implements Runnable {
                 break;
             }
 
+            fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             broadcast(serverMessage);
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
@@ -73,8 +74,7 @@ public class ChatHandler implements Runnable {
     public boolean checkIfChatEnded() {
 //        if (writers.size() == 0)
 //            return true;
-//        return false;
-        return true;
+        return false;
         //TODO
     }
 
@@ -98,6 +98,10 @@ public class ChatHandler implements Runnable {
         player.writeTxt(chatBox);
     }
 
+    /**
+     * remove player
+     * @param killed player to be removed
+     */
     private void removePlayer(Player killed) {
         sharedData.killedPlayers.add(killed);
         killed.setAlive(false);
@@ -105,6 +109,7 @@ public class ChatHandler implements Runnable {
         String result = killed.readTxt();
         if (result.equals("n")) {
             sharedData.players.remove(killed);
+            player.close();
             try {
                 killed.getConnection().close();
             } catch (IOException e) {
@@ -113,6 +118,11 @@ public class ChatHandler implements Runnable {
         }
     }
 
+    /**
+     * read message from client and check if he wants to exit or disconnected
+     * @param player client
+     * @return message
+     */
     public String readWithExit(Player player) {
         String input = "";
         try {

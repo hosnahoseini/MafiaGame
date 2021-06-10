@@ -1,6 +1,1 @@
 --CHAT BOX--
-[ c ]: done
-[ a ]: done
-[ b ]: done
-[ f ]: done
-[ g ]: done

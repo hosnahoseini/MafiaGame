@@ -9,13 +9,19 @@ import org.HO.SharedData;
 import java.io.EOFException;
 import java.io.IOException;
 import java.net.SocketException;
-
+/**
+ * A class for handling poll
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class PollHandler implements Runnable{
 
     Poll poll;
     private Player player;
     private static final LoggingManager logger = new LoggingManager(PollHandler.class.getName());
     private SharedData sharedData = SharedData.getInstance();
+
     public PollHandler(Poll poll, Player player) {
         this.poll = poll;
         this.player = player;
@@ -42,15 +48,18 @@ public class PollHandler implements Runnable{
         Thread.currentThread().interrupt();
     }
 
+    /**
+     * remove player
+     * @param killed player to be removed
+     */
     private void removePlayer(Player killed) {
         sharedData.killedPlayers.add(killed);
         killed.setAlive(false);
-        player.writeTxt("BYE");
         killed.writeTxt("Do you want to see rest of the game?(y/n)");
         String result = killed.readTxt();
         if (result.equals("n")) {
-            killed.setAbleToReadChat(false);
             sharedData.players.remove(killed);
+            player.close();
             try {
                 killed.getConnection().close();
             } catch (IOException e) {
@@ -59,6 +68,11 @@ public class PollHandler implements Runnable{
         }
     }
 
+    /**
+     * read message from client and check if he wants to exit or disconnected
+     * @param player client
+     * @return message
+     */
     public String readWithExit(Player player) {
         String input = "";
         try {

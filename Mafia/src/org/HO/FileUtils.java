@@ -2,7 +2,20 @@ package org.HO;
 
 import java.io.*;
 
+/**
+ * A class to read and write in the file
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class FileUtils {
+
+    /**
+     * write a text to file by buffer
+     *
+     * @param fileName fileName
+     * @param text     text to be written in the file
+     */
     public void fileWriterByBuffer(String fileName, String text) {
 
         try (FileWriter fileWriter = new FileWriter(fileName, true);
@@ -35,6 +48,11 @@ public class FileUtils {
         return result;
     }
 
+    /**
+     * copy source file and append it destination file
+     * @param srcFileAdd source file
+     * @param destFileAdd destination file
+     */
     public void copy(String srcFileAdd, String destFileAdd) {
         String txt = fileReaderByBuffer(srcFileAdd);
         fileWriterByBuffer(destFileAdd, txt);

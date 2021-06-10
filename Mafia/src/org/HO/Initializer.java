@@ -1,10 +1,13 @@
 package org.HO;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Stack;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+
+/**
+ * A class to initialize roles(singleton design pattern)
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 
 public class Initializer {
     private static Stack <PlayerRole> availableRoles = new Stack();
@@ -12,6 +15,10 @@ public class Initializer {
     SharedData sharedData = SharedData.getInstance();
 
 
+    /**
+     * initialize role according to number of players
+     * @param numberOfPlayers to number of players
+     */
     private Initializer(int numberOfPlayers) {
 
     if(numberOfPlayers >= 8) {
@@ -59,6 +66,11 @@ public class Initializer {
 //        Collections.shuffle(availableRoles);
     }
 
+    /**
+     * get instance of initializer
+     * @param numberOfPlayers numberOfPlayers
+     * @return instance of initializer
+     */
     public static Initializer getInstance(int numberOfPlayers) {
         if (instance == null) {
             instance = new Initializer(numberOfPlayers);
@@ -66,6 +78,10 @@ public class Initializer {
         return instance;
     }
 
+    /**
+     * give a role
+     * @return role
+     */
     public synchronized static PlayerRole assignRole(){
         return availableRoles.pop();
     }

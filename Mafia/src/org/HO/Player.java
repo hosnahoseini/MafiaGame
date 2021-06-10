@@ -8,6 +8,12 @@ import java.util.Scanner;
 import static org.HO.PlayerRole.*;
 import static org.HO.PlayerRole.MAYOR;
 
+/**
+ * A class to hold player info
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Player implements Serializable{
 
     private transient Socket connection;
@@ -34,12 +40,20 @@ public class Player implements Serializable{
         }
     }
 
+    /**
+     * check if the player is mafia
+     * @return true if player is mafia
+     */
     public boolean isMafia(){
         if(role == NORMAL_MAFIA || role ==DR_LECTER || role == GOD_FATHER)
             return true;
         return false;
     }
 
+    /**
+     * check if the player is citizen
+     * @return true if player is citizen
+     */
     public boolean isCitizen(){
         if(role == NORMAL_PEOPLE || role == DETECTIVE || role == PROFESSIONAL ||
                 role == PSYCHOLOGIST || role == DIE_HARD || role == MAYOR || role == DR_CITY)
@@ -47,47 +61,33 @@ public class Player implements Serializable{
         return false;
     }
 
-    public boolean isNormalMafia(){
-        if(role == PlayerRole.NORMAL_MAFIA)
-            return true;
-        return false;
-    }
-
+    /**
+     * player write a text in socket buffer
+     * @param text text
+     */
     public void writeTxt(String text) {
         try {
             this.out.writeUTF(text);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println ("Some went Wrong in I/O in player " + name);
+            //TODO
         }
     }
 
+    /**
+     * player read a text in socket buffer
+     * @return text
+     */
     public String readTxt() {
         try {
             return in.readUTF();
         }catch (IOException e) {
-            e.printStackTrace();
+            System.err.println ("Some went Wrong in I/O in player " + name);
+            //TODO
         }
         return null;
     }
 
-    public void writeObj(Object obj) {
-        try {
-            this.outObj.writeObject(obj);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public Object readObj() {
-        try {
-            return this.inObj.readObject();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -105,6 +105,9 @@ public class Player implements Serializable{
         return name;
     }
 
+    /**
+     * close a player and its socket and streams
+     */
     public void close(){
         try {
             in.close();
@@ -115,9 +118,11 @@ public class Player implements Serializable{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
+    /**
+     * add to number of times player healed
+     */
     public void heal(){
         heal ++;
     }
@@ -162,9 +167,6 @@ public class Player implements Serializable{
         return readyToPlay;
     }
 
-    public void setConnection(Socket connection) {
-        this.connection = connection;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -186,14 +188,6 @@ public class Player implements Serializable{
         this.out = out;
     }
 
-    public void setOutObj(ObjectOutputStream outObj) {
-        this.outObj = outObj;
-    }
-
-    public void setInObj(ObjectInputStream inObj) {
-        this.inObj = inObj;
-    }
-
     public int getHeal() {
         return heal;
     }
@@ -206,6 +200,11 @@ public class Player implements Serializable{
         this.mute = mute;
     }
 
+    /**
+     * get input from client and check exit
+     * @param player client
+     * @return input
+     */
     public String writeWithExit(Player player){
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
@@ -216,6 +215,10 @@ public class Player implements Serializable{
         return input;
     }
 
+    /**
+     * remove player in client side
+     * @param player player
+     */
     private void removePlayer(Player player) {
         player.readTxt();
         System.out.println(player.readTxt());

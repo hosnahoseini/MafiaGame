@@ -53,6 +53,14 @@ public class SharedData {
 
     }
 
+    public ArrayList<Player> getPlayers() {
+        ArrayList<Player> playerArrayList = new ArrayList<>();
+        for (Player player : players)
+                playerArrayList.add(player);
+        return playerArrayList;
+
+    }
+
     public ArrayList<Player> getCitizens() {
         ArrayList<Player> citizens = new ArrayList<>();
         for (Player player : players)

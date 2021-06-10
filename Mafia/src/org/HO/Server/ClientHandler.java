@@ -8,7 +8,7 @@ import java.io.*;
 import java.net.Socket;
 
 /**
- * A class for handling acceptance of client s
+ * A class for handling acceptance of clients
  *
  * @author Hosna Oyarhoseini
  * @version 1.0

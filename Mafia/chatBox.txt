@@ -2,30 +2,5 @@
 chat box is empty at first
 
 --CHAT BOX--
-[ h ]: done
-[ g ]: done
-[ f ]: done
-[ e ]: done
-[ d ]: done
-[ c ]: done
-[ b ]: done
-[ a ]: done
 
 --CHAT BOX--
-[ b ]: y
-[ c ]: y
-[ c ]: done
-[ e ]: y
-[ e ]: done
-[ f ]: done
-[ g ]: done
-[ h ]: done
-[ b ]: done
-
---CHAT BOX--
-[ a ]: y
-[ c ]: done
-[ b ]: done
-[ a ]: done
-[ f ]: done
-[ g ]: done

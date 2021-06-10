@@ -548,6 +548,7 @@ public class Server {
             String result = killed.readTxt();
             if (result.equals("n")) {
                 sharedData.players.remove(killed);
+                killed.close();
                 try {
                     killed.getConnection().close();
                 } catch (IOException e) {

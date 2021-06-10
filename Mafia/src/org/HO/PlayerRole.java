@@ -1,5 +1,11 @@
 package org.HO;
 
+/**
+ * enum for players roles
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public enum PlayerRole {
     NORMAL_MAFIA,
     GOD_FATHER,
