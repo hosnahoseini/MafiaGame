@@ -5612,3 +5612,239 @@ DETECTIVE
 ۱۰/۰۶/۲۰۲۱ ۱۸:۰۴:۴۶ [INFO] org.HO.Server.Server ---> send BYE to d
 ۱۰/۰۶/۲۰۲۱ ۱۸:۰۴:۴۶ [INFO] org.HO.Server.Server ---> send BYE to e
 ۱۰/۰۶/۲۰۲۱ ۱۸:۰۴:۴۶ [INFO] org.HO.Client.Client ---> e read BYE
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۶:۱۵ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۶:۲۵ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۶:۳۲ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۶:۴۳ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۶:۵۱ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۱۶ [INFO] org.HO.Server.Server ---> Client [0] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۲۱ [INFO] org.HO.Server.Server ---> Client [1] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۲۴ [INFO] org.HO.Server.Server ---> Client [2] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۲۸ [INFO] org.HO.Server.Server ---> Client [3] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۲ [INFO] org.HO.Server.Server ---> Client [4] connected successfully
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> introducing mafias
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> introducing doctor city
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> d read e is GOD_FATHER
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> e read d is DR_LECTER
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> send CHAT TIME to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> a read c is doctor of city
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> a read CHAT TIME
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> send CHAT TIME to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> send CHAT TIME to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> b read CHAT TIME
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> d read CHAT TIME
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> send CHAT TIME to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> e read CHAT TIME
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.Server ---> send CHAT TIME to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Client.Client ---> c read CHAT TIME
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۳۳ [INFO] org.HO.Server.ChatHandler ---> New player use chat handler
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۰ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۰ [INFO] org.HO.Server.ChatHandler ---> server receives hi
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۰ [INFO] org.HO.Server.ChatHandler ---> server broad cast hi
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۰ [INFO] org.HO.Client.ReadThread ---> e read [ d ]: hi in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۰ [INFO] org.HO.Client.ReadThread ---> d read [ d ]: hi in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۳ [INFO] org.HO.Server.ChatHandler ---> server receives done
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۳ [INFO] org.HO.Client.ReadThread ---> d read d left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۳ [INFO] org.HO.Client.ReadThread ---> e read d left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۵ [INFO] org.HO.Client.ReadThread ---> c read [ d ]: hi in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۵ [INFO] org.HO.Client.ReadThread ---> c read d left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۶ [INFO] org.HO.Server.ChatHandler ---> server receives done
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۶ [INFO] org.HO.Client.ReadThread ---> c read c left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۶ [INFO] org.HO.Client.ReadThread ---> e read c left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۸ [INFO] org.HO.Client.ReadThread ---> b read [ d ]: hi in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۸ [INFO] org.HO.Client.ReadThread ---> b read d left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۴۸ [INFO] org.HO.Client.ReadThread ---> b read c left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۰ [INFO] org.HO.Server.ChatHandler ---> server receives done
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۰ [INFO] org.HO.Client.ReadThread ---> b read b left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۰ [INFO] org.HO.Client.ReadThread ---> e read b left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۲ [INFO] org.HO.Client.ReadThread ---> a read [ d ]: hi in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۲ [INFO] org.HO.Client.ReadThread ---> a read d left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۲ [INFO] org.HO.Client.ReadThread ---> a read c left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۲ [INFO] org.HO.Client.ReadThread ---> a read b left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۳ [INFO] org.HO.Server.ChatHandler ---> server receives done
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۳ [INFO] org.HO.Client.ReadThread ---> a read a left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۳ [INFO] org.HO.Client.ReadThread ---> e read a left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.ChatHandler ---> server receives done
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.ReadThread ---> e read e left chat in chat
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.Server ---> send POLL to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> readPOLL
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.Server ---> send POLL to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> readPOLL
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> readPOLL
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> start poll a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.Server ---> send POLL to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> start poll b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.Server ---> send POLL to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> readPOLL
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> start poll c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> readPOLL
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.Server ---> send POLL to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> start poll d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> start poll e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.PollHandler ---> write poll to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> receive poll d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.PollHandler ---> write poll to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> receive poll c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.PollHandler ---> write poll to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> receive poll a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> receive poll e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۷:۵۶ [INFO] org.HO.Client.Client ---> receive poll b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۰۵ [INFO] org.HO.Server.PollHandler ---> e vote to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۰۹ [INFO] org.HO.Server.PollHandler ---> c vote to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۱ [INFO] org.HO.Server.PollHandler ---> d vote to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۳ [INFO] org.HO.Server.PollHandler ---> b vote to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.PollHandler ---> a vote to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> readVOTING TIME ENDED
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> send VOTING TIME ENDED to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> read poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> write poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> read poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> write poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> read poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> write poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> write poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> read poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Server.Server ---> write poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۵ [INFO] org.HO.Client.Client ---> read poll res
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> a read Mayor canceled poll
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send Mayor canceled poll to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> b read Mayor canceled poll
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send Mayor canceled poll to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send Mayor canceled poll to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> c read Mayor canceled poll
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send Mayor canceled poll to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> d read Mayor canceled poll
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send Mayor canceled poll to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> e read Mayor canceled poll
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send NIGHT to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> a read NIGHT
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send NIGHT to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> b read NIGHT
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send NIGHT to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> c read NIGHT
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send NIGHT to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> d read NIGHT
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.Server ---> send NIGHT to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Client.Client ---> e read NIGHT
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۱۷ [INFO] org.HO.Server.PollHandler ---> write poll to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۲۷ [INFO] org.HO.Server.PollHandler ---> e vote to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۲۹ [INFO] org.HO.Server.PollHandler ---> d vote to a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۴۰ [INFO] org.HO.Client.Role.GodFather ---> a
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۴۰ [INFO] org.HO.Server.Server ---> read god father choicea
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۴ [INFO] org.HO.Client.Client ---> a read You've been killed:(
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۴ [INFO] org.HO.Server.Server ---> a killeda
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MORNING to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read MORNING
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MORNING to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read MORNING
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MORNING to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MORNING to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read MORNING
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send a have been killed last night to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read MORNING
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send a have been killed last night to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read a have been killed last night
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send a have been killed last night to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read a have been killed last night
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read a have been killed last night
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read a have been killed last night
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send a have been killed last night to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send a have been killed last night
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Alive players:
+ to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read Alive players:
+
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Alive players:
+ to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read Alive players:
+
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Alive players:
+ to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read Alive players:
+
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Alive players:
+ to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read Alive players:
+
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Alive players:
+
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send b to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send b to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send b to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send b to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send c to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send c to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send c to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send c to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send d to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send d to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send d to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send d to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send e to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send e to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send e to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send e to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Game ended to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read Game ended
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Game ended to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read Game ended
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Game ended to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read Game ended
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send Game ended to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read Game ended
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MAFIAS are the winners to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read MAFIAS are the winners
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MAFIAS are the winners to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read MAFIAS are the winners
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MAFIAS are the winners to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read MAFIAS are the winners
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send MAFIAS are the winners to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send BYE to b
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read MAFIAS are the winners
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read BYE
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read BYE
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send BYE to c
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send BYE to d
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read BYE
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read BYE
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Server.Server ---> send BYE to e
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> d read null
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> c read null
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> b read null
+۱۰/۰۶/۲۰۲۱ ۲۰:۳۸:۵۸ [INFO] org.HO.Client.Client ---> e read null

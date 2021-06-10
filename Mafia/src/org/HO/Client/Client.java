@@ -206,6 +206,15 @@ public class Client {
             }
             receiverKilledMessage(input);
             receiverMuteMessage(input);
+            receiverWinner(input);
+        }
+    }
+
+    private void receiverWinner(String input) {
+        if(input.equals("Game ended")) {
+            System.out.println(player.readTxt());
+            System.out.println(player.readTxt());
+            player.close();
         }
     }
 
