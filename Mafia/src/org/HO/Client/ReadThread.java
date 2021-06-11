@@ -4,10 +4,14 @@ import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.net.Socket;
 import java.util.Scanner;
+
+/**
+ * A class to handle a thread to reading chat in client side
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 
 public class ReadThread implements Runnable {
     private Player player;
@@ -26,9 +30,9 @@ public class ReadThread implements Runnable {
             message = player.readTxt();
             logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
 
-            if (message.equalsIgnoreCase(end)) break;
+            if (message.equalsIgnoreCase(end) || message.equals("Chat time ended")) break;
 
-            if (chatTimeEndedHandler(message)) break;
+//            if (chatTimeEndedHandler(message)) break;
 
             if (exitMessageHandler(message)) break;
 

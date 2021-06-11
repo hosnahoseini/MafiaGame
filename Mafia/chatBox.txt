@@ -2,5 +2,3 @@
 chat box is empty at first
 
 --CHAT BOX--
-[ e ]: f
-[ d ]: vf

@@ -2,6 +2,12 @@ package org.HO.Client;
 
 import java.util.Scanner;
 
+/**
+ * a class to start a new client
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class ClientMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,26 +1,36 @@
 package org.HO.Client.Role;
 
-import org.HO.Logger.LogLevels;
+
 import org.HO.Player;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Scanner;
 
-public class NormalMafia extends ClientWithRole {
-    public NormalMafia(Player player) {
+/**
+ * A class for client with mafia role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
+public class Mafia extends ClientWithRole {
+    public Mafia(Player player) {
         super(player);
     }
 
+    /**
+     * all mafia start to vote
+     */
     @Override
     public void start() {
         super.start();
         vote();
     }
 
+    /**
+     * vote for mafias poll
+     */
     private void vote() {
         try {
-            Scanner scanner = new Scanner(System.in);
             System.out.println(getPlayer().readTxt());
             Collection<Player> poll = (Collection<Player>) getPlayer().getInObj().readObject();
             for (Player player : poll)

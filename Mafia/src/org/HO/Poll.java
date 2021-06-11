@@ -6,60 +6,69 @@ import java.util.Collection;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * a class for a poll
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Poll implements Serializable {
     private ConcurrentHashMap<Player, ArrayList<Player>> poll;
 
+    /**
+     * constructor
+     *
+     * @param choices poll choices
+     */
     public Poll(Collection<Player> choices) {
         poll = new ConcurrentHashMap<>();
-        for(Player choice:choices)
+        for (Player choice : choices)
             this.poll.put(choice, new ArrayList<>());
     }
 
-    public String pollChoices(){
-        String result = "";
-        int index = 1;
-        for(Player choice: poll.keySet())
-            result += (index ++ + " ) "+ choice.getName() + "\n");
+    /**
+     * put a vote in poll
+     *
+     * @param vote  vote
+     * @param voter player who voted
+     */
+    public void vote(String vote, Player voter) {
 
-        return result;
-    }
-
-    public void showPoll(){
-        System.out.println(pollChoices());
-    }
-
-    public void vote(String vote, Player voter){
-
-        for(Player choice: poll.keySet())
-            if(choice.getName().equals(vote)){
+        for (Player choice : poll.keySet())
+            if (choice.getName().equals(vote)) {
                 ArrayList<Player> previousVote = poll.get(choice);
                 previousVote.add(voter);
-                poll.put(choice , previousVote);
+                poll.put(choice, previousVote);
             }
     }
 
-    public void showResult(){
-        System.out.println(this.getPollResult());
-    }
-
-    public Player winner(){
+    /**
+     * announce winner of the vote
+     *
+     * @return player who have the most vote or random player between whom have same most number of vote
+     */
+    public Player winner() {
         ArrayList<Player> winners = new ArrayList<>();
         int max = 0;
-        for(Player player: poll.keySet())
-            if(poll.get(player).size() > max){
+        for (Player player : poll.keySet())
+            if (poll.get(player).size() > max) {
                 max = poll.get(player).size();
                 winners.removeAll(winners);
                 winners.add(player);
-            }else if(poll.get(player).size() == max)
+            } else if (poll.get(player).size() == max)
                 winners.add(player);
-            Random random = new Random();
-            return winners.get(random.nextInt(winners.size()));
+        Random random = new Random();
+        return winners.get(random.nextInt(winners.size()));
     }
 
-
-    public String getPollResult(){
+    /**
+     * get pull result as string
+     *
+     * @return result in form choice : [players who voted for this choice separated by " "]
+     */
+    public String getPollResult() {
         String result = "";
-        for(Player player: poll.keySet()) {
+        for (Player player : poll.keySet()) {
             result += (player.getName() + " : [ ");
             for (Player voters : poll.get(player))
                 result += (voters.getName() + " ");
@@ -68,6 +77,11 @@ public class Poll implements Serializable {
         return result;
     }
 
+    /**
+     * get poll
+     *
+     * @return poll
+     */
     public ConcurrentHashMap<Player, ArrayList<Player>> getPoll() {
         return poll;
     }

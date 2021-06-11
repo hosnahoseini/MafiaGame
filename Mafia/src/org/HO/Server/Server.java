@@ -502,7 +502,7 @@ public class Server {
         }
         try {
             pool.shutdown();
-            pool.awaitTermination(4000, TimeUnit.SECONDS);
+            pool.awaitTermination(23000, TimeUnit.SECONDS);
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -603,10 +603,12 @@ public class Server {
                 pool.execute(new ChatHandler(player));
             }
         }
-        pool.shutdown();
         try {
-            if (!pool.awaitTermination(10, TimeUnit.SECONDS))
+            pool.shutdown();
+            boolean result = pool.awaitTermination(10, TimeUnit.SECONDS);
+            if (!result)
                 sendMessageToAllClients("Chat time ended");
+            System.out.println("END CHAT");
         } catch (InterruptedException e) {
             e.printStackTrace();
             System.err.println("InterruptedException for termination");

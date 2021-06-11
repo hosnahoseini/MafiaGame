@@ -1,5 +1,5 @@
 --CHAT BOX--
-[ e ]: f
-[ d ]: vf
-[ d ]: b
-[ c ]: a
+[ a ]: d
+[ b ]: d
+[ c ]: e
+[ d ]: e

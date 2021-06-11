@@ -66,16 +66,10 @@ public class ChatHandler implements Runnable {
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             broadcast(serverMessage);
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
-        } while (!checkIfChatEnded() );
+        } while (true);
 
         Thread.currentThread().interrupt();
-    }
-
-    public boolean checkIfChatEnded() {
-//        if (writers.size() == 0)
-//            return true;
-        return false;
-        //TODO
+        System.out.println(player  + " chat  handler ended");
     }
 
     /**

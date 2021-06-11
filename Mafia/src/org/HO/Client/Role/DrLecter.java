@@ -4,13 +4,21 @@ import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class DrLecter extends NormalMafia {
+/**
+ * A class for client with dr lecter role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
+public class DrLecter extends Mafia {
     public DrLecter(Player player) {
         super(player);
     }
 
+    /**
+     * dr lecter heal one mafia if its possible
+     */
     @Override
     public void start() {
         super.start();
@@ -37,12 +45,12 @@ public class DrLecter extends NormalMafia {
                     if (check.equals("thanks"))
                         break;
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.err.println("some thing wrong in reading array list of choices from server");
                 } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
+                    System.err.println("Can't convert to array list");
                 }
             }
-        }else {
+        } else {
             System.out.println(start);
         }
     }

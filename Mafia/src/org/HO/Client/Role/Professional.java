@@ -4,13 +4,21 @@ import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
+/**
+ * A class for client with Professional role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Professional extends ClientWithRole {
     public Professional(Player player) {
         super(player);
     }
 
+    /**
+     * Professional start to kill s.o. if he wants
+     */
     @Override
     public void start() {
         super.start();
@@ -33,9 +41,9 @@ public class Professional extends ClientWithRole {
             }
             getPlayer().writeTxt(name);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Can't convert to array list");
         }
     }
 }

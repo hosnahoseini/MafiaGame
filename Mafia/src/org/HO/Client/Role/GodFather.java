@@ -3,19 +3,27 @@ package org.HO.Client.Role;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
-import org.HO.Poll;
+
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Scanner;
 
-public class GodFather extends NormalMafia {
+/**
+ * A class for client with godfather role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
+public class GodFather extends Mafia {
     private static final LoggingManager logger = new LoggingManager(GodFather.class.getName());
 
     public GodFather(Player player) {
         super(player);
     }
 
+    /**
+     * godfather decide which citizen is going to be killed
+     */
     @Override
     public void start() {
         super.start();
@@ -37,9 +45,9 @@ public class GodFather extends NormalMafia {
             getPlayer().writeTxt(result);
             logger.log(result, LogLevels.INFO);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Can't convert to collection");
         }
     }
 }

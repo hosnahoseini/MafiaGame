@@ -4,18 +4,25 @@ import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
+/**
+ * A class for client with Psychologist role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Psychologist extends ClientWithRole {
     public Psychologist(Player player) {
         super(player);
     }
 
+    /**
+     * Psychologist decide if he wants to mute s.o. for next turn
+     */
     @Override
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
-        Scanner scanner = new Scanner(System.in);
         String result = getPlayer().writeWithExit(getPlayer());
         getPlayer().writeTxt(result);
         if(result.equals("y"))
@@ -34,9 +41,9 @@ public class Psychologist extends ClientWithRole {
                 }
                 getPlayer().writeTxt(name);
             } catch (IOException e) {
-                e.printStackTrace();
+                System.err.println("some thing wrong in reading array list of choices from server");
             } catch (ClassNotFoundException e) {
-                e.printStackTrace();
+                System.err.println("Can't convert to array list");
             }
     }
 }

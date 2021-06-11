@@ -2,14 +2,22 @@ package org.HO.Client.Role;
 
 import org.HO.Player;
 
-import java.util.Scanner;
-
+/**
+ * A class for client with die hard role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Diehard extends ClientWithRole {
     private static int n = 0;
+    //TODO:remove n
     public Diehard(Player player) {
         super(player);
     }
 
+    /**
+     * die hard decide to request for inquire or not
+     */
     @Override
     public void start() {
         super.start();

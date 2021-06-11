@@ -1,17 +1,24 @@
 package org.HO.Client.Role;
 
-import org.HO.Logger.LogLevels;
 import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
+/**
+ * A class for client with dr city role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 
 public class DrCity extends ClientWithRole {
     public DrCity(Player player) {
         super(player);
     }
 
+    /**
+     * dr city heal one citizen if its possible
+     */
     @Override
     public void start() {
         super.start();
@@ -37,9 +44,9 @@ public class DrCity extends ClientWithRole {
                     if (check.equals("thanks"))
                         break;
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.err.println("some thing wrong in reading array list of choices from server");
                 } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
+                    System.err.println("Can't convert to array list");
                 }
             }
         }else {

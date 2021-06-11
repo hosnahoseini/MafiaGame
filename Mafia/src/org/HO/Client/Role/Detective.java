@@ -4,13 +4,20 @@ import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
+/**
+ * A class for client with detective role
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class Detective extends ClientWithRole {
     public Detective(Player player) {
         super(player);
     }
 
+    /**
+     * detective start to guess
+     */
     @Override
     public void start() {
         super.start();
@@ -30,9 +37,9 @@ public class Detective extends ClientWithRole {
             getPlayer().writeTxt(name);
             System.out.println(getPlayer().readTxt());
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Can't convert to array list");
         }
     }
 }
