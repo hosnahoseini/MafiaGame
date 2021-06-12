@@ -32,25 +32,15 @@ public class ReadThread implements Runnable {
 
             if (message.equalsIgnoreCase(end) || message.equals("Chat time ended") || message.equals("end")) break;
 
-//            if (chatTimeEndedHandler(message)) break;
 
             if (exitMessageHandler(message)) break;
 
             System.out.println(message);
 
         } while (true);
-        System.out.println("END READ");
-//        Thread.currentThread().interrupt();
 
     }
 
-    private boolean chatTimeEndedHandler(String message) {
-        if (message.equals("Chat time ended")) {
-            System.out.println(message);
-            return true;
-        }
-        return false;
-    }
 
     private boolean exitMessageHandler(String message) {
         if (message.equals(player.getName() + " exit")) {

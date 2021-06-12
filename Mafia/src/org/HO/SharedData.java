@@ -34,10 +34,6 @@ public class SharedData {
     private SharedData() {
         killedPlayers = new ArrayList<>();
         players = new LinkedBlockingQueue<>();
-//        numberOfNormalMafias = 1;
-//        numberOfNormalPeople = 0;
-        numberOfNormalMafias = (numberOfPlayers / 3) - 2;
-        numberOfNormalPeople = numberOfPlayers - numberOfNormalMafias - 8;
     }
 
     /**
@@ -169,5 +165,11 @@ public class SharedData {
         killedByProfessional = null;
         killedInquired = false;
         mute = null;
+    }
+
+    public void calculateNumbers() {
+        numberOfNormalMafias = (numberOfPlayers / 3) - 2;
+        numberOfNormalPeople = numberOfPlayers - numberOfNormalMafias - 8;
+        System.out.println(numberOfNormalMafias + ", " + numberOfNormalPeople);
     }
 }

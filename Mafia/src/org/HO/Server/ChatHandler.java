@@ -36,9 +36,6 @@ public class ChatHandler implements Runnable {
     public void run() {
         String clientMessage;
 
-//        if (player.readTxt().equals("y"))
-//            previousChats(player);
-
         do {
             clientMessage = readWithExit(player);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
@@ -98,7 +95,7 @@ public class ChatHandler implements Runnable {
      */
     private void previousChats(Player player) {
         String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
-        chatBox += "\n------------";
+        chatBox += "\n----END!----\n";
         player.writeTxt(chatBox);
     }
 

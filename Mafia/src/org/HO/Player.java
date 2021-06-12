@@ -199,18 +199,14 @@ public class Player implements Serializable{
     }
 
     /**
-     * get input from client and check exit
-     * @param player client
-     * @return input
+     * check if input is exit and handle it
+     * @param input input
      */
-    public String writeWithExit(Player player){
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+    public void checkIfInputISExit(String input){
         if(input.equals("exit")) {
-            player.writeTxt("exit");
-            removePlayer(player);
+            this.writeTxt("exit");
+            removePlayer(this);
         }
-        return input;
     }
 
     /**

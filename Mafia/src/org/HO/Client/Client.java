@@ -63,7 +63,7 @@ public class Client {
     private void gameLoop() {
         do {
             ReceiveUntilGetMsg("CHAT TIME");
-
+            System.out.println("~~~CHAT STARTED~~~");
             startChat();
 
             waitUntilRecivingMsg("POLL");
@@ -101,6 +101,7 @@ public class Client {
             if (!player.isAlive())
                 break;
 
+            System.out.println("~~~last night events~~~");
         } while (true);
     }
 
@@ -141,7 +142,6 @@ public class Client {
                 running = false;
                 if (validInput(poll, vote)) {
                     player.writeTxt(vote);
-                    System.out.println("send this vote to server " + vote);
                 } else
                     player.writeTxt("");
                 timer.cancel();
@@ -157,6 +157,7 @@ public class Client {
                         return;
                 }
                 vote = scanner.readLine();
+                player.checkIfInputISExit(vote);
                 if (!validInput(poll, vote)) {
                     System.out.println("Invalid input!Try again");
                     vote = "";
@@ -165,8 +166,10 @@ public class Client {
 
             }
 
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            System.err.println("");
         }
     }
 
@@ -186,8 +189,6 @@ public class Client {
             return;
         }
 
-//        previousChat();
-
         Thread read = new Thread(new ReadThread(player));
         Thread write = new WriteThread(player);
         write.start();
@@ -202,23 +203,6 @@ public class Client {
 
     }
 
-    private void previousChat() {
-        System.out.println("Do you want to see previous chats?(y/n)");
-        String result = scanner.next();
-        player.writeTxt(result);
-        if (result.equals("y")) {
-            ArrayList<String> currentChats = new ArrayList<>();
-            String chat;
-            while (!(chat = player.readTxt()).contains("--CHAT BOX--"))
-                currentChats.add(chat);
-            System.out.println(chat);
-            System.out.println("----END!----");
-            for (String s : currentChats)
-                System.out.println(s);
-        }
-    }
-
-
     /**
      * receive and print any message that comes from server until receiving specific message
      *
@@ -229,11 +213,10 @@ public class Client {
             String input = player.readTxt();
             if (input != null) {
                 logger.log(player.getName() + " read " + input, LogLevels.INFO);
-                if (!input.equals("NIGHT") && !input.equals("MORNING"))
-                    System.out.println("->" + input);
                 if (input.equals(msg)) {
                     break;
-                }
+                }else
+                    System.out.println(input);
                 receiverKilledMessage(input);
                 receiverMuteMessage(input);
                 receiverWinner(input);
@@ -295,7 +278,7 @@ public class Client {
         while (true) {
             String input = player.readTxt();
             if (input.equals(msg)) {
-                System.out.println(msg);
+                System.out.println("~~~" + msg + "~~~");
                 logger.log("read" + msg, LogLevels.INFO);
                 break;
             }

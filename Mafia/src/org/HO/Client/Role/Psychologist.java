@@ -23,9 +23,10 @@ public class Psychologist extends ClientWithRole {
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
-        String result = getPlayer().writeWithExit(getPlayer());
-        getPlayer().writeTxt(result);
-        if(result.equals("y"))
+        vote = "n";
+        getYesOrNoInput();
+        getPlayer().writeTxt(vote);
+        if(vote.equals("y"))
             try {
                 System.out.println(getPlayer().readTxt());
                 ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();

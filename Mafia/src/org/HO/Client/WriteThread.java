@@ -53,7 +53,6 @@ public class WriteThread extends Thread {
                 player.writeTxt(str);
                 logger.log("writer write " + str , LogLevels.INFO);
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);
-            System.out.println("END WRITE");
             timer.cancel();
 
         } catch (Exception e) {

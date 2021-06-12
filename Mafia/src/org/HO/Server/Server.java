@@ -28,6 +28,7 @@ public class Server {
 
     public Server(int numberOfPlayers) {
         sharedData.numberOfPlayers = numberOfPlayers;
+        sharedData.calculateNumbers();
     }
 
     public Server(SharedData sharedData) {
@@ -65,6 +66,11 @@ public class Server {
      * announce winner to players
      */
     private void announceWinner() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         sendMessageToAllClients("Game ended");
         sendMessageToAllClients(sharedData.winner + " are the winners");
         sendMessageToAllClients("BYE");

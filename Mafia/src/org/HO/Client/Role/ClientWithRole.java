@@ -95,6 +95,7 @@ public abstract class ClientWithRole {
                         return;
                 }
                 vote = scanner.readLine();
+                player.checkIfInputISExit(vote);
                 if (!validInput(poll, vote)) {
                     System.out.println("Invalid input!Try again");
                     vote = "";
@@ -105,6 +106,43 @@ public abstract class ClientWithRole {
                 }
 
             }
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getYesOrNoInput(){
+        running = true;
+        Timer timer = new Timer();
+        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                running = false;
+                System.out.println("time ended");
+                getPlayer().writeTxt(vote);
+                timer.cancel();
+            }
+        };
+
+        timer.schedule(task, 5000);
+        try {
+            while (running) {
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running) {
+                        return;
+                    }
+                }
+                vote = scanner.readLine();
+                player.checkIfInputISExit(vote);
+                System.out.println("thanks");
+                getPlayer().writeTxt(vote);
+                timer.cancel();
+                break;
+            }
+
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

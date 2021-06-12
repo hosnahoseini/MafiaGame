@@ -34,7 +34,6 @@ public class DrLecter extends Mafia {
                     getInput(mafias);
                     getPlayer().writeTxt(vote);
                     String check = getPlayer().readTxt();
-                    System.out.println(check);
                         break;
                 } catch (IOException e) {
                     System.err.println("some thing wrong in reading array list of choices from server");

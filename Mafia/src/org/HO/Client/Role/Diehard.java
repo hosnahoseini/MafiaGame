@@ -22,9 +22,10 @@ public class Diehard extends ClientWithRole {
     public void start() {
         super.start();
         System.out.println(getPlayer().readTxt());
-        String result = getPlayer().writeWithExit(getPlayer());
-        if(n <= 1 && result.equals("y"))
-            getPlayer().writeTxt(result);
+        vote = "n";
+        getYesOrNoInput();
+        if(n <= 1 && vote.equals("y"))
+            getPlayer().writeTxt(vote);
         else{
             System.out.println("you can't inquire any more");
             getPlayer().writeTxt("n");
