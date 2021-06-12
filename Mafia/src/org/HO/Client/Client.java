@@ -72,9 +72,21 @@ public class Client {
 
             waitUntilRecivingMsg("POLL");
 
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             voteForMorningPoll();
 
             waitUntilRecivingMsg("VOTING TIME ENDED");
+
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
             showPollResult();
 
@@ -105,91 +117,91 @@ public class Client {
         System.out.println(poll);
 
     }
-    private void voteForMorningPoll() {
-        try {
-            logger.log("start poll " + player.getName(), LogLevels.INFO);
-            System.out.println(player.readTxt());
-            Collection<Player> poll = (Collection<Player>) player.getInObj().readObject();
-            logger.log("receive poll " + player.getName(), LogLevels.INFO);
-            for (Player player : poll)
-                System.out.println(player);
-            final String[] vote = new String[1];
-            while (true) {
-                System.out.println("Enter your vote");
-                vote[0] = player.writeWithExit(player);
-                if (vote[0].equals(player.getName()))
-                    System.out.println("You can't vote to your self try another player");
-                else if (!validInput(poll, vote[0]))
-                    System.out.println("Invalid input");
-                else
-                    break;
-
-            }
-            System.out.println("thanks");
-            player.writeTxt(vote[0]);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 //    private void voteForMorningPoll() {
 //        try {
 //            logger.log("start poll " + player.getName(), LogLevels.INFO);
-//
 //            System.out.println(player.readTxt());
 //            Collection<Player> poll = (Collection<Player>) player.getInObj().readObject();
 //            logger.log("receive poll " + player.getName(), LogLevels.INFO);
 //            for (Player player : poll)
 //                System.out.println(player);
+//            final String[] vote = new String[1];
+//            while (true) {
+//                System.out.println("Enter your vote");
+//                vote[0] = player.writeWithExit(player);
+//                if (vote[0].equals(player.getName()))
+//                    System.out.println("You can't vote to your self try another player");
+//                else if (!validInput(poll, vote[0]))
+//                    System.out.println("Invalid input");
+//                else
+//                    break;
 //
-//            vote(poll);
+//            }
+//            System.out.println("thanks");
+//            player.writeTxt(vote[0]);
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        } catch (ClassNotFoundException e) {
 //            e.printStackTrace();
 //        }
 //    }
-//
-//    private void vote(Collection<Player> poll) {
-//        running = true;
-//        Timer timer = new Timer();
-//        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
-//        TimerTask task = new TimerTask() {
-//            @Override
-//            public void run() {
-//                running = false;
-//                if (validInput(poll, vote)) {
-//                    player.writeTxt(vote);
-//                    System.out.println(vote);
-//                }
-//                else
-//                    player.writeTxt("");
-//                timer.cancel();
-//            }
-//        };
-//
-//        timer.schedule(task, 20000);
-//        try {
-//            while (running) {
-//                while (!scanner.ready()) {
-//                    Thread.sleep(50);
-//                    if (!running)
-//                        return;
-//                }
-//                vote = scanner.readLine();
-//                if (!validInput(poll, vote)) {
-//                    System.out.println("Invalid input!Try again");
-//                    vote = "";
-//                }else
-//                    System.out.println("thanks");
-//
-//            }
-//
-//        } catch (IOException | InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    private void voteForMorningPoll() {
+        try {
+            logger.log("start poll " + player.getName(), LogLevels.INFO);
+
+            System.out.println(player.readTxt());
+            Collection<Player> poll = (Collection<Player>) player.getInObj().readObject();
+            logger.log("receive poll " + player.getName(), LogLevels.INFO);
+            for (Player player : poll)
+                System.out.println(player);
+
+            vote(poll);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void vote(Collection<Player> poll) {
+        running = true;
+        Timer timer = new Timer();
+        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                running = false;
+                if (validInput(poll, vote)) {
+                    player.writeTxt(vote);
+                    System.out.println("send this vote to server " + vote);
+                }
+                else
+                    player.writeTxt("");
+                timer.cancel();
+            }
+        };
+
+        timer.schedule(task, 20000);
+        try {
+            while (running) {
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running)
+                        return;
+                }
+                vote = scanner.readLine();
+                if (!validInput(poll, vote)) {
+                    System.out.println("Invalid input!Try again");
+                    vote = "";
+                }else
+                    System.out.println("thanks");
+
+            }
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     private boolean validInput(Collection<Player> choices, String name) {
         for (Player player : choices)
@@ -249,12 +261,12 @@ public class Client {
         while (true) {
             String input = player.readTxt();
             logger.log(player.getName() + " read " + input, LogLevels.INFO);
-            if(msg == "MORNING") {
+            if(msg.equals("MORNING")) {
                 System.out.println("█▄ ▄█ ▄▀▀▄ █▀▄ █▄ █ █ █▄ █ ▄▀▀\n" +
                         "█ ▀ █ █  █ ██▀ █ ▀█ █ █ ▀█ █ ▀█\n" +
                         "▀   ▀  ▀▀  ▀ ▀ ▀  ▀ ▀ ▀  ▀ ▀▀▀▀");
             }
-            else if(msg == "NIGHT") {
+            else if(msg.equals("NIGHT")) {
                 System.out.println("     ██▀██▀█▀█▀▀██▀█▀█▀▀▀█\n" +
                         "     ██─▄▀─█─█─█▀█─▄─██─██\n" +
                         "     ██▄██▄█▄█▄▄▄█▄█▄██▄██ ");
@@ -323,7 +335,7 @@ public class Client {
         while (true) {
             String input = player.readTxt();
             if (input.equals(msg)) {
-                System.out.println(msg + System.currentTimeMillis() / 1000);
+                System.out.println(msg);
                 logger.log("read" + msg, LogLevels.INFO);
                 break;
             }

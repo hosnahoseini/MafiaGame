@@ -30,7 +30,7 @@ public class ReadThread implements Runnable {
             message = player.readTxt();
             logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
 
-            if (message.equalsIgnoreCase(end) || message.equals("Chat time ended")) break;
+            if (message.equalsIgnoreCase(end) || message.equals("Chat time ended") || message.equals("end")) break;
 
 //            if (chatTimeEndedHandler(message)) break;
 

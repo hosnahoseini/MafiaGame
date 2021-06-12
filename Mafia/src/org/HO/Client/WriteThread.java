@@ -1,5 +1,6 @@
 package org.HO.Client;
 
+import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
 
@@ -25,6 +26,7 @@ public class WriteThread extends Thread {
         @Override
         public void run() {
             running = false;
+            player.writeTxt("end");
 //            timer.cancel();
         }
     };
@@ -38,16 +40,18 @@ public class WriteThread extends Thread {
     public void run() {
         try {
             Timer timer = new Timer();
-            timer.schedule(task, 10 * 1000);
+            timer.schedule(task, 19 * 1000);
             do {
                 while (!scanner.ready()) {
-                    Thread.sleep(50);
-                    if (!running)
+                    Thread.sleep(5);
+                    if (!running){
+                        System.out.println("end write");
                         return;
+                    }
                 }
                 str = scanner.readLine();
                 player.writeTxt(str);
-
+                logger.log("writer write " + str , LogLevels.INFO);
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);
             System.out.println("END WRITE");
             timer.cancel();

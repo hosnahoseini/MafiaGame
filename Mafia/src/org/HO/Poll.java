@@ -32,7 +32,7 @@ public class Poll implements Serializable {
      * @param vote  vote
      * @param voter player who voted
      */
-    public void vote(String vote, Player voter) {
+    public synchronized void vote(String vote, Player voter) {
 
         for (Player choice : poll.keySet())
             if (choice.getName().equals(vote)) {
@@ -67,13 +67,16 @@ public class Poll implements Serializable {
      * @return result in form choice : [players who voted for this choice separated by " "]
      */
     public String getPollResult() {
-        String result = "";
+        String result = "┌────────┬──────────────────────────\n" +
+                "| player |           voters             \n" +
+                "├────────┼──────────────────────────\n";
         for (Player player : poll.keySet()) {
-            result += (player.getName() + " : [ ");
+            result += (String.format("|%4s    |", player.getName()));
             for (Player voters : poll.get(player))
-                result += (voters.getName() + " ");
-            result += ("]\n");
+                result += (" " + voters.getName());
+            result += ("\n├────────┼──────────────────────────\n");
         }
+        result += "└────────┴──────────────────────────\n";
         return result;
     }
 

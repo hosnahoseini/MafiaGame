@@ -62,14 +62,19 @@ public class ChatHandler implements Runnable {
                 break;
             }
 
+            if(clientMessage.equals("end")) {
+                broadcast("end");
+                break;
+            }
+
             fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             broadcast(serverMessage);
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
         } while (true);
 
-        Thread.currentThread().interrupt();
         System.out.println(player  + " chat  handler ended");
+        Thread.currentThread().interrupt();
     }
 
     /**

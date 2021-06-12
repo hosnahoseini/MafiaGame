@@ -10,6 +10,8 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -89,8 +91,11 @@ public class Server {
 
             Poll morningPoll = executeMorningPolling();
 
-            sendMessageToAllClients("VOTING TIME ENDED");
-
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             sendPollResultToAllClients(morningPoll);
 
             AskMayorForPoll();
@@ -497,12 +502,25 @@ public class Server {
     private Poll executePoll(Collection<Player> choices, Collection<Player> voters) {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(choices);
+        long start = System.currentTimeMillis();
         for (Player player : voters) {
             pool.execute(new PollHandler(poll, player));
         }
+//        while (true){
+//            if(System.currentTimeMillis() - start >= 20050){
+//                sendMessageToAllClients("VOTING TIME ENDED");
+//                break;
+//            }
+//            try {
+//                Thread.sleep(5);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
         try {
             pool.shutdown();
-            pool.awaitTermination(23000, TimeUnit.SECONDS);
+            if(pool.awaitTermination(20050, TimeUnit.MILLISECONDS));
+            sendMessageToAllClients("VOTING TIME ENDED");
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -605,9 +623,11 @@ public class Server {
         }
         try {
             pool.shutdown();
-            boolean result = pool.awaitTermination(10, TimeUnit.SECONDS);
-            if (!result)
+            boolean result = pool.awaitTermination(20000, TimeUnit.MILLISECONDS);
+//            pool.shutdownNow();
+            if (!result) {
                 sendMessageToAllClients("Chat time ended");
+            }
             System.out.println("END CHAT");
         } catch (InterruptedException e) {
             e.printStackTrace();

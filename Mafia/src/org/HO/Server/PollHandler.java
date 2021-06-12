@@ -35,12 +35,14 @@ public class PollHandler implements Runnable{
                 player.getOutObj().writeObject(poll.getPoll().keySet());
                 logger.log("write poll to " + player.getName(), LogLevels.INFO);
                 String vote = readWithExit(player);
+                System.out.println("receive vote->" + vote + "from player ->" + player);
                 if (vote.equals("exit")) {
                     removePlayer(player);
                     //Thread.currentThread().interrupt();
                 } else {
                     poll.vote(vote, player);
-                    logger.log(player.getName() + " vote to " + vote, LogLevels.INFO);
+                    System.out.println("current poll res\n" + poll.getPollResult());
+//                    System.out.println(player.getName() + " vote to " + vote);
                 }
             }catch (IOException e) {
                 e.printStackTrace();
