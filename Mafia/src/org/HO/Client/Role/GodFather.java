@@ -34,16 +34,10 @@ public class GodFather extends Mafia {
             Collection <Player> poll = (Collection<Player>) getPlayer().getInObj().readObject();
             String pollResult = getPlayer().readTxt();
             System.out.println(pollResult);
-            String result;
-            while (true) {
-                result = getPlayer().writeWithExit(getPlayer());
-                if (!validInput(poll, result))
-                    System.out.println("Invalid input, try again");
-                else
-                    break;
-            }
-            getPlayer().writeTxt(result);
-            logger.log(result, LogLevels.INFO);
+            getInput(poll);
+
+            getPlayer().writeTxt(vote);
+            logger.log(vote, LogLevels.INFO);
         } catch (IOException e) {
             System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {

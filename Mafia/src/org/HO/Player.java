@@ -166,8 +166,6 @@ public class Player implements Serializable{
     public boolean isReadyToPlay() {
         return readyToPlay;
     }
-
-
     public void setName(String name) {
         this.name = name;
     }

@@ -31,18 +31,10 @@ public class DrLecter extends Mafia {
                     ArrayList<Player> mafias = (ArrayList<Player>) getPlayer().getInObj().readObject();
                     for (Player player : mafias)
                         System.out.println(player.getName());
-                    String name;
-                    while (true) {
-                        name = getPlayer().writeWithExit(getPlayer());
-                        if (!validInput(mafias, name))
-                            System.out.println("Invalid input, try again");
-                        else
-                            break;
-                    }
-                    getPlayer().writeTxt(name);
+                    getInput(mafias);
+                    getPlayer().writeTxt(vote);
                     String check = getPlayer().readTxt();
                     System.out.println(check);
-                    if (check.equals("thanks"))
                         break;
                 } catch (IOException e) {
                     System.err.println("some thing wrong in reading array list of choices from server");

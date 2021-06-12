@@ -67,16 +67,16 @@ public class Poll implements Serializable {
      * @return result in form choice : [players who voted for this choice separated by " "]
      */
     public String getPollResult() {
-        String result = "┌────────┬──────────────────────────\n" +
-                "| player |           voters             \n" +
-                "├────────┼──────────────────────────\n";
+        String result = "────────┬──────────────────────────\n" +
+                " player |           voters             \n" +
+                "────────┼──────────────────────────\n";
         for (Player player : poll.keySet()) {
-            result += (String.format("|%4s    |", player.getName()));
+            result += (String.format("%4s    |", player.getName()));
             for (Player voters : poll.get(player))
                 result += (" " + voters.getName());
-            result += ("\n├────────┼──────────────────────────\n");
+            result += ("\n────────┼──────────────────────────\n");
         }
-        result += "└────────┴──────────────────────────\n";
+        result += "────────┴──────────────────────────\n";
         return result;
     }
 

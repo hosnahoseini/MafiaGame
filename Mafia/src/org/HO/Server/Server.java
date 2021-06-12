@@ -10,8 +10,6 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -47,7 +45,7 @@ public class Server {
 
         resetChatBox("chatBox.txt");
 
-        waitUntilEveryOneReady();
+        waitUntilEveryOneReadyToPlay();
 
         introducing();
 
@@ -91,11 +89,6 @@ public class Server {
 
             Poll morningPoll = executeMorningPolling();
 
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             sendPollResultToAllClients(morningPoll);
 
             AskMayorForPoll();
@@ -173,9 +166,10 @@ public class Server {
      * announce who are still alive
      */
     private void alivePlayerUpdate() {
-        events.add("Alive players:\n");
+        events.add("Alive players:");
         for (Player player : sharedData.getAlivePlayers())
             events.add(player.getName());
+        events.add("------------");
     }
 
     /**
@@ -313,7 +307,8 @@ public class Server {
                 }
                 String name = readWithExit(psychologist);
                 Player player = sharedData.findPlayerWithName(name);
-                player.setMute(true);
+                if (player != null)
+                    player.setMute(true);
                 sharedData.mute = player;
             }
 
@@ -356,11 +351,13 @@ public class Server {
                 detective.getOutObj().writeObject(sharedData.getAlivePlayers());
                 String name = readWithExit(detective);
                 Player player = sharedData.findPlayerWithName(name);
-                if (player.isMafia() && (player.getRole() != PlayerRole.GOD_FATHER))
-                    detective.writeTxt("he / she is mafia");
-                else
-                    detective.writeTxt("he / she is NOT mafia");
-
+                if (player != null) {
+                    if (player.isMafia() && (player.getRole() != PlayerRole.GOD_FATHER))
+                        detective.writeTxt("he / she is mafia");
+                    else
+                        detective.writeTxt("he / she is NOT mafia");
+                } else
+                    detective.writeTxt(":(");
             } catch (IOException e) {
                 System.err.println("Can't send players name to detective");
             }
@@ -390,10 +387,12 @@ public class Server {
                             drCity.writeTxt("thanks");
 
                             sharedData.healedCitizen = sharedData.findPlayerWithName(name);
-                            sharedData.healedCitizen.heal();
-                            if (sharedData.healedCitizen.getRole() == PlayerRole.DIE_HARD
-                                    && sharedData.killedByMafias.getRole() == PlayerRole.DIE_HARD)
-                                sharedData.numberOfKillDieHard--;
+                            if (sharedData.healedCitizen != null) {
+                                sharedData.healedCitizen.heal();
+                                if (sharedData.healedCitizen.getRole() == PlayerRole.DIE_HARD
+                                        && sharedData.killedByMafias.getRole() == PlayerRole.DIE_HARD)
+                                    sharedData.numberOfKillDieHard--;
+                            }
                             break;
                         }
                     } catch (IOException e) {
@@ -429,6 +428,7 @@ public class Server {
                             drLecter.writeTxt("thanks");
 
                             sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                            if(sharedData.healedMafia != null)
                             sharedData.healedMafia.heal();
                             break;
                         }
@@ -458,7 +458,9 @@ public class Server {
 
                 String killedName = godFather.readTxt();
                 logger.log("read god father choice" + killedName, LogLevels.INFO);
-                sharedData.killedByMafias = sharedData.findPlayerWithName(killedName);
+                Player player = sharedData.findPlayerWithName(killedName);
+                if(player != null)
+                sharedData.killedByMafias = player;
             } catch (IOException e) {
                 System.err.println("Can't send mafias poll choices to godfather");
             }
@@ -506,20 +508,10 @@ public class Server {
         for (Player player : voters) {
             pool.execute(new PollHandler(poll, player));
         }
-//        while (true){
-//            if(System.currentTimeMillis() - start >= 20050){
-//                sendMessageToAllClients("VOTING TIME ENDED");
-//                break;
-//            }
-//            try {
-//                Thread.sleep(5);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
+
         try {
             pool.shutdown();
-            if(pool.awaitTermination(20050, TimeUnit.MILLISECONDS));
+            if (pool.awaitTermination(20050, TimeUnit.MILLISECONDS)) ;
             sendMessageToAllClients("VOTING TIME ENDED");
 
         } catch (InterruptedException e) {
@@ -539,10 +531,12 @@ public class Server {
             mayor.writeTxt("YOUR TURN");
             mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
             String result = readWithExit(mayor);
+            System.out.println("server reads " + result);
             if (result.equals("y")) {
                 sharedData.killed = null;
                 sendMessageToAllClients("Mayor canceled poll");
             } else {
+                System.out.println("kill");
                 removePlayer(sharedData.killed);
                 sendMessageToAllClients(sharedData.killed + " killed");
             }
@@ -583,6 +577,11 @@ public class Server {
      */
     private Poll executeMorningPolling() {
         Poll poll = executePoll(sharedData.getAlivePlayers(), sharedData.getAlivePlayers());
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         sharedData.killed = poll.winner();
         return poll;
     }
@@ -623,7 +622,7 @@ public class Server {
         }
         try {
             pool.shutdown();
-            boolean result = pool.awaitTermination(20000, TimeUnit.MILLISECONDS);
+            boolean result = pool.awaitTermination(20050, TimeUnit.MILLISECONDS);
 //            pool.shutdownNow();
             if (!result) {
                 sendMessageToAllClients("Chat time ended");
@@ -650,7 +649,7 @@ public class Server {
     /**
      * server wait until all clients join game
      */
-    private void waitUntilEveryOneReady() {
+    private void waitUntilEveryOneReadyToPlay() {
         while (true) {
             if (checkIfEveryOneISReady())
                 break;
@@ -716,6 +715,7 @@ public class Server {
 
     /**
      * read message from client and check if he wants to exit or disconnected
+     *
      * @param player client
      * @return message
      */

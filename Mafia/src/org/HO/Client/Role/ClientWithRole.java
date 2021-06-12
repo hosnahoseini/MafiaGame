@@ -1,9 +1,14 @@
 package org.HO.Client.Role;
 
+import org.HO.Client.Client;
 import org.HO.Player;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Collection;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * A class for client considering it role to do his own tasks
@@ -14,6 +19,8 @@ import java.util.Collection;
 public abstract class ClientWithRole {
 
     private Player player;
+    protected boolean running = true;
+    protected String vote;
 
     public ClientWithRole(Player player) {
         this.player = player;
@@ -44,7 +51,7 @@ public abstract class ClientWithRole {
         while (true) {
             String input = null;
             input = player.readTxt();
-            if (input.equals(msg)) {
+            if (input.equals(msg) && input!=null) {
                 System.out.println(msg);
                 break;
             }
@@ -63,5 +70,44 @@ public abstract class ClientWithRole {
             if (player.getName().equalsIgnoreCase(name))
                 return true;
         return false;
+    }
+
+    public void getInput(Collection<Player> poll) {
+        vote = "";
+        running = true;
+        Timer timer = new Timer();
+        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                running = false;
+                System.out.println("time ended");
+                timer.cancel();
+            }
+        };
+
+        timer.schedule(task, 5000);
+        try {
+            while (running) {
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running)
+                        return;
+                }
+                vote = scanner.readLine();
+                if (!validInput(poll, vote)) {
+                    System.out.println("Invalid input!Try again");
+                    vote = "";
+                }else {
+                    System.out.println("thanks");
+                    timer.cancel();
+                    break;
+                }
+
+            }
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

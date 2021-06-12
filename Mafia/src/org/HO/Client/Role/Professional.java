@@ -31,15 +31,8 @@ public class Professional extends ClientWithRole {
             ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();
             for (Player player : players)
                 System.out.println(player.getName());
-            String name ;
-            while (true) {
-                name = getPlayer().writeWithExit(getPlayer());
-                if (!validInput(players, name))
-                    System.out.println("Invalid input, try again");
-                else
-                    break;
-            }
-            getPlayer().writeTxt(name);
+            getInput(players);
+            getPlayer().writeTxt(vote);
         } catch (IOException e) {
             System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {

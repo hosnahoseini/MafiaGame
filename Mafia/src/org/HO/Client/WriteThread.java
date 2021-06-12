@@ -27,7 +27,7 @@ public class WriteThread extends Thread {
         public void run() {
             running = false;
             player.writeTxt("end");
-//            timer.cancel();
+            timer.cancel();
         }
     };
 
@@ -40,7 +40,7 @@ public class WriteThread extends Thread {
     public void run() {
         try {
             Timer timer = new Timer();
-            timer.schedule(task, 19 * 1000);
+            timer.schedule(task, 20 * 1000);
             do {
                 while (!scanner.ready()) {
                     Thread.sleep(5);
