@@ -47,7 +47,7 @@ public class ReadThread implements Runnable {
             System.out.println(player.readTxt());
             Scanner scanner = new Scanner(System.in);
             String result = scanner.next();
-            player.writeTxt(result);
+            player.writeTxtClient(result);
             if (result.equals("n")) {
                 player.close();
                 System.exit(5);

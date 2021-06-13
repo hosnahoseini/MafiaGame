@@ -19,15 +19,14 @@ import java.util.ArrayList;
 public class ChatHandler implements Runnable {
 
     private Player player;
-    private ArrayList<Player> writers;
     private ArrayList<Player> readers;
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
     private FileUtils fileUtils = new FileUtils();
     private ServerOutputHandling serverOutputHandling = new ServerOutputHandling();
+    private boolean disconnect = false;
 
     public ChatHandler(Player player) {
-        writers = sharedData.getAlivePlayers();
         readers = sharedData.getPlayers();
         this.player = player;
         logger.log("New player use chat handler", LogLevels.INFO);
@@ -38,6 +37,7 @@ public class ChatHandler implements Runnable {
         String clientMessage;
 
         do {
+            readers = sharedData.getPlayers();
             clientMessage = serverOutputHandling.readWithExit(player);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
@@ -45,7 +45,6 @@ public class ChatHandler implements Runnable {
             if (clientMessage.equalsIgnoreCase("done")) {
                 serverMessage = player.getName() + " left chat";
                 broadcast(serverMessage);
-                writers.remove(player);
                 readers.remove(player);
                 break;
 
@@ -53,7 +52,6 @@ public class ChatHandler implements Runnable {
 
             if (clientMessage.equals("exit")) {
                 serverMessage = player.getName() + " exit";
-                writers.remove(player);
                 readers.remove(player);
                 broadcast(serverMessage);
                 serverOutputHandling.removePlayer(player);
@@ -74,6 +72,9 @@ public class ChatHandler implements Runnable {
             fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             broadcast(serverMessage);
+            if(disconnect)
+                break;
+
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
         } while (true);
 
@@ -87,8 +88,16 @@ public class ChatHandler implements Runnable {
      * @param msg message
      */
     public void broadcast(String msg) {
-        for (Player player : readers)
-            player.writeTxt(msg);
+        for (Player player : readers) {
+            try {
+                player.writeTxt(msg);
+            } catch (SocketException e) {
+                player.close();
+                sharedData.players.remove(player);
+                readers.remove(player);
+                disconnect = true;
+            }
+        }
     }
 
     /**
@@ -99,7 +108,12 @@ public class ChatHandler implements Runnable {
     private void previousChats(Player player) {
         String chatBox = fileUtils.fileReaderByBuffer("chatBox.txt");
         chatBox += "\n----END!----\n";
-        player.writeTxt(chatBox);
+        try {
+            player.writeTxt(chatBox);
+        } catch (SocketException e) {
+            player.close();
+            sharedData.players.remove(player);
+        }
     }
 
     /**

@@ -62,7 +62,7 @@ public class Server {
         for (Player player : sharedData.killedPlayers)
             player.close();
         for (Player player : sharedData.players)
-            if(player.isAlive())
+            if (player.isAlive())
                 player.close();
     }
 
@@ -231,7 +231,7 @@ public class Server {
                 events.add(killed + " have been killed last night");
             } else if (!killed.isMafia()
                     && professional != null
-                    && (sharedData.healedCitizen ==  null
+                    && (sharedData.healedCitizen == null
                     || !sharedData.healedCitizen.equals(professional))) {
                 removePlayer(professional);
                 events.add(professional
@@ -290,20 +290,25 @@ public class Server {
 
         Player dieHard = sharedData.getSingleRole(PlayerRole.DIE_HARD);
         if (dieHard != null && dieHard.isAlive()) {
-            dieHard.writeTxt("YOUR TURN");
+            try {
+                dieHard.writeTxt("YOUR TURN");
 
-            dieHard.writeTxt("Do you want to know who has been killed?(y/n)");
-            String result = serverOutputHandling.readWithExit(dieHard);
-            if (result.equals("y")) {
-                if (sharedData.numberOfInquiries >= 2)
-                    dieHard.writeTxt("you can't do it any more");
-                else {
-                    dieHard.writeTxt("Okay");
-                    sharedData.killedInquired = true;
-                    sharedData.numberOfInquiries++;
+                dieHard.writeTxt("Do you want to know who has been killed?(y/n)");
+                String result = serverOutputHandling.readWithExit(dieHard);
+                if (result.equals("y")) {
+                    if (sharedData.numberOfInquiries >= 2)
+                        dieHard.writeTxt("you can't do it any more");
+                    else {
+                        dieHard.writeTxt("Okay");
+                        sharedData.killedInquired = true;
+                        sharedData.numberOfInquiries++;
+                    }
                 }
+            } catch (SocketException e) {
+                disconnectHandling(dieHard);
             }
         }
+
     }
 
     /**
@@ -312,25 +317,34 @@ public class Server {
     private void psychologistMuteSO() {
         Player psychologist = sharedData.getSingleRole(PlayerRole.PSYCHOLOGIST);
         if (psychologist != null && psychologist.isAlive()) {
-            psychologist.writeTxt("YOUR TURN");
+            try {
+                psychologist.writeTxt("YOUR TURN");
 
-            psychologist.writeTxt("Do you want to mute some one?(y/n)");
-            String result = serverOutputHandling.readWithExit(psychologist);
-            if (result.equals("y")) {
-                psychologist.writeTxt("who do you want to mute?");
-                try {
-                    psychologist.getOutObj().writeObject(sharedData.getAlivePlayers());
-                } catch (IOException e) {
-                    System.err.println("Can't send players name to psychologist");
+                psychologist.writeTxt("Do you want to mute some one?(y/n)");
+                String result = serverOutputHandling.readWithExit(psychologist);
+                if (result.equals("y")) {
+                    psychologist.writeTxt("who do you want to mute?");
+                    try {
+                        psychologist.getOutObj().writeObject(sharedData.getAlivePlayers());
+                    } catch (IOException e) {
+                        System.err.println("Can't send players name to psychologist");
+                    }
+                    String name = serverOutputHandling.readWithExit(psychologist);
+                    Player player = sharedData.findPlayerWithName(name);
+                    if (player != null)
+                        player.setMute(true);
+                    sharedData.mute = player;
+
                 }
-                String name = serverOutputHandling.readWithExit(psychologist);
-                Player player = sharedData.findPlayerWithName(name);
-                if (player != null)
-                    player.setMute(true);
-                sharedData.mute = player;
+            } catch (SocketException e) {
+                disconnectHandling(psychologist);
             }
-
         }
+    }
+
+    private void disconnectHandling(Player player) {
+        sharedData.players.remove(player);
+        player.close();
     }
 
     /**
@@ -339,21 +353,24 @@ public class Server {
     private void professionalKillMafia() {
         Player professional = sharedData.getSingleRole(PlayerRole.PROFESSIONAL);
         if (professional != null && professional.isAlive()) {
-            professional.writeTxt("YOUR TURN");
+            try {
+                professional.writeTxt("YOUR TURN");
 
-            professional.writeTxt("Do you want to kill some one?(y/n)");
-            String result = serverOutputHandling.readWithExit(professional);
-            if (result.equals("y")) {
-                professional.writeTxt("who do you want to kill?");
-                try {
-                    professional.getOutObj().writeObject(sharedData.getAlivePlayers());
-                } catch (IOException e) {
-                    System.err.println("Can't send players name to professional");
+                professional.writeTxt("Do you want to kill some one?(y/n)");
+                String result = serverOutputHandling.readWithExit(professional);
+                if (result.equals("y")) {
+                    professional.writeTxt("who do you want to kill?");
+                    try {
+                        professional.getOutObj().writeObject(sharedData.getAlivePlayers());
+                    } catch (IOException e) {
+                        System.err.println("Can't send players name to professional");
+                    }
+                    String name = serverOutputHandling.readWithExit(professional);
+                    sharedData.killedByProfessional = sharedData.findPlayerWithName(name);
                 }
-                String name = serverOutputHandling.readWithExit(professional);
-                sharedData.killedByProfessional = sharedData.findPlayerWithName(name);
+            } catch (SocketException e) {
+                disconnectHandling(professional);
             }
-
         }
     }
 
@@ -363,8 +380,8 @@ public class Server {
     private void detectiveGuess() {
         Player detective = sharedData.getSingleRole(PlayerRole.DETECTIVE);
         if (detective != null && detective.isAlive()) {
-            detective.writeTxt("YOUR TURN");
             try {
+                detective.writeTxt("YOUR TURN");
                 detective.writeTxt("Who do you want to inquire about?");
                 detective.getOutObj().writeObject(sharedData.getAlivePlayers());
                 String name = serverOutputHandling.readWithExit(detective);
@@ -376,6 +393,9 @@ public class Server {
                         detective.writeTxt("he / she is NOT mafia");
                 } else
                     detective.writeTxt(":(");
+
+            } catch (SocketException e) {
+                disconnectHandling(detective);
             } catch (IOException e) {
                 System.err.println("Can't send players name to detective");
             }
@@ -387,41 +407,45 @@ public class Server {
      */
     private void drCityHealCitizen() {
         Player drCity = sharedData.getSingleRole(PlayerRole.DR_CITY);
-        if (drCity != null && drCity.isAlive()) {
-            drCity.writeTxt("YOUR TURN");
+        if (drCity != null && drCity.isAlive())
+            try {
+                drCity.writeTxt("YOUR TURN");
 
-            //check if there is possible choice
-            if (sharedData.getCitizens().size() != 1 || drCity.getHeal() == 0) {
+                //check if there is possible choice
+                if (sharedData.getCitizens().size() != 1 || drCity.getHeal() == 0) {
 
-                drCity.writeTxt("OK");
-                while (true) {
-                    drCity.writeTxt("Who do you want to heal?");
-                    try {
-                        drCity.getOutObj().writeObject(sharedData.getCitizens());
-                        String name = serverOutputHandling.readWithExit(drCity);
-                        if (name.equals(drCity.getName()) && drCity.getHeal() == 1)
-                            drCity.writeTxt("you've already healed your self, try another player:");
-                        else {
-                            drCity.writeTxt("thanks");
+                    drCity.writeTxt("OK");
+                    while (true) {
+                        drCity.writeTxt("Who do you want to heal?");
+                        try {
+                            drCity.getOutObj().writeObject(sharedData.getCitizens());
+                            String name = serverOutputHandling.readWithExit(drCity);
+                            if (name.equals(drCity.getName()) && drCity.getHeal() == 1)
+                                drCity.writeTxt("you've already healed your self, try another player:");
+                            else {
+                                drCity.writeTxt("thanks");
 
-                            sharedData.healedCitizen = sharedData.findPlayerWithName(name);
-                            if (sharedData.healedCitizen != null) {
-                                sharedData.healedCitizen.heal();
-                                if (sharedData.healedCitizen.getRole() == PlayerRole.DIE_HARD
-                                        && sharedData.killedByMafias.getRole() == PlayerRole.DIE_HARD)
-                                    sharedData.numberOfKillDieHard--;
+                                sharedData.healedCitizen = sharedData.findPlayerWithName(name);
+                                if (sharedData.healedCitizen != null) {
+                                    sharedData.healedCitizen.heal();
+                                    if (sharedData.healedCitizen.getRole() == PlayerRole.DIE_HARD
+                                            && sharedData.killedByMafias.getRole() == PlayerRole.DIE_HARD)
+                                        sharedData.numberOfKillDieHard--;
+                                }
+                                break;
                             }
-                            break;
+                        } catch (IOException e) {
+                            System.err.println("Can't send citizens name to dr city");
                         }
-                    } catch (IOException e) {
-                        System.err.println("Can't send citizens name to dr city");
                     }
+                } else {
+                    drCity.writeTxt("you don't have choice");
                 }
-            } else {
-                drCity.writeTxt("you don't have choice");
+            } catch (SocketException e) {
+                disconnectHandling(drCity);
             }
-        }
     }
+
 
     /**
      * ask dr lecter who is gonna be healed
@@ -429,33 +453,37 @@ public class Server {
     private void drLecterHealMafia() {
         Player drLecter = sharedData.getSingleRole(PlayerRole.DR_LECTER);
         if (drLecter != null && drLecter.isAlive()) {
-            drLecter.writeTxt("YOUR TURN");
+            try {
+                drLecter.writeTxt("YOUR TURN");
 
-            //check if there is possible choice
-            if (sharedData.getMafias().size() != 1 || drLecter.getHeal() == 0) {
+                //check if there is possible choice
+                if (sharedData.getMafias().size() != 1 || drLecter.getHeal() == 0) {
 
-                drLecter.writeTxt("OK");
-                while (true) {
-                    drLecter.writeTxt("Who do you want to heal?");
-                    try {
-                        drLecter.getOutObj().writeObject(sharedData.getMafias());
-                        String name = serverOutputHandling.readWithExit(drLecter);
-                        if (name.equals(drLecter.getName()) && drLecter.getHeal() == 1)
-                            drLecter.writeTxt("you've already healed your self, try another player:");
-                        else {
-                            drLecter.writeTxt("thanks");
+                    drLecter.writeTxt("OK");
+                    while (true) {
+                        drLecter.writeTxt("Who do you want to heal?");
+                        try {
+                            drLecter.getOutObj().writeObject(sharedData.getMafias());
+                            String name = serverOutputHandling.readWithExit(drLecter);
+                            if (name.equals(drLecter.getName()) && drLecter.getHeal() == 1)
+                                drLecter.writeTxt("you've already healed your self, try another player:");
+                            else {
+                                drLecter.writeTxt("thanks");
 
-                            sharedData.healedMafia = sharedData.findPlayerWithName(name);
-                            if(sharedData.healedMafia != null)
-                            sharedData.healedMafia.heal();
-                            break;
+                                sharedData.healedMafia = sharedData.findPlayerWithName(name);
+                                if (sharedData.healedMafia != null)
+                                    sharedData.healedMafia.heal();
+                                break;
+                            }
+                        } catch (IOException e) {
+                            System.err.println("Can't send mafias name to dr lecter");
                         }
-                    } catch (IOException e) {
-                        System.err.println("Can't send mafias name to dr lecter");
                     }
+                } else {
+                    drLecter.writeTxt("you don't have choice");
                 }
-            } else {
-                drLecter.writeTxt("you don't have choice");
+            } catch (SocketException e) {
+                disconnectHandling(drLecter);
             }
         }
     }
@@ -477,8 +505,10 @@ public class Server {
                 String killedName = serverOutputHandling.readWithExit(godFather);
                 logger.log("read god father choice" + killedName, LogLevels.INFO);
                 Player player = sharedData.findPlayerWithName(killedName);
-                if(player != null)
-                sharedData.killedByMafias = player;
+                if (player != null)
+                    sharedData.killedByMafias = player;
+            } catch (SocketException e) {
+                disconnectHandling(godFather);
             } catch (IOException e) {
                 System.err.println("Can't send mafias poll choices to godfather");
             }
@@ -492,8 +522,11 @@ public class Server {
      */
     private void sendPollResultToAllClients(Poll poll) {
         for (Player player : sharedData.players) {
-            player.writeTxt(poll.getPollResult());
-            logger.log("write poll res", LogLevels.INFO);
+            try {
+                player.writeTxt(poll.getPollResult());
+            } catch (SocketException e) {
+                disconnectHandling(player);
+            }
 
         }
     }
@@ -505,7 +538,11 @@ public class Server {
      */
     private Poll executeMafiasPoll() {
         for (Player player : sharedData.getMafias()) {
-            player.writeTxt("YOUR TURN");
+            try {
+                player.writeTxt("YOUR TURN");
+            } catch (SocketException e) {
+                disconnectHandling(player);
+            }
         }
         Poll poll = executePoll(sharedData.getCitizens(), sharedData.getMafias());
         sharedData.killedByMafias = poll.winner();
@@ -546,17 +583,21 @@ public class Server {
     private void AskMayorForPoll() {
         Player mayor = sharedData.getSingleRole(PlayerRole.MAYOR);
         if (mayor != null && mayor.isAlive()) {
-            mayor.writeTxt("YOUR TURN");
-            mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
-            String result = serverOutputHandling.readWithExit(mayor);
-            System.out.println("server reads " + result);
-            if (result.equals("y")) {
-                sharedData.killed = null;
-                sendMessageToAllClients("Mayor canceled poll");
-            } else {
-                System.out.println("kill");
-                removePlayer(sharedData.killed);
-                sendMessageToAllClients(sharedData.killed + " killed");
+            try {
+                mayor.writeTxt("YOUR TURN");
+                mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
+                String result = serverOutputHandling.readWithExit(mayor);
+                System.out.println("server reads " + result);
+                if (result.equals("y")) {
+                    sharedData.killed = null;
+                    sendMessageToAllClients("Mayor canceled poll");
+                } else {
+                    System.out.println("kill");
+                    removePlayer(sharedData.killed);
+                    sendMessageToAllClients(sharedData.killed + " killed");
+                }
+            } catch (SocketException e) {
+                disconnectHandling(mayor);
             }
         }
     }
@@ -567,24 +608,26 @@ public class Server {
      * @param killed player to be removed
      */
     private void removePlayer(Player killed) {
+        try {
+            if (killed.isAlive()) {
+                sharedData.killedPlayers.add(killed);
+                killed.setAlive(false);
 
-        if (killed.isAlive()) {
-            sharedData.killedPlayers.add(killed);
-            killed.setAlive(false);
-
-            killed.writeTxt("You've been killed:(");
-            killed.writeTxt("Do you want to see rest of the game?(y/n)");
-            logger.log(killed + " killed" + killed, LogLevels.INFO);
-            String result = killed.readTxt();
-            if (result.equals("n")) {
-                sharedData.players.remove(killed);
-                killed.close();
-                try {
-                    killed.getConnection().close();
-                } catch (IOException e) {
-                    System.err.println("Some thing went wrong with Server in I/O while closing connection of player " + killed);
+                killed.writeTxt("You've been killed:(");
+                killed.writeTxt("Do you want to see rest of the game?(y/n)");
+                logger.log(killed + " killed" + killed, LogLevels.INFO);
+                String result = killed.readTxt();
+                if (result.equals("n")) {
+                    disconnectHandling(killed);
+                    try {
+                        killed.getConnection().close();
+                    } catch (IOException e) {
+                        System.err.println("Some thing went wrong with Server in I/O while closing connection of player " + killed);
+                    }
                 }
             }
+        } catch (SocketException e) {
+            disconnectHandling(killed);
         }
     }
 
@@ -694,7 +737,11 @@ public class Server {
 
         for (Player player : sharedData.players) {
             //player.getOut().flush();
-            player.writeTxt(msg);
+            try {
+                player.writeTxt(msg);
+            } catch (SocketException e) {
+                disconnectHandling(player);
+            }
             logger.log("send " + msg + " to " + player.getName(), LogLevels.INFO);
         }
     }
@@ -715,7 +762,11 @@ public class Server {
             logger.log("introducing mafias", LogLevels.INFO);
             for (Player otherMafia : sharedData.getMafias()) {
                 if (!otherMafia.equals(mafia)) {
-                    mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
+                    try {
+                        mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
+                    } catch (SocketException e) {
+                        disconnectHandling(mafia);
+                    }
                 }
             }
 
@@ -728,7 +779,11 @@ public class Server {
     public void introduceDrCityToMayor() {
         logger.log("introducing doctor city", LogLevels.INFO);
         String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
-        sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
+        try {
+            sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
+        } catch (SocketException e) {
+            disconnectHandling(sharedData.getSingleRole(PlayerRole.MAYOR));
+        }
     }
 //
 //    /**

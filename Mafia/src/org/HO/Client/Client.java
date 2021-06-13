@@ -133,57 +133,57 @@ public class Client {
             for (Player player : poll)
                 System.out.println(player);
 
-            clientInputHandling.getInputForVote(poll);
+            getInputForVote(poll);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
-//
-//    public void getInputForVote(Collection<Player> poll) {
-//        vote = "";
-//        running = true;
-//        Timer timer = new Timer();
-//        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
-//        TimerTask task = new TimerTask() {
-//            @Override
-//            public void run() {
-//                running = false;
-//                if (validInput(poll, vote)) {
-//                    player.writeTxt(vote);
-//                } else
-//                    player.writeTxt("");
-//                timer.cancel();
-//            }
-//        };
-//
-//        timer.schedule(task, 20000);
-//        try {
-//            while (running) {
-//                while (!scanner.ready()) {
-//                    Thread.sleep(50);
-//                    if (!running)
-//                        return;
-//                }
-//                vote = scanner.readLine();
-//                if(player.checkIfInputIsExit(vote))
-//                    timer.cancel();
-//
-//                if (!validInput(poll, vote)) {
-//                    System.out.println("Invalid input!Try again");
-//                    vote = "";
-//                } else
-//                    System.out.println("thanks");
-//
-//            }
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (InterruptedException e) {
-//            System.err.println("");
-//        }
-//    }
+
+    public void getInputForVote(Collection<Player> poll) {
+        vote = "";
+        running = true;
+        Timer timer = new Timer();
+        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                running = false;
+                if (validInput(poll, vote)) {
+                    player.writeTxtClient(vote);
+                } else
+                    player.writeTxtClient("");
+                timer.cancel();
+            }
+        };
+
+        timer.schedule(task, 20000);
+        try {
+            while (running) {
+                while (!scanner.ready()) {
+                    Thread.sleep(50);
+                    if (!running)
+                        return;
+                }
+                vote = scanner.readLine();
+                if(clientInputHandling.checkIfInputIsExit(player, vote))
+                    timer.cancel();
+
+                if (!validInput(poll, vote)) {
+                    System.out.println("Invalid input!Try again");
+                    vote = "";
+                } else
+                    System.out.println("thanks");
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            System.err.println("");
+        }
+    }
 
     private boolean validInput(Collection<Player> choices, String name) {
         for (Player player : choices)
@@ -271,7 +271,7 @@ public class Client {
         if (input.contains("You've been killed:(")) {
             System.out.println(player.readTxt());
             String result = scanner.next();
-            player.writeTxt(result);
+            player.writeTxtClient(result);
             player.setAlive(false);
             if (result.equals("n")) {
                 System.out.println("BYE");
@@ -325,7 +325,7 @@ public class Client {
         String name;
         while (true) {
             name = scanner.nextLine();
-            player.writeTxt(name);
+            player.writeTxtClient(name);
             try {
                 if ((boolean) player.getInObj().readObject())
                     break;

@@ -59,10 +59,10 @@ public class Mafia extends  ClientWithRole{
             public void run() {
                 running = false;
                 if (validInput(poll, vote)) {
-                    getPlayer().writeTxt(vote);
+                    getPlayer().writeTxtClient(vote);
                 }
                 else
-                    getPlayer().writeTxt("");
+                    getPlayer().writeTxtClient("");
                 System.out.println("poll time ended");
                 timer.cancel();
             }

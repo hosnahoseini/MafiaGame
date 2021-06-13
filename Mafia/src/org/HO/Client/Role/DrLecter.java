@@ -32,7 +32,7 @@ public class DrLecter extends Mafia {
                     for (Player player : mafias)
                         System.out.println(player.getName());
                     getInput(mafias);
-                    getPlayer().writeTxt(vote);
+                    getPlayer().writeTxtClient(vote);
                     String check = getPlayer().readTxt();
                         break;
                 } catch (IOException e) {

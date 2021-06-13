@@ -31,7 +31,7 @@ public class DrCity extends ClientWithRole {
                     for (Player player : citizen)
                         System.out.println(player.getName());
                     getInput(citizen);
-                    getPlayer().writeTxt(vote);
+                    getPlayer().writeTxtClient(vote);
                     String check = getPlayer().readTxt();
                     if (check.equals("thanks"))
                         break;

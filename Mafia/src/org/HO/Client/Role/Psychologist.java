@@ -25,7 +25,7 @@ public class Psychologist extends ClientWithRole {
         System.out.println(getPlayer().readTxt());
         vote = "n";
         getYesOrNoInput();
-        getPlayer().writeTxt(vote);
+        getPlayer().writeTxtClient(vote);
         if(vote.equals("y"))
             try {
                 System.out.println(getPlayer().readTxt());
@@ -33,7 +33,7 @@ public class Psychologist extends ClientWithRole {
                 for (Player player : players)
                     System.out.println(player.getName());
                 getInput(players);
-                getPlayer().writeTxt(vote);
+                getPlayer().writeTxtClient(vote);
             } catch (IOException e) {
                 System.err.println("some thing wrong in reading array list of choices from server");
             } catch (ClassNotFoundException e) {

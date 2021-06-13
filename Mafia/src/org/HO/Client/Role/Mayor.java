@@ -28,7 +28,7 @@ public class Mayor extends ClientWithRole {
         System.out.println(getPlayer().readTxt());
         vote = "y";
         getYesOrNoInput();
-        getPlayer().writeTxt(vote);
+        getPlayer().writeTxtClient(vote);
     }
 
 

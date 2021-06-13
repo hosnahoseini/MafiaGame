@@ -1,5 +1,6 @@
 package org.HO.Client;
 
+import org.HO.Client.Role.ClientInputHandling;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
@@ -21,12 +22,13 @@ public class WriteThread extends Thread {
     private String str = "";
     private Timer timer = new Timer();
     private BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+    private ClientInputHandling clientInputHandling = new ClientInputHandling();
 
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
             running = false;
-            player.writeTxt("end");
+            player.writeTxtClient("end");
             timer.cancel();
         }
     };
@@ -49,9 +51,9 @@ public class WriteThread extends Thread {
                     }
                 }
                 str = scanner.readLine();
-                if(player.checkIfInputIsExit(str))
+                if(clientInputHandling.checkIfInputIsExit(player, str))
                     timer.cancel();
-                player.writeTxt(str);
+                player.writeTxtClient(str);
                 logger.log("writer write " + str , LogLevels.INFO);
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);
             timer.cancel();

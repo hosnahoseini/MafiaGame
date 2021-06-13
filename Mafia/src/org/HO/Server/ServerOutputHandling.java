@@ -42,8 +42,13 @@ public class ServerOutputHandling {
             sharedData.killedPlayers.add(killed);
             killed.setAlive(false);
 
-            killed.writeTxt("You've been killed:(");
-            killed.writeTxt("Do you want to see rest of the game?(y/n)");
+            try {
+                killed.writeTxt("You've been killed:(");
+                killed.writeTxt("Do you want to see rest of the game?(y/n)");
+            } catch (SocketException e) {
+                killed.close();
+                sharedData.players.remove(killed);
+            }
             String result = killed.readTxt();
             if (result.equals("n")) {
                 sharedData.players.remove(killed);

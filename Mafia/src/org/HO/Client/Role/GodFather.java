@@ -36,7 +36,7 @@ public class GodFather extends Mafia {
             System.out.println(pollResult);
             getInput(poll);
 
-            getPlayer().writeTxt(vote);
+            getPlayer().writeTxtClient(vote);
             logger.log(vote, LogLevels.INFO);
         } catch (IOException e) {
             System.err.println("some thing wrong in reading array list of choices from server");

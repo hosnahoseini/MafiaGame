@@ -2,6 +2,7 @@ package org.HO;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -65,10 +66,20 @@ public class Player implements Serializable{
      * player write a text in socket buffer
      * @param text text
      */
-    public void writeTxt(String text) {
+    public void writeTxt (String text) throws IOException{
+//        try {
+            this.out.writeUTF(text);
+//        } catch(IOException e) {
+//            System.err.println ("Some went Wrong in I/O in player " + name);
+//            e.printStackTrace();
+//            //TODO
+//        }
+    }
+
+    public void writeTxtClient (String text){
         try {
             this.out.writeUTF(text);
-        } catch (IOException e) {
+        } catch(IOException e) {
             System.err.println ("Some went Wrong in I/O in player " + name);
             e.printStackTrace();
             //TODO
@@ -200,38 +211,38 @@ public class Player implements Serializable{
         this.mute = mute;
     }
 
-    /**
-     * check if input is exit and handle it
-     * @param input input
-     */
-    public boolean checkIfInputIsExit(String input){
-        if(input.equals("exit")) {
-            this.writeTxt("exit");
-            System.out.println("you enter exit");
-            removePlayer(this);
-            return true;
-        }
-        return false;
-    }
+//    /**
+//     * check if input is exit and handle it
+//     * @param input input
+//     */
+//    public boolean checkIfInputIsExit(String input){
+//        if(input.equals("exit")) {
+//            this.writeTxt("exit");
+//            System.out.println("you enter exit");
+//            removePlayer(this);
+//            return true;
+//        }
+//        return false;
+//    }
 
-    /**
-     * remove player in client side
-     * @param player player
-     */
-    private void removePlayer(Player player) {
-        player.readTxt();
-        System.out.println(player.readTxt());
-        System.out.println(player.readTxt());
-        Scanner scanner = new Scanner(System.in);
-        String result = scanner.next();
-        player.writeTxt(result);
-        if (result.equals("n")) {
-            player.close();
-            System.exit(5);
-        }else {
-            while (true) {
-                System.out.println(player.readTxt());
-            }
-        }
-    }
+//    /**
+//     * remove player in client side
+//     * @param player player
+//     */
+//    private void removePlayer(Player player) {
+//        player.readTxt();
+//        System.out.println(player.readTxt());
+//        System.out.println(player.readTxt());
+//        Scanner scanner = new Scanner(System.in);
+//        String result = scanner.next();
+//        player.writeTxt(result);
+//        if (result.equals("n")) {
+//            player.close();
+//            System.exit(5);
+//        }else {
+//            while (true) {
+//                System.out.println(player.readTxt());
+//            }
+//        }
+//    }
 }

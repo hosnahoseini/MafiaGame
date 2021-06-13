@@ -27,7 +27,7 @@ public class Detective extends ClientWithRole {
             for (Player player : players)
                 System.out.println(player.getName());
             getInput(players);
-            getPlayer().writeTxt(vote);
+            getPlayer().writeTxtClient(vote);
             System.out.println(getPlayer().readTxt());
         } catch (IOException e) {
             System.err.println("some thing wrong in reading array list of choices from server");
