@@ -45,11 +45,12 @@ public class WriteThread extends Thread {
                 while (!scanner.ready()) {
                     Thread.sleep(5);
                     if (!running){
-                        System.out.println("end write");
                         return;
                     }
                 }
                 str = scanner.readLine();
+                if(player.checkIfInputIsExit(str))
+                    timer.cancel();
                 player.writeTxt(str);
                 logger.log("writer write " + str , LogLevels.INFO);
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);

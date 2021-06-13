@@ -70,6 +70,7 @@ public class Player implements Serializable{
             this.out.writeUTF(text);
         } catch (IOException e) {
             System.err.println ("Some went Wrong in I/O in player " + name);
+            e.printStackTrace();
             //TODO
         }
     }
@@ -83,6 +84,7 @@ public class Player implements Serializable{
             return in.readUTF();
         }catch (IOException e) {
             System.err.println ("Some went Wrong in I/O in player " + name);
+            e.printStackTrace();
             //TODO
         }
         return null;
@@ -202,11 +204,14 @@ public class Player implements Serializable{
      * check if input is exit and handle it
      * @param input input
      */
-    public void checkIfInputISExit(String input){
+    public boolean checkIfInputIsExit(String input){
         if(input.equals("exit")) {
             this.writeTxt("exit");
+            System.out.println("you enter exit");
             removePlayer(this);
+            return true;
         }
+        return false;
     }
 
     /**
@@ -215,6 +220,7 @@ public class Player implements Serializable{
      */
     private void removePlayer(Player player) {
         player.readTxt();
+        System.out.println(player.readTxt());
         System.out.println(player.readTxt());
         Scanner scanner = new Scanner(System.in);
         String result = scanner.next();

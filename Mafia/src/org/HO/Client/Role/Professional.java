@@ -34,6 +34,7 @@ public class Professional extends ClientWithRole {
                 System.out.println(player.getName());
             getInput(players);
             getPlayer().writeTxt(vote);
+            System.out.println("send -->" + vote);
         } catch (IOException e) {
             System.err.println("some thing wrong in reading array list of choices from server");
         } catch (ClassNotFoundException e) {

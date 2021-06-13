@@ -170,6 +170,8 @@ public class SharedData {
     public void calculateNumbers() {
         numberOfNormalMafias = (numberOfPlayers / 3) - 2;
         numberOfNormalPeople = numberOfPlayers - numberOfNormalMafias - 8;
+        numberOfNormalMafias = Math.max(numberOfNormalMafias, 0);
+        numberOfNormalPeople = Math.max(numberOfNormalPeople, 0);
         System.out.println(numberOfNormalMafias + ", " + numberOfNormalPeople);
     }
 }

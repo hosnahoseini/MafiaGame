@@ -21,6 +21,7 @@ public class PollHandler implements Runnable{
     private Player player;
     private static final LoggingManager logger = new LoggingManager(PollHandler.class.getName());
     private SharedData sharedData = SharedData.getInstance();
+    private ServerOutputHandling serverOutputHandling = new ServerOutputHandling();
 
     public PollHandler(Poll poll, Player player) {
         this.poll = poll;
@@ -34,16 +35,15 @@ public class PollHandler implements Runnable{
                 player.writeTxt("Who do you want to be killed?");
                 player.getOutObj().writeObject(poll.getPoll().keySet());
                 logger.log("write poll to " + player.getName(), LogLevels.INFO);
-                String vote = readWithExit(player);
+                String vote = serverOutputHandling.readWithExit(player);
 
-                if (vote.equals("exit")) {
-                    removePlayer(player);
-
-                } else {
+//                if (vote.equals("exit"))
+//                    removePlayer(player);
+//                else {
                     poll.vote(vote, player);
                     System.out.println("current poll res\n" + poll.getPollResult());
 
-                }
+//                }
             }catch (SocketException e) {
                 player.close();
                 sharedData.players.remove(player);
@@ -53,43 +53,46 @@ public class PollHandler implements Runnable{
         Thread.currentThread().interrupt();
     }
 
-    /**
-     * remove player
-     * @param killed player to be removed
-     */
-    private void removePlayer(Player killed) {
-        sharedData.killedPlayers.add(killed);
-        killed.setAlive(false);
-        killed.writeTxt("Do you want to see rest of the game?(y/n)");
-        String result = killed.readTxt();
-        if (result.equals("n")) {
-            sharedData.players.remove(killed);
-            player.close();
-            try {
-                killed.getConnection().close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * read message from client and check if he wants to exit or disconnected
-     * @param player client
-     * @return message
-     */
-    public String readWithExit(Player player) {
-        String input = "";
-        try {
-            input = player.getIn().readUTF();
-            if (input.equals("exit"))
-                removePlayer(player);
-        } catch (SocketException e) {
-            player.close();
-            sharedData.players.remove(player);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return input;
-    }
+//    /**
+//     * remove player
+//     * @param killed player to be removed
+//     */
+//    private void removePlayer(Player killed) {
+//        sharedData.killedPlayers.add(killed);
+//        killed.setAlive(false);
+//        killed.writeTxt("BYE");
+//        killed.writeTxt("Do you want to see rest of the game?(y/n)");
+//        String result = killed.readTxt();
+//        if (result.equals("n")) {
+//            sharedData.players.remove(killed);
+//            player.close();
+//            try {
+//                killed.getConnection().close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
+//
+//    /**
+//     * read message from client and check if he wants to exit or disconnected
+//     * @param player client
+//     * @return message
+//     */
+//    public String readWithExit(Player player) {
+//        String input = "";
+//        try {
+//            input = player.getIn().readUTF();
+//            if (input.equals("exit")) {
+//                System.out.println("removing");
+//                removePlayer(player);
+//            }
+//        } catch (SocketException e) {
+//            player.close();
+//            sharedData.players.remove(player);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return input;
+//    }
 }

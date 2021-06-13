@@ -24,6 +24,7 @@ public class ChatHandler implements Runnable {
     private SharedData sharedData = SharedData.getInstance();
     private static final LoggingManager logger = new LoggingManager(ChatHandler.class.getName());
     private FileUtils fileUtils = new FileUtils();
+    private ServerOutputHandling serverOutputHandling = new ServerOutputHandling();
 
     public ChatHandler(Player player) {
         writers = sharedData.getAlivePlayers();
@@ -37,7 +38,7 @@ public class ChatHandler implements Runnable {
         String clientMessage;
 
         do {
-            clientMessage = readWithExit(player);
+            clientMessage = serverOutputHandling.readWithExit(player);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
 
@@ -52,10 +53,10 @@ public class ChatHandler implements Runnable {
 
             if (clientMessage.equals("exit")) {
                 serverMessage = player.getName() + " exit";
-                broadcast(serverMessage);
                 writers.remove(player);
                 readers.remove(player);
-                removePlayer(player);
+                broadcast(serverMessage);
+                serverOutputHandling.removePlayer(player);
                 break;
             }
 
@@ -65,8 +66,10 @@ public class ChatHandler implements Runnable {
 
             }
 
-            if(clientMessage.equals("HISTORY"))
+            if(clientMessage.equals("HISTORY")) {
+                serverMessage = player.getName() + "request for chat HISTORY";
                 previousChats(player);
+            }
 
             fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
@@ -100,43 +103,51 @@ public class ChatHandler implements Runnable {
     }
 
     /**
-     * remove player
+     * remove a player from game
+     *
      * @param killed player to be removed
      */
-    private void removePlayer(Player killed) {
-        sharedData.killedPlayers.add(killed);
-        killed.setAlive(false);
-        killed.writeTxt("Do you want to see rest of the game?(y/n)");
-        String result = killed.readTxt();
-        if (result.equals("n")) {
-            sharedData.players.remove(killed);
-            player.close();
-            try {
-                killed.getConnection().close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * read message from client and check if he wants to exit or disconnected
-     * @param player client
-     * @return message
-     */
-    public String readWithExit(Player player) {
-        String input = "";
-        try {
-            input = player.getIn().readUTF();
-        } catch (SocketException e) {
-            player.close();
-            sharedData.players.remove(player);
-            writers.remove(player);
-            readers.remove(player);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return input;
-    }
+//    private void removePlayer(Player killed) {
+//
+//        if (killed.isAlive()) {
+//            sharedData.killedPlayers.add(killed);
+//            killed.setAlive(false);
+//
+//            killed.writeTxt("You've been killed:(");
+//            killed.writeTxt("Do you want to see rest of the game?(y/n)");
+//            logger.log(killed + " killed" + killed, LogLevels.INFO);
+//            String result = killed.readTxt();
+//            if (result.equals("n")) {
+//                sharedData.players.remove(killed);
+//                killed.close();
+//                try {
+//                    killed.getConnection().close();
+//                } catch (IOException e) {
+//                    System.err.println("Some thing went wrong with Server in I/O while closing connection of player " + killed);
+//                }
+//            }
+//        }
+//    }
+//
+//
+//    /**
+//     * read message from client and check if he wants to exit or disconnected
+//     * @param player client
+//     * @return message
+//     */
+//    public String readWithExit(Player player) {
+//        String input = "";
+//        try {
+//            input = player.getIn().readUTF();
+//        } catch (SocketException e) {
+//            player.close();
+//            sharedData.players.remove(player);
+//            writers.remove(player);
+//            readers.remove(player);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return input;
+//    }
 
 }

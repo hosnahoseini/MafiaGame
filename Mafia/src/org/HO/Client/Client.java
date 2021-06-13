@@ -1,6 +1,7 @@
 package org.HO.Client;
 
 import org.HO.Client.Role.ClientFactory;
+import org.HO.Client.Role.ClientInputHandling;
 import org.HO.Client.Role.ClientWithRole;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
@@ -27,6 +28,8 @@ public class Client {
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
     private boolean running = true;
     private String vote = "";
+    protected ClientInputHandling clientInputHandling = new ClientInputHandling();
+
 
     /**
      * start client to play
@@ -52,7 +55,14 @@ public class Client {
 
         if (!player.isAlive())
             while (true) {
-                System.out.println(player.readTxt());
+                String input = player.readTxt();
+                System.out.println(input);
+                if(input.equals("Game ended")){
+                    System.out.println(player.readTxt());
+                    System.out.println(player.readTxt());
+                    player.close();
+                    System.exit(2);
+                }
             }
 
     }
@@ -123,55 +133,57 @@ public class Client {
             for (Player player : poll)
                 System.out.println(player);
 
-            getInputForVote(poll);
+            clientInputHandling.getInputForVote(poll);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
-
-    public void getInputForVote(Collection<Player> poll) {
-        vote = "";
-        running = true;
-        Timer timer = new Timer();
-        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                running = false;
-                if (validInput(poll, vote)) {
-                    player.writeTxt(vote);
-                } else
-                    player.writeTxt("");
-                timer.cancel();
-            }
-        };
-
-        timer.schedule(task, 20000);
-        try {
-            while (running) {
-                while (!scanner.ready()) {
-                    Thread.sleep(50);
-                    if (!running)
-                        return;
-                }
-                vote = scanner.readLine();
-                player.checkIfInputISExit(vote);
-                if (!validInput(poll, vote)) {
-                    System.out.println("Invalid input!Try again");
-                    vote = "";
-                } else
-                    System.out.println("thanks");
-
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            System.err.println("");
-        }
-    }
+//
+//    public void getInputForVote(Collection<Player> poll) {
+//        vote = "";
+//        running = true;
+//        Timer timer = new Timer();
+//        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
+//        TimerTask task = new TimerTask() {
+//            @Override
+//            public void run() {
+//                running = false;
+//                if (validInput(poll, vote)) {
+//                    player.writeTxt(vote);
+//                } else
+//                    player.writeTxt("");
+//                timer.cancel();
+//            }
+//        };
+//
+//        timer.schedule(task, 20000);
+//        try {
+//            while (running) {
+//                while (!scanner.ready()) {
+//                    Thread.sleep(50);
+//                    if (!running)
+//                        return;
+//                }
+//                vote = scanner.readLine();
+//                if(player.checkIfInputIsExit(vote))
+//                    timer.cancel();
+//
+//                if (!validInput(poll, vote)) {
+//                    System.out.println("Invalid input!Try again");
+//                    vote = "";
+//                } else
+//                    System.out.println("thanks");
+//
+//            }
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (InterruptedException e) {
+//            System.err.println("");
+//        }
+//    }
 
     private boolean validInput(Collection<Player> choices, String name) {
         for (Player player : choices)
