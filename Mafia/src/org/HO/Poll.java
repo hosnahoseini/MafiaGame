@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * a class for a poll
+ * A class for a poll
  *
  * @author Hosna Oyarhoseini
  * @version 1.0

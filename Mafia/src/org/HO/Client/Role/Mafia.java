@@ -43,9 +43,9 @@ public class Mafia extends  ClientWithRole{
             getInputForVote(poll);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O player" + getPlayer());
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Can't convert to Collection<Player>");
         }
     }
 
@@ -86,8 +86,10 @@ public class Mafia extends  ClientWithRole{
 
             }
 
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Some went wrong in I/O player" + getPlayer());
+        } catch (InterruptedException e) {
+            System.err.println("interruption while sleeping");
         }
     }
 

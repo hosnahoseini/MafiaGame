@@ -3,7 +3,7 @@ package org.HO.Client;
 import java.util.Scanner;
 
 /**
- * a class to start a new client
+ * A class to start a new client
  *
  * @author Hosna Oyarhoseini
  * @version 1.0

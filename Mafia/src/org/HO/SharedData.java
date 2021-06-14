@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * a class for shared and main data of game(singleton design pattern)
+ * A class for shared and main data of game(singleton design pattern)
  *
  * @author Hosna Oyarhoseini
  * @version 1.0

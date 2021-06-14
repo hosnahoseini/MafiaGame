@@ -123,7 +123,7 @@ public class Server {
         try {
             Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.err.println("interrupting while sleeping");
         }
     }
 
@@ -592,8 +592,7 @@ public class Server {
             sendMessageToAllClients("VOTING TIME ENDED");
 
         } catch (InterruptedException e) {
-            e.printStackTrace();
-            //TODO:handle exp
+            System.err.println("pool termination caused intruotion");
         }
         return poll;
 
@@ -700,14 +699,11 @@ public class Server {
         try {
             pool.shutdown();
             boolean result = pool.awaitTermination(30050, TimeUnit.MILLISECONDS);
-//            pool.shutdownNow();
             if (!result) {
                 sendMessageToAllClients("Chat time ended");
             }
         } catch (InterruptedException e) {
-            e.printStackTrace();
-            System.err.println("InterruptedException for termination");
-            //TODO:handle this exp
+            System.err.println("pool termination caused interruption");
         }
 
         fileUtils.copy("chatBoxTemp.txt", "chatBox.txt");
@@ -732,6 +728,10 @@ public class Server {
         }
     }
 
+    /**
+     * check if all the players are ready
+     * @return true if the are ready
+     */
     public boolean checkIfEveryOneISReady() {
         for (Player player : sharedData.players) {
             if (!player.isReadyToPlay())

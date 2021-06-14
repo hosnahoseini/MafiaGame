@@ -43,7 +43,7 @@ public class PollHandler implements Runnable {
             player.close();
             sharedData.players.remove(player);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O player" + player);
         }
         Thread.currentThread().interrupt();
     }

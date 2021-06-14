@@ -5,6 +5,7 @@ import org.HO.Logger.LoggingManager;
 import org.HO.Player;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -57,8 +58,10 @@ public class WriteThread extends Thread {
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);
             timer.cancel();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Some went wrong in I/O player" + player);
+        } catch (InterruptedException e) {
+            System.err.println("interrupting while sleeping");
         }
     }
 

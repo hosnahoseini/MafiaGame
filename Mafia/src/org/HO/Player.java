@@ -23,6 +23,7 @@ public class Player implements Serializable{
     private boolean alive = true;
     private boolean readyToPlay = false;
     private boolean mute = false;
+    //number of healed times
     private int heal = 0;
     private transient DataInputStream in;
     private transient DataOutputStream out;
@@ -65,6 +66,7 @@ public class Player implements Serializable{
     /**
      * player write a text in socket buffer
      * @param text text
+     * @throws  SocketException when player disconnected
      */
     public void writeTxt (String text) throws SocketException{
         try {
@@ -133,7 +135,8 @@ public class Player implements Serializable{
             outObj.close();
             connection.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O player" + this);
+
         }
     }
 

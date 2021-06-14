@@ -30,7 +30,7 @@ public class LoggingManager {
             fileWriter.write(logPattern(msg, level.toString()));
             fileWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O logger");
         }
     }
 

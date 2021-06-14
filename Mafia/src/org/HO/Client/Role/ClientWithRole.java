@@ -109,8 +109,10 @@ public abstract class ClientWithRole {
 
             }
 
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Some went wrong in I/O player" + player);
+        } catch (InterruptedException e) {
+            System.err.println("interruption while sleeping");
         }
     }
 
@@ -145,8 +147,10 @@ public abstract class ClientWithRole {
             }
 
 
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Some went wrong in I/O player" + player);
+        } catch (InterruptedException e) {
+            System.err.println("interruption while sleeping");
         }
     }
 }

@@ -9,8 +9,7 @@ import org.HO.Player;
  * @version 1.0
  */
 public class Diehard extends ClientWithRole {
-//    private static int n = 0;
-    //TODO:remove n
+
     public Diehard(Player player) {
         super(player);
     }
@@ -24,12 +23,9 @@ public class Diehard extends ClientWithRole {
         System.out.println(getPlayer().readTxt());
         vote = "n";
         getYesOrNoInput();
-//        if(n <= 1 && vote.equals("y"))
+
             getPlayer().writeTxtClient(vote);
-//        else{
-//            System.out.println("you can't inquire any more");
-//            getPlayer().writeTxtClient("n");
-//        }
+
 
         System.out.println(getPlayer().readTxt());
     }

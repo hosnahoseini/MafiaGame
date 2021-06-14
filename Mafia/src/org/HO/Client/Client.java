@@ -87,7 +87,7 @@ public class Client {
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.err.println("interruption while sleeping");
             }
 
             showPollResult();
@@ -157,9 +157,9 @@ public class Client {
 
             getInputForVote(poll);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O player" + player);
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Can't convert to Collection<Player>");
         }
     }
 
@@ -206,9 +206,9 @@ public class Client {
             }
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Some went wrong in I/O player" + player);
         } catch (InterruptedException e) {
-            System.err.println("");
+            System.err.println("interruption while sleeping");
         }
     }
 
@@ -246,7 +246,7 @@ public class Client {
             read.join();
 
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.err.println("interruption while joining read thread");
         }
 
     }
