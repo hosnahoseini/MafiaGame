@@ -1,5 +1,6 @@
 package org.HO.Client.Role;
 
+import org.HO.Client.ClientInputHandling;
 import org.HO.Player;
 
 import java.io.BufferedReader;
@@ -86,7 +87,7 @@ public abstract class ClientWithRole {
             }
         };
 
-        timer.schedule(task, 10000);
+        timer.schedule(task, 20000);
         try {
             while (running) {
                 while (!scanner.ready()) {
@@ -126,7 +127,7 @@ public abstract class ClientWithRole {
             }
         };
 
-        timer.schedule(task, 5000);
+        timer.schedule(task, 20000);
         try {
             while (running) {
                 while (!scanner.ready()) {

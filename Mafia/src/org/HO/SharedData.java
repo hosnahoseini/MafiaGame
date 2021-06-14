@@ -4,6 +4,7 @@ package org.HO;
 import java.util.ArrayList;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
+
 /**
  * a class for shared and main data of game(singleton design pattern)
  *
@@ -94,6 +95,17 @@ public class SharedData {
     }
 
     /**
+     * get players who are alive normal citizens
+     * @return alive normal citizen
+     */
+    public ArrayList<Player> getNormalCitizens() {
+        ArrayList<Player> citizens = new ArrayList<>();
+        for (Player player : players)
+            if (player.getRole() == PlayerRole.NORMAL_PEOPLE && player.isAlive())
+                citizens.add(player);
+        return citizens;
+    }
+    /**
      * get a player with specific role
      * @param role role
      * @return player with the role
@@ -138,7 +150,6 @@ public class SharedData {
         for (Player player : players)
             if (player.getName().equals(name))
                 return player;
-        System.out.println("i cant find " + name);
         return null;
     }
 
@@ -148,6 +159,8 @@ public class SharedData {
      */
     public String showKilledRoles() {
         String killedRoles = "";
+        if(killedPlayers.size() == 0)
+            return "No one killed yet";
         for (Player player : killedPlayers)
             killedRoles += player.getRole() + "\n";
 
@@ -167,11 +180,13 @@ public class SharedData {
         mute = null;
     }
 
+    /**
+     * calculate number of mafia and citizens
+     */
     public void calculateNumbers() {
         numberOfNormalMafias = (numberOfPlayers / 3) - 2;
         numberOfNormalPeople = numberOfPlayers - numberOfNormalMafias - 8;
         numberOfNormalMafias = Math.max(numberOfNormalMafias, 0);
         numberOfNormalPeople = Math.max(numberOfNormalPeople, 0);
-        System.out.println(numberOfNormalMafias + ", " + numberOfNormalPeople);
     }
 }

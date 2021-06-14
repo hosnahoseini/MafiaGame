@@ -8,6 +8,7 @@ import org.HO.SharedData;
 
 import java.io.IOException;
 import java.net.SocketException;
+import java.net.SocketException;
 import java.util.ArrayList;
 
 /**
@@ -65,7 +66,7 @@ public class ChatHandler implements Runnable {
             }
 
             if(clientMessage.equals("HISTORY")) {
-                serverMessage = player.getName() + "request for chat HISTORY";
+                serverMessage = player.getName() + " request for chat HISTORY";
                 previousChats(player);
             }
 
@@ -78,7 +79,6 @@ public class ChatHandler implements Runnable {
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
         } while (true);
 
-        System.out.println(player  + " chat  handler ended");
         Thread.currentThread().interrupt();
     }
 
@@ -121,47 +121,5 @@ public class ChatHandler implements Runnable {
      *
      * @param killed player to be removed
      */
-//    private void removePlayer(Player killed) {
-//
-//        if (killed.isAlive()) {
-//            sharedData.killedPlayers.add(killed);
-//            killed.setAlive(false);
-//
-//            killed.writeTxt("You've been killed:(");
-//            killed.writeTxt("Do you want to see rest of the game?(y/n)");
-//            logger.log(killed + " killed" + killed, LogLevels.INFO);
-//            String result = killed.readTxt();
-//            if (result.equals("n")) {
-//                sharedData.players.remove(killed);
-//                killed.close();
-//                try {
-//                    killed.getConnection().close();
-//                } catch (IOException e) {
-//                    System.err.println("Some thing went wrong with Server in I/O while closing connection of player " + killed);
-//                }
-//            }
-//        }
-//    }
-//
-//
-//    /**
-//     * read message from client and check if he wants to exit or disconnected
-//     * @param player client
-//     * @return message
-//     */
-//    public String readWithExit(Player player) {
-//        String input = "";
-//        try {
-//            input = player.getIn().readUTF();
-//        } catch (SocketException e) {
-//            player.close();
-//            sharedData.players.remove(player);
-//            writers.remove(player);
-//            readers.remove(player);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return input;
-//    }
 
 }

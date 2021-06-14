@@ -49,7 +49,7 @@ public class Server {
 
         waitUntilEveryOneReadyToPlay();
 
-        introducing();
+//        introducing();
 
         gameLoop();
 
@@ -70,11 +70,7 @@ public class Server {
      * announce winner to players
      */
     private void announceWinner() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(1000);
         sendMessageToAllClients("Game ended");
         sendMessageToAllClients(sharedData.winner + " are the winners");
         sendMessageToAllClients("BYE");
@@ -114,15 +110,21 @@ public class Server {
 
             sendMessageToAllClients("MORNING");
 
+            sleep(1000);
+
             sendEventsToClient();
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            sleep(1000);
 
         } while (!checkEndOfGame());
+    }
+
+    private void sleep(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -166,6 +168,21 @@ public class Server {
         psychologistMuteSO();
 
         dieHardInquired();
+
+        NormalPeopleWakeUp();
+    }
+
+    /**
+     * wake up normal people
+     */
+    private void NormalPeopleWakeUp() {
+        for(Player player:sharedData.getNormalCitizens()) {
+            try {
+                player.writeTxt("YOUR TURN");
+            } catch (SocketException e) {
+                disconnectHandling(player);
+            }
+        }
     }
 
     /**
@@ -185,7 +202,6 @@ public class Server {
         events.add("Alive players:");
         for (Player player : sharedData.getAlivePlayers())
             events.add(player.getName());
-        events.add("------------");
     }
 
     /**
@@ -198,6 +214,8 @@ public class Server {
         inquiredUpdate();
         alivePlayerUpdate();
         muteUpdate();
+        events.add(Color.RESET);
+        events.add(0, Color.PURPLE);
     }
 
     /**
@@ -342,6 +360,10 @@ public class Server {
         }
     }
 
+    /**
+     * handle disconnection
+     * @param player disconnected player
+     */
     private void disconnectHandling(Player player) {
         sharedData.players.remove(player);
         player.close();
@@ -587,12 +609,10 @@ public class Server {
                 mayor.writeTxt("YOUR TURN");
                 mayor.writeTxt(sharedData.killed.getName() + " is going to be killed do you want to cancel this?(y/n)");
                 String result = serverOutputHandling.readWithExit(mayor);
-                System.out.println("server reads " + result);
                 if (result.equals("y")) {
                     sharedData.killed = null;
                     sendMessageToAllClients("Mayor canceled poll");
                 } else {
-                    System.out.println("kill");
                     removePlayer(sharedData.killed);
                     sendMessageToAllClients(sharedData.killed + " killed");
                 }
@@ -638,11 +658,7 @@ public class Server {
      */
     private Poll executeMorningPolling() {
         Poll poll = executePoll(sharedData.getAlivePlayers(), sharedData.getAlivePlayers());
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(1000);
         sharedData.killed = poll.winner();
         return poll;
     }
@@ -683,12 +699,11 @@ public class Server {
         }
         try {
             pool.shutdown();
-            boolean result = pool.awaitTermination(20050, TimeUnit.MILLISECONDS);
+            boolean result = pool.awaitTermination(30050, TimeUnit.MILLISECONDS);
 //            pool.shutdownNow();
             if (!result) {
                 sendMessageToAllClients("Chat time ended");
             }
-            System.out.println("END CHAT");
         } catch (InterruptedException e) {
             e.printStackTrace();
             System.err.println("InterruptedException for termination");
@@ -785,27 +800,6 @@ public class Server {
             disconnectHandling(sharedData.getSingleRole(PlayerRole.MAYOR));
         }
     }
-//
-//    /**
-//     * read message from client and check if he wants to exit or disconnected
-//     *
-//     * @param player client
-//     * @return message
-//     */
-//    public String readWithExit(Player player) {
-//        String input = "";
-//        try {
-//            input = player.getIn().readUTF();
-//            if (input.equals("exit"))
-//                removePlayer(player);
-//        } catch (SocketException e) {
-//            player.close();
-//            sharedData.players.remove(player);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return input;
-//    }
 
 
 }

@@ -1,15 +1,16 @@
-package org.HO.Client.Role;
+package org.HO.Client;
 
 import org.HO.Player;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Collection;
-import java.util.Scanner;
-import java.util.Timer;
-import java.util.TimerTask;
 
+import java.util.Scanner;
+
+/**
+ * A class for client  to handle same method of getting input
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class ClientInputHandling {
 
     /**

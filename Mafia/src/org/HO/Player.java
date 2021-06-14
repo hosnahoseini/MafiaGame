@@ -66,16 +66,20 @@ public class Player implements Serializable{
      * player write a text in socket buffer
      * @param text text
      */
-    public void writeTxt (String text) throws IOException{
-//        try {
+    public void writeTxt (String text) throws SocketException{
+        try {
             this.out.writeUTF(text);
-//        } catch(IOException e) {
-//            System.err.println ("Some went Wrong in I/O in player " + name);
-//            e.printStackTrace();
-//            //TODO
-//        }
+        } catch(IOException e) {
+            System.err.println ("Some went Wrong in I/O in player " + name);
+            e.printStackTrace();
+            //TODO
+        }
     }
 
+    /**
+     * player write a text in socket buffer from client side
+     * @param text text
+     */
     public void writeTxtClient (String text){
         try {
             this.out.writeUTF(text);
@@ -140,109 +144,166 @@ public class Player implements Serializable{
         heal ++;
     }
 
+    /**
+     * Gets connection.
+     *
+     * @return the connection
+     */
     public Socket getConnection() {
         return connection;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Gets role.
+     *
+     * @return the role
+     */
     public PlayerRole getRole() {
         return role;
     }
 
+    /**
+     * Is alive boolean.
+     *
+     * @return the boolean
+     */
     public boolean isAlive() {
         return alive;
     }
 
+    /**
+     * Sets alive.
+     *
+     * @param alive the alive
+     */
     public void setAlive(boolean alive) {
         this.alive = alive;
     }
 
+    /**
+     * Gets in.
+     *
+     * @return the in
+     */
     public DataInputStream getIn() {
         return in;
     }
 
+    /**
+     * Gets out.
+     *
+     * @return the out
+     */
     public DataOutputStream getOut() {
         return out;
     }
 
+    /**
+     * Gets out obj.
+     *
+     * @return the out obj
+     */
     public ObjectOutputStream getOutObj() {
         return outObj;
     }
 
+    /**
+     * Gets in obj.
+     *
+     * @return the in obj
+     */
     public ObjectInputStream getInObj() {
         return inObj;
     }
 
+    /**
+     * Is ready to play boolean.
+     *
+     * @return the boolean
+     */
     public boolean isReadyToPlay() {
         return readyToPlay;
     }
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Sets role.
+     *
+     * @param role the role
+     */
     public void setRole(PlayerRole role) {
         this.role = role;
     }
 
+    /**
+     * Sets ready to play.
+     *
+     * @param readyToPlay the ready to play
+     */
     public void setReadyToPlay(boolean readyToPlay) {
         this.readyToPlay = readyToPlay;
     }
 
+    /**
+     * Sets in.
+     *
+     * @param in the in
+     */
     public void setIn(DataInputStream in) {
         this.in = in;
     }
 
+    /**
+     * Sets out.
+     *
+     * @param out the out
+     */
     public void setOut(DataOutputStream out) {
         this.out = out;
     }
 
+    /**
+     * Gets heal.
+     *
+     * @return the heal
+     */
     public int getHeal() {
         return heal;
     }
 
+    /**
+     * Is mute boolean.
+     *
+     * @return the boolean
+     */
     public boolean isMute() {
         return mute;
     }
 
+    /**
+     * Sets mute.
+     *
+     * @param mute the mute
+     */
     public void setMute(boolean mute) {
         this.mute = mute;
     }
 
-//    /**
-//     * check if input is exit and handle it
-//     * @param input input
-//     */
-//    public boolean checkIfInputIsExit(String input){
-//        if(input.equals("exit")) {
-//            this.writeTxt("exit");
-//            System.out.println("you enter exit");
-//            removePlayer(this);
-//            return true;
-//        }
-//        return false;
-//    }
-
-//    /**
-//     * remove player in client side
-//     * @param player player
-//     */
-//    private void removePlayer(Player player) {
-//        player.readTxt();
-//        System.out.println(player.readTxt());
-//        System.out.println(player.readTxt());
-//        Scanner scanner = new Scanner(System.in);
-//        String result = scanner.next();
-//        player.writeTxt(result);
-//        if (result.equals("n")) {
-//            player.close();
-//            System.exit(5);
-//        }else {
-//            while (true) {
-//                System.out.println(player.readTxt());
-//            }
-//        }
-//    }
 }

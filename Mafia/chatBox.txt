@@ -1,2 +1,4 @@
 --CHAT BOX--
 chat box is empty at first
+
+--CHAT BOX--

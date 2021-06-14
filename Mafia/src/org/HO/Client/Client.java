@@ -1,8 +1,8 @@
 package org.HO.Client;
 
 import org.HO.Client.Role.ClientFactory;
-import org.HO.Client.Role.ClientInputHandling;
 import org.HO.Client.Role.ClientWithRole;
+import org.HO.Color;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.PlayerRole;
@@ -18,7 +18,6 @@ import java.util.*;
  * @author Hosna Oyarhoseini
  * @version 1.0
  */
-
 public class Client {
 
     private Player player;
@@ -28,6 +27,9 @@ public class Client {
     private static final LoggingManager logger = new LoggingManager(Client.class.getName());
     private boolean running = true;
     private String vote = "";
+    /**
+     * The Client input handling.
+     */
     protected ClientInputHandling clientInputHandling = new ClientInputHandling();
 
 
@@ -73,7 +75,7 @@ public class Client {
     private void gameLoop() {
         do {
             ReceiveUntilGetMsg("CHAT TIME");
-            System.out.println("~~~CHAT STARTED~~~");
+            System.out.println(Color.YELLOW + "~~~CHAT STARTED~~~" + Color.RESET);
             startChat();
 
             waitUntilRecivingMsg("POLL");
@@ -94,9 +96,7 @@ public class Client {
                 clientWithRole.start();
 
             ReceiveUntilGetMsg("NIGHT");
-            System.out.println("     ██▀██▀█▀█▀▀██▀█▀█▀▀▀█\n" +
-                    "     ██─▄▀─█─█─█▀█─▄─██─██\n" +
-                    "     ██▄██▄█▄█▄▄▄█▄█▄██▄██ ");
+            printNight();
             if (!player.isAlive())
                 break;
 
@@ -104,17 +104,36 @@ public class Client {
                 clientWithRole.start();
 
             ReceiveUntilGetMsg("MORNING");
-            System.out.println("█▄ ▄█ ▄▀▀▄ █▀▄ █▄ █ █ █▄ █ ▄▀▀\n" +
-                    "█ ▀ █ █  █ ██▀ █ ▀█ █ █ ▀█ █ ▀█\n" +
-                    "▀   ▀  ▀▀  ▀ ▀ ▀  ▀ ▀ ▀  ▀ ▀▀▀▀");
+            printMorning();
 
             if (!player.isAlive())
                 break;
 
-            System.out.println("~~~last night events~~~");
+            System.out.println(Color.YELLOW + "~~~last night events~~~" + Color.RESET);
         } while (true);
     }
 
+    /**
+     * print night
+     */
+    private void printNight() {
+        System.out.println(" ██████▀██▀█▀█▀▀██▀█▀█▀▀▀██████\n" +
+                           " ██████─▄▀─█─█─█▀█─▄─██─███████\n" +
+                           " ██████▄██▄█▄█▄▄▄█▄█▄██▄███████ ");
+    }
+
+    /**
+     * print morning
+     */
+    private void printMorning() {
+        System.out.println("█▄ ▄█ ▄▀▀▄ █▀▄ █▄ █ █ █▄ █ ▄▀▀\n" +
+                           "█ ▀ █ █  █ ██▀ █ ▀█ █ █ ▀█ █ ▀█\n" +
+                           "▀   ▀  ▀▀  ▀ ▀ ▀  ▀ ▀ ▀  ▀ ▀▀▀▀");
+    }
+
+    /**
+     * show poll result
+     */
     private void showPollResult() {
         String poll = player.readTxt();
         logger.log("read poll res", LogLevels.INFO);
@@ -123,6 +142,9 @@ public class Client {
 
     }
 
+    /**
+     * vote for morning poll
+     */
     private void voteForMorningPoll() {
         try {
             logger.log("start poll " + player.getName(), LogLevels.INFO);
@@ -141,6 +163,11 @@ public class Client {
         }
     }
 
+    /**
+     * Gets input for vote.
+     *
+     * @param poll the poll
+     */
     public void getInputForVote(Collection<Player> poll) {
         vote = "";
         running = true;
@@ -185,6 +212,12 @@ public class Client {
         }
     }
 
+    /**
+     * check if the input is valid for poll
+     * @param choices poll choices
+     * @param name input
+     * @return true if its valid
+     */
     private boolean validInput(Collection<Player> choices, String name) {
         for (Player player : choices)
             if (player.getName().equalsIgnoreCase(name) && !(name.equals(this.player.getName())))
@@ -192,6 +225,9 @@ public class Client {
         return false;
     }
 
+    /**
+     * start chat
+     */
     private void startChat() {
 
         if (player.isMute()) {
@@ -290,7 +326,7 @@ public class Client {
         while (true) {
             String input = player.readTxt();
             if (input.equals(msg)) {
-                System.out.println("~~~" + msg + "~~~");
+                System.out.println(Color.YELLOW + "~~~" + msg + "~~~" + Color.RESET);
                 logger.log("read" + msg, LogLevels.INFO);
                 break;
             }
@@ -304,7 +340,7 @@ public class Client {
         setName();
         try {
             player.setRole((PlayerRole) player.getInObj().readObject());
-            System.out.println("Welcome to our game \nyour role is -> " + player.getRole());
+            System.out.println("Welcome to our game \nyour role is -> " + Color.RED +player.getRole() + Color.RESET);
             System.out.println("type GO whenever you are ready to play");
             //scanner.next();
             player.getOutObj().writeObject(true);

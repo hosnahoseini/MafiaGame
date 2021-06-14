@@ -1,5 +1,6 @@
 package org.HO.Client;
 
+import org.HO.Color;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
@@ -35,13 +36,19 @@ public class ReadThread implements Runnable {
 
             if (exitMessageHandler(message)) break;
 
-            System.out.println(message);
+            System.out.println(Color.BLUE + message + Color.RESET);
 
         } while (true);
 
     }
 
 
+    /**
+     * handle client when he write "exit"
+     * @param message input message
+     * @return true if player stay
+     */
+    //TODO
     private boolean exitMessageHandler(String message) {
         if (message.equals(player.getName() + " exit")) {
             System.out.println(player.readTxt());

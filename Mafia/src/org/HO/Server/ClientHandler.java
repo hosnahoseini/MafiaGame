@@ -2,6 +2,7 @@ package org.HO.Server;
 
 import org.HO.Initializer;
 import org.HO.Player;
+import org.HO.PlayerRole;
 import org.HO.SharedData;
 
 import java.io.*;
@@ -28,9 +29,10 @@ public class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
-
-            player.setRole(initializer.assignRole());
             setNameFromClient();
+            PlayerRole role = initializer.assignRole();
+            player.setRole(role);
+            System.out.println(player + "-->" + role);
             player.getOutObj().writeObject(player.getRole());
             sharedData.addToSharedData(player);
             player.setReadyToPlay((boolean) player.getInObj().readObject());

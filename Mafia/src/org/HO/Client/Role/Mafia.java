@@ -77,6 +77,7 @@ public class Mafia extends  ClientWithRole{
                         return;
                 }
                 vote = scanner.readLine();
+                clientInputHandling.checkIfInputIsExit(getPlayer(), vote);
                 if (!validInput(poll, vote)) {
                     System.out.println("Invalid input!Try again");
                     vote = "";

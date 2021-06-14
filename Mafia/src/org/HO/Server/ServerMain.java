@@ -24,7 +24,7 @@ public class ServerMain {
             while (true) {
                 System.out.println("Enter number of players: ");
                 numberOfPlayer = scanner.nextInt();
-                if (numberOfPlayer < 5)
+                if (numberOfPlayer < 3)
                     System.out.println("minimum players should be 5");
                 else break;
             }

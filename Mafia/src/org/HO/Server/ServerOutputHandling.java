@@ -6,7 +6,12 @@ import org.HO.SharedData;
 
 import java.io.IOException;
 import java.net.SocketException;
-
+/**
+ * A class for server  to handle same method of getting output
+ *
+ * @author Hosna Oyarhoseini
+ * @version 1.0
+ */
 public class ServerOutputHandling {
     private SharedData sharedData = SharedData.getInstance();
 

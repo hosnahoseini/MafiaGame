@@ -1,6 +1,5 @@
 package org.HO.Client;
 
-import org.HO.Client.Role.ClientInputHandling;
 import org.HO.Logger.LogLevels;
 import org.HO.Logger.LoggingManager;
 import org.HO.Player;
@@ -42,7 +41,7 @@ public class WriteThread extends Thread {
     public void run() {
         try {
             Timer timer = new Timer();
-            timer.schedule(task, 20 * 1000);
+            timer.schedule(task, 30 * 1000);
             do {
                 while (!scanner.ready()) {
                     Thread.sleep(5);
