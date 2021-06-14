@@ -68,14 +68,14 @@ public class Player implements Serializable{
      * @param text text
      * @throws  SocketException when player disconnected
      */
-    public void writeTxt (String text) throws SocketException{
-        try {
+    public void writeTxt (String text) throws IOException{
+//        try {
             this.out.writeUTF(text);
-        } catch(IOException e) {
-            System.err.println ("Some went Wrong in I/O in player " + name);
-            e.printStackTrace();
-            //TODO
-        }
+//        } catch(IOException e) {
+//            System.err.println ("Some went Wrong in I/O in player " + name);
+//            e.printStackTrace();
+//            //TODO
+//        }
     }
 
     /**

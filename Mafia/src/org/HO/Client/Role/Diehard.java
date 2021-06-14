@@ -24,7 +24,7 @@ public class Diehard extends ClientWithRole {
         vote = "n";
         getYesOrNoInput();
 
-            getPlayer().writeTxtClient(vote);
+        getPlayer().writeTxtClient(vote);
 
 
         System.out.println(getPlayer().readTxt());

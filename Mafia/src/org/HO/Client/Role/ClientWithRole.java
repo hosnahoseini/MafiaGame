@@ -21,7 +21,8 @@ public abstract class ClientWithRole {
     private Player player;
     protected boolean running = true;
     protected String vote;
-    public ClientInputHandling clientInputHandling = new ClientInputHandling();
+    protected ClientInputHandling clientInputHandling = new ClientInputHandling();
+//    protected int noResponseCnt = 0;
 
     public ClientWithRole(Player player) {
         this.player = player;

@@ -4,6 +4,7 @@ import org.HO.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
 /**
  * A class for client with dr city role
  *
@@ -24,12 +25,13 @@ public class DrCity extends ClientWithRole {
         super.start();
         String start = getPlayer().readTxt();
         if (start.equals("OK")) {
-            while (true) {
-                System.out.println(getPlayer().readTxt());
-                try {
-                    ArrayList<Player> citizen = (ArrayList<Player>) getPlayer().getInObj().readObject();
-                    for (Player player : citizen)
-                        System.out.println(player.getName());
+
+            System.out.println(getPlayer().readTxt());
+            try {
+                ArrayList<Player> citizen = (ArrayList<Player>) getPlayer().getInObj().readObject();
+                for (Player player : citizen)
+                    System.out.println(player.getName());
+                while (true) {
                     getInput(citizen);
                     getPlayer().writeTxtClient(vote);
                     String check = getPlayer().readTxt();
@@ -37,13 +39,14 @@ public class DrCity extends ClientWithRole {
                         break;
                     else
                         System.out.println(check);
-                } catch (IOException e) {
-                    System.err.println("some thing wrong in reading array list of choices from server");
-                } catch (ClassNotFoundException e) {
-                    System.err.println("Can't convert to array list");
+
                 }
+            } catch (IOException e) {
+                System.err.println("some thing wrong in reading array list of choices from server");
+            } catch (ClassNotFoundException e) {
+                System.err.println("Can't convert to array list");
             }
-        }else {
+        } else {
             System.out.println(start);
         }
     }

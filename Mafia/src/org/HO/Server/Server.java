@@ -21,6 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @version 1.0
  */
 public class Server {
+    private static final int CHAT_TIME = 60000;
     private SharedData sharedData = SharedData.getInstance();
     private FileUtils fileUtils = new FileUtils();
     private ArrayList<String> events = new ArrayList<>();
@@ -49,7 +50,7 @@ public class Server {
 
         waitUntilEveryOneReadyToPlay();
 
-//        introducing();
+        introducing();
 
         gameLoop();
 
@@ -176,7 +177,7 @@ public class Server {
      * wake up normal people
      */
     private void NormalPeopleWakeUp() {
-        for(Player player:sharedData.getNormalCitizens()) {
+        for (Player player : sharedData.getNormalCitizens()) {
             try {
                 player.writeTxt("YOUR TURN");
             } catch (SocketException e) {
@@ -321,7 +322,8 @@ public class Server {
                         sharedData.killedInquired = true;
                         sharedData.numberOfInquiries++;
                     }
-                }
+                }else
+                    dieHard.writeTxt("Okay");
             } catch (SocketException e) {
                 disconnectHandling(dieHard);
             }
@@ -362,6 +364,7 @@ public class Server {
 
     /**
      * handle disconnection
+     *
      * @param player disconnected player
      */
     private void disconnectHandling(Player player) {
@@ -437,10 +440,11 @@ public class Server {
                 if (sharedData.getCitizens().size() != 1 || drCity.getHeal() == 0) {
 
                     drCity.writeTxt("OK");
-                    while (true) {
-                        drCity.writeTxt("Who do you want to heal?");
-                        try {
-                            drCity.getOutObj().writeObject(sharedData.getCitizens());
+
+                    drCity.writeTxt("Who do you want to heal?");
+                    try {
+                        drCity.getOutObj().writeObject(sharedData.getCitizens());
+                        while (true) {
                             String name = serverOutputHandling.readWithExit(drCity);
                             if (name.equals(drCity.getName()) && drCity.getHeal() == 1)
                                 drCity.writeTxt("you've already healed your self, try another player:");
@@ -456,9 +460,10 @@ public class Server {
                                 }
                                 break;
                             }
-                        } catch (IOException e) {
-                            System.err.println("Can't send citizens name to dr city");
+
                         }
+                    } catch (IOException e) {
+                        System.err.println("Can't send citizens name to dr city");
                     }
                 } else {
                     drCity.writeTxt("you don't have choice");
@@ -482,10 +487,11 @@ public class Server {
                 if (sharedData.getMafias().size() != 1 || drLecter.getHeal() == 0) {
 
                     drLecter.writeTxt("OK");
-                    while (true) {
-                        drLecter.writeTxt("Who do you want to heal?");
-                        try {
-                            drLecter.getOutObj().writeObject(sharedData.getMafias());
+
+                    drLecter.writeTxt("Who do you want to heal?");
+                    try {
+                        drLecter.getOutObj().writeObject(sharedData.getMafias());
+                        while (true) {
                             String name = serverOutputHandling.readWithExit(drLecter);
                             if (name.equals(drLecter.getName()) && drLecter.getHeal() == 1)
                                 drLecter.writeTxt("you've already healed your self, try another player:");
@@ -497,9 +503,10 @@ public class Server {
                                     sharedData.healedMafia.heal();
                                 break;
                             }
-                        } catch (IOException e) {
-                            System.err.println("Can't send mafias name to dr lecter");
+
                         }
+                    } catch (IOException e) {
+                        System.err.println("Can't send mafias name to dr lecter");
                     }
                 } else {
                     drLecter.writeTxt("you don't have choice");
@@ -698,7 +705,7 @@ public class Server {
         }
         try {
             pool.shutdown();
-            boolean result = pool.awaitTermination(30050, TimeUnit.MILLISECONDS);
+            boolean result = pool.awaitTermination(CHAT_TIME + 50, TimeUnit.MILLISECONDS);
             if (!result) {
                 sendMessageToAllClients("Chat time ended");
             }
@@ -730,6 +737,7 @@ public class Server {
 
     /**
      * check if all the players are ready
+     *
      * @return true if the are ready
      */
     public boolean checkIfEveryOneISReady() {

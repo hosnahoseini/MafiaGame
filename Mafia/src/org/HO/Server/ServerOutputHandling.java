@@ -52,7 +52,7 @@ public class ServerOutputHandling {
             try {
                 killed.writeTxt("You've been killed:(");
                 killed.writeTxt("Do you want to see rest of the game?(y/n)");
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 killed.close();
                 sharedData.players.remove(killed);
             }

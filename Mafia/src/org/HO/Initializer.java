@@ -59,14 +59,14 @@ public class Initializer {
                     availableRoles.add(PlayerRole.GOD_FATHER);
                     availableRoles.add(PlayerRole.DR_LECTER);
                     availableRoles.add(PlayerRole.DR_CITY);
-                    availableRoles.add(PlayerRole.DIE_HARD);
+                    availableRoles.add(PlayerRole.DETECTIVE);
                     availableRoles.add(PlayerRole.MAYOR);
-                case 4:
-                    availableRoles.add(PlayerRole.DR_LECTER);
-                    availableRoles.add(PlayerRole.GOD_FATHER);
-                    availableRoles.add(PlayerRole.DIE_HARD);
-                    availableRoles.add(PlayerRole.MAYOR);
-                    availableRoles.add(PlayerRole.NORMAL_PEOPLE);
+//                case 5:
+//                    availableRoles.add(PlayerRole.DR_CITY);
+//                    availableRoles.add(PlayerRole.GOD_FATHER);
+//                    availableRoles.add(PlayerRole.DIE_HARD);
+//                    availableRoles.add(PlayerRole.MAYOR);
+//                    availableRoles.add(PlayerRole.NORMAL_PEOPLE);
             }
 
 
@@ -93,7 +93,6 @@ public class Initializer {
      * @return role
      */
     public synchronized static PlayerRole assignRole() {
-
         return availableRoles.pop();
     }
 

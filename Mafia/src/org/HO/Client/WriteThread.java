@@ -16,6 +16,7 @@ import java.util.TimerTask;
  * @version 1.0
  */
 public class WriteThread extends Thread {
+    private static final long CHAT_TIME = 60000;
     private Player player;
     private static final LoggingManager logger = new LoggingManager(WriteThread.class.getName());
     private boolean running = true;
@@ -42,7 +43,7 @@ public class WriteThread extends Thread {
     public void run() {
         try {
             Timer timer = new Timer();
-            timer.schedule(task, 30 * 1000);
+            timer.schedule(task, CHAT_TIME);
             do {
                 while (!scanner.ready()) {
                     Thread.sleep(5);

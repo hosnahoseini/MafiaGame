@@ -59,13 +59,13 @@ public class ChatHandler implements Runnable {
                 break;
             }
 
-            if(clientMessage.equals("end")) {
+            if (clientMessage.equals("end")) {
                 broadcast("end");
                 break;
 
             }
 
-            if(clientMessage.equals("HISTORY")) {
+            if (clientMessage.equals("HISTORY")) {
                 serverMessage = player.getName() + " request for chat HISTORY";
                 previousChats(player);
             }
@@ -73,7 +73,7 @@ public class ChatHandler implements Runnable {
             fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
             logger.log("server receives " + clientMessage, LogLevels.INFO);
             broadcast(serverMessage);
-            if(disconnect)
+            if (disconnect)
                 break;
 
             logger.log("server broad cast " + clientMessage, LogLevels.INFO);
@@ -88,15 +88,16 @@ public class ChatHandler implements Runnable {
      * @param msg message
      */
     public void broadcast(String msg) {
-        for (Player player : readers) {
-            try {
+        try {
+            for (Player player : readers)
                 player.writeTxt(msg);
-            } catch (SocketException e) {
-                player.close();
-                sharedData.players.remove(player);
-                readers.remove(player);
-                disconnect = true;
-            }
+            System.out.println("in broadcast");
+        } catch (IOException e) {
+            System.out.println("in excp");
+            player.close();
+            sharedData.players.remove(player);
+            readers.remove(player);
+            disconnect = true;
         }
     }
 
@@ -110,7 +111,7 @@ public class ChatHandler implements Runnable {
         chatBox += "\n----END!----\n";
         try {
             player.writeTxt(chatBox);
-        } catch (SocketException e) {
+        } catch (IOException e) {
             player.close();
             sharedData.players.remove(player);
         }
