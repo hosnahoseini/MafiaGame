@@ -21,7 +21,6 @@ public class ClientInputHandling {
     public boolean checkIfInputIsExit(Player player, String input){
         if(input.equals("exit")) {
             player.writeTxtClient("exit");
-            System.out.println("you enter exit");
             removePlayer(player);
             return true;
         }
@@ -33,8 +32,8 @@ public class ClientInputHandling {
      * @param player
      */
     public void removePlayer(Player player) {
-        System.out.println(player.readTxt());
-        System.out.println(player.readTxt());
+        System.out.println("-1"+player.readTxt());
+        System.out.println("-2"+player.readTxt());
         Scanner scanner = new Scanner(System.in);
         String result = scanner.next();
         player.writeTxtClient(result);

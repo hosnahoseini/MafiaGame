@@ -7,8 +7,8 @@ import org.HO.Player;
 import org.HO.SharedData;
 
 import java.io.IOException;
-import java.net.SocketException;
-import java.net.SocketException;
+import java.net.IOException;
+import java.net.IOException;
 import java.util.ArrayList;
 
 /**

@@ -2,7 +2,6 @@ package org.HO;
 
 import java.io.*;
 import java.net.Socket;
-import java.net.SocketException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -66,7 +65,7 @@ public class Player implements Serializable{
     /**
      * player write a text in socket buffer
      * @param text text
-     * @throws  SocketException when player disconnected
+     * @throws  IOException when player disconnected
      */
     public void writeTxt (String text) throws IOException{
 //        try {

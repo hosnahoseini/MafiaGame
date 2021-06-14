@@ -306,7 +306,6 @@ public class Client {
      */
     private void receiverKilledMessage(String input) {
         if (input.contains("You've been killed:(")) {
-            System.out.println("You've been killed:(");
             System.out.println(player.readTxt());
             String result = scanner.next();
             player.writeTxtClient(result);
@@ -344,7 +343,7 @@ public class Client {
             player.setRole((PlayerRole) player.getInObj().readObject());
             System.out.println("Welcome to our game \nyour role is -> " + Color.RED +player.getRole() + Color.RESET);
             System.out.println("type GO whenever you are ready to play");
-            scanner.next();
+//            scanner.next();
             player.getOutObj().writeObject(true);
             System.out.println("FIRST MORNING");
             clientWithRole = factory.getClient(player);

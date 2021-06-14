@@ -61,11 +61,11 @@ public class Initializer {
                     availableRoles.add(PlayerRole.DR_CITY);
                     availableRoles.add(PlayerRole.DETECTIVE);
                     availableRoles.add(PlayerRole.MAYOR);
-//                case 5:
+                case 3:
 //                    availableRoles.add(PlayerRole.DR_CITY);
-//                    availableRoles.add(PlayerRole.GOD_FATHER);
-//                    availableRoles.add(PlayerRole.DIE_HARD);
-//                    availableRoles.add(PlayerRole.MAYOR);
+                    availableRoles.add(PlayerRole.GOD_FATHER);
+                    availableRoles.add(PlayerRole.DIE_HARD);
+                    availableRoles.add(PlayerRole.MAYOR);
 //                    availableRoles.add(PlayerRole.NORMAL_PEOPLE);
             }
 

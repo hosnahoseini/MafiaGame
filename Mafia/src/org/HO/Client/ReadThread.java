@@ -26,18 +26,18 @@ public class ReadThread implements Runnable {
     public void run() {
         String message = "";
         String end = player.getName() + " left chat";
-
         do {
             message = player.readTxt();
-            logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
+            if(message != null) {
+                logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
 
-            if (message.equalsIgnoreCase(end) || message.equals("Chat time ended") || message.equals("end")) break;
+                if (message.equalsIgnoreCase(end) || message.equals("Chat time ended") || message.equals("end")) break;
 
 
-            if (exitMessageHandler(message)) break;
+                if (exitMessageHandler(message)) break;
 
-            System.out.println(Color.BLUE + message + Color.RESET);
-
+                System.out.println(Color.BLUE + message + Color.RESET);
+            }
         } while (true);
 
     }

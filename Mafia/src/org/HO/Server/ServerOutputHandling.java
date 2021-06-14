@@ -5,7 +5,6 @@ import org.HO.Player;
 import org.HO.SharedData;
 
 import java.io.IOException;
-import java.net.SocketException;
 /**
  * A class for server  to handle same method of getting output
  *
@@ -27,13 +26,13 @@ public class ServerOutputHandling {
             input = player.getIn().readUTF();
             if (input.equals("exit"))
                 removePlayer(player);
-        } catch (SocketException e) {
+        } catch (IOException e) {
             player.close();
             sharedData.players.remove(player);
-        } catch (IOException e) {
-            System.err.println("Some went wrong in I/O player" + player);
-            e.printStackTrace();
-            //TODO
+//        } catch (IOException e) {
+//            System.err.println("Some went wrong in I/O player" + player);
+//            e.printStackTrace();
+//            //TODO
         }
         return input;
     }

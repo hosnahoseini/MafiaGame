@@ -7,7 +7,6 @@ import org.HO.Logger.LoggingManager;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ExecutorService;
@@ -50,7 +49,7 @@ public class Server {
 
         waitUntilEveryOneReadyToPlay();
 
-        introducing();
+//        introducing();
 
         gameLoop();
 
@@ -180,7 +179,7 @@ public class Server {
         for (Player player : sharedData.getNormalCitizens()) {
             try {
                 player.writeTxt("YOUR TURN");
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(player);
             }
         }
@@ -324,7 +323,7 @@ public class Server {
                     }
                 }else
                     dieHard.writeTxt("Okay");
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(dieHard);
             }
         }
@@ -356,7 +355,7 @@ public class Server {
                     sharedData.mute = player;
 
                 }
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(psychologist);
             }
         }
@@ -393,7 +392,7 @@ public class Server {
                     String name = serverOutputHandling.readWithExit(professional);
                     sharedData.killedByProfessional = sharedData.findPlayerWithName(name);
                 }
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(professional);
             }
         }
@@ -419,10 +418,10 @@ public class Server {
                 } else
                     detective.writeTxt(":(");
 
-            } catch (SocketException e) {
-                disconnectHandling(detective);
             } catch (IOException e) {
-                System.err.println("Can't send players name to detective");
+                disconnectHandling(detective);
+//            } catch (IOException e) {
+//                System.err.println("Can't send players name to detective");
             }
         }
     }
@@ -468,7 +467,7 @@ public class Server {
                 } else {
                     drCity.writeTxt("you don't have choice");
                 }
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(drCity);
             }
     }
@@ -511,7 +510,7 @@ public class Server {
                 } else {
                     drLecter.writeTxt("you don't have choice");
                 }
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(drLecter);
             }
         }
@@ -536,10 +535,10 @@ public class Server {
                 Player player = sharedData.findPlayerWithName(killedName);
                 if (player != null)
                     sharedData.killedByMafias = player;
-            } catch (SocketException e) {
-                disconnectHandling(godFather);
             } catch (IOException e) {
-                System.err.println("Can't send mafias poll choices to godfather");
+                disconnectHandling(godFather);
+//            } catch (IOException e) {
+//                System.err.println("Can't send mafias poll choices to godfather");
             }
         }
     }
@@ -553,7 +552,7 @@ public class Server {
         for (Player player : sharedData.players) {
             try {
                 player.writeTxt(poll.getPollResult());
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(player);
             }
 
@@ -569,7 +568,7 @@ public class Server {
         for (Player player : sharedData.getMafias()) {
             try {
                 player.writeTxt("YOUR TURN");
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(player);
             }
         }
@@ -622,7 +621,7 @@ public class Server {
                     removePlayer(sharedData.killed);
                     sendMessageToAllClients(sharedData.killed + " killed");
                 }
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(mayor);
             }
         }
@@ -652,7 +651,7 @@ public class Server {
                     }
                 }
             }
-        } catch (SocketException e) {
+        } catch (IOException e) {
             disconnectHandling(killed);
         }
     }
@@ -762,7 +761,7 @@ public class Server {
             //player.getOut().flush();
             try {
                 player.writeTxt(msg);
-            } catch (SocketException e) {
+            } catch (IOException e) {
                 disconnectHandling(player);
             }
             logger.log("send " + msg + " to " + player.getName(), LogLevels.INFO);
@@ -787,7 +786,7 @@ public class Server {
                 if (!otherMafia.equals(mafia)) {
                     try {
                         mafia.writeTxt(otherMafia.getName() + " is " + otherMafia.getRole());
-                    } catch (SocketException e) {
+                    } catch (IOException e) {
                         disconnectHandling(mafia);
                     }
                 }
@@ -804,7 +803,7 @@ public class Server {
         String msg = sharedData.getSingleRole(PlayerRole.DR_CITY).getName() + " is doctor of city";
         try {
             sharedData.getSingleRole(PlayerRole.MAYOR).writeTxt(msg);
-        } catch (SocketException e) {
+        } catch (IOException e) {
             disconnectHandling(sharedData.getSingleRole(PlayerRole.MAYOR));
         }
     }

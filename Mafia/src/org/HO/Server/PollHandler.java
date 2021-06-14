@@ -8,7 +8,6 @@ import org.HO.SharedData;
 
 import java.io.EOFException;
 import java.io.IOException;
-import java.net.SocketException;
 
 /**
  * A class for handling poll
@@ -39,11 +38,11 @@ public class PollHandler implements Runnable {
             String vote = serverOutputHandling.readWithExit(player);
 
             poll.vote(vote, player);
-        } catch (SocketException e) {
+        } catch (IOException e) {
             player.close();
             sharedData.players.remove(player);
-        } catch (IOException e) {
-            System.err.println("Some went wrong in I/O player" + player);
+//        } catch (IOException e) {
+//            System.err.println("Some went wrong in I/O player" + player);
         }
         Thread.currentThread().interrupt();
     }
