@@ -24,12 +24,12 @@ public class ServerMain {
             while (true) {
                 System.out.println("Enter number of players: ");
                 numberOfPlayer = scanner.nextInt();
-                if (numberOfPlayer < 3)
+                if (numberOfPlayer < 5)
                     System.out.println("minimum players should be 5");
                 else break;
             }
-            //System.out.println("Enter port: ");
-            //int port = scanner.nextInt();
+//            System.out.println("Enter port: ");
+//            int port = scanner.nextInt();
             Server server = new Server(numberOfPlayer);
             server.start(7652);
 

@@ -88,7 +88,7 @@ public abstract class ClientWithRole {
             }
         };
 
-        timer.schedule(task, 20000);
+        timer.schedule(task, 30000);
         try {
             while (running) {
                 while (!scanner.ready()) {
@@ -130,7 +130,7 @@ public abstract class ClientWithRole {
             }
         };
 
-        timer.schedule(task, 20000);
+        timer.schedule(task, 30000);
         try {
             while (running) {
                 while (!scanner.ready()) {

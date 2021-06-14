@@ -7,8 +7,6 @@ import org.HO.Player;
 import org.HO.SharedData;
 
 import java.io.IOException;
-import java.net.IOException;
-import java.net.IOException;
 import java.util.ArrayList;
 
 /**
@@ -91,9 +89,7 @@ public class ChatHandler implements Runnable {
         try {
             for (Player player : readers)
                 player.writeTxt(msg);
-            System.out.println("in broadcast");
         } catch (IOException e) {
-            System.out.println("in excp");
             player.close();
             sharedData.players.remove(player);
             readers.remove(player);

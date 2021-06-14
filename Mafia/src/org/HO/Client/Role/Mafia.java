@@ -68,7 +68,7 @@ public class Mafia extends  ClientWithRole{
             }
         };
 
-        timer.schedule(task, 20000);
+        timer.schedule(task, 30000);
         try {
             while (running) {
                 while (!scanner.ready()) {

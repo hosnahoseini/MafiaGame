@@ -49,7 +49,7 @@ public class Server {
 
         waitUntilEveryOneReadyToPlay();
 
-//        introducing();
+        introducing();
 
         gameLoop();
 
@@ -594,7 +594,7 @@ public class Server {
 
         try {
             pool.shutdown();
-            if (pool.awaitTermination(20050, TimeUnit.MILLISECONDS)) ;
+            if (pool.awaitTermination(30050, TimeUnit.MILLISECONDS)) ;
             sendMessageToAllClients("VOTING TIME ENDED");
 
         } catch (InterruptedException e) {
