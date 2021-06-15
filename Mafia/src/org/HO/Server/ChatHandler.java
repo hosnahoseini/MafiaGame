@@ -39,7 +39,7 @@ public class ChatHandler implements Runnable {
             readers = sharedData.getPlayers();
             clientMessage = player.readTxt();
             String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
-            if(clientMessage != null) {
+            if (clientMessage != null) {
                 if (clientMessage.equalsIgnoreCase("done")) {
                     serverMessage = player.getName() + " left chat";
                     broadcast(serverMessage);
@@ -111,11 +111,4 @@ public class ChatHandler implements Runnable {
             sharedData.players.remove(player);
         }
     }
-
-    /**
-     * remove a player from game
-     *
-     * @param killed player to be removed
-     */
-
 }

@@ -64,11 +64,7 @@ public class Initializer {
                     availableRoles.add(PlayerRole.PSYCHOLOGIST);
                     availableRoles.add(PlayerRole.MAYOR);
                     break;
-                case 3:
-                    availableRoles.add(PlayerRole.GOD_FATHER);
-                    availableRoles.add(PlayerRole.MAYOR);
-                    availableRoles.add(PlayerRole.DR_CITY);
-                    break;
+
             }
 
 

@@ -9,6 +9,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -20,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @version 1.0
  */
 public class Server {
-    private static final int CHAT_TIME = 60000;
+    private static final int CHAT_TIME = 5 * 60000;
     private SharedData sharedData = SharedData.getInstance();
     private FileUtils fileUtils = new FileUtils();
     private ArrayList<String> events = new ArrayList<>();
@@ -537,6 +538,13 @@ public class Server {
             } catch (IOException e) {
                 disconnectHandling(godFather);
             }
+        }else {
+            sharedData.killedByMafias = mafiasPoll.winner();
+        }
+
+        if(sharedData.killedByMafias == null){
+            Random random = new Random();
+            sharedData.getCitizens().get(random.nextInt(sharedData.getCitizens().size()));
         }
     }
 
@@ -620,7 +628,11 @@ public class Server {
             } catch (IOException e) {
                 disconnectHandling(mayor);
             }
+        }else {
+            removePlayer(sharedData.killed);
+            sendMessageToAllClients(sharedData.killed + " killed");
         }
+
     }
 
     /**

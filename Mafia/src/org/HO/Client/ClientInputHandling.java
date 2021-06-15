@@ -31,7 +31,7 @@ public class ClientInputHandling {
 
     /**
      * remove player from client side
-     * @param player
+     * @param player player
      */
     public void removePlayer(Player player) {
         System.out.println(player.readTxt());

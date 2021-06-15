@@ -57,17 +57,26 @@ public class Client {
         gameLoop();
 
         if (!player.isAlive())
-            while (true) {
-                String input = player.readTxt();
-                System.out.println(input);
-                if(input.equals("Game ended")){
-                    System.out.println(player.readTxt());
-                    System.out.println(player.readTxt());
-                    player.close();
-                    System.exit(2);
-                }
-            }
+            deadPlayer();
 
+    }
+
+    /**
+     * dead player who wants to see game tasks
+     */
+    private void deadPlayer() {
+        while (true) {
+            String input = player.readTxt();
+            if(!input.equals("Chat time ended")) {
+                System.out.println(input);
+            }
+            if(input.equals("Game ended")){
+                System.out.println(player.readTxt());
+                System.out.println(player.readTxt());
+                player.close();
+                System.exit(2);
+            }
+        }
     }
 
     /**
@@ -77,8 +86,9 @@ public class Client {
         do {
             ReceiveUntilGetMsg("CHAT TIME");
             System.out.println(Color.YELLOW + "~~~CHAT STARTED~~~" + Color.RESET);
+
             startChat();
-            unMute();
+
             waitUntilRecivingMsg("POLL");
 
             voteForMorningPoll();
@@ -114,6 +124,9 @@ public class Client {
         } while (true);
     }
 
+    /**
+     * unmute player if he is mute
+     */
     private void unMute() {
         if(player.isMute())
             player.setMute(false);
@@ -191,7 +204,7 @@ public class Client {
             }
         };
 
-        timer.schedule(task, 20000);
+        timer.schedule(task, 30000);
         try {
             while (running) {
                 while (!scanner.ready()) {
@@ -238,20 +251,20 @@ public class Client {
         if (player.isMute()) {
             System.out.println("you are mute this turn");
             return;
+        }else {
+
+            Thread read = new Thread(new ReadThread(player));
+            Thread write = new WriteThread(player);
+            write.start();
+            read.start();
+
+            try {
+                read.join();
+
+            } catch (InterruptedException e) {
+                System.err.println("interruption while joining read thread");
+            }
         }
-
-        Thread read = new Thread(new ReadThread(player));
-        Thread write = new WriteThread(player);
-        write.start();
-        read.start();
-
-        try {
-            read.join();
-
-        } catch (InterruptedException e) {
-            System.err.println("interruption while joining read thread");
-        }
-
     }
 
     /**
@@ -336,6 +349,7 @@ public class Client {
                 break;
             }
         }
+        unMute();
     }
 
     /**
@@ -347,7 +361,7 @@ public class Client {
             player.setRole((PlayerRole) player.getInObj().readObject());
             System.out.println("Welcome to our game \nyour role is -> " + Color.RED +player.getRole() + Color.RESET);
             System.out.println("type GO whenever you are ready to play");
-//            scanner.next();
+            scanner.next();
             player.getOutObj().writeObject(true);
             System.out.println("FIRST MORNING");
             clientWithRole = factory.getClient(player);
