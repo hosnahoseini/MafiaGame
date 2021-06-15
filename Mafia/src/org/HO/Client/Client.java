@@ -78,7 +78,7 @@ public class Client {
             ReceiveUntilGetMsg("CHAT TIME");
             System.out.println(Color.YELLOW + "~~~CHAT STARTED~~~" + Color.RESET);
             startChat();
-
+            unMute();
             waitUntilRecivingMsg("POLL");
 
             voteForMorningPoll();
@@ -112,6 +112,11 @@ public class Client {
 
             System.out.println(Color.YELLOW + "~~~last night events~~~" + Color.RESET);
         } while (true);
+    }
+
+    private void unMute() {
+        if(player.isMute())
+            player.setMute(false);
     }
 
     /**
@@ -154,7 +159,7 @@ public class Client {
             Collection<Player> poll = (Collection<Player>) player.getInObj().readObject();
             logger.log("receive poll " + player.getName(), LogLevels.INFO);
             for (Player player : poll)
-                System.out.println(player);
+                System.out.println("◉ " + player);
 
             getInputForVote(poll);
         } catch (IOException e) {
@@ -230,11 +235,8 @@ public class Client {
      * start chat
      */
     private void startChat() {
-
         if (player.isMute()) {
             System.out.println("you are mute this turn");
-            player.setMute(false);
-            //TODO:flush buffer
             return;
         }
 
@@ -293,10 +295,10 @@ public class Client {
      * @param input messages that come from server
      */
     private void receiverMuteMessage(String input) {
-        if (input.contains(player.getName() + " is muted"))
+        if (input.contains(player.getName() + " is muted")) {
             player.setMute(true);
-        else
-            player.setMute(false);
+        }
+
     }
 
     /**
@@ -326,6 +328,8 @@ public class Client {
     private void waitUntilRecivingMsg(String msg) {
         while (true) {
             String input = player.readTxt();
+            if(player.isMute())
+                System.out.println(input);
             if (input.equals(msg)) {
                 System.out.println(Color.YELLOW + "~~~" + msg + "~~~" + Color.RESET);
                 logger.log("read" + msg, LogLevels.INFO);

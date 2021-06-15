@@ -15,7 +15,6 @@ public class ServerMain {
     private static FileUtils fileUtils = new FileUtils();
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 //        System.out.println("1)Start new game\n2)Load game");
 //        int choice = scanner.nextInt();
@@ -24,7 +23,7 @@ public class ServerMain {
             while (true) {
                 System.out.println("Enter number of players: ");
                 numberOfPlayer = scanner.nextInt();
-                if (numberOfPlayer < 5)
+                if (numberOfPlayer < 3)
                     System.out.println("minimum players should be 5");
                 else break;
             }

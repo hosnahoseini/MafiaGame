@@ -31,7 +31,7 @@ public class Psychologist extends ClientWithRole {
                 System.out.println(getPlayer().readTxt());
                 ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();
                 for (Player player : players)
-                    System.out.println(player.getName());
+                    System.out.println("◉ " + player.getName());
                 getInput(players);
                 getPlayer().writeTxtClient(vote);
             } catch (IOException e) {

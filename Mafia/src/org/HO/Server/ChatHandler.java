@@ -37,44 +37,43 @@ public class ChatHandler implements Runnable {
 
         do {
             readers = sharedData.getPlayers();
-            clientMessage = serverOutputHandling.readWithExit(player);
-            logger.log("server receives " + clientMessage, LogLevels.INFO);
+            clientMessage = player.readTxt();
             String serverMessage = "[ " + player.getName() + " ]: " + clientMessage;
+            if(clientMessage != null) {
+                if (clientMessage.equalsIgnoreCase("done")) {
+                    serverMessage = player.getName() + " left chat";
+                    broadcast(serverMessage);
+                    readers.remove(player);
+                    break;
 
-            if (clientMessage.equalsIgnoreCase("done")) {
-                serverMessage = player.getName() + " left chat";
+                }
+
+                if (clientMessage.equals("exit")) {
+                    serverMessage = player.getName() + " exit";
+                    broadcast(serverMessage);
+                    readers.remove(player);
+                    serverOutputHandling.removePlayer(player);
+                    break;
+                }
+
+                if (clientMessage.equals("Chat time ended")) {
+                    broadcast("Chat time ended");
+                    break;
+
+                }
+
+                if (clientMessage.equals("HISTORY")) {
+                    serverMessage = player.getName() + " request for chat HISTORY";
+                    previousChats(player);
+                }
+
+                fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
+                logger.log("server " + player + " receives " + clientMessage, LogLevels.INFO);
                 broadcast(serverMessage);
-                readers.remove(player);
-                break;
-
+                if (disconnect)
+                    break;
+                logger.log("server broad cast " + clientMessage, LogLevels.INFO);
             }
-
-            if (clientMessage.equals("exit")) {
-                serverMessage = player.getName() + " exit";
-                readers.remove(player);
-                broadcast(serverMessage);
-                serverOutputHandling.removePlayer(player);
-                break;
-            }
-
-            if (clientMessage.equals("end")) {
-                broadcast("end");
-                break;
-
-            }
-
-            if (clientMessage.equals("HISTORY")) {
-                serverMessage = player.getName() + " request for chat HISTORY";
-                previousChats(player);
-            }
-
-            fileUtils.fileWriterByBuffer("chatBoxTemp.txt", serverMessage);
-            logger.log("server receives " + clientMessage, LogLevels.INFO);
-            broadcast(serverMessage);
-            if (disconnect)
-                break;
-
-            logger.log("server broad cast " + clientMessage, LogLevels.INFO);
         } while (true);
 
         Thread.currentThread().interrupt();

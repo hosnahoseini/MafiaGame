@@ -38,7 +38,7 @@ public class Mafia extends  ClientWithRole{
             System.out.println(getPlayer().readTxt());
             Collection<Player> poll = (Collection<Player>) getPlayer().getInObj().readObject();
             for (Player player : poll)
-                System.out.println(player);
+                System.out.println("◉ " + player);
 
             getInputForVote(poll);
 
@@ -49,6 +49,10 @@ public class Mafia extends  ClientWithRole{
         }
     }
 
+    /**
+     * get input for vote
+     * @param poll poll
+     */
     public void getInputForVote(Collection<Player> poll) {
         vote = "";
         running = true;

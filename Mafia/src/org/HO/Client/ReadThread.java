@@ -17,7 +17,7 @@ import java.util.Scanner;
 public class ReadThread implements Runnable {
     private Player player;
     private static final LoggingManager logger = new LoggingManager(ReadThread.class.getName());
-
+    private ClientInputHandling clientInputHandling = new ClientInputHandling();
     public ReadThread(Player player) {
         this.player = player;
     }
@@ -31,10 +31,13 @@ public class ReadThread implements Runnable {
             if(message != null) {
                 logger.log(player.getName() + " read " + message + " in chat", LogLevels.INFO);
 
-                if (message.equalsIgnoreCase(end) || message.equals("Chat time ended") || message.equals("end")) break;
+                if (message.equalsIgnoreCase(end) || message.equals("Chat time ended")) break;
 
 
-                if (exitMessageHandler(message)) break;
+                if (message.equals(player.getName() + " exit")) {
+                    clientInputHandling.removePlayer(player);
+                    break;
+                }
 
                 System.out.println(Color.BLUE + message + Color.RESET);
             }
@@ -42,25 +45,4 @@ public class ReadThread implements Runnable {
 
     }
 
-
-    /**
-     * handle client when he write "exit"
-     * @param message input message
-     * @return true if player stay
-     */
-    //TODO
-    private boolean exitMessageHandler(String message) {
-        if (message.equals(player.getName() + " exit")) {
-            System.out.println(player.readTxt());
-            Scanner scanner = new Scanner(System.in);
-            String result = scanner.next();
-            player.writeTxtClient(result);
-            if (result.equals("n")) {
-                player.close();
-                System.exit(5);
-                return true;
-            }
-        }
-        return false;
-    }
 }

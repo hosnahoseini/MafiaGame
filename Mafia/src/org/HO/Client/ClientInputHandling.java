@@ -1,5 +1,6 @@
 package org.HO.Client;
 
+import org.HO.Color;
 import org.HO.Player;
 
 
@@ -17,6 +18,7 @@ public class ClientInputHandling {
      * check if input is exit and handle it
      * @param input input
      * @param player player
+     * @return true if it is exit
      */
     public boolean checkIfInputIsExit(Player player, String input){
         if(input.equals("exit")) {

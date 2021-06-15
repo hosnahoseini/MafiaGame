@@ -224,6 +224,7 @@ public class Server {
     private void muteUpdate() {
         if (sharedData.mute != null)
             events.add(sharedData.mute.getName() + " is muted");
+
     }
 
     /**
@@ -420,8 +421,6 @@ public class Server {
 
             } catch (IOException e) {
                 disconnectHandling(detective);
-//            } catch (IOException e) {
-//                System.err.println("Can't send players name to detective");
             }
         }
     }
@@ -537,8 +536,6 @@ public class Server {
                     sharedData.killedByMafias = player;
             } catch (IOException e) {
                 disconnectHandling(godFather);
-//            } catch (IOException e) {
-//                System.err.println("Can't send mafias poll choices to godfather");
             }
         }
     }
@@ -587,15 +584,14 @@ public class Server {
     private Poll executePoll(Collection<Player> choices, Collection<Player> voters) {
         ExecutorService pool = Executors.newCachedThreadPool();
         Poll poll = new Poll(choices);
-        long start = System.currentTimeMillis();
         for (Player player : voters) {
             pool.execute(new PollHandler(poll, player));
         }
 
         try {
             pool.shutdown();
-            if (pool.awaitTermination(30050, TimeUnit.MILLISECONDS)) ;
-            sendMessageToAllClients("VOTING TIME ENDED");
+            pool.awaitTermination(30050, TimeUnit.MILLISECONDS);
+
 
         } catch (InterruptedException e) {
             System.err.println("pool termination caused intruotion");
@@ -663,6 +659,7 @@ public class Server {
      */
     private Poll executeMorningPolling() {
         Poll poll = executePoll(sharedData.getAlivePlayers(), sharedData.getAlivePlayers());
+        sendMessageToAllClients("VOTING TIME ENDED");
         sleep(1000);
         sharedData.killed = poll.winner();
         return poll;

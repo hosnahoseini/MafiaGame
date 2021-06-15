@@ -30,9 +30,9 @@ public class DrLecter extends Mafia {
             try {
                 ArrayList<Player> mafias = (ArrayList<Player>) getPlayer().getInObj().readObject();
                 for (Player player : mafias)
-                    System.out.println(player.getName());
-                getInput(mafias);
+                    System.out.println("◉ " + player.getName());
                 while (true) {
+                    getInput(mafias);
                     getPlayer().writeTxtClient(vote);
                     String check = getPlayer().readTxt();
                     if (check.equals("thanks"))

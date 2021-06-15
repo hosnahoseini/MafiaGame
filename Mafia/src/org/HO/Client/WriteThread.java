@@ -29,7 +29,7 @@ public class WriteThread extends Thread {
         @Override
         public void run() {
             running = false;
-            player.writeTxtClient("end");
+            player.writeTxtClient("Chat time ended");
             timer.cancel();
         }
     };
@@ -52,8 +52,11 @@ public class WriteThread extends Thread {
                     }
                 }
                 str = scanner.readLine();
-                if(clientInputHandling.checkIfInputIsExit(player, str))
+                if(str.equals("exit")) {
+                    player.writeTxt("exit");
                     timer.cancel();
+                    return;
+                }
                 player.writeTxtClient(str);
                 logger.log("writer write " + str , LogLevels.INFO);
             } while (!str.equalsIgnoreCase("done") && !str.equals("exit") && running);

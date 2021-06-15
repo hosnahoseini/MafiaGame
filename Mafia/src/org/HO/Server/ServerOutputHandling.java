@@ -29,10 +29,6 @@ public class ServerOutputHandling {
         } catch (IOException e) {
             player.close();
             sharedData.players.remove(player);
-//        } catch (IOException e) {
-//            System.err.println("Some went wrong in I/O player" + player);
-//            e.printStackTrace();
-//            //TODO
         }
         return input;
     }

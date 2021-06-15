@@ -30,7 +30,7 @@ public class DrCity extends ClientWithRole {
             try {
                 ArrayList<Player> citizen = (ArrayList<Player>) getPlayer().getInObj().readObject();
                 for (Player player : citizen)
-                    System.out.println(player.getName());
+                    System.out.println("◉ " + player.getName());
                 while (true) {
                     getInput(citizen);
                     getPlayer().writeTxtClient(vote);

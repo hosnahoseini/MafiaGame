@@ -22,7 +22,7 @@ public abstract class ClientWithRole {
     protected boolean running = true;
     protected String vote;
     protected ClientInputHandling clientInputHandling = new ClientInputHandling();
-//    protected int noResponseCnt = 0;
+
 
     public ClientWithRole(Player player) {
         this.player = player;
@@ -74,6 +74,10 @@ public abstract class ClientWithRole {
         return false;
     }
 
+    /**
+     * get input in a collection
+     * @param poll collection
+     */
     public void getInput(Collection<Player> poll) {
         vote = "";
         running = true;
@@ -117,6 +121,9 @@ public abstract class ClientWithRole {
         }
     }
 
+    /**
+     * get y/n as input in specific time
+     */
     public void getYesOrNoInput(){
         running = true;
         Timer timer = new Timer();

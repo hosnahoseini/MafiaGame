@@ -2,3 +2,6 @@
 chat box is empty at first
 
 --CHAT BOX--
+[ c ]: da
+
+--CHAT BOX--

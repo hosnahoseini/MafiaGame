@@ -68,13 +68,7 @@ public class Player implements Serializable{
      * @throws  IOException when player disconnected
      */
     public void writeTxt (String text) throws IOException{
-//        try {
             this.out.writeUTF(text);
-//        } catch(IOException e) {
-//            System.err.println ("Some went Wrong in I/O in player " + name);
-//            e.printStackTrace();
-//            //TODO
-//        }
     }
 
     /**
@@ -87,7 +81,7 @@ public class Player implements Serializable{
         } catch(IOException e) {
             System.err.println ("Some went Wrong in I/O in player " + name);
             e.printStackTrace();
-            //TODO
+
         }
     }
 
@@ -101,7 +95,6 @@ public class Player implements Serializable{
         }catch (IOException e) {
             System.err.println ("Some went Wrong in I/O in player " + name);
             e.printStackTrace();
-            //TODO
         }
         return null;
     }

@@ -25,7 +25,7 @@ public class Detective extends ClientWithRole {
         try {
             ArrayList<Player> players = (ArrayList<Player>) getPlayer().getInObj().readObject();
             for (Player player : players)
-                System.out.println(player.getName());
+                System.out.println("◉ " + player.getName());
             getInput(players);
             getPlayer().writeTxtClient(vote);
             System.out.println(getPlayer().readTxt());

@@ -61,10 +61,14 @@ public class Initializer {
                     availableRoles.add(PlayerRole.GOD_FATHER);
                     availableRoles.add(PlayerRole.DR_LECTER);
                     availableRoles.add(PlayerRole.DR_CITY);
-                    availableRoles.add(PlayerRole.DETECTIVE);
+                    availableRoles.add(PlayerRole.PSYCHOLOGIST);
                     availableRoles.add(PlayerRole.MAYOR);
                     break;
-
+                case 3:
+                    availableRoles.add(PlayerRole.GOD_FATHER);
+                    availableRoles.add(PlayerRole.MAYOR);
+                    availableRoles.add(PlayerRole.DR_CITY);
+                    break;
             }
 
 
@@ -91,9 +95,6 @@ public class Initializer {
      * @return role
      */
     public synchronized static PlayerRole assignRole() {
-        for (PlayerRole playerRole:availableRoles)
-            System.out.println(playerRole);
-        System.out.println("-----");
         return availableRoles.pop();
     }
 
