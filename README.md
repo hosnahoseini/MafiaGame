@@ -1,4 +1,4 @@
-# AP_midtermProject_spring_2021
+# Mafia Game
 
 
 My advanced programming course project for midterm, which is mafia game!
